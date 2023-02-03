@@ -13,10 +13,10 @@ global.owner = [
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  
 global.smods = []
-global.mods = [''] 
-global.prems = [''] 
+global.mods = [] 
+global.prems = [] 
 
-//━━━━━━━━━━━━━━━━━━━━ (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)
+//━━━━━━━━━━━━━━━━━━━━ ❤️
 
 global.APIs = { // API Prefix
 	//━━━━━.⋅ name: 'https://website' ⋅.━━━━
