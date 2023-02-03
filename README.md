@@ -2,7 +2,7 @@
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
-<a href="https://github.com/TheKillerMax"><img src="https://github.com/TheKillerMax.png" width="250" height="250" alt="TheKillerMax"/></a>
+<a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
 
 ## `COLABORADORES DEL BOT` 
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
