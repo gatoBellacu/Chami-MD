@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, args }) => {
   if (db.data.users[m.sender].bank >= moneymins * count) {
     db.data.users[m.sender].bank -= moneymins * count
     db.data.users[m.sender].limit += count
-    conn.reply(m.chat, `Bot Tiburón🦈 | *「 ATM 」*\n\n-${moneymins * count} LEAF en la cuenta de banco\n+ ${count} Leaf`, m)
+    conn.reply(m.chat, `CuriosityBot-MD | *「 ATM 」*\n\n-${moneymins * count} LEAF en la cuenta de banco\n+ ${count} Leaf`, m)
   } else conn.reply(m.chat, `NO TIENES ${count} PARA RETIRAR`, m)
 }
 handler.help = ['sacar <cantidad> (Saca leaf de tu cuenta de banco)', 'sacartodo']
