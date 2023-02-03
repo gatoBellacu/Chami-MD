@@ -1,4 +1,4 @@
-# Bot Tiburón🦈
+# 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 🍒✨
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
