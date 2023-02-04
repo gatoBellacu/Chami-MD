@@ -484,8 +484,8 @@ const smsSetW2 = () => { return `${baseCB['smsAvisoIIG']()}🙌 *_ESCRIBA EL MEN
 const smsDest = () => { return `${baseCB['smsAvisoEG']()}*LA DESCRIPCIÓN DEL GRUPO HA SIDO CONFIGURADA*`}
 
 //grupo-setname.js
-const smsNam1 = () => { return `${baseCB['smsAvisoEG']()}*EL NOMBRE DEL GRUPO HA SIDO CONFIGURADO*`}
-const smsNam2 = () => { return `${baseCB['smsAvisoMG']()}*🙌 ESCRIBA EL NUEVO NOMBRE DEL GRUPO*`}
+const smsNam1 = () => { return `${baseCB['smsAvisoEG']()}*🤖: EL NOMBRE DEL GRUPO HA SIDO CONFIGURADO CORRECTAMENTE*`}
+const smsNam2 = () => { return `${baseCB['smsAvisoMG']()}*🤖: ESCRIBA EL NUEVO NOMBRE DEL GRUPO*`}
 const smsNam3 = () => { return `${baseCB['smsAvisoFG']()}*EL NOMBRE DEL GRUPO NO DEBE DE TENER MÁS DE 25 CARACTERES*`}
 
 //grupo-restaurarEnlace.js
