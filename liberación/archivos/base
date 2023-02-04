@@ -474,11 +474,11 @@ const smstagaa = () => { return `⚡ INVOCANDO AL GRUPO ⚡`}
 
 //grupo-setbye.js
 const smsSetB = () => { return `${baseCB['smsAvisoEG']()}*LA DESPEDIDA DEL GRUPO HA SIDO CONFIGURADA*`}
-const smsSetB2 = () => { return `${baseCB['smsAvisoIIG']()}🙌 *_ESCRIBA EL MENSAJE DE DESPEDIDA_*\n*_OPCIONAL PUEDE USAR LO QUE ESTA CON "@" PARA AGREGAR MÁS INFORMACIÓN:_*\n\n*⚡ @user (Mención al usuario(a))*\n\n*RECUERDE QUE EL "@" ES OPCIONAL*`}
+const smsSetB2 = () => { return `${baseCB['smsAvisoIIG']()}🤖: *_ESCRIBA EL MENSAJE DE DESPEDIDA_*\n*_OPCIONAL PUEDE USAR LO QUE ESTA CON "@" PARA AGREGAR MÁS INFORMACIÓN:_*\n\n*✨ @user (Mención al usuario(a))*\n\n*RECUERDE QUE EL "@" ES OPCIONAL*`}
 
 //grupo-setwelcome.js
-const smsSetW = () => { return `${baseCB['smsAvisoEG']()}*LA BIENVENIDA DEL GRUPO HA SIDO CONFIGURADA*`}
-const smsSetW2 = () => { return `${baseCB['smsAvisoIIG']()}🙌 *_ESCRIBA EL MENSAJE DE BIENVENIDA_*\n*_OPCIONAL PUEDE USAR LO QUE ESTA CON "@" PARA AGREGAR MÁS INFORMACIÓN:_*\n\n*⚡ @user (Mención al usuario(a))*\n*⚡ @subject (Nombre de grupo)*\n*⚡ @desc (Description de grupo)*\n\n*RECUERDE QUE LOS "@" SON OPCIONALES*`}
+const smsSetW = () => { return `${baseCB['smsAvisoEG']()}*🤖: LA BIENVENIDA DEL GRUPO HA SIDO CONFIGURADA CORRECTAMENTE*`}
+const smsSetW2 = () => { return `${baseCB['smsAvisoIIG']()}🤖: *_ESCRIBA EL MENSAJE DE BIENVENIDA_*\n*_OPCIONAL PUEDE USAR LO QUE ESTA CON "@" PARA AGREGAR MÁS INFORMACIÓN:_*\n\n*✨ @user (Mención al usuario(a))*\n*✨ @subject (Nombre de grupo)*\n*✨ @desc (Description de grupo)*\n\n*🧠: RECUERDE QUE LOS "@" SON OPCIONALES*`}
 
 //grupo-setdesc.js
 const smsDest = () => { return `${baseCB['smsAvisoEG']()}*LA DESCRIPCIÓN DEL GRUPO HA SIDO CONFIGURADA*`}
@@ -486,7 +486,7 @@ const smsDest = () => { return `${baseCB['smsAvisoEG']()}*LA DESCRIPCIÓN DEL GR
 //grupo-setname.js
 const smsNam1 = () => { return `${baseCB['smsAvisoEG']()}*🤖: EL NOMBRE DEL GRUPO HA SIDO CONFIGURADO CORRECTAMENTE*`}
 const smsNam2 = () => { return `${baseCB['smsAvisoMG']()}*🤖: ESCRIBA EL NUEVO NOMBRE DEL GRUPO*`}
-const smsNam3 = () => { return `${baseCB['smsAvisoFG']()}*EL NOMBRE DEL GRUPO NO DEBE DE TENER MÁS DE 25 CARACTERES*`}
+const smsNam3 = () => { return `${baseCB['smsAvisoFG']()}*🤖: EL NOMBRE DEL GRUPO NO DEBE DE TENER MÁS DE 25 CARACTERES*`}
 
 //grupo-restaurarEnlace.js
 const smsRestGp = () => { return `${baseCB['smsAvisoEG']()}*EL ENLACE DEL GRUPO HA SIDO RESTABLECIDO*`}
