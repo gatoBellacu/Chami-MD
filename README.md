@@ -21,3 +21,5 @@
 <a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
 <div><button id="boton" type="button">Baileys - By adiwajshing</button></div>
 <a href="https://github.com/adiwajshing/Baileys"><img src="https://github.com/adiwajshing.png" width="150" height="150" alt="adiwajshing"/></a>
+<div><button id="boton" type="button">Maxxy-Update - By Frezzy</button></div>
+<a href="https://github.com/Frezzy-XD/Maxxy-Update"><img src="https://github.com/Frezzy-XD.png" width="150" height="150" alt="Frezzy"/></a>
