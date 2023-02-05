@@ -60,7 +60,7 @@
 #### AGRADECIMIENTO ESPECIAL PARA
 <a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
 <a href="https://github.com/adiwajshing/Baileys"><img src="https://github.com/adiwajshing.png" width="150" height="150" alt="adiwajshing"/></a>
-<a href="https://github.com/AzamiWithLogic/ConfigBot-update"><img src="https://github.com/AzamiWithLogic.png" width="150" height="150" alt="Azami"/></a>
+<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="150" height="150" alt="elrebelde21"/></a>
 
 #### CONTRIBUIDORES 
 <a href="https://github.com/Miker-Update"><img src="https://github.com/Miker-Update.png" width="100" height="100" alt="Miker-Update"/></a>
