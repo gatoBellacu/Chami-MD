@@ -8,6 +8,11 @@
 </p>
 <a href="#"><img title="CuriosityBot-MD" src="https://img.shields.io/badge/Compatible con la versión multi dispositivos de whatsApp-red?colorA=%F77F48FJ&colorB=%F77F48FJ&style=for-the-badge">
 </a>
+<p align="higt">   
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AzamiWithLogic/CuriosityBotV1-MD?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AzamiWithLogic/CuriosityBotV1-MD?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/AzamiWithLogic/CuriosityBotV1-MD?label=Stars&color=yellow&style=flat-square"></a>
+</p>
 
 ### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
