@@ -29,7 +29,7 @@
 
 > Los grupos son para la diversión no para spamear ⚠️
 
-#### `REDES SOCIALES`
+#### REDES SOCIALES
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://www.youtube.com/AzamiWithLogic)
