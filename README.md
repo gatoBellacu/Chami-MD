@@ -4,10 +4,8 @@
 </p> 
 
 <p align="center">
-<img src="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/blob/main/origen/sity3.jpg" alt="CuriosityBotV1-MD" width="900"/>
+<img src="https://i.imgur.com/WwxBm8o.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
-<a href="#"><img title="CuriosityBot-MD" src="https://img.shields.io/badge/Compatible con la versión multi dispositivos de whatsApp-red?colorA=%F77F48FJ&colorB=%F77F48FJ&style=for-the-badge">
-</a>
 <p align="higt">   
 <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AzamiWithLogic/CuriosityBotV1-MD?label=Forks&color=blue&style=flat-square"></a>
 <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/AzamiWithLogic/CuriosityBotV1-MD?label=Watchers&color=green&style=flat-square"></a>
