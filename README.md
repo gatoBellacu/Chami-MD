@@ -15,3 +15,9 @@
 <a href="https://github.com/Paquito1923"><img src="https://github.com/Paquito1923.png" width="100" height="100" alt="Paquito1923"/></a>
 <a href="https://github.com/Hyzerr"><img src="https://github.com/Hyzerr.png" width="100" height="100" alt="Paquito1923"/></a>
 <a href="https://github.com/TIKIof"><img src="https://github.com/TIKIof.png" width="100" height="100" alt="TIKIof"/></a>
+
+## `AGRADECIMIENTOS & CREDITOS` 
+<div><button id="boton" type="button">games-wabot-md - By BochilGaming </button></div>
+<a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
+<div><button id="boton" type="button">Baileys - By adiwajshing</button></div>
+<a href="https://github.com/adiwajshing/Baileys"><img src="https://github.com/adiwajshing.png" width="150" height="150" alt="adiwajshing"/></a>
