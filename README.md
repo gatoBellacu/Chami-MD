@@ -20,8 +20,13 @@
 > Los grupos son para la diversión no para spamear ⚠️
 
 ## REDES SOCIALES 
+-----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://www.youtube.com/AzamiWithLogic)
+
+-----
+[![blog](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+](mailto:https://centergatabot@gmail.com)
 
 
 > ☑️ ESTE REPOSITORIO DE CURIOSITY BOT ES COMPATIBLE CON:
