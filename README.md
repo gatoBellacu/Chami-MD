@@ -18,6 +18,11 @@
 <a href="https://github.com/clicknetcafe/azamibot-md-multi/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/clicknetcafe/azamibot-md-multi?label=PullRequest&color=success&style=flat-square"></a>
 <a href="https://github.com/clicknetcafe/azamibot-md-multi/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/clicknetcafe/azamibot-md-multi?label=PullRequest&color=red&style=flat-square"></a>
 
+#### Heroku Buildpack
+| BuildPack | LINK |
+|--------|--------|
+| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
 #### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
