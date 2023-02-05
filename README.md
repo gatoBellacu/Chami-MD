@@ -14,7 +14,7 @@
 
 # REDES SOCIALES 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://www.youtube.com/AzamiWithLogic)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+](https://www.youtube.com/AzamiWithLogic)
 
 
 > ☑️ ESTE REPOSITORIO DE CURIOSITY BOT ES COMPATIBLE CON:
