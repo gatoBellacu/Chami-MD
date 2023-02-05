@@ -9,14 +9,14 @@
 <a href="#"><img title="CuriosityBot-MD" src="https://img.shields.io/badge/Compatible con la versión multi dispositivos de whatsApp-red?colorA=%F77F48FJ&colorB=%F77F48FJ&style=for-the-badge">
 </a>
 <p align="higt">   
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/network/members"><img title="Forks" src="https://img.shields.io/github/forks/clicknetcafe/azamibot-md-multi?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/clicknetcafe/azamibot-md-multi?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/clicknetcafe/azamibot-md-multi?label=Stars&color=yellow&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/clicknetcafe/azamibot-md-multi?label=Contributors&color=blue&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/issues"><img title="Issues" src="https://img.shields.io/github/issues/clicknetcafe/azamibot-md-multi?label=Issues&color=success&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/clicknetcafe/azamibot-md-multi?label=Issues&color=red&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/clicknetcafe/azamibot-md-multi?label=PullRequest&color=success&style=flat-square"></a>
-<a href="https://github.com/clicknetcafe/azamibot-md-multi/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/clicknetcafe/azamibot-md-multi?label=PullRequest&color=red&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/clicknetcafe/azamibot-md-multi?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/clicknetcafe/azamibot-md-multi?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/clicknetcafe/azamibot-md-multi?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/clicknetcafe/azamibot-md-multi?label=Contributors&color=blue&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/issues"><img title="Issues" src="https://img.shields.io/github/issues/clicknetcafe/azamibot-md-multi?label=Issues&color=success&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/clicknetcafe/azamibot-md-multi?label=Issues&color=red&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/pulls"><img title="Pull Request" src="https://img.shields.io/github/issues-pr/clicknetcafe/azamibot-md-multi?label=PullRequest&color=success&style=flat-square"></a>
+<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/clicknetcafe/azamibot-md-multi?label=PullRequest&color=red&style=flat-square"></a>
 
 
 #### DUDAS SOBRE?, EL BOT CONTACTAME 
