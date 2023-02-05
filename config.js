@@ -92,8 +92,8 @@ global.thumb = fs.readFileSync('./media/thumb.jpg')
 
 //━━━━━.⋅ Sticker WM ⋅.━━━━
 
-global.packname = '𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🍒✨'
-global.author = '𝑨𝒛𝒂𝒎𝒊 👑'
+global.packname = '🍒 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓'
+global.author = '𝑨𝒛𝒂𝒎𝒊 ❤️'
 
 //⊱ ━━━━━.⋅ Redes | cuentas | versión ⋅.━━━━ ⊰
 
