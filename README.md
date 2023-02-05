@@ -6,6 +6,8 @@
 <p align="center">
 <img src="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/blob/main/origen/sity3.jpg" alt="CuriosityBotV1-MD" width="900"/>
 </p>
+<a href="#"><img title="CuriosityBot-MD" src="https://img.shields.io/badge/Compatible con la versión multi dispositivos de whatsApp-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge">
+</a>
 
 ### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
