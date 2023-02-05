@@ -23,5 +23,5 @@
 <a href="https://github.com/adiwajshing/Baileys"><img src="https://github.com/adiwajshing.png" width="150" height="150" alt="adiwajshing"/></a>
 <div><button id="boton" type="button">Maxxy-Update - By Frezzy</button></div>
 <a href="https://github.com/Frezzy-XD/Maxxy-Update"><img src="https://github.com/Frezzy-XD.png" width="150" height="150" alt="Frezzy"/></a>
-<div><button id="boton" type="button">ConfigBot-update-desarrollo - By AzamiWithLogic</button></div>
-<a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD"><img src="https://github.com/AzamiWithLogic.png" width="150" height="150" alt="Azami"/></a>
+<div><button id="boton" type="button">ConfigBot-update - By AzamiWithLogic</button></div>
+<a href="https://github.com/AzamiWithLogic/ConfigBot-update"><img src="https://github.com/AzamiWithLogic.png" width="150" height="150" alt="Azami"/></a>
