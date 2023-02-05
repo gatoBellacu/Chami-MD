@@ -8,9 +8,9 @@
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 
 ### ❇️ GRUPOS OFICIALES
-<a href="https://chat.whatsapp.com/Dw6uFt4fBzbHqVLpRXB8u8" target="blank"><img src="https://img.shields.io/badge/©_CURIOSITY_BOT_MD_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LGg7jeOW7njH19daSmxmnd" target="blank"><img src="https://img.shields.io/badge/©_CURIOSITY_BOT_MD_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-# REDES SOCIALES 
+## REDES SOCIALES 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://www.youtube.com/AzamiWithLogic)
 
