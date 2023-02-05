@@ -3,7 +3,7 @@
   <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7BY&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
 </p> 
 
-### DUDAS SOBRE EL BOT CONTACTAME 
+### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 <a href="https://github.com/AzamiWithLogic"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7XZ&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="70px"
