@@ -47,15 +47,23 @@
 * HEROKU
 * ZIPPNODES
 
-#### `EDITOR Y PROPIETARIO DEL BOT` 
+#### EDITOR Y PROPIETARIO DEL BOT
 
 <a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
 
 #### AGRADECIMIENTO ESPECIAL PARA
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
 [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
+<div><button id="boton" type="button">games-wabot-md - By BochilGaming </button></div>
 
-#### Contributor
+#### CONTRIBUIDORES 
+<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
+<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
+<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="100" height="100" alt="BrunoSobrino"/></a>
+<a href="https://github.com/DIEGO-OFC"><img src="https://github.com/DIEGO-OFC.png" width="100" height="100" alt="DIEGO-OFC"/></a>
+<a href="https://github.com/Paquito1923"><img src="https://github.com/Paquito1923.png" width="100" height="100" alt="Paquito1923"/></a>
+<a href="https://github.com/Hyzerr"><img src="https://github.com/Hyzerr.png" width="100" height="100" alt="Paquito1923"/></a>
+<a href="https://github.com/TIKIof"><img src="https://github.com/TIKIof.png" width="100" height="100" alt="TIKIof"/></a>
 [![Adiixyz](https://github.com/Adiixyz.png?size=100)](https://github.com/Adiixyz)
 [![idhamthoriqbot](https://github.com/idhamthoriqbot.png?size=100)](https://github.com/idhamthoriqbot)
 [![BlueShiYT](https://github.com/BlueShiYT.png?size=100)](https://github.com/BlueShiYT)
@@ -70,13 +78,6 @@
 [![ZeroChanBot](https://github.com/ZeroChanBot.png?size=100)](https://github.com/ZeroChanBot)
 [![Bintangp02](https://github.com/Bintangp02.png?size=100)](https://github.com/Bintangp02)
 [![DineshValor](https://github.com/DineshValor.png?size=100)](https://github.com/DineshValor)
-<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
-<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
-<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="100" height="100" alt="BrunoSobrino"/></a>
-<a href="https://github.com/DIEGO-OFC"><img src="https://github.com/DIEGO-OFC.png" width="100" height="100" alt="DIEGO-OFC"/></a>
-<a href="https://github.com/Paquito1923"><img src="https://github.com/Paquito1923.png" width="100" height="100" alt="Paquito1923"/></a>
-<a href="https://github.com/Hyzerr"><img src="https://github.com/Hyzerr.png" width="100" height="100" alt="Paquito1923"/></a>
-<a href="https://github.com/TIKIof"><img src="https://github.com/TIKIof.png" width="100" height="100" alt="TIKIof"/></a>
 
 ## `AGRADECIMIENTOS & CREDITOS` 
 <div><button id="boton" type="button">games-wabot-md - By BochilGaming </button></div>
