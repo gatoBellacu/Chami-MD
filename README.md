@@ -3,14 +3,6 @@
   <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7BB&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
 </p> 
 
-<p align="center"> 
-  <a href="https://github.com/AzamiWithLogic/CuriosityBot-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7BY&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
-</p> 
-
-<p align="center"> 
-  <a href="https://github.com/AzamiWithLogic/CuriosityBot-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7BG&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
-</p> 
-
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
 <a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
