@@ -43,7 +43,6 @@
 * REPLIT
 * KOYEB
 * HEROKU
-* ZIPPNODES
 
 #### Heroku Buildpack
 | BuildPack | LINK |
