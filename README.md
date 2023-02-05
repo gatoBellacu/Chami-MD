@@ -18,8 +18,7 @@
 * REPLIT
 * KOYEB
 * HEROKU
-*ZIPPNODES
-*NOXHOTS (no disponible por el momento, desarrollado por AzamiWithLogic y vecemi)
+* ZIPPNODES
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
