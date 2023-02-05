@@ -9,7 +9,8 @@
 <a href="https://github.com/AzamiWithLogic"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7XZ&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="70px"
 </p> 
 
-> LOS NUMEROS NO SON BOTS Y EN EL GRUPO NO SE PERMITEN NUMEROS-BOTS 
+
+> USAREMOS INSTAGRAM DE ASISTENCIA MIENTRAS BUSCO UN NUMERO DE WHATSAPP PARA LA ASISTENCIA
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
