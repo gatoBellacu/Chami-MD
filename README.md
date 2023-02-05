@@ -19,7 +19,7 @@
 <a href="https://github.com/clicknetcafe/azamibot-md-multi/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/clicknetcafe/azamibot-md-multi?label=PullRequest&color=red&style=flat-square"></a>
 
 
-### DUDAS SOBRE?, EL BOT CONTACTAME 
+#### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 
@@ -47,7 +47,7 @@
 * HEROKU
 * ZIPPNODES
 
-## `EDITOR Y PROPIETARIO DEL BOT` 
+#### `EDITOR Y PROPIETARIO DEL BOT` 
 
 <a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
 
