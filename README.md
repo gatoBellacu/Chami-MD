@@ -13,6 +13,9 @@
 > USAREMOS INSTAGRAM DE ASISTENCIA MIENTRAS BUSCO UN NUMERO DE WHATSAPP PARA ATENDERLOS MAS RÁPIDO 
 
 # REDES SOCIALES 
+[![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://www.youtube.com/AzamiWithLogic)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+
 
 > ☑️ ESTE REPOSITORIO DE CURIOSITY BOT ES COMPATIBLE CON:
 * TERMUX
