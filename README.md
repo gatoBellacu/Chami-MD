@@ -83,7 +83,3 @@
 [![ZeroChanBot](https://github.com/ZeroChanBot.png?size=100)](https://github.com/ZeroChanBot)
 [![Bintangp02](https://github.com/Bintangp02.png?size=100)](https://github.com/Bintangp02)
 [![DineshValor](https://github.com/DineshValor.png?size=100)](https://github.com/DineshValor)
-
-#### COMPA
-<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="250" height="250" alt="elrebelde21"/></a>
-
