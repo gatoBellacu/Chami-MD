@@ -8,7 +8,7 @@
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 <a href="https://github.com/AzamiWithLogic"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7XZ&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="70px"
 </p> 
-> USAREMOS INSTAGRAM DE ASISTENCIA MIENTRAS BUSCO UN NUMERO DE WHATSAPP PARA LA ASISTENCIA 
+> LOS NUMEROS NO SON BOTS Y EN EL GRUPO NO SE PERMITEN NUMEROS-BOTS 
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
 
