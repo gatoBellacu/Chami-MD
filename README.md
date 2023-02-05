@@ -1,6 +1,6 @@
 # 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 🍒✨
 <p align="center"> 
-  <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7SL&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
+  <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=ABF7BY&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.👀" height="90px"
 </p> 
 
 ## `EDITOR Y PROPIETARIO DEL BOT` 
