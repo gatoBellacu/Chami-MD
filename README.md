@@ -8,8 +8,6 @@
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 
 
-> USAREMOS INSTAGRAM DE ASISTENCIA MIENTRAS BUSCO UN NUMERO DE WHATSAPP PARA ATENDERLOS MAS RÁPIDO 
-
 # REDES SOCIALES 
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://www.youtube.com/AzamiWithLogic)
