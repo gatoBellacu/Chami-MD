@@ -1,3 +1,4 @@
+import moment from 'moment-timezone'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 let locale = 'es'
 let d = new Date(new Date + 3600000)
@@ -8,10 +9,21 @@ let time = d.toLocaleTimeString(locale, {
     }) 
 
 let pp = '.media/menu2.jpg'
- 
+let { money, joincount } = global.db.data.users[m.sender]
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let week = d.toLocaleDateString(locale, { weekday: 'long' })
+let date = d.toLocaleDateString(locale, {
+day: 'numeric',
+month: 'long',
+year: 'numeric'
+}) 
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime) 
+
 const sections = [  
 {
-title: `Bot Tiburón🦈 Menu`,
+title: `🅒🅤🅡🅘🅞🅢🅘🅣🅨🅑🅞🅣-🅜🅓 🍒✨ Menu`,
 rows: [
        {title: "/info", description: "para vez el cuentos grupos esta el bot", rowId: `${usedPrefix}grouplist`},
         {title: "/creador", description: "para mostra el numeor del creador", rowId: `${usedPrefix}owner`},
@@ -54,39 +66,32 @@ rows: [
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: `╭─「 Bot Tiburón🦈 」
-║❥Hola, ${name}! Espero que tengas un lindo día o noche!!
-║
-║❥Creador del Bot: wa.me/56937358804
-║
-║❥Tu SN es: 
-║
-║❥💰Coins restantes:  Coins*
-║
-║❥Tu nivel es: 
-║
-║❥ XP en Total
-║
-║❥YouTube: https://www.youtube.com/c/TheKillerMaxOFC
-║
-║❥Reestablecer códigos de tu número de WhatsApp en menos de 30 segundos: https://youtu.be/c4K0n3XdCXE
-║
-║❥Sacar de soporte cualquier número de WhatsApp en menos de 30 segundos: https://youtu.be/DzSAB9_HmC8
-║
-║❥Envia ¨Bot¨ para ver los Grupos del Bot.
-║
-║❥Envia ¨/serbot¨ para tener el bot en tu número (no disponible por el momento)
-║
-║❥Si quieres ayudar a mejorar el bot, puedes donar
-║
-║❥Paypal: paypal.me/arris187
-║
-║❥Envia los comandos sin * * ¨ ¨ ( )
-║ 
-╰────
-*Bot Tiburón🦈*`, footer: ``, pp,
+text: `╔════ ≪ •❈• ≫ ════╗\n║ *${ucapan()}*\n║❤️•.¸❤️.• *${taguser}* •.¸❤️¸.•❤️\n╚═════ೋೋ═════╝
+
+╔════ ≪ •🌐• ≫ ════╗
+║🅒🅤🅡🅘🅞🅢🅘🅣🅨🅑🅞🅣-🅜🅓 🍒✨ 
+║📡 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 𝙰𝙻 𝙼𝙴𝙽𝚄 𝙻𝙸𝚂𝚃𝙰 
+║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+║🎁 𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃 🎁
+║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+║⏱️ ❥ ғᴇᴄʜᴀ: ${date}
+║⏱️ ❥ ʜᴏʀᴀ: ${time}
+║⏰ ❥ ᴀᴄᴛɪᴠɪᴅᴀᴅᴀᴅ: ${uptime}
+║👑 ❥ ᴠᴇʀsɪᴏɴ ᴅᴇʟ ʙᴏᴛ: ${vs}
+║ 📚 ❥ ʟɪʙʀᴇʀɪᴀ:  h
+║👥 ❥ ᴜsᴜᴀʀɪᴏ(s): ${Object.keys(global.db.data.users).length}
+║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+║🍄 𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 🍄
+║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+║ 🎖️ ❥ 𝙽𝙸𝚅𝙴𝙻: ${level}
+║ 🧰 ❥ 𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰: ${exp}
+║ 💎 ❥ 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴𝚂: ${limit}
+║ 👻 ❥ 𝚁𝙰𝙽𝙶𝙾: ${role}
+║ 🪙  ❥ 𝚂𝙸𝚃𝚈-𝙲𝙾𝙸𝙽𝚂: ${money}
+╚═════ೋೋ═════╝
+*🅒🅤🅡🅘🅞🅢🅘🅣🅨🅑🅞🅣-🅜🅓 🍒✨*`, footer: ``, pp,
 title: null,
-buttonText: "menu", 
+buttonText: "🅗🅐🅖🅐 🅒🅛🅘🅒🅚 🅐🅠🅤🅘", 
 sections }
 
 conn.sendMessage(m.chat, listMessage)
@@ -96,3 +101,32 @@ handler.tags = ['group', 'owner']
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 handler.register = true
 export default handler
+
+
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function ucapan() {
+  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  let res = `𝙱𝚄𝙴𝙽𝙾𝚂 𝙳𝙸𝙰𝚂 | 𝙶𝙾𝙾𝙳 𝙼𝙾𝚁𝙽𝙸𝙽𝙶`
+  if (time >= 4) {
+    res = `𝙱𝚄𝙴𝙽𝙾𝚂 𝙳𝙸𝙰𝚂 | 𝙶𝙾𝙾𝙳 𝙼𝙾𝚁𝙽𝙸𝙽𝙶`
+  }
+  if (time >= 11) {
+    res = `𝙱𝚄𝙴𝙽𝙰𝚂 𝚃𝙰𝚁𝙳𝙴𝚂 | 𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶`
+  }
+  if (time >= 15) {
+    res = `𝙱𝚄𝙴𝙽𝙰𝚂 𝚃𝙰𝚁𝙳𝙴𝚂 | 𝙶𝙾𝙾𝙳 𝙴𝚅𝙴𝙽𝙸𝙽𝙶`
+  }
+  if (time >= 17) {
+    res = `𝙱𝚄𝙴𝙽𝙰𝚂 𝙽𝙾𝙲𝙷𝙴𝚂 | 𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝚃𝙷`
+  }
+  return res
+} 
