@@ -23,13 +23,13 @@
 <p align="hihg">   
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
 
-### 🌐 GRUPOS OFICIALES
+#### 🌐 GRUPOS OFICIALES
 <a href="https://chat.whatsapp.com/LGg7jeOW7njH19daSmxmnd" target="blank"><img src="https://img.shields.io/badge/©_CURIOSITY_BOT_MD_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/LGg7jeOW7njH19daSmxmnd" target="blank"><img src="https://img.shields.io/badge/©_CURIOSITY_BOT_MD_2-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 > Los grupos son para la diversión no para spamear ⚠️
 
-## REDES SOCIALES 
+#### `REDES SOCIALES`
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://www.youtube.com/AzamiWithLogic)
@@ -52,9 +52,8 @@
 <a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
 
 #### AGRADECIMIENTO ESPECIAL PARA
-[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
-[![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
-<a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
+<a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="100" height="150" alt="BochilGaming"/></a>
+<a href="https://github.com/adiwajshing/Baileys"><img src="https://github.com/adiwajshing.png" width="150" height="100" alt="adiwajshing"/></a>
 
 #### CONTRIBUIDORES 
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
