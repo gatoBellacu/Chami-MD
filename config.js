@@ -3,13 +3,13 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['5214531173598', '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🔰', true],
-  ['5214621913018', '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓🔰', true],
-  ['51931542837', '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🔰', true],
-  ['593968585383', '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓🔰', true], 
-  ['529996125657'], [''], [''], [''], [''],
-  [''], [''], [''], [''], ['']]
-//Numeros de owner 
+  [ '5214531173598' ,  '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🔰' ,  cierto ] ,
+  [ '5214621913018' ,  '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓🔰' ,  cierto ] ,
+  [ '51931542837' ,  '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🔰' ,  cierto ] ,
+  [ '593968585383' ,  '🔰 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓🔰' ,  cierto ] , 
+  [ '529996125657' ] ,
+  [ '56964787183' ] ]
+//━━━━━━━━━━━━━━━━━━━━━━━━━━⁔⁔⁔ ━━━━
 
 global.mods = ['0'] 
 global.prems = ['0']
@@ -30,7 +30,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 `👑 ➢ CREADOR POR:\n📅 ➢ Día:\n🗓️ ➢ Fecha:`
 global.author = ` CURIOSITY-BOT 🍒 \n• ${dia}\n• ${fecha}`
-global.fgig = '® 𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓  : 𝐀𝐙𝐀𝐌𝐈\n' 
+global.fgig = '® *CURIOSITYBOT-MD* : *AZAMI*\n' 
 global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
 global.fgsc = 'https://github.com/FG98F/dylux-fg' 
 global.fgyt = 'https://youtube.com/fg98f'
