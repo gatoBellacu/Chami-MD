@@ -28,8 +28,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-`👑 ➢ CREADOR POR:\n📅 ➢ Día:\n🗓️ ➢ Fecha:`
-global.author = ` CURIOSITY-BOT 🍒 \n• ${dia}\n• ${fecha}`
+global.packname = `CURIOSITY-BOT 🍒`
+global.author = `AZAMI 🔰`
 global.fgig = '® *CURIOSITYBOT-MD* : *AZAMI*\n' 
 global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
 global.fgsc = 'https://github.com/FG98F/dylux-fg' 
