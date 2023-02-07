@@ -4,7 +4,7 @@
 </p> 
 
 <p align="center">
-<img src="https://telegra.ph/file/95dab7d8991d67e0854a3.jpg" alt="CuriosityBot-MD" width="900"/>
+<img src="https://telegra.ph/file/8d82c74f8e9d3493c6cf4.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
 <p align="higt">   
 <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/AzamiWithLogic/CuriosityBotV1-MD?label=Forks&color=blue&style=flat-square"></a>
