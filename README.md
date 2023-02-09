@@ -17,6 +17,10 @@
 <a href="https://github.com/AzamiWithLogic/CuriosityBotV1-MD/pulls?q=is%3Apr+is%3Aclosed"><img title="Pull Request" src="https://img.shields.io/github/issues-pr-closed/AzamiWithLogic/CuriosityBotV1-MD?label=PullRequest&color=red&style=flat-square"></a>
 
 
+<a href="https://youtu.be/bUYcID5kjX8"><img src="https://i.ibb.co/gtC28NQ/20230127-162401.png" alt="CuriosityBot-MD" border="50" width="50"></a>
+
+
+
 #### DUDAS SOBRE?, EL BOT CONTACTAME 
 <p align="hihg">   
 <a href="https://instagram.com/azamiwithlogic" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
