@@ -1,4 +1,4 @@
-# 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 🍧
+# 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 
 
 <div align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Bungee+Shade&size=50&pause=1000&color=F710D7&center=true&width=910&height=100&lines=Curiosity+Bot+md;Multi+Device+Whatsapp+Bot;Codigo+By+Azami" alt="Typing SVG" /></a>
