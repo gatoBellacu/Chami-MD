@@ -1,9 +1,7 @@
 # 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 🍧
-<p align="center"><a href="https://github.com/Aiinne"><img src="https://github-readme-stats.vercel.app/api?username=Aiinne&show_icons=true&theme=tokyonight"></a></p>
-<p align="center">
-  <a href="https://github.com/aiinne"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Aiinne&bg_color=30,e96443,904e95&title_color=fff&text_color=fff&hide_border=true&show_icons=true&layout=compact" /></a>
+ <p align="center">
+<a href="https://github.com/DarkWinzo/Queen-MD"><img align="center" src="https://github-cardname.caliph.my.id/api?name=Queen&description=Hola,%20I%20am%20Ciriosity%20Bot%20MD.%20I%20am%20First%20Multi-device%20Whatsapp%20%Sinhala20Bot,%20You%20Can%20Deploy%20Me%20%20%20enjoy%20Futures&image=https://i.ibb.co/5hYmkkK/Menu.png&backgroundColor=%23ecf0f1&instagram=@darkWinzo&github=DarkWinzo&pattern=ticTacToe&colorPattern=%23eaeaea&site=youtube.com/DarkWinzo"/></a>
 </p>
-
 
 <p align="center">
 <img src="https://telegra.ph/file/8d82c74f8e9d3493c6cf4.jpg" alt="CuriosityBot-MD" width="900"/>
