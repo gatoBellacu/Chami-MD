@@ -1,4 +1,4 @@
-## Versión 1.0.2-V1 🚀
+## Versión V1-1.0.2 🚀
 <p align="center"> 
   <a href="https://github.com/AzamiWithLogic/CuriosityBot-MD"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=AEF2DF&center=falso&vCenter=falso&lines=CURIOSITY+BOT+MD++🍒;GRACIAS+POR+VISITAR+ESTE+REPOSITORIO.❤️" height="90px"
 </p> 
