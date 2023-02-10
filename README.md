@@ -49,12 +49,13 @@
 | **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-#### ADMINISTRADOR 
-<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="250" height="250" alt="elrebelde21"/></a>
-
 #### EDITOR Y PROPIETARIO DEL BOT
 
-<a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="240" height="240" alt="AzamiWithLogic"/></a>
+<a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
+
+#### ADMINISTRADOR DEL BOT 
+<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="220" height="220" alt="elrebelde21"/></a>
+
 
 #### AGRADECIMIENTO ESPECIAL PARA
 <a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
