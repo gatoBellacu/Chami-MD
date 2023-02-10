@@ -54,7 +54,7 @@
 
 #### EDITOR Y PROPIETARIO DEL BOT
 
-<a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="250" height="250" alt="AzamiWithLogic"/></a>
+<a href="https://github.com/AzamiWithLogic"><img src="https://github.com/AzamiWithLogic.png" width="240" height="240" alt="AzamiWithLogic"/></a>
 
 #### AGRADECIMIENTO ESPECIAL PARA
 <a href="https://github.com/BochilGaming/games-wabot-md/tree/multi-device"><img src="https://github.com/BochilGaming.png" width="150" height="150" alt="BochilGaming"/></a>
@@ -62,24 +62,10 @@
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="150" height="150" alt="elrebelde21"/></a>
 
 #### CONTRIBUIDORES 
-<a href="https://github.com/Miker-Update"><img src="https://github.com/Miker-Update.png" width="100" height="100" alt="Miker-Update"/></a>
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
+<a href="https://github.com/Miker-Update"><img src="https://github.com/Miker-Update.png" width="100" height="100" alt="Miker-Update"/></a>
 <a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="100" height="100" alt="BrunoSobrino"/></a>
 <a href="https://github.com/DIEGO-OFC"><img src="https://github.com/DIEGO-OFC.png" width="100" height="100" alt="DIEGO-OFC"/></a>
 <a href="https://github.com/Paquito1923"><img src="https://github.com/Paquito1923.png" width="100" height="100" alt="Paquito1923"/></a>
 <a href="https://github.com/Hyzerr"><img src="https://github.com/Hyzerr.png" width="100" height="100" alt="Paquito1923"/></a>
 <a href="https://github.com/TIKIof"><img src="https://github.com/TIKIof.png" width="100" height="100" alt="TIKIof"/></a>
-[![Adiixyz](https://github.com/Adiixyz.png?size=100)](https://github.com/Adiixyz)
-[![idhamthoriqbot](https://github.com/idhamthoriqbot.png?size=100)](https://github.com/idhamthoriqbot)
-[![BlueShiYT](https://github.com/BlueShiYT.png?size=100)](https://github.com/BlueShiYT)
-[![zatu22](https://github.com/zatu22.png?size=100)](https://github.com/zatu22)
-[![unx21](https://github.com/unx21.png?size=100)](https://github.com/unx21)
-[![botstylee](https://github.com/botstylee.png?size=100)](https://github.com/botstylee)
-[![Jauhariq](https://github.com/Jauhariq.png?size=100)](https://github.com/Jauhariq)
-[![Nobuyaki](https://github.com/Nobuyaki.png?size=100)](https://github.com/Nobuyaki)
-[![Aiinne](https://github.com/Aiinne.png?size=100)](https://github.com/Aiinne)
-[![arisawali2014](https://github.com/arisawali2014.png?size=100)](https://github.com/arisawali2014)
-[![ryznxx](https://github.com/ryznxx.png?size=100)](https://github.com/ryznxx)
-[![ZeroChanBot](https://github.com/ZeroChanBot.png?size=100)](https://github.com/ZeroChanBot)
-[![Bintangp02](https://github.com/Bintangp02.png?size=100)](https://github.com/Bintangp02)
-[![DineshValor](https://github.com/DineshValor.png?size=100)](https://github.com/DineshValor)
