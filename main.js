@@ -80,7 +80,7 @@ getMessage: async (key) => ( opts.store.loadMessage(/** @type {string} */(key.re
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['CuriosityBot','FirefoxNightlyForDevelopers','1.0.0'],
+browser: ['CuriosityBot','Firefox','1.0.0'],
 version   
 }
 
