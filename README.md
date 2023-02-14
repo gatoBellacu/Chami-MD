@@ -1,4 +1,4 @@
-## Esta versión ya no sirve debido a unos problemas con el baileys 
+## Esta versión ya no sirve debido a unos problemas con el baileys ATTE. Azami 
 
 ## Versión V1-1.0.3 🚀
 <p align="center"> 
