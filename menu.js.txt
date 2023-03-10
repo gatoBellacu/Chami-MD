@@ -1,0 +1,272 @@
+
+
+var monoSpace = '```'
+
+exports.listmenu = (sender,prefix,ad,namenya,premnya,usernya,romnya,readmoore,tanggal,jam,no) => {
+return`╔═══════✪ MAIN	
+╠
+╠ ${prefix}menu
+╠ ${prefix}rules
+╠ ${prefix}owner
+╠ ${prefix}infobot
+╠ ${prefix}gcbot
+╠
+╠═══════✪ USER
+╠
+╠ ${prefix}verify
+╠ ${prefix}report
+╠ ${prefix}request
+╠ ${prefix}menfess
+╠ ${prefix}buatroom
+╠ ${prefix}secretchat
+╠ ${prefix}checkprem
+╠ ${prefix}daftarprem
+╠ ${prefix}changename
+╠
+╠═══════✪ OWNER & VIP
+╠
+╠ ${prefix}error
+╠ ${prefix}clearerr
+╠ ${prefix}siaran
+╠ ${prefix}session
+╠ ${prefix}resetdb
+╠ ${prefix}runtime
+╠ ${prefix}setexif
+╠ ${prefix}setwm
+╠ ${prefix}setfooter
+╠ ${prefix}setppbot
+╠ ${prefix}addprem
+╠ ${prefix}delprem
+╠ ${prefix}join
+╠ ${prefix}bctext
+╠ ${prefix}bcvideo
+╠ ${prefix}bcaudio
+╠ ${prefix}bcimage
+╠ ${prefix}broadcast
+╠ ${prefix}sendbug 569xxx
+╠ ${prefix}philips 569xxx
+╠ ${prefix}philips2 569xxx
+╠ ${prefix}philips3 569xxx
+╠ ${prefix}santet @tag
+╠ ${prefix}santet2 @tag
+╠ ${prefix}santet3 @tag
+╠ ${prefix}virtex 569xxx
+╠ ${prefix}virtex2 569xxx
+╠ ${prefix}virtex3 569xxx
+╠ ${prefix}bug1 569xxx
+╠ ${prefix}bug2 569xxx
+╠ ${prefix}bug3 569xxx
+╠ ${prefix}bug4 569xxx
+╠ ${prefix}bug5 569xxx
+╠
+╠═══════✪ ADMI
+╠
+╠ ${prefix}delete
+╠ ${prefix}revoke
+╠ ${prefix}tagall
+╠ ${prefix}hidetag
+╠ ${prefix}setdesc
+╠ ${prefix}linkgrup
+╠ ${prefix}infogroup
+╠ ${prefix}setppgrup
+╠ ${prefix}setnamegrup
+╠ ${prefix}group open
+╠ ${prefix}group close
+╠ ${prefix}antilink on
+╠ ${prefix}antilink off
+╠ ${prefix}welcome on
+╠ ${prefix}welcome off
+╠ ${prefix}tiktokauto on
+╠ ${prefix}tiktokauto off
+╠ ${prefix}kick @tag
+╠ ${prefix}demote @tag
+╠ ${prefix}promote @tag
+╠
+╠═══════✪ DESCARGAS
+╠
+╠ ${prefix}tiktok
+╠ ${prefix}ytmp3
+╠ ${prefix}ytmp4
+╠ ${prefix}pinterest
+╠ ${prefix}playmp3
+╠ ${prefix}playmp4
+╠ ${prefix}gitclone
+╠ ${prefix}mediafire
+╠ ${prefix}soundcloud
+╠
+╠═══════✪ CREADOR
+╠ ${prefix}tts
+╠ ${prefix}ttp
+╠ ${prefix}ttp2
+╠ ${prefix}attp
+╠ ${prefix}attp2
+╠ ${prefix}tourl
+╠ ${prefix}upload
+╠ ${prefix}toimg
+╠ ${prefix}toimage
+╠ ${prefix}tomp3
+╠ ${prefix}toaudio
+╠ ${prefix}tomp4
+╠ ${prefix}tovideo
+╠ ${prefix}emojimix
+╠ ${prefix}emojmix
+╠ ${prefix}emojinua
+╠ ${prefix}mixemoji
+╠ ${prefix}stiker
+╠ ${prefix}sticker
+╠ ${prefix}sgif
+╠ ${prefix}stikergif
+╠ ${prefix}stickergif
+╠ ${prefix}swm
+╠ ${prefix}stikerwm
+╠ ${prefix}stickerwm
+╠ ${prefix}smeme
+╠ ${prefix}memestiker
+╠ ${prefix}stikermeme
+╠ ${prefix}stickermeme
+╠ ${prefix}takesticker
+╠ ${prefix}emojinua2
+╠ ${prefix}mixemoji2
+╠ ${prefix}emojmix2
+╠ ${prefix}emojimix2
+╠
+╠═══════✪ IMG EDT
+╠
+╠ ${prefix}sadcat
+╠ ${prefix}iaedit
+╠ ${prefix}
+╠
+╠═══════✪ CEHCK
+╠
+╠ ${prefix}checkprem
+╠ ${prefix}checkuser
+╠
+╠═══════✪ ANONYMOUS
+╠
+╠ ${prefix}buatroom 569xxx
+╠ ${prefix}room <only owner>
+╠ ${prefix}stopchat <only room>
+╠ ${prefix}menfess 569xxx|juan|holi
+╠
+╠═══════✪ IA
+╠
+╠ ${prefix}chatgpt
+╠ ${prefix}simi
+╠ ${prefix}aurora
+╠
+╠═══════✪ STALK
+╠
+╠ ${prefix}stalkff
+╠ ${prefix}stalknpm
+╠ ${prefix}stalkgithub
+╠
+╠═══════✪ AUDIO
+╠
+╠ ${prefix}fat
+╠ ${prefix}fast
+╠ ${prefix}slow
+╠ ${prefix}bass
+╠ ${prefix}deep
+╠ ${prefix}tupai
+╠ ${prefix}robot
+╠ ${prefix}blown
+╠ ${prefix}smooth
+╠ ${prefix}earrape
+╠ ${prefix}reverse
+╠ ${prefix}nightcore
+╠
+╠═══════✪ FUN
+╠
+╠ ${prefix}checkgay
+╠ ${prefix}checklesbi
+╠ ${prefix}checkputa
+╠ ${prefix}checkidiota
+╠ ${prefix}checkurgido
+╠ ${prefix}checkcornudo
+╠
+╠═══════✪ WALLPAPER
+╠
+╠ ${prefix}loli
+╠ ${prefix}wallml
+╠ ${prefix}cosplay
+╠ ${prefix}ppcouple
+╠ ${prefix}mobil
+╠ ${prefix}wallhp
+╠ ${prefix}programing
+╠ ${prefix}wallpaperprogamer
+╠ ${prefix}wallpaperteknologi
+╠ ${prefix}wallpapercyber
+╠
+╠═══════✪ ANIME
+╠
+╠ ${prefix}cry
+╠ ${prefix}hug
+╠ ${prefix}pat
+╠ ${prefix}bully
+╠ ${prefix}lick
+╠ ${prefix}kiss
+╠ ${prefix}awoo
+╠ ${prefix}waifu
+╠ ${prefix}shinobu
+╠ ${prefix}cuddle
+╠ ${prefix}megumin
+╠ ${prefix}slap
+╠ ${prefix}neko
+╠ ${prefix}wink
+╠ ${prefix}dance
+╠ ${prefix}poke
+╠ ${prefix}glomp
+╠ ${prefix}bite
+╠ ${prefix}nom
+╠ ${prefix}handhold
+╠ ${prefix}highfive
+╠ ${prefix}wave
+╠ ${prefix}smug
+╠ ${prefix}smile
+╠ ${prefix}bonk
+╠
+╠═══════✪ NSFW
+╠
+╠ ${prefix}ass
+╠ ${prefix}bdsm
+╠ ${prefix}nloli
+╠ ${prefix}ahegao
+╠ ${prefix}blowjob
+╠
+╠═══════✪ OTROS
+╠
+╠ ${prefix}ppcp
+╠ ${prefix}cuevana
+╠ ${prefix}pelisplus
+╠ ${prefix}tranducir
+╚═════════════✪`
+}
+
+exports.rulesBot = () =>{
+return`*──「 REGLAS 」──*
+
+1. No permitido spam. 
+Sancion: *Advertencia Bloqueo*
+
+2. No permitido llamar.
+Sancion: *Bloqueo*
+
+3. No permitido insultar al bot.
+Sancion: *Bloqueo Permanente*
+
+Si quedo todo claro
+Escribe *#menu* para empezar`
+}
+
+exports.donasiBot = (cekName,ucapanWaktu) =>{
+return`──「 *DONACION* 」──
+
+NO SE ACEPTAN DONATIVOS.
+ESTE BOT NO PERMITE DONATIVOS
+BOT 100% GRATIS NO ACEPTAMOS DINERO
+SIENTETE LIBRE DE USARLO Y EDITARLO`
+}
+
+exports.infoOwner = () =>{
+return`Sin info`
+}

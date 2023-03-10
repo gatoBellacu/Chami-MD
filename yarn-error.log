@@ -1,0 +1,55 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /data/data/com.termux/files/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: EPERM: operation not permitted, symlink '../../../../pino/bin.js' -> '/storage/emulated/0/VIP/node_modules/@adiwajshing/baileys/node_modules/.bin/pino'
+
+npm manifest: 
+  {
+    "name": "Bot",
+    "version": "0.0.0",
+    "description": "Create By Denara Bot",
+    "main": "main.js",
+    "scripts": {
+      "start": "node main.js"
+    },
+    "author": "Denara Bot",
+    "license": "ISC",
+    "dependencies": {
+      "@adiwajshing/baileys": "^4.4.0",
+      "@adiwajshing/keyed-db": "^0.2.4",
+      "@bochilteam/scraper": "^3.0.0",
+      "colors": "^1.4.0",  
+      "chalk": "^4.1.2",
+      "cheerio": "^1.0.0-rc.10",
+      "clui": "^0.3.6",
+      "crypto": "^1.0.1",
+      "form-data": "^4.0.0",
+      "fluent-ffmpeg": "^2.1.2",
+      "path": "^0.12.7",
+      "moment-timezone": "^0.5.34",
+      "node-fetch": "2.6.1",
+      "node-webpmux": "^3.1.1",
+      "scrape-primbon": "^1.1.0",
+      "qrcode": "^1.5.0",
+      "qrcode-terminal": "^0.12.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
