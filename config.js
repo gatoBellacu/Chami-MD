@@ -5,16 +5,14 @@ import fs from 'fs'
 
 
 global.owner = [
-   ['59894808483','ೄྀ𝐀𝐳𝐚𝐦𝐢 🍓 - Creador', true],
-  ['5215535705067', '🤖 👺👍 Bot Comedia 🤖', true],
-  ['5215533827255', '𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 - Creador 👑', true],
+  ['59894808483','ೄྀ𝐀𝐳𝐚𝐦𝐢 🍓 - Creador', true],
   ['5215561717728', 'Curiosity 📘 - BOT DE PROMOCIÓN ☘️', true]
 ] // Cambia los numeros que quieras onichan 
 
 global.prems = [] 
 global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★🌎ANI MX SCANS🌏★'
-global.wm = '★🌎ANI MX SCANS🌏★'
+global.author = '📚 CuriosityBot-MD'
+global.wm = '📚 CuriosityBot-MD'
 global.igfg = '★🌎ANI MX SCANS🌏★'
 global.wait = '*⌛ _Cargando, aguarde un momento..._ ▬▬▬▭*'
 global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
