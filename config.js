@@ -5,11 +5,11 @@ import fs from 'fs'
 
 
 global.owner = [
-   ['5215517489568','𝓢𝓾𝓹𝓻𝓮𝓶𝓮 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 - Creador 👁️', true],
+   ['59894808483','ೄྀ𝐀𝐳𝐚𝐦𝐢 🍓 - Creador', true],
   ['5215535705067', '🤖 👺👍 Bot Comedia 🤖', true],
   ['5215533827255', '𝓡𝓮𝔂 𝓔𝓷𝓭𝔂𝓶𝓲𝓸𝓷 - Creador 👑', true],
-  ['5215561717728', '🌎ANI MX SCANS🌏 - BOT DE PROMOCIÓN 🌎', true]
-] // Cambia los numeros que quieras
+  ['5215561717728', 'Curiosity 📘 - BOT DE PROMOCIÓN ☘️', true]
+] // Cambia los numeros que quieras onichan 
 
 global.prems = [] 
 global.packname = '(☞ﾟ∀ﾟ)☞'
