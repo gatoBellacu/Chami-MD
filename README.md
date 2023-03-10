@@ -1,6 +1,4 @@
-## VERSIÓN V1 TERMINANDA 🚀1️⃣
-
-###### Archivos del bot ya no se permanecen aqui
+###### Repositorio en desarrollo 🚀
 
 <div align="center">
   <img src="https://i.ibb.co/GvXzJSG/20210406-014153.jpg" width="200" height="200">
