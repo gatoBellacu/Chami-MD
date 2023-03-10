@@ -1,6 +1,6 @@
-## Repositorio en desarrollo ☘️💫
+## VERSIÓN V1 TERMINANDA 🚀1️⃣
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00CB22&width=435&lines=Simple+WhatsApp+Bot+Multidevice+nwn;Gracias+por+usar+este+bot)](https://git.io/typing-svg)
+###### Archivos del bot ya no se permanecen aqui
 
 <div align="center">
   <img src="https://i.ibb.co/GvXzJSG/20210406-014153.jpg" width="200" height="200">
