@@ -1,9 +1,8 @@
-/* If You Copy, Don`t Delete This Credit!!! 
-  Don`t Sell This Script Or I Take Immediately 
-  Yang Jual Script Ini Report/Hangusin Aja Akunnya Atau Pukulin ae orangnya
-  Fix Doesn't Not Show QrCode & Multi Auth State
-  Regards from YanXiao ♡
+/* Si copia, ¡no elimine este crédito!!! 
+  No vendas este guión o lo tomo inmediatamente ♡ Atte. Azami
 */
+
+
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js'
 
