@@ -5,7 +5,6 @@
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js'
-
 import path, { join } from 'path'
 import { platform } from 'process'
 import { fileURLToPath, pathToFileURL } from 'url'
@@ -92,8 +91,8 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFolder = storeSys.fixFileName(`${opts._[0] || ''}sessions`)
-    let { state, saveCreds } = await useMultiFileAuthState(path.resolve('./sessions'))
+global.authFolder = storeSys.fixFileName(`${opts._[0] || ''}sesionsity`)
+    let { state, saveCreds } = await useMultiFileAuthState(path.resolve('./sesionsity'))
     let { version, isLatest } = await fetchLatestBaileysVersion()
     console.log(`using WA v${version.join('.')}, isLatest: ${isLatest}`)
 /*const store = storeSys.makeInMemoryStore()
@@ -105,7 +104,7 @@ const connectionOptions = {
 	    version,
         printQRInTerminal: true,
         auth: state,
-        browser: ['Elaina(イレイナ)', 'Safari', '3.1.0'], 
+        browser: ['CuriosityBot-MD', 'Edge', '1.0.0'], 
 	      patchMessageBeforeSending: (message) => {
                 const requiresPatch = !!(
                     message.buttonsMessage 
@@ -155,13 +154,13 @@ function clearTmp() {
   })
 }
 
-function clearSessions(folder = 'sessions') {
+function clearSessions(folder = 'sesionsity') {
 	let filename = []
 	readdirSync(folder).forEach(file => filename.push(join(folder, file)))
 	return filename.map(file => {
 		let stats = statSync(file)
 		if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 120)) { // 1 hours
-			console.log('Deleted sessions', file)
+			console.log('delet sesionsity', file)
 			return unlinkSync(file)
 		}
 		return false
@@ -340,5 +339,5 @@ async function _quickTest() {
 
 }
 _quickTest()
-    .then(() => conn.logger.info('☑️ Quick Test Done , nama file session ~> creds.json'))
+    .then(() => conn.logger.info('☑️ Prueba rápida listo , nombre del archivo sesionsity ~> creds.json'))
     .catch(console.error)
