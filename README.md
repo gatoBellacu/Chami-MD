@@ -3,5 +3,5 @@
     <img src="https://telegra.ph/file/37df69a78afb6e010282d.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
- **Warning** 
+> **Warning** 
  ###### Este bot está en desarrollo ⚒️
