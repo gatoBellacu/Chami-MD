@@ -171,7 +171,7 @@ async function connectionUpdate(update) {
     const { receivedPendingNotifications, connection, lastDisconnect, isOnline, isNewLogin } = update
   if (isNewLogin) conn.isInit = true
   if (connection == 'connecting') console.log(chalk.redBright('⚡ Mengaktifkan Bot, Mohon tunggu sebentar...'))
-  if (connection == 'open') console.log(chalk.green('✅ Tersambung'))
+  if (connection == 'open') console.log(chalk.green('✅ Conectado'))
   if (isOnline == true) console.log(chalk.green('Status Aktif'))
   if (isOnline == false) console.log(chalk.red('Status Mati'))
   if (receivedPendingNotifications) console.log(chalk.yellow('Menunggu Pesan Baru'))
