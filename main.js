@@ -1,4 +1,4 @@
-/* Si copia, ¡no elimine este crédito!!! 
+/* Si copia este codigo, ¡no elimine este crédito!!! 
   No vendas este guión o lo tomo inmediatamente ♡ Atte. Azami
 */
 
