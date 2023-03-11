@@ -1,7 +1,7 @@
 {
-    "name": "Elaina-BOT",
+    "name": "CuriosityBot-MD",
     "version": "3.5.0",
-    "description": "RPG BOT Whatsapp",
+    "description": "RPG WhatsApp Bot",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -26,16 +26,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/ImYanXiao/Elaina-MultiDevice",
+    "homepage": "https://github.com/Azami19/CuriosityBotV1-MD",
     "author": {
-        "name": "ImYanXiao"
+        "name": "Azami19"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ImYanXiao/Elaina-MultiDevice.git"
+        "url": "git+https://github.com/Azami19/CuriosityBotV1-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/ImYanXiao/Elaina-MultiDevice/issues"
+        "url": "https://github.com/Azami19/CuriosityBotV1-MD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
