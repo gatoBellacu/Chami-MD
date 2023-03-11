@@ -8,8 +8,8 @@ function connect(PORT) {
 	
 	app.get('/nowa', async (req, res) => {
 		let q = req.query.number, regex = /x/g
-		if (!q) return res.send('Input Parameter Number Parameter')
-		if (!q.match(regex)) return res.send('Parameter Number Must Fill With One Letter "x"')
+		if (!q) return res.send('Parámetro de número de parámetro de entrada')
+		if (!q.match(regex)) return res.send('El número de parámetro debe llenarse con una letra "x"')
 		let random = q.match(regex).length, total = Math.pow(10, random), array = []
 		for (let i = 0; i < total; i++) {
 			let list = [...i.toString().padStart(random, '0')]
