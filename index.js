@@ -1,4 +1,4 @@
-console.log('🐾 Starting...')
+console.log('✅ Iniciando...')
 
 import yargs from 'yargs'
 import cfonts from 'cfonts'
@@ -46,7 +46,7 @@ function start(file) {
   })
   p.on('exit', (_, code) => {
     isRunning = false
-    console.error('[❗]Exited with code:', code)
+    console.error('[❗]Error:', code)
     if (code !== 0) return start(file)
     watchFile(args[0], () => {
       unwatchFile(args[0])
