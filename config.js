@@ -40,18 +40,16 @@ global.psaweria = 'https://saweria.com/XiaoYan021' //Link Saweriamu Kalo Nggada 
 
 /*============== NOMOR ==============*/
 global.nomorbot = '5218911151728' // Número del Bot
-global.nomorown = '6285736178354' // Número del Owner
-global.namebot = 'Elaina BOT' // Nombre del Bot
+global.nomorown = '59894808483' // Número del Owner
+global.namebot = 'CuriosityBot-MD' // Nombre del Bot
 global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nombre del Owner
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285736178354', '❦ 𝚇 𝚒 𝚊 𝚘 - 𝚈𝚊𝚗? 🎐', true] //Ganti jd nomormu sama Namamu
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+  ['59894808483', '𝙰 𝚉 𝙰 𝙼 𝙸', true]
+global.mods = [] 
+global.prems = []
 
 
 global.lolkey = 'apikeymu'
@@ -79,13 +77,13 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 ᴇʟᴀɪɴᴀ 𝙱𝙾𝚃 汉  」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴇʟᴀɪɴᴀ - ᴄʜᴀɴ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ ᴇʟᴀɪɴᴀ 𝙱𝙾𝚃'
-global.namedoc = 'Elaina`s Bot' //Main Name Menu Document
+global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ ʙᴏᴛ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
+global.namedoc = 'CutiosityBot-MD' //Main Name Menu Document
 global.botdate = `⫹⫺ Day's: ${week} ${date}`
-global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
-global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
+global.bottime = `ᴛɪᴇᴍᴘᴏ: ${wktuwib}`
+global.titlebot = '🎋 ┊ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ'
 global.author = global.wm
 
 
