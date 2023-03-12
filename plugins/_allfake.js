@@ -1,7 +1,3 @@
-// Made By Aguz Familia/@FokusDotId (Fokus ID)
-// Github: https://github.com/fokusdotid
-// Recode By ImYanXiao
-
 import fs from 'fs'
 import fetch from 'node-fetch'
 import axios from 'axios'
@@ -297,22 +293,19 @@ global.fakefb = {
 export default handler 
 
 function ucapan() {
-	const time = moment.tz('Asia/Jakarta').format('HH')
-	let res = "Selamat malam 🌌"
-	if(time >= 1) {
-		res = "Selamat Dini hari 🌌"
-	}
-	if(time >= 4) {
-		res = "Selamat pagi ⛅"
-	}
-	if(time > 10) {
-		res = "Selamat siang 🌅"
-	}
-	if(time >= 15) {
-		res = "Selamat sore 🌇"
-	}
-	if(time >= 18) {
-		res = "Selamat malam 🌃"
+	const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  let res = "👋 *BIENVENIDO(A)* 👋"
+  if (time >= 4) {
+    res = "🌇 *Buenos Días* ⛅"
+  }
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes* 🌤️"
+  }
+  if (time >= 15) {
+    res = "🌆 *Buenas tardes* 🌥️"
+  }
+  if (time >= 17) {
+    res = "🌃 *Buenas noches* 💫"
 	}
 	return res
 }
