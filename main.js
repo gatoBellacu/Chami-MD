@@ -212,7 +212,7 @@ global.reloadHandler = async function (restatConn) {
   }
 
   conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *🚦 WELCOME 🚦* 〙──\n┃━━━━━━━━━━━━\n┃ *🌷 @user bienvenid@ a* \n┃ *@subject 🌸*\n┃\n┃=> *En este grupo podrás*\n *encontrar 📖:*\n┠⊷ *Amistades 💌* \n┠⊷ *Desmadre 👻* \n┠⊷ *Relajo 🎉* \n┠⊷ *Enemig@s 😼* :\n┠⊷ *Un Bot Sexy (Yo) 🍓*\n┃\n┃=> *Puedes solicitar mi lista de*\n┃ *comandos con ✨:*\n┠⊷ *#menu*\n┃\n┃=> *📑 Aquí tienes la descripción 📑* \n┃ *del grupo, léela!!_*\n┃\n\n@desc\n\n┃ \n┃ *🍀🌷  Disfruta de tu* \n┃ *estadía en el grupo  🌷🍀*  \n┃\n┗━━━━━━━━━━━'
-  conn.bye = '❖━━━━━━[ ʟᴇᴀᴠɪɴɢ ]━━━━━━❖\n𝚂𝚊𝚢𝚘𝚗𝚊𝚛𝚊𝚊 @user 👋😃'
+  conn.bye = '┏━━━━━━━━━━━━\n┃──〘 *🍧 ADIOS 🍧* 〙───\n┃━━━━━━━━━━━━\n┃ *🙀 SE FUE @user* \n┃\n┃ *ESTAREMOS MEJOR SI TI*\n┗━━━━━━━━━━'
   conn.spromote = '@user Sekarang jadi admin!'
   conn.sdemote = '@user Sekarang bukan lagi admin!'
   conn.sDesc = 'Deskripsi telah diubah menjadi \n@desc'
