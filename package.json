@@ -1,7 +1,7 @@
 {
     "name": "CuriosityBot-MD",
     "version": "3.5.0",
-    "description": "RPG WhatsApp Bot",
+    "description": "Completo WhatsApp Bot",
     "main": "index.js",
     "type": "module",
     "directories": {
