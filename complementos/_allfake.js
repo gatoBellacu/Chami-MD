@@ -1,7 +1,3 @@
-// Made By Aguz Familia/@FokusDotId (Fokus ID)
-// Github: https://github.com/fokusdotid
-// Recode By ImYanXiao
-
 import fs from 'fs'
 import fetch from 'node-fetch'
 import axios from 'axios'
@@ -303,10 +299,10 @@ function ucapan() {
 		res = "Selamat Dini hari 🌌"
 	}
 	if(time >= 4) {
-		res = "Selamat pagi ⛅"
+		res = "Buenos días ⛅"
 	}
 	if(time > 10) {
-		res = "Selamat siang 🌅"
+		res = "Buenas tardes 🌅"
 	}
 	if(time >= 15) {
 		res = "Selamat sore 🌇"
