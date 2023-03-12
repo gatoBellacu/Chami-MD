@@ -1,6 +1,6 @@
 {
     "name": "CuriosityBot-MD",
-    "version": "3.5.0",
+    "version": "1.0.0",
     "description": "Completo WhatsApp Bot",
     "main": "index.js",
     "type": "module",
