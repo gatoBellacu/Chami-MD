@@ -42,8 +42,8 @@ function parseResult(json, options) {
 		unicode: true,
 		ignoreVal: [null, undefined],
 		ignoreKey: [],
-		title: ' ',
-		headers: `%title\n`,
+		título: ' ',
+		encabezados: `%title\n`,
 		body: `*• %key:* %value`,
 		footer: '\n',
 		...options
