@@ -44,9 +44,9 @@ function parseResult(json, options) {
 		ignoreKey: [],
 		título: ' ',
 		encabezados: `%title\n`,
-		body: `*• %key:* %value`,
-		footer: '\n',
-		...options
+		cuerpo: `*• %key:* %value`,
+		pie de página: '\n',
+		...opciones
 	}
 	let { unicode, ignoreKey, title, headers, ignoreVal, body, footer } = opts
 	let obj = Object.entries(json), tmp = []
