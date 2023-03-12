@@ -5,8 +5,8 @@ import moment from 'moment-timezone'
 
 /*============= WAKTU =============*/
 let wibh = moment.tz('America/Los_Angeles').format('HH')
-    let wibm = moment.tz('Asia/Jakarta').format('mm')
-    let wibs = moment.tz('Asia/Jakarta').format('ss')
+    let wibm = moment.tz('America/Los_Angeles').format('mm')
+    let wibs = moment.tz('America/Los_Angeles').format('ss')
     let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
     
     let d = new Date(new Date + 3600000)
@@ -39,10 +39,10 @@ global.ppulsa = '085736178354' //Nomor SimCard Yang Kamu Pake
 global.psaweria = 'https://saweria.com/XiaoYan021' //Link Saweriamu Kalo Nggada Ketik - aja
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6281231079387' //Nomor Bot
-global.nomorown = '6285736178354' //Nomor Owner
-global.namebot = 'Elaina BOT' //Nama Bot
-global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nama Owner
+global.nomorbot = '6281231079387' // Número del Bot
+global.nomorown = '6285736178354' // Número del Owner
+global.namebot = 'Elaina BOT' // Nombre del Bot
+global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nombre del Owner
 
 
 /*============== STAFF ==============*/
