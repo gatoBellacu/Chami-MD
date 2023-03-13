@@ -5,3 +5,15 @@
 
 > **Warning** 
  ###### Este bot está en desarrollo ⚒️
+
+## TERMUX USER
+```bash
+$ pkg upgrade && pkg update
+$ pkg install git -y
+$ pkg install nodejs -y
+$ pkg install ffmpeg -y
+$ pkg install imagemagick -y
+$ git clone https://github.com/ImYanXiao/Elaina-MultiDevice
+$ cd Elaina-MultiDevice
+$ npm i 
+```
