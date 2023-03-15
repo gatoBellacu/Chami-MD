@@ -7,7 +7,7 @@ global.wait = '*⚡ Cargando*'
 //============= urlButtons =============//
 
 global.textUrlbot = 'INSTAGRAM'
-global.linkUrlbot = "https://www.instagram.com/ilmanhdyt_"
+global.linkUrlbot = "https://instagram.com/azami.19"
 
 //=========================================================================//
 
