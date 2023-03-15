@@ -1,7 +1,7 @@
 global.owner = ['5214531106422', 'CuriosityBot-MD ☂️', true]
 global.packname = ''
-global.author = '⫹⫺ WhatsApp Bot\n'
-global.wm = 'CuriosityBot-MD ☂️'
+global.author = '⫹⫺ WhatsApp Bot\nwa.me/528911151728'
+global.wm = 'CuriosityBot-MD'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
 //============= urlButtons =============//
