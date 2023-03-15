@@ -63,7 +63,7 @@ const connectionOptions = {
   auth: state,
   logger: P({ level: 'silent'}),
   downloadHistory: false,
-  browser: ['SIMPLE-BOT','Safari','1.0.0']
+  browser: ['CuriosityBot-MD','Edge','1.0.0']
 }
 
 global.conn = simple.makeWASocket(connectionOptions)
@@ -85,7 +85,7 @@ async function connectionUpdate(update) {
     global.timestamp.connect = new Date
   }
   if (global.db.data == null) loadDatabase()
-  if (connection == 'open') {console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))}
+  if (connection == 'open') {console.log(chalk.yellow('❏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅···\n┋\n┋➥ Conectado al WhatsApp ☂️\n┋\n❏┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅···'))}
 }
 
 process.on('uncaughtException', console.error)
