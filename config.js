@@ -1,5 +1,3 @@
-//============= Datos del Bot =============//
-
 global.owner = ['5214531106422']
 global.packname = '(☞ﾟ∀ﾟ)☞'
 global.author = '𝕊𝕚𝕞𝕡𝕝𝕖𝔹𝕠𝕥'
