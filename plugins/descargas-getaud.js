@@ -2,7 +2,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 let fetch = require('node-fetch')
 let { youtubedl, youtubedlv2, youtubedlv3 } = require('@bochilteam/scraper')
 let handler = async (m, { conn, command, text, args }) => {
-if (!text) return m.reply(`*⚠️ Ingrese el comando más el enlace / link de un vídeo de YouTube*`)
+if (!text) return m.reply(`*⚠️ Ingrese el comando más el enlace de un vídeo de YouTube*`)
 try {
 let q = '128kbps'
 let v = args[0]
