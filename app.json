@@ -2,8 +2,8 @@
   "name": "CuriosityBotV1-MD",
   "description": "Súper WhatsApp Bot",
   "repository": "https://github.com/Azami19/CuriosityBotV1-MD",
-  "logo": "https://raw.githubusercontent.com/BrunoSobrino/SimpleBot/master/Menu2.jpg",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+  "logo": "https://raw.githubusercontent.com/Azami19/CuriosityBotV1-MD/master/Menu2.jpg",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "curiosity-bot"],
   "buildpacks": [
   {
     "url": "heroku/nodejs"
