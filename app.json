@@ -1,7 +1,7 @@
 {
-  "name": "SimpleBot",
-  "description": "Subscribete a The Shadow Borkers (≧▽≦)",
-  "repository": "https://github.com/BrunoSobrino/SimpleBot",
+  "name": "CuriosityBotV1-MD",
+  "description": "Súper WhatsApp Bot",
+  "repository": "https://github.com/Azami19/CuriosityBotV1-MD",
   "logo": "https://raw.githubusercontent.com/BrunoSobrino/SimpleBot/master/Menu2.jpg",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
   "buildpacks": [
