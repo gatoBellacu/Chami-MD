@@ -154,14 +154,14 @@ conn.ev.off('call', conn.onCall)
 conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
-conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *WELCOME* 〙──\n┃━━━━━━━━━━━━\n┃ *🌷 @user bienvenid@ a* \n┃ *@subject ❤️*\n┃\n┃=> *Puedes solicitar mi lista de*\n┃ *comandos con: 📚*\n┠⊷ *#menu*\n┃\n┃=> *Aquí tienes la descripción*\n┃ *del grupo, léela!!🎐*\n┃\n\n@desc\n\n┃ \n┃ *🧪  Disfruta de tu* \n┃ *estadía en el grupo ✨*  \n┃\n┗━━━━━━━━━━━'
-conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
-conn.spromote = '『❗』 *@user 𝚂𝙴 𝚂𝚄𝙼𝙰 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂!!*'
-conn.sdemote = '『❗』 *@user 𝙰𝙱𝙰𝙽𝙳𝙾𝙽𝙰 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂 !!*'
-conn.sDesc = '『❗』 *𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
-conn.sSubject = '『❗』*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n*𝙽𝚄𝙴𝚅𝙾 𝙽𝙾𝙼𝙱𝚁𝙴:* @subject'
-conn.sIcon = '『❗』*𝚂𝙴 𝙷𝙰 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 𝙻𝙰 𝙵𝙾𝚃𝙾 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!!*'
-conn.sRevoke = '『❗』 *𝚂𝙴 𝙷𝙰 𝙰𝙲𝚃𝚄𝙰𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙻 𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!!*\n*𝙻𝙸𝙽𝙺 𝙽𝚄𝙴𝚅𝙾:* @revoke'
+conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *WELCOME* 〙──\n┃━━━━━━━━━━━━\n┃ *🌷 @user bienvenid@ a* \n┃ *@subject ❤️*\n┃\n┃=> *Puedes solicitar mi lista de*\n┃ *comandos con: 📚*\n┠⊷ *#menu*\n┃\n┃=> *Aquí tienes la descripción*\n┃ *del grupo, léela!!🎐*\n┃\n\n@desc\n\n┃ \n┃ *✨  Disfruta de tu* \n┃ *estadía en el grupo ✨*  \n┃\n┗━━━━━━━━━━━'
+conn.bye = '*┏━━━━━━━━━━━━*\n*┃ @user*\n*┃ Hasta nunca 👋🏻* \n*┗━━━━━━━━━━━━*'
+conn.spromote = '⚠️ *@user Ahora es admin!!*'
+conn.sdemote = '⚠️ *@user Ya no es Admin!!*'
+conn.sDesc = '⚠️ *Se ha modificado la descripción del grupo*\n\n*Nueva descripción:* @desc'
+conn.sSubject = '⚠️ *Se ha modificado el nombre del grupo*\n*Nuevo nombre:* @subject'
+conn.sIcon = '⚠️ *Se ha cambiado la foto del grupo!!*'
+conn.sRevoke = '⚠️ *Se ha restablecido el link del grupo!!*\n*Nuevo link:* @revoke'
 
 
 conn.handler = handler.handler.bind(global.conn)
