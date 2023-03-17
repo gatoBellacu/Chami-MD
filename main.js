@@ -155,7 +155,7 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
 conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *WELCOME* 〙──\n┃━━━━━━━━━━━━\n┃ *🌷 @user bienvenid@ a* \n┃ *@subject ❤️*\n┃\n┃=> *Puedes solicitar mi lista de*\n┃ *comandos con: 📚*\n┠⊷ *#menu*\n┃\n┃=> *Aquí tienes la descripción*\n┃ *del grupo, léela!!🎐*\n┃\n\n@desc\n\n┃ \n┃ *✨  Disfruta de tu* \n┃ *estadía en el grupo ✨*  \n┃\n┗━━━━━━━━━━━'
-conn.bye = '*┏━━━━━━━━━━━━*\n*┃ @user*\n*┃ Hasta nunca 👋🏻* \n*┗━━━━━━━━━━━━*'
+conn.bye = '*┏━━━━━━━━━━━━*\n*┃ @user*\n*┃ Hasta nunca 😼* \n*┗━━━━━━━━━━━━*'
 conn.spromote = '⚠️ *@user Ahora es admin!!*'
 conn.sdemote = '⚠️ *@user Ya no es Admin!!*'
 conn.sDesc = '⚠️ *Se ha modificado la descripción del grupo*\n\n*Nueva descripción:* @desc'
