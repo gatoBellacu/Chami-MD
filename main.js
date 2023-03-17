@@ -248,10 +248,10 @@ Object.freeze(global.support)
 }
 setInterval(async () => {
 var a = await clearTmp()
-console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
+console.log(chalk.cyanBright(lenguajeCB['smsClearTmp']()))
 }, 180000)
 _quickTest()
-.then(() => conn.logger.info(lenguajeGB['smsCargando']()))
+.then(() => conn.logger.info(lenguajeCB['smsCargando']()))
 .catch(console.error)
 
 
