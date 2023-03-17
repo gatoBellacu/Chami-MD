@@ -100,9 +100,9 @@ tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(d
    
    
        
-readdirSync("./DorratSession").forEach(file => {
+readdirSync("./SitySession").forEach(file => {
 if (file !== 'creds.json') {
-unlinkSync("./DorratSession/" + file, { recursive: true, force: true })}})    
+unlinkSync("./SitySession/" + file, { recursive: true, force: true })}})    
 return filename.map(file => {
 const stats = statSync(file)
 if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
@@ -183,29 +183,29 @@ isInit = false
 return true
 }
 
-const comandosFolder = global.__dirname(join(__dirname, './comandos/index'))
-const comandosFilter = filename => /\.js$/.test(filename)
-global.comandos = {}
+const pluginsFolder = global.__dirname(join(__dirname, './plugins/index'))
+const pluginsFilter = filename => /\.js$/.test(filename)
+global.plugins = {}
 async function filesInit() {
-for (let filename of readdirSync(comandosFolder).filter(comandosFilter)) {
+for (let filename of readdirSync(pluginsFolder).filter(pluginsFilter)) {
 try {
-let file = global.__filename(join(comandosFolder, filename))
+let file = global.__filename(join(pluginsFolder, filename))
 const module = await import(file)
-global.comandos[filename] = module.default || module
+global.plugins[filename] = module.default || module
 } catch (e) {
 conn.logger.error(e)
-delete global.comandos[filename]
+delete global.plugins[filename]
 }}}
-filesInit().then(_ => Object.keys(global.comandos)).catch(console.error)
+filesInit().then(_ => Object.keys(global.plugins)).catch(console.error)
 
 global.reload = async (_ev, filename) => {
-if (comandosFilter(filename)) {
-let dir = global.__filename(join(comandosFolder, filename), true)
-if (filename in global.comandos) {
+if (pluginsFilter(filename)) {
+let dir = global.__filename(join(pluginsFolder, filename), true)
+if (filename in global.plugins) {
 if (existsSync(dir)) conn.logger.info(` updated plugin - '${filename}'`)
 else {
 conn.logger.warn(`deleted plugin - '${filename}'`)
-return delete global.comandos[filename]
+return delete global.plugins[filename]
 }
 } else conn.logger.info(`new plugin - '${filename}'`)
 let err = syntaxerror(readFileSync(dir), filename, {
@@ -215,11 +215,11 @@ allowAwaitOutsideFunction: true
 if (err) conn.logger.error(`syntax error while loading '${filename}'\n${format(err)}`)
 else try {
 const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`))
-global.comandos[filename] = module.default || module
+global.plugins[filename] = module.default || module
 } catch (e) {
 conn.logger.error(`error require plugin '${filename}\n${format(e)}'`)
 } finally {
-global.comandos = Object.fromEntries(Object.entries(global.comandos).sort(([a], [b]) => a.localeCompare(b)))
+global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)))
 }}}
 Object.freeze(global.reload)
 watch(comandosFolder, global.reload)
