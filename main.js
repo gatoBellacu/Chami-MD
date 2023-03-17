@@ -248,10 +248,10 @@ Object.freeze(global.support)
 }
 setInterval(async () => {
 var a = await clearTmp()
-console.log(chalk.cyanBright('\n'))
+console.log(chalk.cyanBright('╭» 🔵 𝐀𝐔𝐓𝐎𝐂𝐋𝐄𝐀𝐑 🔵\n│☁ ARCHIVOS DE LA CARPETA TMP ELIMINADAS\n╰―――――――――――――――――――✤'))
 }, 180000)
 _quickTest()
-.then(() => conn.logger.info(lenguajeCB['smsCargando']()))
+.then(() => conn.logger.info('𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎...'))
 .catch(console.error)
 
 
