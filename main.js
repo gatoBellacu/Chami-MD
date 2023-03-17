@@ -119,12 +119,12 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined) {
-console.log(chalk.yellow('▣═══════[ Escanea este codigo QR ]═══════════\nel codigo QR expira en 60 segundos.'))
+console.log(chalk.yellow('⫹⫺━━━━━━━━⫹ Escanea este codigo QR ⫺━━━━━━━━⫹⫺\nEl codigo QR expira en 60 segundos.'))
 }
 if (connection == 'open') {
 console.log(chalk.yellow('╭──────────────────────────────✧•°•°···\n│➢ 𝐁𝐎𝐓 𝐂𝐎𝐍𝐄𝐂𝐓𝐀𝐃𝐎 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀𝐌𝐄𝐍𝐓𝐄 ☑️\n│❏ 𝐁𝐎𝐓 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐃𝐎:𝐃𝐎𝐑𝐑𝐀𝐓-𝐁𝐎𝐓-𝐌𝐃 ☑️\n╰──────────────────────────────✧•°•°···'))}
 if (connection == 'close') {
-console.log(chalk.yellow(`▣════════[ Conexion cerrada ]═══════════\npor favor borre la carpeta ${global.authFile} y reescanee el codigo QR`))}
+console.log(chalk.yellow(`⫹⫺━━━━━━━━⫹ Conexion cerrada ⫺━━━━━━━━⫹⫺\nConexion perdida, por favor borre la carpeta `))}
 }
 
 process.on('uncaughtException', console.error)
