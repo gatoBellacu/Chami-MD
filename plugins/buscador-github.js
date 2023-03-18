@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 try {
-if (!text) throw `⚠️ 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘿𝙀 𝙂𝙄𝙏𝙃𝙐𝘽\n\n📌 Ejemplo: ${usedPrefix + command} DORRAT-BOT-MD`
+if (!text) throw `⚠️ 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘿𝙀 𝙂𝙄𝙏𝙃𝙐𝘽\n\n📌 Ejemplo: ${usedPrefix + command} CuriosityBotV1-MD`
 let res = await fetch(global.API('https://api.github.com', '/search/repositories', { q: text }))
 let json = await res.json()
 if (res.status !== 200) throw json
@@ -25,24 +25,24 @@ return `
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]
 let buttonMessage= {
-'document': { url: `https://github.com/DIEGO-OFC/DORRAT-BOT-MD` },
+'document': { url: `https://github.com/Azami19/CuriosityBotV1-MD` },
 'mimetype': `application/${document}`,
-'fileName': `𝐷𝑂𝑅𝑅𝐴𝑇-𝐵𝑂𝑇-𝑀𝐷`,
+'fileName': `CuriosityBot-MD`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/DIEGO-OFC/DORRAT-BOT-MD',
+'mediaUrl': 'https://github.com/Azami19/CuriosityBotV1-MD',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': `• Resultados Encontrados🔎`,
-'body': global.author,
+'body': global.wm,
 'thumbnail': await (await fetch(json.items[0].owner.avatar_url)).buffer(),
-'sourceUrl': 'https//wa.me/593959425714'}},
+'sourceUrl': 'https//wa.me/524531106422'}},
 'caption': str,
-'footer': `• 𝚂𝙸 𝙳𝙴𝚂𝙴𝙰 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝚄𝙽\n*𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝙸𝙾 𝙳𝙴 𝙶𝙸𝚃𝙷𝚄𝙱*\n*𝙴𝚂𝙲𝚁𝙸𝙱𝙰 ${usedPrefix}gitclone <LINK>*`,
+'footer': `• Si desea descargar un\n*repositorio de Github*\n*escriba ${usedPrefix}gitclone <LINK>*`,
 'buttons':[
 {buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'Menú 🤖'}, type: 1}, 
 {buttonId: `${usedPrefix}infobot`, buttonText: {displayText: 'Info 📦'}, type: 1}],
