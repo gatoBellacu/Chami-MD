@@ -1,4 +1,3 @@
-
 import * as fs from 'fs'
 
 export async function before(m, { conn, isAdmin, isBotAdmin, usedPrefix }) {
@@ -22,7 +21,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, usedPrefix }) {
         setTimeout(() => { 
         	conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }, 1000)
-        } else if (!bot.restrict) return m.reply('[ ! ] Para realizar acciones de eliminación, mi dueño tiene que encender el modo restringido!')
+        } else if (!bot.restrict) return m.reply('*⚠️ Esta característica está deshabilitada*')
     }
     return !0
 }
