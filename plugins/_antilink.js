@@ -19,7 +19,7 @@ await conn.sendButton(m.chat, `*⚠️ ${await this.getName(m.sender)} Rompiste 
 if (isBotAdmin && bot.restrict) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-} else if (!bot.restrict) return m.reply('*⚠️ Esta característica está deshabilitada*')
+} else if (!bot.restrict) return m.reply('*⚠️ La carterista de eliminación está desactivada, contacte con mi propietario para que la active*')
 }
 return !0
 }
