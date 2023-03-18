@@ -18,11 +18,11 @@ export function before(m) {
         if (!afkTime || afkTime < 0)
             continue
         let reason = user.afkReason || ''
-        m.reply(`*⚠️ 𝙽𝙾 𝙻𝙾 𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙴𝚂 ⚠️*
+        m.reply(`*⚠️ No lo etiquetes ⚠️*
 
 *Por ahora el usuario que etiquetaste está en modo afk*      
-*${reason ? 'Razon: ' + reason : 'Razon: *Sin razon'}*
-*—◉ 𝚃𝙸𝙴𝙼𝙿𝙾 𝚃𝚁𝙰𝙽𝚂𝙲𝚄𝚁𝚁𝙸𝙳𝙾 𝙳𝙴 𝙸𝙽𝙰𝙲𝚃𝙸𝚅𝙸𝙳𝙰𝙳 (𝙰𝙵𝙺): ${(new Date - afkTime).toTimeString()}*
+*${reason ? 'Razon: ' + reason : '*Sin razon'}*
+*Tiempo transcurrido de inactividad: ${(new Date - afkTime).toTimeString()}*
   `.trim())
     }
     return true
