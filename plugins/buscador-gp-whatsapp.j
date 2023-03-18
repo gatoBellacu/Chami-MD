@@ -2,7 +2,7 @@ import { googleImage } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 import fs from 'fs'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
-if (!text) throw `*⚠️ 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙰𝙿𝙿 𝙾 𝙰𝙿𝙺 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝙱𝚄𝚂𝙲𝙰𝚁*`
+if (!text) throw `*⚠️ Ingrese el nombre de la APP o APK que desee buscar*`
 const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
