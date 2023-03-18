@@ -21,7 +21,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, usedPrefix }) {
         setTimeout(() => { 
         	conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }, 1000)
-        } else if (!bot.restrict) return m.reply('*⚠️ Esta característica está deshabilitada*')
+        } else if (!bot.restrict) return m.reply('*⚠️ La carterista de eliminación está desactivada, contacte con mi propietario para que la active*')
     }
     return !0
 }
