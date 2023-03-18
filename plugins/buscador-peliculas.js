@@ -1,5 +1,3 @@
-//Creado por https://github.com/DIEGO-OFC/DORRAT-BOT-MD
-
 import fetch from 'node-fetch'
 let handler = async (m, {text, usedPrefix, command, conn}) => {
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
