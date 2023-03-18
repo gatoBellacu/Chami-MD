@@ -124,7 +124,7 @@ console.log(chalk.yellow('⫹⫺━━━━━━━━⫹ Escanea este codigo 
 if (connection == 'open') {
 console.log(chalk.yellow('╭──────────────────────────────✧•°•°···\n│➢ 𝐁𝐎𝐓 𝐂𝐎𝐍𝐄𝐂𝐓𝐀𝐃𝐎 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀𝐌𝐄𝐍𝐓𝐄 ☑️\n│❏ 𝐁𝐎𝐓 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐃𝐎:𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓-𝐌𝐃 ☑️\n╰──────────────────────────────✧•°•°···'))}
 if (connection == 'close') {
-console.log(chalk.yellow(`⫹⫺━━━━━━━━⫹ Conexion cerrada ⫺━━━━━━━━⫹⫺\nConexion perdida, por favor borre la carpeta ${global.authFile} y rescanee el código`))}
+console.log(chalk.yellow(`⫹⫺━━━━━━━━⫹ Conexion cerrada ⫺━━━━━━━━⫹⫺\nPor favor borre la carpeta ${global.authFile} y rescanee el código`))}
 }
 
 process.on('uncaughtException', console.error)
@@ -222,7 +222,7 @@ conn.logger.error(`error require plugin '${filename}\n${format(e)}'`)
 global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)))
 }}}
 Object.freeze(global.reload)
-watch(comandosFolder, global.reload)
+watch(pluginsFolder, global.reload)
 await global.reloadHandler()
 async function _quickTest() {
 let test = await Promise.all([
