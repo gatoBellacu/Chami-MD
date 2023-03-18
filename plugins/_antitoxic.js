@@ -1,4 +1,4 @@
-const isSatir = /mierda|muertos|pesao|hijo de puta|cabron|hdp|mrd|zorra|asco|idiota|tonto|gilipollas|hijo puta|bot puta |gay|pito|pollas|muerto|dorrat|pendejo|pdj|Diego/i  // tambahin sendiri
+const isSatir = /mierda|muertos|pesao|hijo de puta|cabron|hdp|mrd|zorra|asco|idiota|tonto|gilipollas|hijo puta|bot puta |gay|pito|pollas|muerto|dorrat|pendejo|pdj|Diego|ptm/i  // tambahin sendiri
 
 export async function before(m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }) {
     if (m.isBaileys && m.fromMe)
