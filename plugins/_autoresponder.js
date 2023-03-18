@@ -9,5 +9,5 @@ let stiker = await sticker(imagen4, false, global.packname, global.author)
 this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, { 
 contextInfo: { externalAdReply: { title: 'CutiosityBot-MD', body: '@Azami19', sourceUrl: `https://github.com/Azami19/CuriosityBotV1-MD`, thumbnail: imagen1}}})}
     
-return !0 }b
+return !0 }
 export default handler
