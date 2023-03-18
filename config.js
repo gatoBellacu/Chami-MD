@@ -5,9 +5,11 @@ global.wm = 'CuriosityBot-MD 🪷🎐'
 global.wait = '*⚡ Cargando*'
 
 //============= urlButtons =============//
-
 global.textUrlbot = 'INSTAGRAM'
 global.linkUrlbot = "https://instagram.com/azami.19"
+
+//============= IMG =============//
+global.imagen1 = fs.readFileSync('./storage/curiosity1')
 
 //=========================================================================//
 
