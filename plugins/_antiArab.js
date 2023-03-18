@@ -15,6 +15,16 @@ if (m.sender.startsWith('212' || '212')) {
 global.db.data.users[m.sender].banned = true
 m.reply(`*💥 Anti árabes está activo para evitar spam*\n\n*Hasta la próxima*`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
-   
+
+if (m.sender.startsWith('212' || '212')) {
+global.db.data.users[m.sender].banned = true
+m.reply(`*💥 Anti árabes está activo para evitar spam*\n\n*Hasta la próxima*`)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('95' || '95')) {
+global.db.data.users[m.sender].banned = true
+m.reply(`*💥 Anti árabes está activo para evitar spam*\n\n*Hasta la próxima*`)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
+  
 }}
 export default handler
