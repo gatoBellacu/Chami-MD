@@ -1,5 +1,3 @@
-//by https://github.com/DIEGO-OFC/DORRAT-BOT-MD
-
 import { sandroid1 } from '../lib/scrape.js'
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
