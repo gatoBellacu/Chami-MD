@@ -34,7 +34,7 @@ export async function handler(chatUpdate) {
         if (!m)
             return
         m.exp = 0
-        m.dorracoins = false
+        m.sitycoins = false
         m.bitcoins = false
         m.limit = false
         try {
@@ -46,10 +46,10 @@ export async function handler(chatUpdate) {
             if (user) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
-		if (!isNumber(user.joincount)) user.joincount = 2
-                if (!isNumber(user.bitcoins)) user.bitcoins = 10
-                if (!isNumber(user.dorracoins)) user.dorracoins = 20    	    
-                if (!isNumber(user.limit)) user.limit = 20    	       
+		if (!isNumber(user.joincount)) user.joincount = 6
+                if (!isNumber(user.bitcoins)) user.bitcoins = 20
+                if (!isNumber(user.sitycoins)) user.sitycoins = 500  	    
+                if (!isNumber(user.limit)) user.limit = 15    	       
                 if (!('registered' in user)) user.registered = false
                     
             if (!user.registered) {
@@ -752,11 +752,11 @@ export async function handler(chatUpdate) {
                     lelebakar: 0,
                     leleg: 0,
                     level: 0,
-                    bitcoins: 10,
-                    dorracoins: 20,
-                    limit: 20,
+                    bitcoins: 20,
+                    sitycoins: 500,
+                    limit: 40,
                     limitjoinfree: 1,
-                    dorracoinsjoinfree: 1,
+                    sitycoinsjoinfree: 1,
                     lion: 0,
                     lionexp: 0,
                     lionlastfeed: 0,
@@ -1184,16 +1184,15 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugins.limit && global.db.data.users[m.sender].limit < plugins.limit * 1) {
-                    this.reply(m.chat, `${ag}\n𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy*`, m)
-                    continue // Limit habis
+                    this.reply(m.chat, `${ag}\n*No tienes diamantes. 💎 Puede comprar con el comando ${usedPrefix}buy*`, m)  continue // Limit habis
                 }
-if (!isPrems && plugins.dorracoins && global.db.data.users[m.sender].dorracoins < plugins.dorracoins * 1) {
-                    this.reply(m.chat, `${ag}\n\n*NO TIENE DORRATCOINS* 🪙\n\n *puede conseguir dorratcoins con el comando #minarcoins o comprando con #buy dorracoins [cantidad]*`, m)
+if (!isPrems && plugins.sitycoins && global.db.data.users[m.sender].sitycoins < plugins.sitycoins * 1) {
+                    this.reply(m.chat, `${ag}\n\n*⚠️ NO TIENE SITYCOINS 🪙*\n\n *puede conseguir sitycoins con el comando #minarcoins o comprando con #buy sitycoins [cantidad]*`, m)
                     continue // Limit habis
 
 }
                 if (plugins.level > _user.level) {
-                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${comandos.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${plugins.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
+                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${plugins.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${plugins.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
