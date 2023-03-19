@@ -1037,17 +1037,17 @@ export async function handler(chatUpdate) {
         const isAdmin = isRAdmin || user?.admin == 'admin' || false // Is User Admin?
         const isBotAdmin = bot?.admin || false // Are you Admin?
 
-        const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './comandos')
-        for (let name in global.comandos) {
-            let comandos = global.comandos[name]
-            if (!comandos)
+        const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './plugins')
+        for (let name in global.plugins) {
+            let plugins = global.plugins[name]
+            if (!plugins)
                 continue
-            if (comandos.disabled)
+            if (plugins.disabled)
                 continue
             const __filename = join(___dirname, name)
-            if (typeof comandos.all === 'function') {
+            if (typeof plugins.all === 'function') {
                 try {
-                    await comandos.all.call(this, m, {
+                    await plugins.all.call(this, m, {
                         chatUpdate,
                         __dirname: ___dirname,
                         __filename
@@ -1063,12 +1063,12 @@ export async function handler(chatUpdate) {
                 }
             }
             if (!opts['restrict'])
-                if (comandos.tags && comandos.tags.includes('admin')) {
+                if (plugins.tags && plugins.tags.includes('admin')) {
                     // global.dfail('restrict', m, this)
                     continue
                 }
             const str2Regex = str => str.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
-            let _prefix = comandos.customPrefix ? comandos.customPrefix : conn.prefix ? conn.prefix : global.prefix
+            let _prefix = plugins.customPrefix ? plugins.customPrefix : conn.prefix ? conn.prefix : global.prefix
             let match = (_prefix instanceof RegExp ? // RegExp Mode?
                 [[_prefix.exec(m.text), _prefix]] :
                 Array.isArray(_prefix) ? // Array?
@@ -1082,8 +1082,8 @@ export async function handler(chatUpdate) {
                         [[new RegExp(str2Regex(_prefix)).exec(m.text), new RegExp(str2Regex(_prefix))]] :
                         [[[], new RegExp]]
             ).find(p => p[1])
-            if (typeof comandos.before === 'function') {
-                if (await comandos.before.call(this, m, {
+            if (typeof plugins.before === 'function') {
+                if (await plugins.before.call(this, m, {
                     match,
                     conn: this,
                     participants,
@@ -1102,7 +1102,7 @@ export async function handler(chatUpdate) {
                 }))
                     continue
             }
-            if (typeof comandos !== 'function')
+            if (typeof plugins !== 'function')
                 continue
             if ((usedPrefix = (match[0] || '')[0])) {
                 let noPrefix = m.text.replace(usedPrefix, '')
@@ -1111,16 +1111,16 @@ export async function handler(chatUpdate) {
                 let _args = noPrefix.trim().split` `.slice(1)
                 let text = _args.join` `
                 command = (command || '').toLowerCase()
-                let fail = comandos.fail || global.dfail // When failed
-                let isAccept = comandos.command instanceof RegExp ? // RegExp Mode?
-                    comandos.command.test(command) :
-                    Array.isArray(comandos.command) ? // Array?
-                        comandos.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
+                let fail = plugins.fail || global.dfail // When failed
+                let isAccept = plugins.command instanceof RegExp ? // RegExp Mode?
+                    plugins.command.test(command) :
+                    Array.isArray(plugins.command) ? // Array?
+                        plugins.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
                             cmd.test(command) :
                             cmd === command
                         ) :
-                        typeof comandos.command === 'string' ? // String?
-                            comandos.command === command :
+                        typeof plugins.command === 'string' ? // String?
+                            plugins.command === command :
                             false
 
                 if (!isAccept)
@@ -1136,64 +1136,64 @@ export async function handler(chatUpdate) {
                 }
                 let hl = _prefix 
                 let adminMode = global.db.data.chats[m.chat].modoadmin
-                let dorrat = `${comandos.botAdmin || comandos.admin || comandos.group || comandos || noPrefix || hl ||  m.text.slice(0, 1) == hl || comandos.command}`
+                let dorrat = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
                 if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && dorrat) return   
 
-                if (comandos.rowner && comandos.owner && !(isROwner || isOwner)) { // Both Owner
+                if (plugins.rowner && plugins.owner && !(isROwner || isOwner)) { // Both Owner
                     fail('owner', m, this)
                     continue
                 }
-                if (comandos.rowner && !isROwner) { // Real Owner
+                if (plugins.rowner && !isROwner) { // Real Owner
                     fail('rowner', m, this)
                     continue
                 }
-                if (comandos.owner && !isOwner) { // Number Owner
+                if (plugins.owner && !isOwner) { // Number Owner
                     fail('owner', m, this)
                     continue
                 }
-                if (comandos.mods && !isMods) { // Moderator
+                if (plugins.mods && !isMods) { // Moderator
                     fail('mods', m, this)
                     continue
                 }
-                if (comandos.premium && !isPrems) { // Premium
+                if (plugins.premium && !isPrems) { // Premium
                     fail('premium', m, this)
                     continue
                 }
-                if (comandos.group && !m.isGroup) { // Group Only
+                if (plugins.group && !m.isGroup) { // Group Only
                     fail('group', m, this)
                     continue
-                } else if (comandos.botAdmin && !isBotAdmin) { // You Admin
+                } else if (plugins.botAdmin && !isBotAdmin) { // You Admin
                     fail('botAdmin', m, this)
                     continue
-                } else if (comandos.admin && !isAdmin) { // User Admin
+                } else if (plugins.admin && !isAdmin) { // User Admin
                     fail('admin', m, this)
                     continue
                 }
-                if (comandos.private && m.isGroup) { // Private Chat Only
+                if (plugins.private && m.isGroup) { // Private Chat Only
                     fail('private', m, this)
                     continue
                 }
-                if (comandos.register == true && _user.registered == false) { // Butuh daftar?
+                if (plugins.register == true && _user.registered == false) { // Butuh daftar?
                     fail('unreg', m, this)
                     continue
                 }
                 m.isCommand = true
-                let xp = 'exp' in comandos ? parseInt(comandos.exp) : 17 // XP Earning per command
+                let xp = 'exp' in plugins ? parseInt(comandos.exp) : 17 // XP Earning per command
                 if (xp > 2000)
                     m.reply('Ngecit -_-') // Hehehe
                 else
                     m.exp += xp
-                if (!isPrems && comandos.limit && global.db.data.users[m.sender].limit < comandos.limit * 1) {
+                if (!isPrems && plugins.limit && global.db.data.users[m.sender].limit < plugins.limit * 1) {
                     this.reply(m.chat, `${ag}\n𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
-if (!isPrems && comandos.dorracoins && global.db.data.users[m.sender].dorracoins < comandos.dorracoins * 1) {
+if (!isPrems && plugins.dorracoins && global.db.data.users[m.sender].dorracoins < plugins.dorracoins * 1) {
                     this.reply(m.chat, `${ag}\n\n*NO TIENE DORRATCOINS* 🪙\n\n *puede conseguir dorratcoins con el comando #minarcoins o comprando con #buy dorracoins [cantidad]*`, m)
                     continue // Limit habis
 
 }
-                if (comandos.level > _user.level) {
-                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${comandos.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${comandos.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
+                if (plugins.level > _user.level) {
+                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${comandos.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${plugins.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -1220,10 +1220,10 @@ if (!isPrems && comandos.dorracoins && global.db.data.users[m.sender].dorracoins
                     __filename
                 }
                 try {
-                    await comandos.call(this, m, extra)
+                    await plugins.call(this, m, extra)
                     if (!isPrems)
-                        m.limit = m.limit || comandos.limit || false
-                        m.dorracoins = m.dorracoins || comandos.dorracoins || false
+                        m.limit = m.limit || plugins.limit || false
+                        m.dorracoins = m.dorracoins || plugins.dorracoins || false
                 } catch (e) {
                     // Error occured
                     m.error = e
@@ -1244,7 +1244,7 @@ if (!isPrems && comandos.dorracoins && global.db.data.users[m.sender].dorracoins
                     // m.reply(util.format(_user))
                     if (typeof comandos.after === 'function') {
                         try {
-                            await comandos.after.call(this, m, extra)
+                            await plugins.after.call(this, m, extra)
                         } catch (e) {
                             console.error(e)
                         }
@@ -1276,10 +1276,10 @@ if (!isPrems && comandos.dorracoins && global.db.data.users[m.sender].dorracoins
             }
 
             let stat
-            if (m.comandos) {
+            if (m.plugins) {
                 let now = +new Date
                 if (m.comandos in stats) {
-                    stat = stats[m.comandos]
+                    stat = stats[m.plugins]
                     if (!isNumber(stat.total))
                         stat.total = 1
                     if (!isNumber(stat.success))
@@ -1289,7 +1289,7 @@ if (!isPrems && comandos.dorracoins && global.db.data.users[m.sender].dorracoins
                     if (!isNumber(stat.lastSuccess))
                         stat.lastSuccess = m.error != null ? 0 : now
                 } else
-                    stat = stats[m.comandos] = {
+                    stat = stats[m.plugins] = {
                         total: 1,
                         success: m.error != null ? 0 : 1,
                         last: now,
@@ -1343,7 +1343,7 @@ export async function participantsUpdate({ id, participants, action }) {
          if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = './galeria/sinfoto.jpg'
+                    let pp = './storage/sinfoto.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
