@@ -9,7 +9,7 @@ global.textUrlbot = 'INSTAGRAM'
 global.linkUrlbot = "https://instagram.com/azami.19"
 
 //============= IMG =============//
-global.imagen1 = fs.readFileSync('./storage/IMG/curiosity1')
+global.imagen1 = fs.readFileSync('./storage/IMG/curiosity1.jpg')
 
 //=========================================================================//
 
