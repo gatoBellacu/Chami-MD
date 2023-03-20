@@ -214,7 +214,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.jagung)) user.jagung = 0
               if (!isNumber(user.jagungbakar)) user.jagungbakar = 0
               if (!isNumber(user.jeruk)) user.jeruk = 0
-              if (!isNumber(user.joindorracoins)) user.joindorracoins = 1
+              if (!isNumber(user.joinsitycoins)) user.joinsitycoins = 1
               if (!isNumber(user.joinlimit)) user.joinlimit = 1
               if (!isNumber(user.judilast)) user.judilast = 0
               if (!isNumber(user.kaleng)) user.kaleng = 0
@@ -1058,7 +1058,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⛔ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⛔ ]*\n\n*—◉ 🗂️ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 👥 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 🤖 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 🛡️ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+                            m.reply(`*⚠️ REPORTE DE COMANDOS CON FALLOS ⚠️*\n\n*🗂️ PLUGIN:* ${name}\n*☂️ USUARIO:* ${m.sender}\n*📚 COMANDO:* ${m.text}\n\n*📍 ERROR:*\n\`\`\`${format(e)}\`\`\`\n\n*⚠️ Repórtelo al creador para darle una solución, usando el comando #reporte*`.trim(), data.jid)
                     }
                 }
             }
