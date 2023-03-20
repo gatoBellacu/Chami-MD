@@ -21,7 +21,7 @@ export async function all(m, chatUpdate) {
         if (plugins.disabled)
             continue
         if (!opts['restrict'])
-            if (plugins.tags && comandos.tags.includes('admin'))
+            if (plugins.tags && plugins.tags.includes('admin'))
                 continue
         if (typeof plugins !== 'function')
             continue
