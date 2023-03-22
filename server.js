@@ -1,9 +1,9 @@
-import express from 'express'
-import { createServer } from 'http'
-import path from 'path'
-import { Socket } from 'socket.io'
-import { toBuffer } from 'qrcode'
-import fetch from 'node-fetch'
+let express = require('express')
+let path = require('path')
+let { createServer } = require('http')
+let SocketIO = require('socket.io')
+let qrcode = require('qrcode')
+let fetch = require('node-fetch')
 
 function connect(conn, PORT) {
 let app = global.app = express()
@@ -19,7 +19,7 @@ app.use(async (req, res) => {
 res.setHeader('content-type', 'image/png')
 res.end(await toBuffer(_qr))
 })
-  
+
 server.listen(PORT, () => {
 console.log('App listened on port', PORT)
 if (opts['keepalive']) keepAlive()
@@ -43,4 +43,4 @@ setInterval(() => {
 fetch(url).catch(console.error)
 }, 5 * 1000 * 60)}
 
-export default connect
+module.exports = connect
