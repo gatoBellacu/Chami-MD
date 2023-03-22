@@ -1,7 +1,7 @@
 {
-    "name": "SimpleBot",
+    "name": "CuriosityBotV1-MD",
     "version": "1.0.0",
-    "description": "Subscribete al canal de YT The Shadow Borkers",
+    "description": "Bot By @Azami19",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -23,20 +23,23 @@
         "games-wabot",
         "theshadowbrokers-bot",
         "themystic-bot",
+        "gatabot-md",
+        "theloli-bot-md",
+        "curiositybotv1-md"
         "wabotmd",
         "multi-device",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/Azami19",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "Azami19"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/SimpleBot.git"
+        "url": "git+https://github.com/Azami19/CuriosityBotV1-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/SimpleBot/issues"
+        "url": "https://github.com/Azami19/CuriosityBotV1-MD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
