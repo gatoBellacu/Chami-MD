@@ -1,3 +1,5 @@
+import fs from 'fs'
+
 global.owner = ['5214531106422', 'CuriosityBot-MD 🪷🎐', true]
 global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/528911151728 ☂️'
