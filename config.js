@@ -3,6 +3,7 @@ global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/528911151728 ☂️'
 global.wm = 'CuriosityBot-MD 🪷🎐'
 global.wait = '*⚡ Cargando*'
+global.img1 = fs.readFileSync('./storage/IMG/curiosity1.jpg')
 
 //============= urlButtons =============//
 global.textUrlbot = 'INSTAGRAM'
