@@ -9,13 +9,13 @@ export async function before(m) {
 		chat.updateAnimeInterval = setTimeout(async () => {
 			try {
 				if (!Array.isArray(chat.lastAnime)) chat.lastAnime = []
-				conn.logger.info(`Checking anime for "${m.chat}"`)
+				conn.logger.info(`*❕ Ver anime para "${m.chat}"*`)
 				let { title, cover, url } = (await getLatestAnime())[0]
-				if (chat.lastAnime.includes(title)) return conn.logger.info(`${title} already sent to "${m.chat}"`)
+				if (chat.lastAnime.includes(title)) return conn.logger.info(`*❕ ${title} ya enviado a "${m.chat}"*`)
 				let length = chat.lastAnime[chat.lastAnime.length - 1]
 				chat.lastAnime.push(title)
 				if (chat.lastAnime.indexOf(length) !== -1) chat.lastAnime.splice(chat.lastAnime.indexOf(length), 1)
-				conn.logger.info(`Sending anime ${title} to "${m.chat}"`)
+				conn.logger.info(`*⚠️ enviando anime ${title} a "${m.chat}"*`)
 				let detailAnime = await getDetailAnime(url), download = detailAnime.download
 				let txt = parseResult(detailAnime, { title: '*ANIME UPDATE*', ignoreKey: ['update', 'cover', 'download'] })
 				let list = Object.keys(download).map(v => parseResult(download[v], { headers: `*• ${v}:*`, body: ' - Quality: %key\n - Url: %value' }))
