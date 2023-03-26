@@ -22,10 +22,10 @@ global.ppulsa = '085736178354'
 global.psaweria = 'https://saweria.com/XiaoYan021'
 
 //✨━━━━━ NÚMEROS ━━━━━✨
-global.nomorbot = '6281231079387' // Número del Bot
-global.nomorown = '6285736178354' // Número del Owner
-global.namebot = 'Elaina BOT' // Nombre del Bot
-global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nombre del Owner
+global.nomorbot = '6281231079387'
+global.nomorown = '5214531106422'
+global.namebot = 'Elaina BOT'
+global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻'
 
 
 /*============== STAFF ==============*/
