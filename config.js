@@ -9,6 +9,12 @@ global.owner = [
 global.mods = []
 global.prems = [] 
 
+//✨━━━━ INFO-BOT/OWNER ━━━━━✨
+global.nomorbot = '6281231079387'
+global.nomorown = '5214531106422'
+global.namebot = 'Elaina BOT'
+global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻
+
 //🌐━━━━━ REDES SOCIALES ━━━━━🌐
 global.sig = 'https://instagram.com/azami19'
 global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
@@ -21,16 +27,7 @@ global.pdana = '085736178354'
 global.ppulsa = '085736178354'
 global.psaweria = 'https://saweria.com/XiaoYan021'
 
-//✨━━━━ INFO-BOT/OWNER ━━━━━✨
-global.nomorbot = '6281231079387'
-global.nomorown = '5214531106422'
-global.namebot = 'Elaina BOT'
-global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻'
-
-
-/*============== STAFF ==============*/
-
-
+'
 
 global.lolkey = 'apikeymu'
 global.xkey = 'APIKEYMU'
