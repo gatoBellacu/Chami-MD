@@ -9,11 +9,13 @@ global.owner = [
 global.mods = []
 global.prems = [] 
 
-//✨━━━━ INFO-BOT/OWNER ━━━━━✨
-global.nomorbot = '6281231079387'
+//✨━━━━ INFO-OWNER ━━━━━✨
 global.nomorown = '5214531106422'
 global.namebot = 'Elaina BOT'
 global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻
+global.pdana = '085736178354'
+global.ppulsa = '085736178354'
+global.psaweria = 'https://saweria.com/XiaoYan021'
 
 //🌐━━━━━ REDES SOCIALES ━━━━━🌐
 global.sig = 'https://instagram.com/azami.19'
@@ -23,9 +25,7 @@ global.sdc = '-'
 global.snh = 'https://nhentai.net/g/HaramTod🗿'
 
 /*============== PAGOS ==============*/
-global.pdana = '085736178354'
-global.ppulsa = '085736178354'
-global.psaweria = 'https://saweria.com/XiaoYan021'
+
 
 '
 
@@ -53,15 +53,16 @@ global.APIKeys = { // APIKey Here
 }
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
-/*============== WATERMARK ==============*/
+//🌐━━━━━  ━━━━━🌐
 global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」' //Reproducir marca de agua
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
-global.namedoc = 'Curiosity Bot' //Nombre para los menu documentos 
+global.namedoc = 'CuriosityBotV1-MD'
 global.botdate = `⫹⫺ Day's: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
 global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
 global.author = global.wm
+global.nomorbot = '6281231079387'
 
 
 /*============== LOGOS ==============*/
