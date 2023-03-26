@@ -44,8 +44,8 @@ global.snh = 'https://nhentai.net/g/HaramTod🗿'
 //💥━━━━━ STICKER WM ━━━━━💥
 global.stickpack = '.'
 global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
-global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
+global.packname = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ'
+global.packname2 = 'ᴄʀᴇᴀᴅᴏ ʙʏ ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ'
 
 
 //🔔━━━━━ KEY ━━━━━🔔
