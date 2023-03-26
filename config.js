@@ -47,25 +47,6 @@ global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹
 global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
 global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
 
-//⌛━━━━━ TIEMPO  ━━━━━⌛
-let wibh = moment.tz('America/Los_Angeles').format('HH')
-    let wibm = moment.tz('America/Los_Angeles').format('mm')
-    let wibs = moment.tz('America/Los_Angeles').format('ss')
-    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
-    
-    let d = new Date(new Date + 3600000)
-    let locale = 'id'
-    // d.getTimeZoneOffset()
-    // Offset -420 is 18.00
-    // Offset    0 is  0.00
-    // Offset  420 is  7.00
-    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long' })
-    let date = d.toLocaleDateString(locale, {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
 
 //🔔━━━━━ KEY ━━━━━🔔
 global.lolkey = 'apikeymu'
@@ -298,7 +279,7 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 
-/*============== FlamingText ===========*/
+//🌟━━━━━ FlamingText ━━━━━🌟
 global.flaaa = [
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=', 
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
@@ -307,44 +288,57 @@ global.flaaa = [
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='] 
 
-
-
-/*=========== TIPO DE DOCUMENTO ===========*/
+//🗂️━━━━━ TIPO DOCUMENTO ━━━━━🗂️
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 global.djson = 'application/json'
-
 global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
-/*=========== TALLAS FALSAS  ===========*/
-global.fsizedoc = '99999999999999' // default 10TB
+//💣━━━━━ TALLAS FALSAS  ━━━━━💣
+global.fsizedoc = '99999999999999'
 global.fpagedoc = '999'
 
-/*=========== DECORACIÓN ===========*/
-// DEFAULT MENU
-global.dmenut = 'ଓ═┅═━–〈' //top
-global.dmenub = '┊↬' //cuerpo
-global.dmenub2 = '┊' //cuerpo para info cmd en el menú predeterminado
-global.dmenuf = '┗––––––––––✦' //pies de página
-
-// COMMAND MENU
+//💠━━━━━ DECORACIONES ━━━━━💠
+global.dmenut = 'ଓ═┅═━–〈'
+global.dmenub = '┊↬' 
+global.dmenub2 = '┊'
+global.dmenuf = '┗––––––––––✦' 
 global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
-global.cmenut = '❏––––––『'                       //top
-global.cmenuh = '』––––––'                        //encabezados
-global.cmenub = '┊❀'                            //cuerpo
-global.cmenuf = '┗━═┅═━––––––๑\n'                //pies de página
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //después
-global.pmenus = '┊'                              //delimitador selector de menú
-
-global.htki = '––––––『' // Decoración de título (IZQUIERDA)
-global.htka = '』––––––' // Título Decoración (DERECHA)
-global.lopr = 'Ⓟ' //LOGOTIPO PREMIUM EN MENÚ.JS
-global.lolm = 'Ⓛ' //LÍMITE DE LOGOTIPOS/GRATIS EN EL MENÚ JS
-global.htjava = '⫹⫺'    //solo decoracion :v
+global.cmenut = '❏––––––『'                       
+global.cmenuh = '』––––––'                        
+global.cmenub = '┊❀'                       
+global.cmenuf = '┗━═┅═━––––––๑\n'               
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' 
+global.pmenus = '┊'                              
+global.htki = '––––––『'
+global.htka = '』––––––'
+global.lopr = 'Ⓟ'
+global.lolm = 'Ⓛ'
+global.htjava = '⫹⫺'
 global.hsquere = ['⛶','❏','⫹⫺']
+
+//⌛━━━━━ TIEMPO ━━━━━⌛
+let wibh = moment.tz('America/Los_Angeles').format('HH')
+    let wibm = moment.tz('America/Los_Angeles').format('mm')
+    let wibs = moment.tz('America/Los_Angeles').format('ss')
+    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
+    
+    let d = new Date(new Date + 3600000)
+    let locale = 'id'
+    // d.getTimeZoneOffset()
+    // Offset -420 is 18.00
+    // Offset    0 is  0.00
+    // Offset  420 is  7.00
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
 
 
 global.multiplier = 79 // Cuanto más alto, más difícil subir de nivel
@@ -392,7 +386,6 @@ global.rpg = {
     else return emot[results[0][0]]
   }
 }
-
 
 
 //⚠️------ NO CAMBIES ----- ⚠️
