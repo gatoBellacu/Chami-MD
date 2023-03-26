@@ -34,11 +34,7 @@ global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
 global.sdc = '-'
 global.snh = 'https://nhentai.net/g/HaramTod🗿'
 
-/*============== PAGOS ==============*/
-
-
-'
-
+//🔔━━━━━ KEY ━━━━━🔔
 global.lolkey = 'apikeymu'
 global.xkey = 'APIKEYMU'
 /*============== API ==============*/
