@@ -9,7 +9,7 @@ global.owner = [
 global.mods = []
 global.prems = [] 
 
-/*⬤━━━━━ REDES SOCIALES ━━━━━⬤*/
+//⬤━━━━━ REDES SOCIALES ━━━━━⬤
 global.sig = 'https://instagram.com/azami19'
 global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
