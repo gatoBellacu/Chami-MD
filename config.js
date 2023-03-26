@@ -41,6 +41,12 @@ global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
 global.sdc = '-'
 global.snh = 'https://nhentai.net/g/HaramTod🗿'
 
+//💥━━━━━ STICKER WM ━━━━━💥
+global.stickpack = '.'
+global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
+global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
+global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
+
 //🔔━━━━━ KEY ━━━━━🔔
 global.lolkey = 'apikeymu'
 global.xkey = 'APIKEYMU'
@@ -320,11 +326,6 @@ global.lolm = 'Ⓛ' //LÍMITE DE LOGOTIPOS/GRATIS EN EL MENÚ JS
 global.htjava = '⫹⫺'    //solo decoracion :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
-/*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
-global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
 
 global.multiplier = 79 // Cuanto más alto, más difícil subir de nivel
 
