@@ -5,9 +5,8 @@ import moment from 'moment-timezone'
 
 global.owner = [
   ['5214531106422', 'CuriosityBotV1-MD 🪷', true]]
+/*⬤━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬤*/
 
-     
-    
 /*⬤━━━━━ REDES SOCIALES ━━━━━⬤*/
 global.sig = 'https://instagram.com/azami19'
 global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
