@@ -3,6 +3,8 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
 
+global.owner = [
+  ['6285736178354', 'CuriosityBotV1-MD ', true]]
 
       
     
@@ -28,10 +30,7 @@ global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nombre
 
 
 /*============== STAFF ==============*/
-global.owner = [
-  ['6285736178354', '❦ 𝚇 𝚒 𝚊 𝚘 - 𝚈𝚊𝚗? 🎐', true] //Ganti jd nomormu sama Namamu
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
+
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
