@@ -9,7 +9,7 @@ handler.all = async function (m) {
         let users = Object.entries(global.db.data.users).map(([key, value]) => {
                 return { ...value, jid: key }
         })
-        let pp = './src/avatar_contact.png'
+        let pp = './storage/avatar_contact.png'
         let who = m.sender
         let exp = global.db.data.users[m.sender].exp
         let logo = await (await fetch(thumblvlup)).buffer() 
