@@ -8,7 +8,7 @@ global.owner = [
 
      
     
-/*============== SOCIAL ==============*/
+/*━━━━━ REDES SOCIALES ━━━━━*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/Xiao_yan_21' //Link Instagrammu
