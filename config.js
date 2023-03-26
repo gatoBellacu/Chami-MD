@@ -24,7 +24,7 @@ global.botdate = `⫹⫺ Day's: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
 global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
 global.author = global.wm
-global.nomorbot = '6281231079387'
+global.nomorbot = '0'
 global.namebot = 'CuriosityBotV1-MD'
 
 //🌐━━━━━ REDES SOCIALES ━━━━━🌐
