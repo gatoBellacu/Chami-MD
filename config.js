@@ -16,7 +16,7 @@ global.namebot = 'Elaina BOT'
 global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻
 
 //🌐━━━━━ REDES SOCIALES ━━━━━🌐
-global.sig = 'https://instagram.com/azami19'
+global.sig = 'https://instagram.com/Azami19'
 global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
 global.sdc = '-'
