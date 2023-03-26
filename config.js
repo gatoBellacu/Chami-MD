@@ -8,14 +8,12 @@ global.owner = [
 
      
     
-/*━━━━━ REDES SOCIALES ━━━━━*/
-
-// kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/Xiao_yan_21' //Link Instagrammu
-global.sgh = 'https://github.com/ImYanXiao' //Link Githubmu
+/*⬤━━━━━ REDES SOCIALES ━━━━━⬤*/
+global.sig = 'https://instagram.com/azami19'
+global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
-global.sdc = '-' //Isi Pake Link Discordmu Kalo Gada Biarin aja
-global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
+global.sdc = '-'
+global.snh = 'https://nhentai.net/g/HaramTod🗿'
 
 /*============== PAGOS ==============*/
 global.pdana = '085736178354'
