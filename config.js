@@ -373,7 +373,7 @@ global.rpg = {
   }
 }
 
-/*============= TIEMPO =============*/
+//⌛━━━━━ TIEMPO  ━━━━━⌛
 let wibh = moment.tz('America/Los_Angeles').format('HH')
     let wibm = moment.tz('America/Los_Angeles').format('mm')
     let wibs = moment.tz('America/Los_Angeles').format('ss')
@@ -393,7 +393,7 @@ let wibh = moment.tz('America/Los_Angeles').format('HH')
       year: 'numeric'
     })
 
-//------ JANGAN DIUBAH -----
+//⚠️------ NO CAMBIES ----- ⚠️
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
