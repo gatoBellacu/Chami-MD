@@ -11,7 +11,6 @@ global.prems = []
 
 //✨━━━━ INFO-OWNER ━━━━━✨
 global.nomorown = '5214531106422'
-global.namebot = 'Elaina BOT'
 global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻
 global.pdana = '085736178354'
 global.ppulsa = '085736178354'
@@ -57,12 +56,13 @@ global.APIKeys = { // APIKey Here
 global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」' //Reproducir marca de agua
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
-global.namedoc = 'CuriosityBotV1-MD'
+global.namedoc = '𝙲𝚞𝚛𝚒𝚘𝚜𝚒𝚝𝚢 ʙᴏᴛ'
 global.botdate = `⫹⫺ Day's: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
 global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
 global.author = global.wm
 global.nomorbot = '6281231079387'
+global.namebot = 'CuriosityBotV1-MD'
 
 
 /*============== LOGOS ==============*/
