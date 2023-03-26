@@ -20,7 +20,7 @@ global.pdana = '085736178354' //Nomor Danamu
 global.ppulsa = '085736178354' //Nomor SimCard Yang Kamu Pake
 global.psaweria = 'https://saweria.com/XiaoYan021' //Link Saweriamu Kalo Nggada Ketik - aja
 
-/*============== NOMOR ==============*/
+/*┉┉┉┉┉┉┉┉┉┉┉┉┉┉┅ NÚMEROS ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┅*/
 global.nomorbot = '6281231079387' // Número del Bot
 global.nomorown = '6285736178354' // Número del Owner
 global.namebot = 'Elaina BOT' // Nombre del Bot
