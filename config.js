@@ -37,7 +37,7 @@ global.snh = 'https://nhentai.net/g/HaramTod🗿'
 //🔔━━━━━ KEY ━━━━━🔔
 global.lolkey = 'apikeymu'
 global.xkey = 'APIKEYMU'
-/*============== API ==============*/
+//💡━━━━━ API ━━━━━💡
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
