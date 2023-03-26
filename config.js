@@ -16,6 +16,18 @@ global.pdana = '085736178354'
 global.ppulsa = '085736178354'
 global.psaweria = 'https://saweria.com/XiaoYan021'
 
+//🦩━━━━━ INFO-BOT ━━━━━🦩
+global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」' //Reproducir marca de agua
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
+global.namedoc = '𝙲𝚞𝚛𝚒𝚘𝚜𝚒𝚝𝚢 ʙᴏᴛ'
+global.botdate = `⫹⫺ Day's: ${week} ${date}`
+global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
+global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
+global.author = global.wm
+global.nomorbot = '6281231079387'
+global.namebot = 'CuriosityBotV1-MD'
+
 //🌐━━━━━ REDES SOCIALES ━━━━━🌐
 global.sig = 'https://instagram.com/azami.19'
 global.sgh = 'https://github.com/Azami19/CuriosityBot-MD1'
@@ -52,17 +64,7 @@ global.APIKeys = { // APIKey Here
 }
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
-//🌐━━━━━  ━━━━━🌐
-global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」' //Reproducir marca de agua
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
-global.namedoc = '𝙲𝚞𝚛𝚒𝚘𝚜𝚒𝚝𝚢 ʙᴏᴛ'
-global.botdate = `⫹⫺ Day's: ${week} ${date}`
-global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
-global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
-global.author = global.wm
-global.nomorbot = '6281231079387'
-global.namebot = 'CuriosityBotV1-MD'
+
 
 
 /*============== LOGOS ==============*/
