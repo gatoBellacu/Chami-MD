@@ -15,12 +15,12 @@ global.sgc = 'https://chat.whatsapp.com/DyBMXDw1IshFM9z0ZHZNlR'
 global.sdc = '-' //Isi Pake Link Discordmu Kalo Gada Biarin aja
 global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
 
-/*============== PAYMENT ==============*/
-global.pdana = '085736178354' //Nomor Danamu
-global.ppulsa = '085736178354' //Nomor SimCard Yang Kamu Pake
-global.psaweria = 'https://saweria.com/XiaoYan021' //Link Saweriamu Kalo Nggada Ketik - aja
+/*============== PAGOS ==============*/
+global.pdana = '085736178354'
+global.ppulsa = '085736178354'
+global.psaweria = 'https://saweria.com/XiaoYan021'
 
-/*┉┉┉┉┉┉┉┉┉┉┉┉┉┉┅ NÚMEROS ┉┉┉┉┉┉┉┉┉┉┉┉┉┉┅*/
+/*=============== NÚMEROS ===============*/
 global.nomorbot = '6281231079387' // Número del Bot
 global.nomorown = '6285736178354' // Número del Owner
 global.namebot = 'Elaina BOT' // Nombre del Bot
