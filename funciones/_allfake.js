@@ -19,11 +19,11 @@ handler.all = async function (m) {
 		global.fla = flaaa.getRandom()
                 global.social = pickRandom([global.sgh, global.sig, global.snh, global.sgc]) 
 
-		// Module 
+		// Module
 		global.fetch = import('node-fetch')
 		global.bochil = import('@bochilteam/scraper')
 		
-                // Function
+                Funcion
                 global.pickRandom = function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
@@ -49,19 +49,16 @@ handler.all = async function (m) {
 }
 
 		const _uptime = process.uptime() * 1000
-        
-		// ucapan ini mah
+      
 		global.ucapan = ucapan()
-		
-		// pesan sementara
+
 		global.ephemeral = '86400' // 86400 = 24jam, kalo ingin di hilangkan ganti '86400' jadi 'null' atau ''
          
-     		// externalAdReply atau text with thumbnail. gatau bahasa Inggris? coba translate!
 		global.adReply = {
 			contextInfo: {
 				forwardingScore: 9999,
-				//isForwarded: true, // ini biar ada tulisannya diteruskan berkali-kali, jika ingin di hilangkan ganti true menjadi false
-				externalAdReply: { // Bagian ini sesuka kalian berkreasi :'v
+				//isForwarded: true
+				externalAdReply: { 
                                         showAdAttribution: true,
 					title: global.ucapan,
 					body: wm,
