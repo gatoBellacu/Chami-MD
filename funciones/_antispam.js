@@ -10,11 +10,11 @@ export async function all(m) {
             if (this.spam[m.sender].count > 10) {
                global.db.data.users[m.sender].banned = true
                 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
-    let caption = ` Banned *@${who.split("@")[0]}* Jangan spam kak!`
-    this.sendButton(m.chat, caption, wm, null, [['Matikan AntiSpam', '/disable antispam']], m, { mentions: this.parseMention(caption) })
+    let caption = `*PROHIBIDO *@${who.split("@")[0]}* NO HAGAS SPAM*`
+    this.sendButton(m.chat, caption, wm, null, [['MENU ☘️', '/menu']], m, { mentions: this.parseMention(caption) })
             }
             this.spam[m.sender].count = 0
-            this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
+            this.spam[m.sender].lastspam = m.messageTimestamp.toNumber() 
         }
     }
     else
