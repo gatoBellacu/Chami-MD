@@ -47,6 +47,26 @@ global.stickauth = `☂︎\n𝗘\nl\na\ni\nn\na\n-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹
 global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
 global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴇʟᴀɪɴᴀ ʙᴏᴛᴢ'
 
+//⌛━━━━━ TIEMPO  ━━━━━⌛
+let wibh = moment.tz('America/Los_Angeles').format('HH')
+    let wibm = moment.tz('America/Los_Angeles').format('mm')
+    let wibs = moment.tz('America/Los_Angeles').format('ss')
+    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
+    
+    let d = new Date(new Date + 3600000)
+    let locale = 'id'
+    // d.getTimeZoneOffset()
+    // Offset -420 is 18.00
+    // Offset    0 is  0.00
+    // Offset  420 is  7.00
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
+
 //🔔━━━━━ KEY ━━━━━🔔
 global.lolkey = 'apikeymu'
 global.xkey = 'APIKEYMU'
@@ -373,25 +393,7 @@ global.rpg = {
   }
 }
 
-//⌛━━━━━ TIEMPO  ━━━━━⌛
-let wibh = moment.tz('America/Los_Angeles').format('HH')
-    let wibm = moment.tz('America/Los_Angeles').format('mm')
-    let wibs = moment.tz('America/Los_Angeles').format('ss')
-    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
-    
-    let d = new Date(new Date + 3600000)
-    let locale = 'id'
-    // d.getTimeZoneOffset()
-    // Offset -420 is 18.00
-    // Offset    0 is  0.00
-    // Offset  420 is  7.00
-    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long' })
-    let date = d.toLocaleDateString(locale, {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
+
 
 //⚠️------ NO CAMBIES ----- ⚠️
 let file = fileURLToPath(import.meta.url)
