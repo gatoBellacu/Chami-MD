@@ -4,9 +4,9 @@ import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
 
 global.owner = [
-  ['6285736178354', 'CuriosityBotV1-MD ', true]]
+  ['5214531106422', 'CuriosityBotV1-MD 🪷', true]]
 
-      
+     
     
 /*============== SOCIAL ==============*/
 
