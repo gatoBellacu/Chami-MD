@@ -293,22 +293,22 @@ global.fakefb = {
 export default handler 
 
 function ucapan() {
-	const time = moment.tz('Asia/Jakarta').format('HH')
-	let res = "Selamat malam 🌌"
+	const time = moment.tz('America/Los_Angeles').format('HH')
+	let res = "Buenas noches 🌌"
 	if(time >= 1) {
-		res = "Selamat Dini hari 🌌"
+		res = "Buen día 🌥️"
 	}
 	if(time >= 4) {
-		res = "Selamat pagi ⛅"
+		res = "Buen día ☀️"
 	}
 	if(time > 10) {
-		res = "Selamat siang 🌅"
+		res = "Buenas tardes 🌅"
 	}
 	if(time >= 15) {
-		res = "Selamat sore 🌇"
+		res = "Buenas tardes 🌇"
 	}
 	if(time >= 18) {
-		res = "Selamat malam 🌃"
+		res = "Buenas noches 🌃"
 	}
 	return res
 }
