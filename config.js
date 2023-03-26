@@ -21,7 +21,7 @@ global.pdana = '085736178354'
 global.ppulsa = '085736178354'
 global.psaweria = 'https://saweria.com/XiaoYan021'
 
-//✨━━━━━ NÚMEROS ━━━━━✨
+//✨━━━━ INFO-BOT/OWNER ━━━━━✨
 global.nomorbot = '6281231079387'
 global.nomorown = '5214531106422'
 global.namebot = 'Elaina BOT'
