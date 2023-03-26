@@ -1,4 +1,3 @@
-//ganti domain & ubah sebagian ga krn ga work
 import axios from 'axios'
 import cheerio from 'cheerio'
 import { lookup } from 'mime-types'
