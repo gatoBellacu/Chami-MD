@@ -20,7 +20,7 @@ global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」' //
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴄᴜʀɪᴏsɪᴛʏ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
 global.namedoc = '𝙲𝚞𝚛𝚒𝚘𝚜𝚒𝚝𝚢 ʙᴏᴛ'
-global.botdate = `⫹⫺ Day's: ${week} ${date}`
+global.botdate = `⫹⫺ Dias: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
 global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
 global.author = global.wm
@@ -57,12 +57,8 @@ global.APIKeys = { // APIKey Here
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://violetics.pw': 'beta'
 }
-// Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
-
-
-
-/*============== LOGOS ==============*/
+//♨️━━━━━ IMG ━━━━━♨️
 global.thumb = 'https://telegra.ph/file/cce9ab4551f7150f1970d.jpg' //Main Thumbnail
 global.thumb2 = 'https://telegra.ph/file/26b515d170f1e599f78a7.jpg'
 global.thumbbc = 'https://telegra.ph/file/05f874dc87f7e27fa8127.jpg' //For broadcast
