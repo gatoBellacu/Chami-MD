@@ -6,6 +6,8 @@ import moment from 'moment-timezone'
 global.owner = [
   ['5214531106422', 'CuriosityBotV1-MD 🪷', true]]
 /*⬤━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⬤*/
+global.mods = []
+global.prems = [] 
 
 /*⬤━━━━━ REDES SOCIALES ━━━━━⬤*/
 global.sig = 'https://instagram.com/azami19'
@@ -28,8 +30,6 @@ global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻' // Nombre
 
 /*============== STAFF ==============*/
 
-global.mods = [] // Want some help?
-global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
 
 global.lolkey = 'apikeymu'
