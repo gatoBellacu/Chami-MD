@@ -13,6 +13,7 @@ global.prems = []
 global.nomorown = '5214531106422'
 global.nameown = '𝓐𝔃𝓪𝓶𝓲 - 𝓬𝓻𝓮𝓪𝓭𝓸𝓻
 global.ppulsa = '085736178354'
+global.pdana = '085736178354' 
 global.psaweria = 'https://saweria.com/XiaoYan021'
 
 //🦩━━━━━ INFO-BOT ━━━━━🦩
