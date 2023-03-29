@@ -100,7 +100,7 @@ async function getLatestAnime() {
 async function getDetailAnime(url) {
 	let html = (await axios.get(url)).data
 	let $ = cheerio.load(html), obj = {}
-	obj.title = $('div.pagetitle > h1').text().trim().replace(/Subtitle Indonesia/, '')
+	obj.title = $('div.pagetitle > h1').text().trim().replace(/Subtitle México/, '')
 	obj.episode = /Episode/.test(obj.title) ? obj.title.split(' Episode ')[1] : 'Movie'
 	obj.update = $('div.breadcrumb > span > time').attr('datetime')
 	$('div.contenttable > table > tbody > tr').each((idx, el) => {
