@@ -216,7 +216,7 @@ global.reloadHandler = async function (restatConn) {
   conn.sRevoke = '*⚠️ El enlace del grupo se ha cambiado a*\n@revoke'
   conn.sAnnounceOn = '"⚠️ El grupo ha sido cerrado!\ahora solo los administradores pueden enviar mensajes!!!*'
   conn.sAnnounceOff = '*⚠️ Se ha abierto el grupo!\nAhora todos los participantes pueden enviar mensajes!!!*'
-  conn.sRestrictOn = '*⚠️ Editar información del grupo cambió a administrador solamente!!!*''
+  conn.sRestrictOn = '*⚠️ Editar información del grupo cambió a administrador solamente!!!*'
   conn.sRestrictOff = '*⚠️ Editar información del grupo cambió a todos los participantes!!!*'
 
   conn.handler = handler.handler.bind(global.conn)
