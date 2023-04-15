@@ -1,6 +1,6 @@
 let handler = m => m
 
-let toxic = /(a(su|nj(([ie])ng|([ie])r)?)|me?me?k|ko?nto?l|ba?bi|fu?ck|ta(e|i)k|bangsat|g([iueo])bl([iueo])(k|g)|g ([iueo]) b l ([iueo]) (k|g)|a (n j (i n g|i r)?)s u|col(i|ay)|an?jg|b([ia])ngs([ia])?t|t([iuo])l([iuo])l)/i
+let toxic = /g0re|g0r3|g.o.r.e|sap0|sap4|malparido|malparida|malparidos|malparidas|m4lp4rid0|m4lp4rido|m4lparido|malp4rido|m4lparid0|malp
 handler.before = function (m, { user }) {
   if (m.isBaileys && m.fromMe) return true
   if (/masuk|lanjutkan|banjir|(per)?panjang/g.exec(m.text)) return true
