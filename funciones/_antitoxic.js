@@ -8,7 +8,7 @@ let toxic = /g0re|g0r3|g.o.r.e|sap0|sap4|malparido|malparida|malparidos|malparid
   let isGroupToxic = toxic.exec(m.text)
 
   if (chat.antiToxic && isGroupToxic) {
-    m.reply('*⚠️ no seas toxico!!*\n' + readMore + '\n *¿Quieres apagar? tipo /disable antitoxic*')
+    m.reply('*⚠️ no seas toxico!!*\n' + readMore + '\n *❌ Las palabras groseras no se permiten aquí*')
     if (global.opts['restrict']) {
       // if (!user.isAdmin) return true
       // this.groupRemove(m.chat, [m.sender])
