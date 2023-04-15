@@ -14,7 +14,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.sendButton(m.chat, `*⚠️ Detección de enlace de grupo*${isBotAdmin ? '' : '\n\n*⚠️ Bot no administrador*'}
+        await conn.sendButton(m.chat, `*⚠️ Detección de enlace de grupo*${isBotAdmin ? '' : '\n\n*⚠️ Bot no administrador, no puede eliminar personas*'}
         if (isBotAdmin && bot.restrict) {
            return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: pesan, participant: hapus }})
             return conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
