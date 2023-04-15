@@ -8,7 +8,7 @@ handler.before = function (m, { user }) {
   let isGroupToxic = toxic.exec(m.text)
 
   if (chat.antiToxic && isGroupToxic) {
-    m.reply('no seas toxico!!\n' + readMore + '\n ¿Quieres apagar? tipo */disable antitoxic*')
+    m.reply('*⚠️ no seas toxico!!*\n' + readMore + '\n *¿Quieres apagar? tipo /disable antitoxic*')
     if (global.opts['restrict']) {
       // if (!user.isAdmin) return true
       // this.groupRemove(m.chat, [m.sender])
