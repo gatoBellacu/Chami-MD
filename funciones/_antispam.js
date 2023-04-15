@@ -10,7 +10,7 @@ export async function all(m) {
             if (this.spam[m.sender].count > 10) {
                global.db.data.users[m.sender].banned = true
                 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
-    let caption = `*⚠️ ESTAS PROHIBIDO *@${who.split("@")[0]}* NO HAGAS SPAM*`
+    let caption = `*⚠️ ESTAS PROHIBIDO, *@${who.split("@")[0]}* NO HAGAS SPAM*`
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber() 
