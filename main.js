@@ -71,7 +71,7 @@ var _0x3fb854=_0x5872;function _0x5872(_0x297e08,_0x4da48b){var _0x54e980=_0x54e
 
 /*------------------------------------------------*/
 
-global.authFile = `MysticSession`
+global.authFile = `CuriositySession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = MessageRetryMap => { }
 let { version } = await fetchLatestBaileysVersion();
@@ -90,7 +90,7 @@ return { conversation: "hello, i'm BrunoSobrino" }},
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['MysticBot','Safari','9.7.0'],
+browser: ['CuriosityBotV1-MD','Edge','1.0.0'],
 version   
 }
 
@@ -132,13 +132,13 @@ return filename.map(file => {
 
 function purgeSession() {
     let prekey = []
-    let directorio = readdirSync("./MysticSession")
+    let directorio = readdirSync("./CuriositySession")
     let filesFolderPreKeys = directorio.filter(file => {
         return file.startsWith('pre-key-')
     })
     prekey = [...prekey, ...filesFolderPreKeys]
     filesFolderPreKeys.forEach(files => {
-    unlinkSync(`./MysticSession/${files}`)
+    unlinkSync(`./CuriositySession/${files}`)
 })
 
 }  
@@ -161,7 +161,7 @@ listaDirectorios.forEach(filesInDir => {
 }
 
 function purgeOldFiles() {
-const directories = ['./MysticSession/', './jadibts/']
+const directories = ['./CuriositySession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000) 
 directories.forEach(dir => {
     readdirSync(dir, (err, files) => {
