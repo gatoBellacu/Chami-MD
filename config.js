@@ -5,7 +5,7 @@ import fs from 'fs'
 
 global.owner = [
   ['5214531106422', '🍥 𝑪𝒖𝒓𝒊𝒐𝒔𝒊𝒕𝒚𝑩𝒐𝒕-𝑴𝑫 🍥', true]]
- //━━━━━━━━━━━━━━━━━━━ ◉⁠‿⁠◉
+ //━━━━━━━━━━━━━━━━━━━⁠◉
 global.mods = [] 
 global.prems = []
 
@@ -63,12 +63,12 @@ global.APIKeys = { // APIKey Here
 
 //❏ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❏
 global.packname = ''
-global.author = '𝖀𝖓𝕻𝖙𝖔𝕬𝖉𝖗𝖎𝖍𝕭𝖔𝖙'
+global.author = 'CuriosityBot-MD 🍥'
 
 
 //❏ ━━━━━.⋅ Información ⋅.━━━━ ❏
-global.wm = '𝖀𝖓𝕻𝖙𝖔𝕬𝖉𝖗𝖎𝖍𝕭𝖔𝖙'
-global.igfg = '𝖀𝖓𝕻𝖙𝖔𝕬𝖉𝖗𝖎𝖍𝕭𝖔𝖙'
+global.wm = 'CuriosityBotV1-MD'
+global.igfg = 'CuriosityBotV1-MD'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
