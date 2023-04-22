@@ -1,4 +1,7 @@
-console.log('✅ㅤIniciando...')
+console.log('⚡')
+console.log('⚡⚡')
+console.log('🚀🚀🚀')
+console.log('🟢 I N I C I A N D O . . .')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -13,11 +16,11 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('upabotMD', {
+say('Curiosity\nBot\nMD', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Bot creado por unptoadrih15`, {
+say(`Bot creado por @Azami`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -54,7 +57,7 @@ p.send(process.uptime())
 break }})
 p.on('exit', (_, code) => {
 isRunning = false
-console.error('❎ㅤOcurrio un error inesperado:', code)
+console.error('⚠️ㅤOcurrio un error inesperado:', code)
 
 p.process.kill()
 isRunning = false
