@@ -14,16 +14,16 @@
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
         "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/AzamiHub",
+    "homepage": "https://github.com/Azami-Hub",
     "author": {
-        "name": "AzamiGood"
+        "name": "🍥 Azami-Hub 🍥"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AzamiGood/CuriosityBotV2-MD.git"
+        "url": "git+https://github.com/Azami-Hub/CuriosityBot-MD1.git"
     },
     "bugs": {
-        "url": "https://github.com/AzamiGood/CuriosityBotV2-MD/issues"
+        "url": "https://github.com/Azami-Hub/CuriosityBot-MD1/issues"
     },
     "license": "MIT",
     "dependencies": {
