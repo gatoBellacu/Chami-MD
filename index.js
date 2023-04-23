@@ -38,13 +38,8 @@ function start(file) {
 say(`WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios`, {
   font: 'console',
   align: 'center',
-  colors: ['candy']})
-
-/* say('⚡ FUENTE DE CARGA...', {
-    font: 'console',
-    align: 'center',
-    colors: ['blue']}) *\
-
+  colors: ['candy']
+})
 say('Ajuste la pantalla para escanear el codigo QR', {
 font: 'console',
 align: 'center',
