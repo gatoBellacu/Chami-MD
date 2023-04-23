@@ -200,7 +200,7 @@ console.log(chalk.yellow('🚩ㅤEscanea este codigo QR, el codigo QR expira en 
 if (connection == 'open') {
 console.log(chalk.yellow('⬤┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n┊\n┊► 🟢 CONECTADO CORRECTAMENTE AL WHATSAPP\n┊\n⬤┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄'))}
 if (connection == 'close') {
-console.log(chalk.yellow(`🚩ㅤConexion cerrada, por favor borre la carpeta ${global.authFile} y reescanee el codigo QR`))}
+console.log(chalk.yellow(`⚠️ PERDI LA CONEXIÓN, POR FAVOR BORRE LA CARPETA ${global.authFile} Y RESCANEE EL CÓDIGO QR`))}
 }
 
 process.on('uncaughtException', console.error)
