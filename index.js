@@ -33,7 +33,7 @@ function start(file) {
     colors: ['blue']
   })
 
-say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Index.js Gracias a @gata_dios`, {
+say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimiento a @gata_dios`, {
   font: 'console',
   align: 'center',
   colors: ['candy']
