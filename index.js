@@ -35,7 +35,13 @@ function start(file) {
     colors: ['blue']
   })
 
-say(`WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios`, {
+/*say(`WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios`, {
+  font: 'console',
+  align: 'center',
+  colors: ['candy']
+})*/
+  
+say('\x1b[1mWhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios\x1b[0m', {
   font: 'console',
   align: 'center',
   colors: ['candy']
