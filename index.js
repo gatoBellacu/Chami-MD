@@ -31,7 +31,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)]
 say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Diseño Gracias a @gata_dios`, {
   font: 'console',
   align: 'center',
-  colors: ['Multi color']
+  colors: ['candy']
 })
 
 say('Ajuste la pantalla para escanear el codigo QR', {
