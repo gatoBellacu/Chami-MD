@@ -16,7 +16,7 @@ const rl = createInterface(process.stdin, process.stdout)
 say('Curiosity\nBot\nMD', {
   font: 'block',
   align: 'center',
-  colors: ['green', 'pink']})
+  colors: ['pink']})
 
 var isRunning = false
 /**
