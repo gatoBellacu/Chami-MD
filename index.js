@@ -28,7 +28,7 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Diseño Gracias a @gata_dios`, {
+say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Index.js Gracias a @gata_dios`, {
   font: 'console',
   align: 'center',
   colors: ['candy']
