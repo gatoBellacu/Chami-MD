@@ -43,8 +43,7 @@ say(`WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios`, {
 /*say('⚡ FUENTE DE CARGA...', {
     font: 'console',
     align: 'center',
-    colors: ['blue']
-  })*\
+    colors: ['blue']})*\
 
 say('Ajuste la pantalla para escanear el codigo QR', {
 font: 'console',
