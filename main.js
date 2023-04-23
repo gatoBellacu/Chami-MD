@@ -104,22 +104,6 @@ if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 't
 }, 30 * 1000)}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
-
-   
-     /* Y ese fue el momazo mas bueno del mundo
-        Aunque no dudara tan solo un segundo
-        Mas no me arrepiento de haberme reido
-        Por que la grasa es un sentimiento
-        Y ese fue el momazo mas bueno del mundo
-        Aunque no dudara tan solo un segundo
-        que me arrepiento de ser un grasoso
-        Por que la grasa es un sentimiento
-        - El waza 👻👻👻👻 (Aiden)            */
-   
-   /* Yo tambien se hacer momazos Aiden... 
-      ahi te va el ajuste de los borrados 
-      inteligentes de las sesiones y de los sub-bot  
-      By (Rey Endymion 👺👍🏼) */
        
 function clearTmp() {
 const tmp = [tmpdir(), join(__dirname, './tmp')]
@@ -195,12 +179,12 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined) {
-console.log(chalk.yellow('🔰ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'))
+console.log(chalk.yellow('🚀ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'))
 }
 if (connection == 'open') {
 console.log(chalk.yellow('⬤┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n┊\n┊► 🟢 CONECTADO CORRECTAMENTE AL WHATSAPP\n┊\n⬤┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄'))}
 if (connection == 'close') {
-console.log(chalk.yellow(`⚠️ PERDI LA CONEXIÓN, POR FAVOR BORRE LA CARPETA ${global.authFile} Y RESCANEE EL CÓDIGO QR`))}
+console.log(chalk.yellow(`⚠️ Perdí la conexión, por favor borre la carpeta ${global.authFile} y rescanee el código QR`))}
 }
 
 process.on('uncaughtException', console.error)
