@@ -32,14 +32,19 @@ function start(file) {
   say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
-    colors: ['blue']
+    colors: ['yellow']
   })
 
 say(`WhatsApp Bot MULTI-DEVICE By @Azami\n Agradecimientos a @gata_dios`, {
   font: 'console',
   align: 'center',
-  colors: ['candy']
-})
+  colors: ['candy']})
+
+say('⚡ FUENTE DE CARGA...', {
+    font: 'console',
+    align: 'center',
+    colors: ['blue']
+  })
 
 say('Ajuste la pantalla para escanear el codigo QR', {
 font: 'console',
