@@ -1,4 +1,4 @@
-console.log('✅ㅤIniciando...')
+console.log('✅ I N I C I A N D O . . .')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -13,7 +13,7 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Mystic - Bot\nWhatsApp Bot MD', {
+say('Mystic - Bot\', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
