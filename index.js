@@ -20,13 +20,18 @@ say('Curiosity\nBot\nMD', {
 
 var isRunning = false
 /**
-* Start a js file
-* @param {String} file `path/to/file`
-*/
+ * Start a js file
+ * @param {String} file `path/to/file`
+ */
 function start(file) {
-if (isRunning) return
-isRunning = true
-let args = [join(__dirname, file), ...process.argv.slice(2)]
+  if (isRunning) return
+  isRunning = true
+  let args = [join(__dirname, file), ...process.argv.slice(2)]
+  say([process.argv[0], ...args].join(' '), {
+    font: 'console',
+    align: 'center',
+    colors: ['blue']
+  })
 
 say(`🎁 WhatsApp Bot MULTI-DEVICE By @Azami\n Index.js Gracias a @gata_dios`, {
   font: 'console',
