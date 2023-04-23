@@ -1,4 +1,4 @@
-/*Diseños y adaptación a https://github.com/Azami19/CuriosityBot-MD1 & https://github.com/GataNina-Li*\
+//Diseños y adaptación a https://github.com/Azami19/CuriosityBot-MD1 & https://github.com/GataNina-Li
 
 console.log('✅ I N I C I A N D O . . .')
 import { join, dirname } from 'path'
