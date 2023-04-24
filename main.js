@@ -363,7 +363,6 @@ setInterval(async () => {
 console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_OLDFILES ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`))
 }, 1000 * 60 * 60)
 setInterval(async () => {
-if (stopped == 'close') return
         
 .then(() => conn.logger.info(`✨ CARGANDO...`))
 .catch(console.error)
