@@ -11,12 +11,12 @@ global.owner = [
   ['5214531106422', '🍥 Creador 🍥', true],
   ['59894808483', '🎁 desarrollador 🎁', true]]
 
-global.suittag = ['5219993404349'] 
-global.prems = ['51995386439'] 
+global.suittag = [] 
+global.prems = [] 
 
 global.packname = ''
 global.author = '🍥 CuriosityBot-MD\n 👑 Owner: @Azami\n ❤️ Instagram: Azami.19\n 🚀 WhatsApp Bot: +591 76184204'
-global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
+global.wm = ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
