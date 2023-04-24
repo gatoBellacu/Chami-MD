@@ -1309,7 +1309,7 @@ export async function participantsUpdate({ id, participants, action }) {
     switch (action) {
         case 'add':
         case 'remove':
-            if (chat.welcome) {
+            /*if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
                     let pp = './src/avatar_contact.png'
@@ -1361,7 +1361,12 @@ export async function participantsUpdate({ id, participants, action }) {
                         "mediaUrl": 'https://youtu.be/EaXoIuT3UQ0',
                         "sourceUrl": 'https://www.xvideos.com' }}} 
                         this.sendMessage(id, buttonMessage, fake)                          
-}}}
+}}}*\
+
+this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
+                   }
+                }
+            }
              
             break
         case 'promote':
