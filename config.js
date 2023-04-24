@@ -16,7 +16,7 @@ global.prems = []
 
 global.packname = ''
 global.author = '🍥 CuriosityBot-MD\n 👑 Owner: @Azami\n ❤️ Instagram: Azami.19\n 🚀 WhatsApp Bot: +591 76184204'
-global.wm = '*CuriosityBot-MD | Azami*'
+global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
 global.igfg = 'CuriosityBot-MD 🍥🚀'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
