@@ -1331,24 +1331,15 @@ export async function participantsUpdate({ id, participants, action }) {
         case 'promote':
         case 'daradmin':
         case 'darpoder':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```').replace('@date', global.fecha).replace('@time', global.tiempo)
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
         case 'demote':
         case 'quitarpoder':
         case 'quitaradmin':
             if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```').replace
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
-        let who = id.mentionedJid && m.mentionedJid[0] ? id.mentionedJid[0] : id.fromMe ? conn.user.jid : id.sender
-        let user = global.db.data.users[who]
-        for (let user of participants) {
-                    let pp = './src/avatar_contact.png'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                    } catch (e) {
-                    } finally {
-                    let biot = await conn.fetchStatus(user).catch(_ => 'undefined')
-  let bio = biot.status?.toString() || 'Sin Info'
             if (chat.detect)
+                this.sendMessage(id, { text, mentions: this.parseMention(text) })
             break
     }
 }
