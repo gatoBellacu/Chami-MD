@@ -219,10 +219,10 @@ conn.welcome = '*╔══════════════*\n*╟❧ @subjec
 conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
 conn.spromote = '*⚠️ @user*\n*Ahora eres el nuevo admin!!*'
 conn.sdemote = '*⚠️ @user*\n*Dejaste de ser admin!!*'
-conn.sDesc = '*⚠️ Se ha modificado la descripción del grupo*\n\n*Nueva descripción:* @desc'
-conn.sSubject = '*⚠️ Se ha modificado el nombre del grupo*\n*Nuevo nombre:* @subject'
-conn.sIcon = '*𝚂𝙴 𝙷𝙰 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 𝙻𝙰 𝙵𝙾𝚃𝙾 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!!*'
-conn.sRevoke = '*𝚂𝙴 𝙷𝙰 𝙰𝙲𝚃𝚄𝙰𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙻 𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!!*\n*𝙻𝙸𝙽𝙺 𝙽𝚄𝙴𝚅𝙾:* @revoke'
+conn.sDesc = '*⚠️ Se ha modificado la descripción del grupo*\n\n*Nueva descripción:*\n@desc'
+conn.sSubject = '*⚠️ Se ha modificado el título del grupo*\n*Nuevo título:*\n@subject'
+conn.sIcon = '*⚠️ Se ha cambiado la foto del grupo!!*'
+conn.sRevoke = '*⚠️ Se ha restablecido el enlace del grupo!!*\n*Enlace nuevo:*\n@revoke'
 
 conn.handler = handler.handler.bind(global.conn)
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
