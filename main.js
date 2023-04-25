@@ -220,7 +220,7 @@ conn.bye = '*╔══════════════*\n*╟❧ @user*\n*�
 conn.spromote = '*⚠️ @user*\n*Ahora eres el nuevo admin!!*'
 conn.sdemote = '*⚠️ @user*\n*Dejaste de ser admin!!*'
 conn.sDesc = '*⚠️ Se ha modificado la descripción del grupo*\n\n*Nueva descripción:*\n@desc'
-conn.sSubject = '*⚠️ Se ha modificado el título del grupo*\n*Nuevo título:*\n@subject'
+conn.sSubject = '*⚠️ Se ha modificado el título del grupo a*\n@subject'
 conn.sIcon = '*⚠️ Se ha cambiado la foto del grupo!!*'
 conn.sRevoke = '*⚠️ Se ha restablecido el enlace del grupo!!*\n*Enlace nuevo:*\n@revoke'
 
