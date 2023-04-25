@@ -9,7 +9,7 @@ let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[this.user.jid] || {}
 if (bot.antiPrivate && !isOwner && !isROwner) {
-await m.reply(`*⚠️ Hola *@${m.sender.split`@`[0]}*, no se puede usar el bot al chat privado*`, false, { mentions: [m.sender] })
+await m.reply(`*⚠️ Hola @${m.sender.split`@`[0]}, no se puede usar el bot al chat privado*`, false, { mentions: [m.sender] })
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'banchat')
 return !1
 }}
