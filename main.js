@@ -215,7 +215,7 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*┏━━━━━━━━━━━━━━*\n*┠◆ ✨ @subject ✨*\n*┣━━━━━━━━━━━━━━*\n*┠◆ ❤️ @user*\n*┠◆ 🧩 Bienvenido/a* \n*┃*\n*┠◆ 🔰 Descripción del grupo:*\n\n@desc\n\n*┃*\n*┠◆ Disfruta tu estadía en el grupo 😼✨!!*\n*┗━━━━━━━━━━━━━━*'
+conn.welcome = '*┏━━━━━━━━━━━━━━*\n*┠◆ ✨ @subject ✨*\n*┣━━━━━━━━━━━━━━*\n*┠◆ ❤️ @user*\n*┠◆ 🧩 Bienvenido/a* \n*┠◆ 🔰 Descripción del grupo:*\n\n@desc\n\n*┃*\n*┠◆ Disfruta tu estadía en el grupo 😼✨*\n*┗━━━━━━━━━━━━━━*'
 conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*┗━━━━━━━━━━━━━━*'
 conn.spromote = '*⚠️ @user*\n*Ahora eres el nuevo admin!!*'
 conn.sdemote = '*⚠️ @user*\n*Dejaste de ser admin!!*'
