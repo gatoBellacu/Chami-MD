@@ -22,6 +22,12 @@ m.reply(`*⚠️ En este grupo no se permiten árabes, serás eliminado\n\n* ⚠
 let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 if (responseb[0].status === "404") return   
 } 	
+
+if (m.sender.startsWith('48' || '48')) {
+m.reply(`*⚠️ En este grupo no se permiten árabes, serás eliminado\n\n* ⚠️ غير مسموح للعرب في هذه المجموعة سوف يتم إقصاؤكم*`)
+let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+if (responseb[0].status === "404") return   
+} 	
    
 }}
 export default handler
