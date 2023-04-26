@@ -21,7 +21,7 @@ global.prems = []
 global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/${nomorbot}'
 
-//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
 global.wm2 = `▸ 🗓️ ${dia} ${fecha}\n▸ *🔰 CuriosityBot-MD 🔰*`
 global.igfg = 'CuriosityBot-MD 🍥🚀'
@@ -29,6 +29,8 @@ global.wait = '*⚡ Cargando, espere un momento*'
 global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
+global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 
 global.openai_key = 'sk-0'
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
@@ -445,8 +447,7 @@ global.mes = d.toLocaleDateString('es', { month: 'long' })
 global.año = d.toLocaleDateString('es', { year: 'numeric' })
 global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //*****************************
-global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
-global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
+
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
 global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
 global.nomorown = '5219993404349'
