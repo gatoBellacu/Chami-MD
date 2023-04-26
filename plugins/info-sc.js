@@ -8,7 +8,7 @@ let str = `*https://github.com/ImYanXiao/Elaina-MultiDevice*`
     let ran = chen.split('\n')
     let yae = ran[Math.floor(Math.random() * ran.length)]
     let thumb = await(await fetch(yae)).buffer()
-conn.sendButton(m.chat, str, wm, 'ᴡᴀɴᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ?', 'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+//conn.sendButton(m.chat, str, wm, 'ᴡᴀɴᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ?', 'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: global.sig,
     title: wm,
     body: 'want source code?',
