@@ -7,7 +7,7 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone' 
 
-//•============ OWNER ============•
+//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.owner = [
   ['5214531106422', '🍥 Creador 🍥', true],
   ['59894808483', '🎁 desarrollador 🎁', true],
