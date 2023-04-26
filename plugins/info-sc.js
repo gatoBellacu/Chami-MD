@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
@@ -21,5 +21,5 @@ handler.help = ['sc', 'script']
 handler.tags = ['info', 'main']
 handler.command =  /^(script|sc)$/i
 
-export default handler
+export default handler*/
 
