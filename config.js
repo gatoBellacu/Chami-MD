@@ -31,6 +31,11 @@ global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏ�
 global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
+global.nomorbot = '59176184204'
+
+//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+global.nomorown = '5214531106422'
+global.azami = 'https://github.com/Azami19'
 
 global.openai_key = 'sk-0'
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
@@ -449,9 +454,6 @@ global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', 
 //*****************************
 
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
-global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
-global.nomorown = '5219993404349'
-global.nomorbot = '59176184204'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 global.cmenut = '❖––––––『'
 global.cmenub = '┊✦ '
