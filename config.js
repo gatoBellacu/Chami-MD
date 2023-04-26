@@ -16,8 +16,8 @@ global.owner = [
 global.suittag = [] 
 global.prems = [] 
 
-global.packname = 'CuriosityBot-MD'
-global.author = 'WhatsApp Bot'
+global.packname = 'CuriosityBot-MD 🍧'
+global.author = '⫹⫺ WhatsApp Bot\nwa.me/'
 global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
 global.igfg = 'CuriosityBot-MD 🍥🚀'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
