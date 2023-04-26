@@ -17,11 +17,9 @@ handler.command = /^(broadcastchats?|bcc(hats?)?)$/i
 handler.owner = true
 
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
 const randomID = length => randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-
