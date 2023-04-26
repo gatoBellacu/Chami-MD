@@ -11,7 +11,7 @@ global.owner = [
   ['5214531106422', '🍥 Creador 🍥', true],
   ['59894808483', '🎁 desarrollador 🎁', true],
   ['59169316023'],
-  ['50583693909']]
+  ['50587538740']]
 
 global.suittag = [] 
 global.prems = [] 
