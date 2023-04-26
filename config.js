@@ -19,7 +19,7 @@ global.prems = []
 
 //≈≈≈≈≈≈≈≈≈ STICKER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.packname = 'CuriosityBot-MD 🍧'
-global.author = '⫹⫺ WhatsApp Bot\nwa.me/${nomorbot}'
+global.author = '⫹⫺ WhatsApp Bot\nwa.me/59176184204'
 
 //≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.wm = '𝘾𝙪𝙧𝙞𝙤𝙨𝙞𝙩𝙮𝘽𝙤𝙩-𝙈𝘿 • 𝘼𝙯𝙖𝙢𝙞'
@@ -32,7 +32,7 @@ global.waitttt = '*⚠️ Cargado, espere un momento...*'
 global.gt = 'Curiosity'
 global.md = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.mysticbot = 'CuriosityMD'
-global.nomorbot = '00'
+global.nomorbot = '59176184204'
 global.nomorown = '5214531106422'
 global.azami = 'https://github.com/Azami19'
 
