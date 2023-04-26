@@ -21,19 +21,17 @@ global.prems = []
 global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/${nomorbot}'
 
-//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
-global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
+//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+global.wm = '𝘾𝙪𝙧𝙞𝙤𝙨𝙞𝙩𝙮𝘽𝙤𝙩-𝙈𝘿 • 𝘼𝙯𝙖𝙢𝙞'
 global.wm2 = `▸ 🗓️ ${dia} ${fecha}\n▸ *🔰 CuriosityBot-MD 🔰*`
 global.igfg = 'CuriosityBot-MD 🍥🚀'
-global.wait = '*⚡ Cargando, espere un momento*'
-global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
-global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
+global.wait = '*⚠️ Cargando, espere un momento*'
+global.waitt = '*⚠️ Cargando, espere un momento...*'
+global.waittt = '*⚠️ Cargando espere un momento...*'
+global.waitttt = '*⚠️ Cargado, espere un momento...*'
+global.gt = 'Curiosity'
+global.mysticbot = 'CuriosityMD'
 global.nomorbot = '59176184204'
-
-//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.nomorown = '5214531106422'
 global.azami = 'https://github.com/Azami19'
 
