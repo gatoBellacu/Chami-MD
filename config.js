@@ -32,7 +32,7 @@ global.waitttt = '*⚠️ Cargado, espere un momento...*'
 global.gt = 'Curiosity'
 global.md = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.mysticbot = 'CuriosityMD'
-global.nomorbot = '59176184204'
+global.nomorbot = '00'
 global.nomorown = '5214531106422'
 global.azami = 'https://github.com/Azami19'
 
