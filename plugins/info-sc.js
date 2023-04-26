@@ -13,7 +13,7 @@ conn.sendButtonDoc(m.chat, str, wm, 'ᴡᴀɴᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ?',
     title: wm,
     body: 'want source code?',
     thumbnail: imagen1,
-    sourceUrl: sig
+    sourceUrl: md
   }
   } }) 
           }
