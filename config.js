@@ -21,10 +21,14 @@ global.prems = []
 global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/${nomorbot}'
 
-≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+//≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
+global.wm2 = `▸ 🗓️ ${dia} ${fecha}\n▸ *🔰 CuriosityBot-MD 🔰*`
 global.igfg = 'CuriosityBot-MD 🍥🚀'
 global.wait = '*⚡ Cargando, espere un momento*'
+global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
 global.openai_key = 'sk-0'
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
@@ -445,9 +449,6 @@ global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
 global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
-global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 global.nomorown = '5219993404349'
 global.nomorbot = '59176184204'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
