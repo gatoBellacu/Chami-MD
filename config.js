@@ -17,13 +17,14 @@ global.owner = [
 global.suittag = [] 
 global.prems = [] 
 
-//≈≈≈≈≈≈≈≈≈ STICKER WM ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
+//≈≈≈≈≈≈≈≈≈ STICKER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ WhatsApp Bot\nwa.me/${nomorbot}'
+
+≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.wm = '*𝘊𝘶𝘳𝘪𝘰𝘴𝘪𝘵𝘺𝘉𝘰𝘵-𝘔𝘋 • 𝘈𝘻𝘢𝘮𝘪*'
 global.igfg = 'CuriosityBot-MD 🍥🚀'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-
+global.wait = '*⚡ Cargando, espere un momento*'
 
 global.openai_key = 'sk-0'
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
@@ -440,7 +441,6 @@ global.mes = d.toLocaleDateString('es', { month: 'long' })
 global.año = d.toLocaleDateString('es', { year: 'numeric' })
 global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //*****************************
-global.wm2 = `▸ 🗓️ ${dia} ${fecha}\n▸ *🔰 CuriosityBot-MD 🔰*`
 global.gt = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.mysticbot = 'ᴄᴜʀɪᴏsɪᴛʏʙᴏᴛ-ᴍᴅ'
 global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
