@@ -66,7 +66,7 @@ global.APIs = {
   rose: 'https://api.itsrose.site',
   popcat : 'https://api.popcat.xyz',
   xcoders : 'https://api-xcoders.site'
-  azami-mods: 'https://api.azami-mods.xyz'
+  dzx: 'https://api.azami-mods.xyz'
 },
 global.APIKeys = { 
   'https://api.xteam.xyz': `${keysxteam}`,
