@@ -30,6 +30,7 @@ global.waitt = '*⚠️ Cargando, espere un momento...*'
 global.waittt = '*⚠️ Cargando espere un momento...*'
 global.waitttt = '*⚠️ Cargado, espere un momento...*'
 global.gt = 'Curiosity'
+global.md = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.mysticbot = 'CuriosityMD'
 global.nomorbot = '59176184204'
 global.nomorown = '5214531106422'
@@ -66,7 +67,6 @@ global.APIs = {
   rose: 'https://api.itsrose.site',
   popcat : 'https://api.popcat.xyz',
   xcoders : 'https://api-xcoders.site'
-  dzx: 'https://api.azami-mods.xyz'
 },
 global.APIKeys = { 
   'https://api.xteam.xyz': `${keysxteam}`,
@@ -452,7 +452,6 @@ global.año = d.toLocaleDateString('es', { year: 'numeric' })
 global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //*****************************
 
-global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 global.cmenut = '❖––––––『'
 global.cmenub = '┊✦ '
