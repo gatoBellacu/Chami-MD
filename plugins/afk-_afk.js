@@ -21,7 +21,7 @@ export function before(m) {
         m.reply(`*⚠️ No lo etiquetes ⚠️*
 
 *⚠️ El usuario que etiquetaste está inactivo*      
-*—◉ ${reason ? 'motivo de inactividad: ' + reason : 'motivo de inactividad: _sin motivo_'}*
+*⚠️ ${reason ? 'motivo de inactividad: ' + reason : 'motivo de inactividad: _sin motivo_'}*
 *⚠️ Tiempo transcurrido de inactividad: ${(new Date - afkTime).toTimeString()}*
   `.trim())
     }
