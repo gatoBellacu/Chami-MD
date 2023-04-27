@@ -15,5 +15,5 @@ buffer = Buffer.concat([buffer, chunk])}
 if (/video/.test(type)) {
 return this.sendFile(m.chat, buffer, 'error.mp4', `${msg[type].caption}\n${wm2}\n\n*⚠️ Aquí no esta permitido ocultar un vídeo*`, m)
 } else if (/image/.test(type)) {
-return this.sendFile(m.chat, buffer, 'error.jpg', `${msg[type].caption}\n\n*𝙰𝚀𝚄𝙸 𝙽𝙾 𝚂𝙴 𝙿𝙴𝚁𝙼𝙸𝚃𝙴 𝙾𝙲𝚄𝙻𝚃𝙰𝚁 𝙽𝙰𝙳𝙰*`, m)
+return this.sendFile(m.chat, buffer, 'error.jpg', `${msg[type].caption}\n${wm2}\n\n*⚠️ Aquí no esta permitido ocultar una foto*`, m)
 }}}
