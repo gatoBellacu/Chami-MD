@@ -19,7 +19,7 @@ if (!img) return
 stiker = await createSticker(img, false, packname || global.packname, author || global.author)
 //stiker = await sticker(img, false, packname, author)
 } else if (/video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return await this.sendButton(m.chat, '*⚠️ El vídeo no puede durar más de 10 segundos*', wm, [['Desactivar autosticker', '/disable autosticker']], m)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return await this.sendButton(m.chat, '*⚠️ El vídeo no puede durar más de 10 segundos*', wm, [['Desactivar autosticker', '/disable autosticker']], m)
 let img = await q.download()
 if (!img) return
 stiker = await mp4ToWebp(img, { pack: packname || global.packname, author: author || global.author })
@@ -50,7 +50,7 @@ if (!stickerMetadata.author) stickerMetadata.author = '‎'
 if (!stickerMetadata.crop) stickerMetadata.crop = false
 } else if (!stickerMetadata) { stickerMetadata = { pack: '‎', author: '‎', crop: false }}
 let getBase64 = file.toString('base64')
-const Format = { file: `data:video/mp4;base64,${getBase64}`, processOptions: { crop: stickerMetadata?.crop, startTime: '00:00:00.0', endTime: '00:00:10.0', loop: 0
+const Format = { file: `data:video/mp4;base64,${getBase64}`, processOptions: { crop: stickerMetadata?.crop, startTime: '00:00:00.0', endTime: '00:00:7.0', loop: 0
 }, stickerMetadata: { ...stickerMetadata },
 sessionInfo: {
 WA_VERSION: '2.2106.5',
