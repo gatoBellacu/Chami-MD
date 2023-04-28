@@ -1324,7 +1324,7 @@ export async function participantsUpdate({ id, participants, action }) {
 this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '💫 Bienvenido 💫' : '😼 Adios 😼'), (action == 'add' ? '#welcomegc' : '#byegc')], ['🧩 Menu 🧩', `#menu`]], null, {mentions: this.parseMention(text)})
 let buttonMessage = {
 document: imagen1, 
-fileName: `EL MEJOR BOT DE WHATSAPP⁩`, 
+fileName: `el mejor bot de whatsapp⁩`, 
 mimetype: `application/${document}`,
 jpegThumbnail: imagen1,
 caption: text,
