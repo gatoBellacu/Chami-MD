@@ -18,8 +18,8 @@ conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`
 *💰 Moneda:* ${gPlay.moneda}
 *☂️ Gratis?:* ${gPlay.gratis}
 *⚖️ Precio:* ${gPlay.precio}
-*📈 Puntuacion:* ${gPlay.puntuacion}`},{quoted:m}
-*🪧 Descripcion:* ${curiosity.text})
+*📈 Puntuacion:* ${gPlay.puntuacion}`}
+*🪧 Descripcion:* ${curiosity.text},{quoted:m})
 } catch {
 await m.reply('*⚠️ Fallo, vuelva a intentarlo*')    
 }}
