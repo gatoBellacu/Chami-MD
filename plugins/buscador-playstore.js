@@ -4,13 +4,13 @@ let handler = async (m, { conn, text, args }) => {
 if (!args[0]) throw `*⚠️ Ingrese el nombre de la apk que quiera buscar*`
 try {
 let enc = encodeURIComponent(text)
-let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=brunosobrino&q=${enc}`)
+let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=azami&q=${enc}`)
 let gPlay = await json.json()
 
-let mystic = await translate(`${gPlay.descripcion}`, { to: 'es', autoCorrect: true })
+let curiosity = await translate(`${gPlay.descripcion}`, { to: 'es', autoCorrect: true })
 if (!gPlay.titulo) return m.reply(`[ ! ] Sin resultados`)
 conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`
-🔍 Resultado: ${gPlay.titulo}
+*🔍  RESULTADOS DE:* ${gPlay.titulo}
 ➺🧬 Identificador: ${gPlay.id}
 ➺⛓️ Link: ${gPlay.link}
 ➺🖼️ Imagen: ${gPlay.imagen}
