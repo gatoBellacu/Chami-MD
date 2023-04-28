@@ -14,12 +14,12 @@ conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`
 *🧩 Identificador:* ${gPlay.id}
 *📍 Link:* ${gPlay.link}
 *🖼️ Imagen:* ${gPlay.imagen}
+*🪧 Descripcion:* ${curiosity.text}
 *🚀 Desarrollador:* ${gPlay.desarrollador}
 *💰 Moneda:* ${gPlay.moneda}
 *☂️ Gratis?:* ${gPlay.gratis}
 *⚖️ Precio:* ${gPlay.precio}
-*📈 Puntuacion:* ${gPlay.puntuacion}`}
-*🪧 Descripcion:* ${curiosity.text},{quoted:m})
+*📈 Puntuacion:* ${gPlay.puntuacion}`},{quoted:m})
 } catch {
 await m.reply('*⚠️ Fallo, vuelva a intentarlo*')    
 }}
