@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args }) => {
 if (!args[0]) throw `*⚠️ Ingrese el nombre de la apk que quiera buscar*`
 try {
 let enc = encodeURIComponent(text)
-let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=azami&q=${enc}`)
+let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=brunosobrino&q=${enc}`)
 let gPlay = await json.json()
 
 let curiosity = await translate(`${gPlay.descripcion}`, { to: 'es', autoCorrect: true })
