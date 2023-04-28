@@ -2,37 +2,38 @@ function handler(m, { text }) {
     let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
     m.reply(teks.replace(/[a-z]/gi, v => {
         return {
-            'a': 'ka',
-            'b': 'tu',
-            'c': 'mi',
-            'd': 'te',
-            'e': 'ku',
-            'f': 'lu',
-            'g': 'ji',
-            'h': 'ri',
-            'i': 'ki',
-            'j': 'zu',
-            'k': 'me',
-            'l': 'ta',
-            'm': 'rin',
-            'n': 'to',
-            'o': 'mo',
-            'p': 'no',
-            'q': 'ke',
-            'r': 'shi',
-            's': 'ari',
-            't': 'ci',
-            'u': 'do',
-            'v': 'ru',
-            'w': 'mei',
-            'x': 'na',
-            'y': 'fu',
-            'z': 'zi'
+            'a': 'aa',
+            'b': 'ba',
+            'c': 'ca',
+            'd': 'da',
+            'e': 'ea',
+            'f': 'fa',
+            'g': 'ga',
+            'h': 'ha',
+            'i': 'ia',
+            'j': 'ja',
+            'k': 'ka',
+            'l': 'la',
+            'm': 'ma',
+            'n': 'na',
+            'ñ': 'ña',
+            'o': 'oa',
+            'p': 'pa',
+            'q': 'qa',
+            'r': 'ra',
+            's': 'sa',
+            't': 'ta',
+            'u': 'ua',
+            'v': 'va',
+            'w': 'wa',
+            'x': 'xa',
+            'y': 'ya',
+            'z': 'za'
         }[v.toLowerCase()] || v
     }))
 }
-handler.help = ['namaninja <teks>']
+handler.help = ['nombaleator <teks>']
 handler.tags = ['fun']
-handler.command =  /^(nombrealeatorio|nama)$/i
+handler.command =  /^(nombaleator|nl)$/i
 
 export default handler
