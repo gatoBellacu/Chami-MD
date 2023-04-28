@@ -7,4 +7,5 @@ m.reply(`*「 🚀 CURIOSITY AFK 🚀 」*\n\n*⚠️ El usuario ${conn.getName(
 handler.help = ['afk [alasan]']
 handler.tags = ['main']
 handler.command = /^afk$/i
+handler.register = true
 export default handler
