@@ -8,7 +8,7 @@ let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=brunos
 let gPlay = await json.json()
 
 let mystic = await translate(`${gPlay.descripcion}`, { to: 'es', autoCorrect: true })
-if (!gPlay.titulo) return m.reply(`[ ! ] Sin resultados`)
+if (!gPlay.titulo) return m.reply(`*⚠️ Sin resultados*`)
 conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`
 *🔍  RESULTADOS DE:* ${gPlay.titulo}
 ➺🧬 Identificador: ${gPlay.id}
