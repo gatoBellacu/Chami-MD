@@ -215,7 +215,7 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*┏━━━━━━━━━━━━━━*\n*┠◆ ✨ @subject ✨*\n*┣━━━━━━━━━━━━━━*\n*┠◆ ❤️ @user*\n*┠◆ 🧩 Bienvenido/a* \n*┠◆ 🔰 Descripción del grupo:*\n\n@desc\n\n*┃*\n*┠◆ Disfruta tu estadía en el grupo 😼✨*\n*┗━━━━━━━━━━━━━━*'
+conn.welcome = ''┏━━━━━━━━━━━━\n┃──〘 *🚦 WELCOME 🚦* 〙──\n┃━━━━━━━━━━━━\n┃ *🚀 @user bienvenid@ a* \n┃ *@subject 💖*\n┃\n┃=> *En este grupo podrás*\n┃ *encontrar:*\n┠⊷ *Amistades 👻* \n┠⊷ *Desmadre 🥵* \n┠⊷ *Relajo 😾* \n┠⊷ *Enemig@s 😼❤️* :\n┠⊷ *Un Bot Curioso 😳*\n┃\n┃=> *Puedes solicitar mi lista de*\n┃ *comandos con:*\n┠⊷ *#menu*\n┃\n┃=> *Aquí tienes la descripción* \n┃ *del grupo, léela!!*\n┃\n\n@desc\n\n┃ \n┃ *❗  Disfruta de tu* \n┃ *estadía en el grupo  ❗*  \n┃\n┗━━━━━━━━━━━'
 conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*┗━━━━━━━━━━━━━━*'
 conn.spromote = '*⚠️ @user*\n*Ahora eres el nuevo admin!!*'
 conn.sdemote = '*⚠️ @user*\n*Dejaste de ser admin!!*'
