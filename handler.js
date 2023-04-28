@@ -1322,8 +1322,30 @@ export async function participantsUpdate({ id, participants, action }) {
                               (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                         
 this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '💫 Bienvenido 💫' : '😼 Adios 😼'), (action == 'add' ? '#welcomegc' : '#byegc')], ['🧩 Menu 🧩', `#menu`]], null, {mentions: this.parseMention(text)})
-                
- this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
+let buttonMessage = {
+document: imagen1, 
+fileName: `EL MEJOR BOT DE WHATSAPP⁩`, 
+mimetype: `application/${document}`,
+jpegThumbnail: imagen1,
+caption: text,
+fileLength: "99999999999999",
+mentions: [user],
+footer: groupMetadata.subject,
+buttons: buttons,
+headerType: 4,   
+contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+"mentionedJid": [user],
+"externalAdReply": {
+"showAdAttribution": false,
+"title": `𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝙲𝙸𝙾𝙽`,
+"mediaType": 2, 
+"previewType": "VIDEO",
+"thumbnail": apii.data,
+"mediaUrl": 'https://youtu.be/EaXoIuT3UQ0',
+"sourceUrl": 'https://www.xvideos.com' }}} 
+this.sendMessage(id, buttonMessage, fake)                           
                    }
                 }
             }
