@@ -3,10 +3,10 @@ import axios from 'axios'
 let handler = async (m, { conn, command, args }) => {
 const fetch = (await import('node-fetch')).default
 let text = args.join` `
-if (!text) return conn.reply(m.chat, '*⚠️ Ingrese el texto que desea buscar 🔍*', m)
+if (!text) return conn.reply(m.chat, '*⚠️ Ingrese el texto que desea buscar*', m)
 let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 let search = await googleIt(text)
-let msg = search.articles.map(({ title, url, description }) => { return `*${title}*\n_${url}_\n_${description}_` }).join('\n\n')
+let msg = search.articles.map(({ title, url, description }) => { return `*🔍 ${title}*\n_${url}_\n📍 ${description}` }).join('\n\n')
 try {
 let ss = `https://image.thum.io/get/fullpage/${url}`
 await conn.sendFile(m.chat, ss, 'error.png', url + '\n\n' + msg, m)
