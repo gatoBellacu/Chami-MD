@@ -1,5 +1,5 @@
-let handler = async (m, { conn }) => {
 global.fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: wm}}}}
+let handler = async (m, { conn }) => {
 conn.reply(m.chat, `
 *🚀 LISTA CMD 🚀*
 
