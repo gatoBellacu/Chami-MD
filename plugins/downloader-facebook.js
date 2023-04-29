@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 if (!args[0]) throw `*⚠️ Ingrese un enlace de facebook*\n\n*📍 Ejemplo:*\n${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/` 
 if (!args[0].match(/www.facebook.com|fb.watch/g)) throw `*⚠️ Ingrese un enlace de faceboo*k\n\n*📍 Ejemplo:\n${usedPrefix + command} https://fb.watch/fOTpgn6UFQ/`
 try {
-await m.reply(`*_🚀 Descargando su video, espere un momento_*\n\n*_💚 Esto puede tardar de 2 a 3 minutos dependiendo del peso del vídeo o image_*`)      
+await m.reply(`*_🚀 Descargando su video, espere un momento_*\n\n*_💚 Esto puede tardar de 2 a 3 minutos dependiendo del peso del vídeo_*`)      
 const d2ata = await facebook.v1(args[0]);
 let r2es = '';
 if (d2ata.urls && d2ata.urls.length > 0) {
