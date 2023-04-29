@@ -1421,7 +1421,7 @@ global.dfail = (type, m, conn) => {
         admin: '*⚠️️ Este comando es solo para Admins del grupo*',
         botAdmin: '*⚠️️ Para usar este comando debo ser Admin*',
         unreg: '*⚠️ Regístrese para usar esta función  Escribiendo:*\n\n• */reg nombre*\n\n*📍 Ejemplo* : */reg Azami*',
-        restrict: '*Esta característica está deshabilitada por mi creador*'
+        restrict: '*Esta característica está deshabilitada por mi actual propietario*'
     }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
     let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: 'ᴛʜᴇ ᴍʏsᴛɪᴄ - ʙᴏᴛ', thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD' }}}}, aa)
