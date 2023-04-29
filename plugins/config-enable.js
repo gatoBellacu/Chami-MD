@@ -45,9 +45,6 @@ footer: `┏━━━━━━━━━━━━━┓
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *simsimi*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *simsimi*_
 ┗━━━━━━━━━━━━━┛`,
-title: null,
-buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
-sections }
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
