@@ -24,6 +24,7 @@ global.author = '⫹⫺ WhatsApp Bot\nwa.me/59176184204'
 
 //≈≈≈≈≈≈≈≈≈≈≈≈≈≈ INFO-BOT-OWNER ≈≈≈≈≈≈≈≈≈≈≈≈≈≈
 global.wm = '𝘾𝙪𝙧𝙞𝙤𝙨𝙞𝙩𝙮𝘽𝙤𝙩-𝙈𝘿 • 𝘼𝙯𝙖𝙢𝙞'
+global.wm2 = '𝘾𝙪𝙧𝙞𝙤𝙨𝙞𝙩𝙮𝘽𝙤𝙩-𝙈𝘿 • 𝘼𝙯𝙖𝙢𝙞'
 global.igfg = 'CuriosityBot-MD 🍥🚀'
 global.wait = '*⚠️ Cargando, espere un momento*'
 global.waitt = '*⚠️ Cargando, espere un momento...*'
