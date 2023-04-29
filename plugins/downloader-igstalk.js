@@ -8,13 +8,13 @@ let res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${args[0].replace(/
 let res3 = await res2.json()
 let json = JSON.parse(JSON.stringify(res))
 let iggs = `
-▢ *Username:* ${json.username}
-▢ *Nickname:* ${json.fullname}
-▢ *Followers:* ${json.followers}
-▢ *Following:* ${json.following}
-▢ *Posting:* ${json.post}
-▢ *Link:* https://instagram.com/${json.username.replace(/^@/, '')}
-▢ *Bio:* ${json.bio}`.trim() 
+💚 *Username:* ${json.username}
+👀 *Nickname:* ${json.fullname}
+✅ *Followers:* ${json.followers}
+⚖️ *Following:* ${json.following}
+🧩 *Posting:* ${json.post}
+📚 *Link:* https://instagram.com/${json.username.replace(/^@/, '')}
+🌺 *Bio:* ${json.bio}`.trim() 
 let aa = `${res3.result.photo_profile || res.profile}`
 await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m)}
 handler.help = ['igstalk <username>']
