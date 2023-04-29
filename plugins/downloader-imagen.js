@@ -23,6 +23,8 @@ export default handler
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Minecraft*`
 const res = await googleImage(text)
+await conn.sendFile(m.chat, global.wait, md, wm, null, wm2, m)
+    conn.sendFile(m.chat, res.getRandom(), 'Menu2.jpg', `
 let image = await res.getRandom()
 let link = image
 let captionn = `🔎 *𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴:* ${text}\n🔗 *𝙻𝙸𝙽𝙺* ${link}\n🌎 *𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁:* Google`
