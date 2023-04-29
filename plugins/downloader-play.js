@@ -39,7 +39,7 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
     } Another love*`;
   try {
     const yt_play = await search(args.join(" "));
-    let texto1 = `*⌈𝖸𝖮𝖴𝖳𝖴𝖡𝖤 𝖯𝖫𝖠𝖸⌋*\n
+    let texto1 = `*●─⌈𝖸𝖮𝖴𝖳𝖴𝖡𝖤 𝖯𝖫𝖠𝖸⌋─●*\n
 ❏ 📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
 ❏ 📆 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${yt_play[0].ago}
 ❏ ⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
