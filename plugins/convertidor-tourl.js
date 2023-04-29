@@ -23,7 +23,7 @@ conn.reply(m.chat, caption, m, { contextInfo: {
           externalAdReply :{
     mediaUrl: md,
     mediaType: 2,
-    title: wm2,
+    title: wm,
     body: botdate,
     thumbnail: await(await fetch(link)).buffer(),
     sourceUrl: link
