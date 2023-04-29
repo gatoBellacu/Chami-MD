@@ -2,7 +2,7 @@ import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) throw `⚠️️ *_Que imagen busco?_*`
     const res = await googleImage(text)
-    await conn.sendCuripsity(m.chat, global.wait, md, adimagen, null, script, m)
+    await conn.sendCuripsity(m.chat, global.wait, md, wm, null, script, m)
     conn.sendFile(m.chat, res.getRandom(), 'image.jpg', `
 ✅ Resultado de : *${text}*
 `.trim(), m)
