@@ -7,7 +7,7 @@ import { instagram } from "@xct007/frieren-scraper";
 import { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
 if (!args[0]) throw `*⚠️ Ingrese un enlace de instagram*\n\n*📍 Ejemplo:*\n${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link` 
-m.reply(`*_🚀 Descargando, espere un momento_*\n\n*_💚 este proceso puede durar entre 2 y 3 minutos dependiendo del peso del vídeo_*`)
+m.reply(`*_🚀 Descargando su video, espere un momento_*\n\n*_💚 este proceso puede durar entre 2 y 3 minutos dependiendo del peso del vídeo_*`)
 try {
 const datTa = await instagram.v1(args[0])
 if (datTa.error) return m.reply(`${datTa.message}`);
