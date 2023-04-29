@@ -20,34 +20,34 @@ await new Promise(resolve => setTimeout(resolve, 10000))}
 try {  
 const AA = await savefrom(args[0])    
 let shortUrl222 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
-let txt222 = `🔗 *Url:* ${shortUrl222}`.trim()
+let txt222 = `*✅ TOMA TU VÍDEO ✅*\n\n *📍URL:*\n${shortUrl222}`.trim()
 await conn.sendFile(m.chat, AA.url[0].url, 'error.mp4', txt222, m)
 } catch {
-console.log('Error en el intento 1')  
+console.log('*❌ Fallo en el intento 1*')  
 try {    
 const resultss = await instagramGetUrl(args[0]).url_list[0]    
 let shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
-let txt2 = `🔗 *Url:* ${shortUrl2}`.trim()
+let txt2 = `*✅ TOMA TU VÍDEO ✅*\n\n *📍URL:*\n${shortUrl2}`.trim()
 await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, m)
 } catch {  
-console.log('Error en el intento 2')  
+console.log('*❌ Fallo en el intento 2*')  
 try {
 const resultssss = await instagramdl(args[0]).catch(async _ => await instagramdlv2(args[0])).catch(async _ => await instagramdlv3(args[0])).catch(async _ => await instagramdlv4(args[0]))
 let shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${r.medias[i].url}`)).text()
-let txt4 = `🔗 *Url:* ${shortUrl3}`.trim()
+let txt4 = `*✅ TOMA TU VÍDEO ✅*\n\n *📍URL:*\n${shortUrl3}`.trim()
 for (const { url } of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m)
 } catch {
-console.log('Error en el intento 3')  
+console.log('*❌ Fallo en el intento 3*')  
 try {   
 let human = await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=${lolkeysapi}&url=${args[0]}`)
 let json = await human.json()
 let videoig = json.result
 let shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
-let txt1 = `🔗 *Url:* ${shortUrl1}`.trim()
+let txt1 = `*✅ TOMA TU VÍDEO ✅*\n\n*📍URL:*\n${shortUrl1}`.trim()
 await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m)     
 } catch { 
-console.log('Error en el intento 4, sin resultados')  
-throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*`
+console.log('*❌ Fallo en el intento 4, sin resultados*')  
+throw `*⚠️ Vuelva a intentarlo*`
 }}}}}}
 handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i
 export default handler
