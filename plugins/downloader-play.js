@@ -40,15 +40,15 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
   try {
     const yt_play = await search(args.join(" "));
     let texto1 = `*●─⌈𝖸𝖮𝖴𝖳𝖴𝖡𝖤 𝖯𝖫𝖠𝖸⌋─●*\n
-❏ 📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${yt_play[0].title}
-❏ 📆 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${yt_play[0].ago}
-❏ ⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${secondString(yt_play[0].duration.seconds)}
-❏ 👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${`${MilesNumber(yt_play[0].views)}`}
-❏ 👤 *𝙰𝚄𝚃𝙾𝚁:* ${yt_play[0].author.name}
-❏ ⏯️ *𝙲𝙰𝙽𝙰𝙻:* ${yt_play[0].author.url}
-❏ 🆔 *𝙸𝙳:* ${yt_play[0].videoId}
-❏ 🪬 *𝚃𝙸𝙿𝙾:* ${yt_play[0].type}
-❏ 🔗 *𝙻𝙸𝙽𝙺:* ${yt_play[0].url}`.trim();
+❏ 🫐 *TITULO:* ${yt_play[0].title}
+❏ 📆 *PUBLICADO:* ${yt_play[0].ago}
+❏ ⌚ *DURACIÓN:* ${secondString(yt_play[0].duration.seconds)}
+❏ 👀 *VISTAS:* ${`${MilesNumber(yt_play[0].views)}`}
+❏ 👤 *AUTOR:* ${yt_play[0].author.name}
+❏ ⏯️ *CANAL:* ${yt_play[0].author.url}
+❏ 🆔 *ID:* ${yt_play[0].videoId}
+❏ 🪬 *TIPO:* ${yt_play[0].type}
+❏ 🔗 *LINK:* ${yt_play[0].url}`.trim();
     const buttons = [
       {
         buttonId: `#ytmp3 ${yt_play[0].url}`,
@@ -68,7 +68,7 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
     ];
     let buttonMessage = {
       document: { url: "https://wa.me/5219992095479" },
-      fileName: "❏ 🌿 ʀᴇᴘʀᴏᴅᴜᴄᴛᴏʀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ",
+      fileName: "🚀 ʀᴇᴘʀᴏᴅᴜᴄᴛᴏʀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ",
       mimetype: "application/vnd.ms-excel",
       caption: texto1,
       fileLength: "99999999999999",
