@@ -1,4 +1,4 @@
-import { googleImage } from '@bochilteam/scraper'
+/*import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Minecraft*`
 const res = await googleImage(text)
@@ -9,4 +9,4 @@ conn.sendButton(m.chat, captionn, author, link, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|imagen)$/i
-export default handler
+export default handler*\
