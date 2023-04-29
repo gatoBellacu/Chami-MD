@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 const notStickerMessage = `*⚠️ Responda al sticker que desea convertir en imagen usando el comando ${usedPrefix + command}*`
 if (!m.quoted) throw notStickerMessage
 const q = m.quoted || m
-let mime = q.mediaType || '*Toma tu imagen*'
+let mime = q.mediaType || ''
 if (!/sticker/.test(mime)) throw notStickerMessage
 let media = await q.download()
 let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
