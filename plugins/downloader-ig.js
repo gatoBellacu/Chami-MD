@@ -7,13 +7,13 @@ import { instagram } from "@xct007/frieren-scraper";
 import { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
 if (!args[0]) throw `*⚠️ Ingrese un enlace de instagram*\n\n*📍 Ejemplo:*\n${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link` 
-m.reply(`*[❗] ᴅᴇsᴄᴀʀɢᴀɴᴅᴏ sᴜ ᴠɪᴅᴇᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ ᴘᴏʀ ғᴀᴠᴏʀ, ᴇsᴛᴇ ᴘʀᴏᴄᴇsᴏ ᴘᴜᴇᴅᴇ ᴅᴜʀᴀʀ ᴇɴᴛʀᴇ 2 ʏ 10 ᴍɪɴᴜᴛᴏs ᴅᴇᴘᴇɴᴅɪᴇɴᴅᴏ ᴅᴇ ʟᴀ ᴅᴜʀᴀᴄɪᴏɴ ᴅᴇʟ ᴠɪᴅᴇᴏ...*`)
+m.reply(`*_🚀 Descargando, espere un momento_*\n\n*_💚 este proceso puede durar entre 2 y 3 minutos dependiendo del peso del vídeo_*`)
 try {
 const datTa = await instagram.v1(args[0])
 if (datTa.error) return m.reply(`${datTa.message}`);
 for (let urRRl of datTa) {
 let shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${urRRl.url}`)).text()    
-let tXXxt = `🔗 *Url:* ${shortUrRRl}`.trim()    
+let tXXxt = `*✅ TOMA TU VÍDEO ✅*\n\n *📍URL:*\n${shortUrRRl}`.trim()    
 conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m)    
 await new Promise(resolve => setTimeout(resolve, 10000))}
 } catch {  
