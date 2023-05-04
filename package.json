@@ -1,6 +1,6 @@
 { 
     "name": "CuriosityBot-MD",
-    "version": "2.2.2",
+    "version": "1.0.0",
     "description": "El mejor bot de WhatsApp",
     "main": "index.js",
     "type": "module",
@@ -26,16 +26,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/AzamiWithLogic/CuriosityBotV1-MD",
+    "homepage": "https://github.com/Azami19/CuriosityBot-MD1",
     "author": {
         "name": "Azami"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AzamiWithLogic/CuriosityBotV1-MD.git"
+        "url": "git+https://github.com/Azami19/CuriosityBot-MD1.git"
     },
     "bugs": {
-        "url": "https://github.com/AzamiWithLogic/CuriosityBotV1-MD/issues"
+        "url": "https://github.com/Azami19/CuriosityBot-MD1/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
