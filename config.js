@@ -3,12 +3,12 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['59894808483', 'Creador', true]
-  ['5492266613038']]
-//Numeros de owner 
+  ['59894808483', 'creador', true],
+  ['5492266613038']
+] //Numeros de owner 
 
-global.mods = ['573125484672'] 
-global.prems = ['50489079501', '5219631769130', '573125484672']
+global.mods = [] 
+global.prems = []
 global.APIs = { // API Prefix
   // name: 'https://website'
   xteam: 'https://api.xteam.xyz', 
@@ -46,8 +46,6 @@ global.informacion = iig
 global.fg = '「❌」 𝐅𝐀𝐋𝐋𝐎 「❌」\n\n'
 global.fallo = fg
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
-
-
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = 'CURIOSITY-BOT-MD : AZAMI'
