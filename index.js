@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('CURIOSITY\nBOT\n-MD', {
+say('DyLux -  FG98', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`'${name}' By Azami`, {
+say(`'${name}' By @fg98._`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -59,7 +59,8 @@ function start(file) {
         break
     }
   })
-  p.on('exit', (_, code) => {
+  //---
+ p.on('exit', (_, code) => {
     isRunning = false
     console.error('❎ Ocurrió un error inesperado:', code)
     if (code === 0) return
@@ -68,6 +69,7 @@ function start(file) {
       start(file)
     })
   })
+  //----
   let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
   if (!opts['test'])
     if (!rl.listenerCount()) rl.on('line', line => {

@@ -38,7 +38,7 @@ global.timestamp = {
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎z/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.,\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 // global.opts['db'] = process.env['db']
 
@@ -78,14 +78,14 @@ loadDatabase()
 //-- SESSION
 //global.authFile = `${opts._[0] || 'session'}.data.json`
 //const { state, saveState } = store.useSingleFileAuthState(global.authFile)
-global.authFile = `SitySession`
+global.authFile = `sessions`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['CuriosityBot-MD','Firefox','1.0.0']
+  browser: ['dylux-bot','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -108,7 +108,7 @@ async function clearTmp() {
   const tmp = [tmpdir(), join(__dirname, './tmp')]
   const filename = []
   tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-  
+
   //---
   return filename.map(file => {
     const stats = statSync(file)
@@ -163,8 +163,8 @@ global.reloadHandler = async function (restatConn) {
 
   conn.welcome = 'Hola, @user\nBienvenido a @group'
   conn.bye = 'adiós @user'
-  conn.spromote = '@user ahora a admin'
-  conn.sdemote = '@user ya no es admin'
+  conn.spromote = '@user promovió a admin'
+  conn.sdemote = '@user degradado'
   conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
   conn.sSubject = 'El nombre del grupo ha sido cambiado a \n@group'
   conn.sIcon = 'El icono del grupo ha sido cambiado'
