@@ -7,8 +7,8 @@ global.owner = [
   ['5492266613038']]
 //Numeros de owner 
 
-global.mods = ['0'] 
-global.prems = ['0']
+global.mods = [] 
+global.prems = []
 global.APIs = { // API Prefix
   // name: 'https://website'
   xteam: 'https://api.xteam.xyz', 
@@ -25,40 +25,10 @@ global.APIKeys = { // APIKey Here
 
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
-global.packname = '𝐂𝐔𝐑𝐈𝐎𝐒𝐈𝐓𝐘-𝐁𝐎𝐓 🍧'
-global.author = '𝑨𝒛𝒂𝒎𝒊 👑'
+global.packname = ''
+global.author = 'CuriosityBot'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
-
-//✡︎ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ✡︎
-
-global.vs = 'V1'
-global.version = vs
-
-global.cb = '*® CURIOSITY-BOT-MD*'
-global.curiositybot = cb
-
-global.yt = 'https://www.youtube.com/@Azami_593'
-global.youtube = yt
-
-global.ig = 'https://instagram.com/azami_593'
-global.gatadiosig = ig
-
-global.md = 'https://github.com/AzamiWithLogic/CuriosityBotV1-MD'
-global.gatabot = md
-
-global.nna = 'https://chat.whatsapp.com/DdEtddrUJYZ0LUFi2GZvVe'
-global.nnagrupo = nna //UPDATE CURIOSITYBOT
-global.nna2 = 'DdEtddrUJYZ0LUFi2GZvVe'
-
-global.nn = 'https://chat.whatsapp.com/Jt76tVg51bfJNLwHwtlmGU'
-global.nngrupo = nn //Grupo 1
-
-global.nnn = 'https://chat.whatsapp.com/Dx7SpgNO13fGvgCSuLjwpP'
-global.nnngrupo = nnn //Grupo 2
-
-global.nnnt = 'https://chat.whatsapp.com/LHkRugxY5jL3mhVSZJMjIw'
-global.nnntgrupo = nnnt //Grupo 3
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ツ
 
@@ -75,17 +45,6 @@ global.informacion = iig
 
 global.fg = '「❌」 𝐅𝐀𝐋𝐋𝐎 「❌」\n\n'
 global.fallo = fg
-
-global.mg = '「❗️」 𝐋𝐎 𝐔𝐒𝐎 𝐌𝐀𝐋 「❗️」\n\n'
-global.mal = mg
-
-global.eeg = '「💌」  𝐑𝐄𝐏𝐎𝐑𝐓𝐄 「💌」\n\n'
-global.envio = eeg
-
-global.eg = '「🔰」 𝐄𝐗𝐈𝐓𝐎 「🔰」\n\n'
-global.exito = eg
-
-//𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
