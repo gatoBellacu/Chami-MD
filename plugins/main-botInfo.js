@@ -75,3 +75,7 @@ handler.tags = ['main']
 handler.command = ['info', 'infobot', 'botinfo']
 
 export default handler
+
+const more = String.fromCharCode(8206)
+
+const readMore = more.repeat(4001)
