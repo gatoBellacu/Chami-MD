@@ -44,6 +44,7 @@ global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.pre
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.fgig = '® Curiosity*\n' 
+global.nameowner = '© Azami'
 global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
 global.fgsc = 'https://github.com/FG98F/dylux-fg' 
 global.fgyt = 'https://youtube.com/fg98f'
