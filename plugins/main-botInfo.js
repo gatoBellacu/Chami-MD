@@ -45,17 +45,16 @@ let infobt = `
 ≡ *INFO BOT*
   
 *ESTADO*
-▢ *${groupsIn.length}* Chats de grupo
-▢ *${groupsIn.length}* Gropos unidos
-▢ *${groupsIn.length - groupsIn.length}* Grupos abandonados
-▢ *${chats.length - groupsIn.length}* Chats privados
-▢ *${chats.length}* Total Chats
+● *${groupsIn.length}* Chats de grupo
+● *${groupsIn.length}* Gropos unidos
+● *${groupsIn.length - groupsIn.length}* Grupos abandonados
+● *${chats.length - groupsIn.length}* Chats privados
+● *${chats.length}* Total Chats
 
 *≡ OWNER*
-  *azami
-▢ Instagram :
-▢ GitHub :
-  • https://github.com
+azami
+● GitHub :
+  • ${fgsc}
   
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
