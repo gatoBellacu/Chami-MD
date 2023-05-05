@@ -45,16 +45,15 @@ let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
 ┴│☂︎ *Nombre Bot:* ${wm}
-⬡│☂︎ *owner: azami
+⬡│☂︎ *Owner:* azami
 ⬡│☂︎ *Prefix:* #
 ⬡│☂︎ *Librería:* Node.Js
 ⬡│☂︎︎ *Usuarios:* ${Object.keys(global.db.data.users).length} 
-⬡│☂︎ *${groupsIn.length}* Chats de grupo
-⬡│☂︎ *${groupsIn.length}* Gropos unidos
-⬡│☂︎ *${groupsIn.length - groupsIn.length}* Grupos abandonados
-⬡│☂︎ *${chats.length - groupsIn.length}* Chats privados
-⬡│☂︎ *${chats.length}* Total Chats
-⬡│☂ GitHub : ${fgsc}
+⬡│☂︎ *Chats de grupo:* ${groupsIn.length}
+⬡│☂︎ *Gropos unidos:* ${groupsIn.length}
+⬡│☂︎ *Grupos abandonados:* ${groupsIn.length - groupsIn.length}
+⬡│☂︎ *Chats privados:* *${chats.length - groupsIn.length}
+⬡│☂︎ *Total Chats:* ${chats.length}
 │╰────────────────···
 ╰──────────═┅═─────
   
