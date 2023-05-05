@@ -27,11 +27,23 @@ let tags = {
   'advanced': 'AVANZADO',
 }
 const defaultMenu = {
-  before: `╔═════ ▓▓ ࿇ ▓▓ ═════╗
-║👋🏻 _Hola_ *%name*
-╚═════ ▓▓ ࿇ ▓▓ ═════╝
-  ≡ *LISTA DE MENUS* %readmore
-`.trimStart(),
+  before: `╔═══❖•ೋ° °ೋ•❖═══╗
+║👋🏻 Hola *%name*
+║❂ Base de datos: %rtotalreg a %totalreg
+║❂ Fecha: %week , %date
+║❂ hora: %time
+║❂ Tiempo activo: %uptime
+║❂ Version del bot: %version
+║❂ Dueño del bot: azami
+║❂ Cliente: %name
+║❂ Nivel: %level (%exp / %maxexp)
+║❂ Rol: %role
+║❂ XP: %totalexp
+╚═══❖•ೋ° °ೋ•❖═══╝
+%readmore
+~|-------------------------|~
+*[_>] _COMANDOS_  ☷*
+~|-------------------------|~\n`.trimStart(),
   header: '╔═✪「 *%category*  」',
   body: '╠ %cmd %isdiamond %isPremium',
   footer: '╚═════════════✪\n',
@@ -41,7 +53,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-    let { exp, diamond, level, role } = global.db.data.users[m.sender]
+    let { exp, diamond, limit, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
@@ -143,9 +155,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m)*/  
     conn.sendButton(m.chat, text.trim(), 'CURIOSITY-BOT-MD : AZAMI', pp, [
-      ['DONAR', `${_p}donate`],
-      ['INFO', `${_p}botinfo`],
-      ['GRUPOS', `${_p}gpdylux`]
+      ['[ DONAR ]', `${_p}donate`],
+      ['[ INFO ]', `${_p}botinfo`],
+      ['[ GRUPOS ]', `${_p}gpdylux`]
     ],m, rpl)
   
     m.react('🎈') 
