@@ -17,6 +17,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
         await conn.reply(m.chat, `*⚠️ ENLACE DETECTADO ⚠️*
 
 *🔰 El antilink esta activo 🔰*
+
 *😼 @${m.sender.split('@')[0]} rompiste las reglas del grupo serás expulsado del grupo* ${isBotAdmin ? '' : '\n\n*Te salvaste de mi maldito, no soy admin no te puedo expulsar 😆*'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })
