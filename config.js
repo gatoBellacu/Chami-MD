@@ -32,7 +32,7 @@ global.author = '⫹⫺ Whatsapp BOT\nwa.me/59176184204'
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = 'curiosity'
+global.wm = 'CuriosityBot-MD'
 global.igfg = 'CURIOSITY'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
