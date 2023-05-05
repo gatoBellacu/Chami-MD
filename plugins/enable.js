@@ -16,6 +16,7 @@ const sections = [
 	{title: "🗣️ | ChatBot", rowId: `${usedPrefix + command} chatbot`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
 	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
+	{title: "● | MODOJADIBOT", rowId: `${usedPrefix + command} modejadibot`},
 	{title: "🛡️ | Restrict", rowId: `${usedPrefix + command} restrict`},
 	{title: "💬 | OnlyPv", rowId: `${usedPrefix + command} onlydm`},
 	{title: "👥 | OnlyGp", rowId: `${usedPrefix + command} onlygp`}
@@ -165,6 +166,15 @@ const listMessage = {
       global.opts['pconly'] = isEnable
       break
       
+      case 'modejadibot':
+isAll = true
+if (!isROwner) {
+global.dfail('rowner', m, conn)
+throw false
+}
+bot.modejadibot = isEnable
+break     
+
     case 'gponly':
     case 'onlygp':
     case 'grouponly':
