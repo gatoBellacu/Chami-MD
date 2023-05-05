@@ -42,19 +42,22 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let speed = neww - old
   
 let infobt = `
-≡ *INFO BOT*
-  
-*ESTADO*
-● *${groupsIn.length}* Chats de grupo
-● *${groupsIn.length}* Gropos unidos
-● *${groupsIn.length - groupsIn.length}* Grupos abandonados
-● *${chats.length - groupsIn.length}* Chats privados
-● *${chats.length}* Total Chats
-
-*≡ OWNER*
-azami
-● GitHub :
-  • ${fgsc}
+╭─────═[ INFO BOT ]═─────⋆
+│╭────────────────···
+┴│☂︎ *Nombre Bot:* ${wm}
+⬡│☂︎ *owner: azami
+⬡│☂︎ *Prefix:* #
+⬡│☂︎ *Librería:* Node.Js
+⬡│☂︎ *Tiempo:* ${uptime}
+⬡│☂︎︎ *Usuarios:* ${Object.keys(global.db.data.users).length} 
+⬡│☂︎ *${groupsIn.length}* Chats de grupo
+⬡│☂︎ *${groupsIn.length}* Gropos unidos
+⬡│☂︎ *${groupsIn.length - groupsIn.length}* Grupos abandonados
+⬡│☂︎ *${chats.length - groupsIn.length}* Chats privados
+⬡│☂︎ *${chats.length}* Total Chats
+⬡│☂ GitHub : ${fgsc}
+│╰────────────────···
+╰──────────═┅═─────
   
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
@@ -64,8 +67,8 @@ azami
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
 conn.sendButton(m.chat, infobt, fgig, null, [
-  ['ꨄ︎ Apoyar', `${usedPrefix}donate`],
-   ['⌬ Grupos', `${usedPrefix}gpdylux`]
+  ['● APOYAR', `${usedPrefix}donate`],
+   ['● GRUPOS', `${usedPrefix}gpdylux`]
  ], m)
 
 }
