@@ -30,22 +30,6 @@ global.author = '⫹⫺ Whatsapp BOT\nwa.me/59176184204'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
 
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ツ
-
-//⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
-
-global.rg = '「✅」 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎 「✅」\n\n'
-global.resultado = rg
-
-global.ag = '「⚠️」 𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀 「⚠️」\n\n'
-global.advertencia = ag
-
-global.iig = '「❕」 𝐈𝐍𝐅𝐎𝐌𝐀𝐂𝐈𝐎𝐍 「❕」\n\n'
-global.informacion = iig
-
-global.fg = '「❌」 𝐅𝐀𝐋𝐋𝐎 「❌」\n\n'
-global.fallo = fg
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = 'curiosity'
