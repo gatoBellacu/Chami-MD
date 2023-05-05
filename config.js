@@ -25,8 +25,8 @@ global.APIKeys = { // APIKey Here
 
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
-global.packname = ''
-global.author = 'CuriosityBot'
+global.packname = '🔰 CuriosityBot-MD 🔰'
+global.author = '☘︎ WhatsApp Bot\nwa.me/591'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
 
@@ -49,7 +49,7 @@ global.fallo = fg
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = 'curiosity'
-global.igfg = 'CURIOSITY '
+global.igfg = 'CURIOSITY'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
