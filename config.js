@@ -26,7 +26,7 @@ global.APIKeys = { // APIKey Here
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
 global.packname = ''
-global.author = '⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`'
+global.author = '⫹⫺ Whatsapp BOT\nwa.me/${nomorbot}'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
 
