@@ -13,7 +13,7 @@ export async function before(m, { conn }) {
         m.reply(`
 *☰ SUBISTE DE NIVEL 🍧*
 
- *${before}* ‣  *${user.level}*
+ *[ ${before} ]* ‣  *[ ${user.level} ]*
  Rango : *${user.role}*
  
  _para desactivar escribe_
