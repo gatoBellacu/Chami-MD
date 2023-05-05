@@ -161,8 +161,8 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '┏─━─━─━∞◆∞━─━─━─┓\n║       WELCOME\n║——————«•»——————\n║ Hola, @user\n║——————«•»——————\n║Bienvenido a  @subject\n║——————«•»——————\n║descripción:\n║@desc\N┗◛◛◛◛◛◛◛◛◛◛◛◛┛'
-  conn.bye = 'adiós @user'
+  conn.welcome = '┏─━─━─━∞◆∞━─━─━─┓\n║       WELCOME\n║——————«•»——————\n║ Hola, @user\n║——————«•»——————\n║Bienvenido a  @subject\n║——————«•»——————\n║descripción:\n║@desc\n┗◛◛◛◛◛◛◛◛◛◛◛◛┛'
+  conn.bye = '┏─━─━─━∞◆∞━─━─━─┓\n║adiós @user\n┗◛◛◛◛◛◛◛◛◛◛◛◛┛'
   conn.spromote = '@user promovió a admin'
   conn.sdemote = '@user degradado'
   conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
@@ -269,11 +269,11 @@ async function _quickTest() {
   // require('./lib/sticker').support = s
   Object.freeze(global.support)
 
-  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
-  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
-  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+  if (!s.ffmpeg) conn.logger.warn('\n\n[ IMPORTANTE ] : Por favor instalé el paquete ffmpeg para el envío de archivos multimedia\n[_>] (pkg install ffmpeg)\n\n')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no estén animadas sin libwebp en ffmpeg\n[_>] (pkg install libwebp) ó (--enable-ibwebp while compiling ffmpeg)\n\n')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no funcionen sin imagemagick si libwebp y ffmpeg no esten instalados\n[_>] (pkg install imagemagick)\n\n')
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Quick Test Done'))
+  .then(() => conn.logger.info('\n\n[_>] Prueba rápida realizada ✓\n'))
   .catch(console.error)
