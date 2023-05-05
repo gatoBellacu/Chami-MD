@@ -25,7 +25,7 @@ global.APIKeys = { // APIKey Here
 
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
-global.packname = '® Curiosity*\n'
+global.packname = '® CuriosityBot-MD\n'
 global.author = 'CuriosityBot'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
