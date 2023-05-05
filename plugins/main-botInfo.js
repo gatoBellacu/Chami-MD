@@ -52,7 +52,7 @@ let infobt = `
 ⬡│☂︎ *Chats de grupo:* ${groupsIn.length}
 ⬡│☂︎ *Gropos unidos:* ${groupsIn.length}
 ⬡│☂︎ *Grupos abandonados:* ${groupsIn.length - groupsIn.length}
-⬡│☂︎ *Chats privados:* *${chats.length - groupsIn.length}
+⬡│☂︎ *Chats privados:* ${chats.length - groupsIn.length}
 ⬡│☂︎ *Total Chats:* ${chats.length}
 │╰────────────────···
 ╰──────────═┅═─────
