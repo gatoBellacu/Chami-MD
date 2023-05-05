@@ -4,7 +4,7 @@
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
-import { en, es } from './lib/lenguajes/nexo.js'
+//import { en, es } from './lib/lenguajes/nexo.js'
 
 //Metodo para cargar archivos con ESModules en Node.js
 import { createRequire } from 'module'
