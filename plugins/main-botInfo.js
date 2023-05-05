@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Nombre Bot:* ${wm}
+┴│☂︎ *Nombre Bot:* ${wm} %readmore
 ⬡│☂︎ *Owner:* azami
 ⬡│☂︎ *Prefix:* #
 ⬡│☂︎ *Librería:* Node.Js
