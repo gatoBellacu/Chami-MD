@@ -25,7 +25,7 @@ global.APIKeys = { // APIKey Here
 
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
-global.packname = ''
+global.packname = 'CuriosityBot-MD 🍧'
 global.author = '⫹⫺ Whatsapp BOT\nwa.me/591'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
