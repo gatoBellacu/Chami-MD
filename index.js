@@ -24,7 +24,7 @@ say('CURIOSITY\nBOT\n-MD', {
 say(`'${name}' By Azami`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['red', 'green']
 })
 
 var isRunning = false
