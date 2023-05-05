@@ -40,11 +40,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   
   let neww = performance.now()
   let speed = neww - old
-  
+  m.react('☔') 
 let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Nombre Bot:* ${wm} %readmore
+┴│☂︎ *Nombre Bot:* ${wm}
 ⬡│☂︎ *Owner:* azami
 ⬡│☂︎ *Prefix:* #
 ⬡│☂︎ *Librería:* Node.Js
@@ -56,7 +56,7 @@ let infobt = `
 ⬡│☂︎ *Total Chats:* ${chats.length}
 │╰────────────────···
 ╰──────────═┅═─────
-  
+%readmore
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
@@ -75,4 +75,3 @@ handler.tags = ['main']
 handler.command = ['info', 'infobot', 'botinfo']
 
 export default handler
-
