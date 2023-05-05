@@ -7,7 +7,7 @@ export async function all(m) {
         
  👋🏻 Hola @${m.sender.split('@')[0]}
   *puedes invitar el bot para que se una a un grupo más info click en el botón*
-`.trim(), fgig, null, [['✅ INVITAR ', '.buyprem']] , m, { mentions: [m.sender] })
+`.trim(), wm, null, [['✅ Invitar', '.buyprem']] , m, { mentions: [m.sender] })
     m.react('🔰')
   } 
   
