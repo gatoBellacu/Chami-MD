@@ -6,6 +6,6 @@ let msg = `
  `
 conn.sendPayment(m.chat, '99999999', msg, m)
 }
-handler.command = handler.help = ['gruposofc']
+handler.command = handler.help = ['grupos']
 handler.tags = ['info']
 export default handler
