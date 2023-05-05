@@ -48,7 +48,6 @@ let infobt = `
 ⬡│☂︎ *owner: azami
 ⬡│☂︎ *Prefix:* #
 ⬡│☂︎ *Librería:* Node.Js
-⬡│☂︎ *Tiempo:* ${uptime}
 ⬡│☂︎︎ *Usuarios:* ${Object.keys(global.db.data.users).length} 
 ⬡│☂︎ *${groupsIn.length}* Chats de grupo
 ⬡│☂︎ *${groupsIn.length}* Gropos unidos
@@ -77,3 +76,4 @@ handler.tags = ['main']
 handler.command = ['info', 'infobot', 'botinfo']
 
 export default handler
+
