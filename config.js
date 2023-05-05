@@ -26,7 +26,7 @@ global.APIKeys = { // APIKey Here
 //❑ ━━━━━.⋅ Sticker WM ⋅.━━━━ ❐
 
 global.packname = 'CuriosityBot-MD 🍧'
-global.author = '⫹⫺ Whatsapp BOT\nwa.me/591'
+global.author = '⫹⫺ Whatsapp BOT\nwa.me/59176184204'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
 
@@ -60,7 +60,6 @@ global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.pre
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.fgig = '® Curiosity*\n' 
-global.nomorbot = '591'
 global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
 global.fgsc = 'https://github.com/FG98F/dylux-fg' 
 global.fgyt = 'https://youtube.com/fg98f'
