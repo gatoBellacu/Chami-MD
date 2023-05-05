@@ -27,7 +27,7 @@ if (process.send) { process.send('uptime')
 _muptime = await new Promise(resolve => { process.once('message', resolve) 
 setTimeout(resolve, 1000) }) * 1000}
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let pp = './media/menus/Menu1.jpg'
+let pp = './src/nuevobot.jpg'
 let uptime = clockString(_uptime)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let muptime = clockString(_muptime)
@@ -65,22 +65,21 @@ let neww = performance.now()
 let speed = neww - old
 let info = `┏━━━━❰･𝐄𝐒𝐓𝐀𝐃𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓･❱━━━━
 ┃
-┃웃 Hola ${taguser}* este es el estado del BOT
+┃웃 Hola ${taguser}* 
 ┃
 ┃╍╍╍╍╍╍╍╍╍╍╍╍╍
 ┃
-┃➢ 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 : *${speed}* ms
-┃➢ 𝚁𝙰𝙼 𝙳𝙴𝙻 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁:  ${format(totalmem() - freemem())} / ${format(totalmem())}
-┃➢ 𝙿𝙻𝙰𝚃𝙰𝙵𝙾𝚁𝙼𝙰 : ${os.platform()}
-┃➢ 𝙰𝙲𝚃𝙸𝚅𝙾:  ${uptime}
-┃➢ 𝙼𝙾𝙳𝙾: publico
-┃➢ 𝙻𝙸𝙱𝚁𝙴𝚁𝙸𝙰: Bailey MD
+┃➢  𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳 : *${speed}* ms
+┃➢  𝚁𝙰𝙼 𝙳𝙴𝙻 𝚂𝙴𝚁𝚅𝙸𝙳𝙾𝚁:  ${format(totalmem() - freemem())} / ${format(totalmem())}
+┃➢  𝙿𝙻𝙰𝚃𝙰𝙵𝙾𝚁𝙼𝙰 : ${os.platform()}
+┃➢  𝙰𝙲𝚃𝙸𝚅𝙾:  ${uptime}
+┃➢  𝙼𝙾𝙳𝙾: ${global.opts['self'] ? '𝙿𝚁𝙸𝚅𝙰𝙳𝙾 - 𝙿𝚁𝙸𝚅𝙰𝚃𝙴' : '𝙿𝚄𝙱𝙻𝙸𝙲𝙾 - 𝙿𝚄𝙱𝙻𝙸𝙲'}
 ┃➢  𝙶𝚁𝚄𝙿𝙾𝚂 𝙱𝙰𝙽𝙴𝙰𝙳𝙾𝚂: ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ┃➢ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙱𝙰𝙽𝙴𝙰𝙳𝙾𝚂: ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃➢ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝚃𝙾𝚃𝙰𝙻𝙴𝚂: ${Object.keys(global.db.data.users).length} 
 ┃
 ┗━━━━━━━━━━━━━`
-conn.sendButton(m.chat, info, `bot`, pp, [['MENU', '.menu']], fkontak, m)
+conn.sendButton(m.chat, info, `${wm}`, pp, [['MENU', '.menu']], fkontak, m)
 
 /*let estado =`
 ╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
