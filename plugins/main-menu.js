@@ -29,18 +29,12 @@ let tags = {
 const defaultMenu = {
   before: `╔═════ ▓▓ ࿇ ▓▓ ═════╗
 ║👋🏻 _Hola_ *%name*
-║🧿 Nivel : *%level* 
-║👥 Usuarios : %totalreg
-║📈 Tiempo activo : %muptime
-║ %readmore
-║Ⓟ = Premium
-║ⓓ = Diamantes
 ╚═════ ▓▓ ࿇ ▓▓ ═════╝
-  ≡ *LISTA DE MENUS*
+  ≡ *LISTA DE MENUS* %readmore
 `.trimStart(),
-  header: '╔╦══• *%category* •══╦╗',
-  body: '║ %cmd %isdiamond %isPremium',
-  footer: '╚╩══• •✠•❀•✠ • •══╩╝\n',
+  header: '╔═✪「 *%category*  」',
+  body: '╠ %cmd %isdiamond %isPremium',
+  footer: '╚═════════════✪\n',
   after: `
 `,
 }
