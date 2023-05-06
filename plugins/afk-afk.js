@@ -10,6 +10,7 @@ Ahora estas afk hasta que envies un mensaje
 ▢ *Usuario:* ${conn.getName(m.sender)} 
 ▢ *Razon:* ${text ? text : ''}
   `)
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🍧 CuriosityBot-MD 🍧*', 'status@broadcast')
 }
 handler.help = ['afk <razon>']
 handler.tags = ['fun']
