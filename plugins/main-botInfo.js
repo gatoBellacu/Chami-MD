@@ -40,7 +40,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   
   let neww = performance.now()
   let speed = neww - old
-m.react('❕') 
+  m.react('❕') 
 let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
@@ -56,7 +56,7 @@ let infobt = `
 ⬡│☂︎ *Total Chats:* ${chats.length}
 │╰────────────────···
 ╰──────────═┅═─────
-%readmore
+
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
