@@ -17,6 +17,6 @@ export async function before(m, { conn }) {
  🔰 Rango : *${user.role}*
  
  _⚠️ para desactivar escribe_
-_*/off autolevelup*_ׂ`, null, [['✳️MENU', `/menu`]], fkontak, m)
+_*/off autolevelup*_ׂ`, null, [['🍥 MENU 🍥', `/menu`]], fkontak, m)
     }
 }
