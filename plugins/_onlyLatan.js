@@ -5,7 +5,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner } ) {
 	
 	if (!m.isGroup) return !1
 	let chat = global.db.data.chats[m.chat]
-	let te = `⚠️ Anti arabes esta activo para evitar spam`
+	let te = `*⚠️ Anti arabes esta activo para evitar spam*`
 	if (isBotAdmin && chat.onlyLatinos && !isAdmin && !isOwner) {
    if (m.sender.startsWith('212')) {
   //global.db.data.users[m.sender].banned = true
