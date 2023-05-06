@@ -40,6 +40,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   
   let neww = performance.now()
   let speed = neww - old
+m.react('❕') 
 let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
