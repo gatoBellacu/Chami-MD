@@ -64,7 +64,7 @@ let infobt = `
 *≡  NodeJS Uso de memoria*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
-conn.sendButton(m.chat, infobt, fgig, null, [
+conn.sendButton(m.chat, infobt, wm null, [
   ['● APOYAR', `${usedPrefix}donate`],
    ['● GRUPOS', `${usedPrefix}gpdylux`]
  ], m)
