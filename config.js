@@ -40,7 +40,7 @@ global.igfg = 'CURIOSITY'
 global.nomorown = '5214531106422'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
-global.fgig = '® Curiosity*\n' 
+global.fgig = '© Curiosity' 
 global.dygp = 'https://chat.whatsapp.com/ErnXC51D9lWJtRWOD4stR2'
 global.fgsc = 'https://github.com/Azami19/CuriosityBot-MD1' 
 global.fgyt = 'https://youtube.com'
