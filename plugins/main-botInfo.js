@@ -1,4 +1,4 @@
-import { cpus as _cpus, totalmem, freemem } from 'os'
+/*import { cpus as _cpus, totalmem, freemem } from 'os'
 import util from 'util'
 import { performance } from 'perf_hooks'
 import { sizeFormatter } from 'human-readable'
@@ -83,5 +83,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')*/
 }
