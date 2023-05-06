@@ -1,4 +1,4 @@
-/*import { cpus as _cpus, totalmem, freemem } from 'os'
+import { cpus as _cpus, totalmem, freemem } from 'os'
 import util from 'util'
 import { performance } from 'perf_hooks'
 import { sizeFormatter } from 'human-readable'
@@ -36,11 +36,13 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       irq: 0
     }
   })
+  let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   let old = performance.now()
   
   let neww = performance.now()
   let speed = neww - old
-  m.react('❕') 
+  let pp = './src/fg_logo.jpg'
+  m.react('☔') 
 let infobt = `
 ╭─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
@@ -55,20 +57,19 @@ let infobt = `
 ⬡│☂︎ *Chats privados:* ${chats.length - groupsIn.length}
 ⬡│☂︎ *Total Chats:* ${chats.length}
 │╰────────────────···
-╰──────────═┅═─────
-
- *≡ S E R V E R*
+╰──────────═┅═─────`
+conn.sendButton(m.chat, infobt, `*≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
 
 *≡  NodeJS Uso de memoria*
-${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
-`
-conn.sendButton(m.chat, infobt, wm null, [
+${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}`, pp, [
+   ['● APOYAR', `${usedPrefix}donate`],
+   ['● GRUPOS', `${usedPrefix}gpdylux`]], fkontak, m)
+/*conn.sendButton(m.chat, infobt, fgig, null, [
   ['● APOYAR', `${usedPrefix}donate`],
    ['● GRUPOS', `${usedPrefix}gpdylux`]
- ], m)
-
+ ], m)*/
 }
 handler.help = ['info']
 handler.tags = ['main']
@@ -78,10 +79,3 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-
-function clockString(ms) {
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')*/
-}
