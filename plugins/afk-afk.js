@@ -1,4 +1,4 @@
-//import db from '../lib/database.js'
+/*//import db from '../lib/database.js'
 
 let handler = async (m, { text, conn }) => {
     let user = global.db.data.users[m.sender]
@@ -15,4 +15,4 @@ handler.command = ['afk']
 handler.group = true
 handler.register = true
 
-export default handler
+export default handler*/
