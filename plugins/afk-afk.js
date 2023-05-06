@@ -9,8 +9,6 @@ let handler = async (m, { text, conn }) => {
 🔰 *Usuario:* ${conn.getName(m.sender)} 
 📍 *Razon:* ${text ? text : ''}
   `)
-conn.fakeReply(m.chat, '*⚠️ Si mandas un mensaje dejaras de estar afk automáticamente*', '0@s.whatsapp.net', '*🍧 CuriosityBot-MD 🍧*', 'status@broadcast')
-}
 handler.help = ['afk <razon>']
 handler.tags = ['fun']
 handler.command = ['afk']
