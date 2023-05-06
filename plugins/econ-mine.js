@@ -2,12 +2,12 @@
 
 let handler = async (m, { conn }) => {
 
-  let hasil = Math.floor(Math.random() * 5000)
+  let hasil = Math.floor(Math.random() * 1000)
   let time = global.db.data.users[m.sender].lastmiming + 14400000
   if (new Date - global.db.data.users[m.sender].lastmiming < 14400000) throw `⏳ _Espera_ *${msToTime(time - new Date())}* _para regresar a la mina_`
   global.db.data.users[m.sender].exp += hasil
   m.reply(`
-🎉 Genial! minaste *${hasil} XP*`)
+conn.fakeReply(m.chat, '*⛏️ Genial! Minaste ${hasil}*', '0@s.whatsapp.net', '*🍧 CuriosityBot-MD 🍧*', 'status@broadcast')`)
   global.db.data.users[m.sender].lastmiming = new Date * 1
 }
 handler.help = ['mine']
