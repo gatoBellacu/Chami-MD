@@ -35,6 +35,7 @@ global.author = 'CuriosityBot'
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = 'CuriosityBot-MD'
+global.nombreowner = 'Azami'
 global.igfg = 'CURIOSITY'
 global.nomorown = '5214531106422'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
