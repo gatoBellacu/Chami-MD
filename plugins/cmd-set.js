@@ -1,5 +1,3 @@
-//import db from '../lib/database.js'
-
 let handler = async (m, { text, usedPrefix, command }) => {
     global.db.data.sticker = global.db.data.sticker || {}
     if (!m.quoted) throw `*⚠️ Responde a un mensaje con ${usedPrefix + command}*`
