@@ -14,7 +14,7 @@ user.afkReason = text
         title: wm3,
         body: wm,
         thumbnail: thumb,
-        sourceUrl: sig
+        sourceUrl: fgsc
     }
     } })
             }
