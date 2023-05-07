@@ -3,7 +3,7 @@
 let handler = async (m, { text, usedPrefix, command }) => {
     global.db.data.sticker = global.db.data.sticker || {}
     if (!m.quoted) throw `*⚠️ Responde a un mensaje con ${usedPrefix + command}*`
-    if (!m.quoted.fileSha256) throw '*⚠️ Menciona al mensaje'*
+    if (!m.quoted.fileSha256) throw '*⚠️ Menciona al mensaje*'
     if (!text) throw `*⚠️ Falta el comando*`
     let sticker = global.db.data.sticker
     let hash = m.quoted.fileSha256.toString('base64')
