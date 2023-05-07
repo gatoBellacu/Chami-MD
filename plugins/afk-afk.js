@@ -4,7 +4,7 @@ let handler = async (m, { text }) => {
 let name = m.pushName || conn.getName(m.sender)
 
 let user = global.db.data.users[m.sender]
-let thumb = await getBuffer(global.pic)
+//let thumb = await getBuffer(global.pic)
 user.afk = + new Date
 user.afkReason = text
  conn.sendButtonDoc(m.chat, `${conn.getName(m.sender)} is now AFK${text ? ': ' + text : ''}`, wm, name, 'No moloestar ⚠️', 'Bilek', m,  { contextInfo: { externalAdReply: { showAdAttribution: true,
