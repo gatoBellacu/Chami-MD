@@ -1,5 +1,6 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js'; 
+
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
@@ -37,7 +38,7 @@ global.timestamp = {
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || '‎z/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.,\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 // global.opts['db'] = process.env['db']
 
@@ -77,14 +78,14 @@ loadDatabase()
 //-- SESSION
 //global.authFile = `${opts._[0] || 'session'}.data.json`
 //const { state, saveState } = store.useSingleFileAuthState(global.authFile)
-global.authFile = `sessions`
+global.authFile = `SitySession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['dylux-bot','Safari','1.0.0']
+  browser: ['CuriosityBot-MD','Firefox','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -107,7 +108,7 @@ async function clearTmp() {
   const tmp = [tmpdir(), join(__dirname, './tmp')]
   const filename = []
   tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-
+  
   //---
   return filename.map(file => {
     const stats = statSync(file)
@@ -160,10 +161,10 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '┏─━─━─━∞◆∞━─━─━─┓\n║       WELCOME\n║——————«•»——————\n║ Hola, @user\n║——————«•»——————\n║Bienvenido a  @subject\n║——————«•»——————\n║descripción:\n║@desc\n┗◛◛◛◛◛◛◛◛◛◛◛◛┛'
-  conn.bye = '┏─━─━─━∞◆∞━─━─━─┓\n║adiós @user\n┗◛◛◛◛◛◛◛◛◛◛◛◛┛'
-  conn.spromote = '@user promovió a admin'
-  conn.sdemote = '@user degradado'
+  conn.welcome = 'Hola, @user\nBienvenido a @group'
+  conn.bye = 'adiós @user'
+  conn.spromote = '@user ahora a admin'
+  conn.sdemote = '@user ya no es admin'
   conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
   conn.sSubject = 'El nombre del grupo ha sido cambiado a \n@group'
   conn.sIcon = 'El icono del grupo ha sido cambiado'
@@ -186,31 +187,31 @@ global.reloadHandler = async function (restatConn) {
   return true
 }
 
-const funcionFolder = global.__dirname(join(__dirname, './funciones/index'))
-const funcionFilter = filename => /\.js$/.test(filename)
-global.funciones = {}
+const pluginFolder = global.__dirname(join(__dirname, './plugins/index'))
+const pluginFilter = filename => /\.js$/.test(filename)
+global.plugins = {}
 async function filesInit() {
-  for (let filename of readdirSync(funcionesFolder).filter(funcionesFilter)) {
+  for (let filename of readdirSync(pluginFolder).filter(pluginFilter)) {
     try {
-      let file = global.__filename(join(funcionesFolder, filename))
+      let file = global.__filename(join(pluginFolder, filename))
       const module = await import(file)
-      global.funciones[filename] = module.default || module
+      global.plugins[filename] = module.default || module
     } catch (e) {
       conn.logger.error(e)
-      delete global.funciones[filename]
+      delete global.plugins[filename]
     }
   }
 }
-filesInit().then(_ => console.log(Object.keys(global.funciones))).catch(console.error)
+filesInit().then(_ => console.log(Object.keys(global.plugins))).catch(console.error)
 
 global.reload = async (_ev, filename) => {
-  if (funcionesFilter(filename)) {
-    let dir = global.__filename(join(funcionesFolder, filename), true)
-    if (filename in global.funciones) {
+  if (pluginFilter(filename)) {
+    let dir = global.__filename(join(pluginFolder, filename), true)
+    if (filename in global.plugins) {
       if (existsSync(dir)) conn.logger.info(` updated plugin - '${filename}'`)
       else {
         conn.logger.warn(`deleted plugin - '${filename}'`)
-        return delete global.funciones[filename]
+        return delete global.plugins[filename]
       }
     } else conn.logger.info(`new plugin - '${filename}'`)
     let err = syntaxerror(readFileSync(dir), filename, {
@@ -220,16 +221,16 @@ global.reload = async (_ev, filename) => {
     if (err) conn.logger.error(`syntax error while loading '${filename}'\n${format(err)}`)
     else try {
       const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`))
-      global.funciones[filename] = module.default || module
+      global.plugins[filename] = module.default || module
     } catch (e) {
       conn.logger.error(`error require plugin '${filename}\n${format(e)}'`)
     } finally {
-      global.funciones = Object.fromEntries(Object.entries(global.funciones).sort(([a], [b]) => a.localeCompare(b)))
+      global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)))
     }
   }
 }
 Object.freeze(global.reload)
-watch(funcionesFolder, global.reload)
+watch(pluginFolder, global.reload)
 await global.reloadHandler()
 
 // Quick Test
@@ -268,11 +269,11 @@ async function _quickTest() {
   // require('./lib/sticker').support = s
   Object.freeze(global.support)
 
-  if (!s.ffmpeg) conn.logger.warn('\n\n[ IMPORTANTE ] : Por favor instalé el paquete ffmpeg para el envío de archivos multimedia\n[_>] (pkg install ffmpeg)\n\n')
-  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no estén animadas sin libwebp en ffmpeg\n[_>] (pkg install libwebp) ó (--enable-ibwebp while compiling ffmpeg)\n\n')
-  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no funcionen sin imagemagick si libwebp y ffmpeg no esten instalados\n[_>] (pkg install imagemagick)\n\n')
+  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
 }
 
 _quickTest()
-  .then(() => conn.logger.info('\n\n[_>] Prueba rápida realizada ✓\n'))
+  .then(() => conn.logger.info('Quick Test Done'))
   .catch(console.error)
