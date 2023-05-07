@@ -38,7 +38,7 @@ global.timestamp = {
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || '‎z/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.,\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 // global.opts['db'] = process.env['db']
 
@@ -85,7 +85,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['CuriosityBot-MD','Firefox','1.0.0']
+  browser: ['NovaBot-MD','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -108,7 +108,7 @@ async function clearTmp() {
   const tmp = [tmpdir(), join(__dirname, './tmp')]
   const filename = []
   tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-
+  
   //---
   return filename.map(file => {
     const stats = statSync(file)
@@ -118,8 +118,8 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.cyan(`✅  Auto clear  | Se limpio la carpeta tmp`))
-}, 60000) //1 munto
+	console.log(chalk.cyan(`╭━─━─━─≪🔆≫─━─━─━╮\n│SE LIMPIO LA CARPETA TMP CORRECTAMENTE\n╰━─━─━─≪🔆≫─━─━─━╯`))
+}, 60000) //1 min
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -130,8 +130,9 @@ async function connectionUpdate(update) {
     global.timestamp.connect = new Date
   }
   if (global.db.data == null) loadDatabase()
-}
-
+if (connection == 'open') {
+console.log(chalk.yellow('╭━─━─━─≪🔆≫─━─━─━╮\n│YA ESTA CONECTADO CORRECTAMENTE\n╰━─━─━─≪🔆≫─━─━─━╯'))
+await conn.groupAcceptInvite('JESaesjOEcB6wnGX0QYT9o')}}
 
 process.on('uncaughtException', console.error)
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
@@ -161,14 +162,14 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Hola, @user\nBienvenido a @group'
-  conn.bye = 'adiós @user'
-  conn.spromote = '@user promovió a admin'
-  conn.sdemote = '@user degradado'
-  conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
-  conn.sSubject = 'El nombre del grupo ha sido cambiado a \n@group'
-  conn.sIcon = 'El icono del grupo ha sido cambiado'
-  conn.sRevoke = 'El enlace del grupo ha sido cambiado a \n@revoke'
+  conn.welcome = '┏─━─━─━∞◆∞━─━─━─┓\n┆ ｡･ﾟ♡ﾟ･｡🍓｡･ﾟ♡ﾟ･｡🍒\n┆ Hola @user ¿COMO ESTAS?😃\n┆——————«•»——————\n┆ Bienvenido A @subject\n┆——————«•»——————\n┆un gusto conocerte amig@ 🤗\n┆Recuerda leer las reglas del grupo\n┆para no tener ningun problema 🧐\n┖━─━─━─━─━─━─━─━─━┚\n\n@desc'
+  conn.bye = '┏─━─━─━∞◆∞━─━─━─┓\n┆ ｡･ﾟ♡ﾟ･｡🍓｡･ﾟ♡ﾟ･｡🍒\n┆ adiós @user se fue\n┆ un fan del bts\n  ┖━─━─━─━─━─━─━─━─━┚'
+  conn.spromote = '@user ahora eres admin del grupo'
+  conn.sdemote = '@user joderte ya no eres admin'
+  conn.sDesc = 'La descripción del grupo fue cambiada nueva descripción es\n@desc'
+  conn.sSubject = 'El nombre del grupo fue cambiado nuevos nombre es\n@subject'
+  conn.sIcon = 'la foto del grupo fue cambiada con éxito'
+  conn.sRevoke = 'nuevos link \n@revoke'
   conn.handler = handler.handler.bind(global.conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
@@ -269,11 +270,11 @@ async function _quickTest() {
   // require('./lib/sticker').support = s
   Object.freeze(global.support)
 
-  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
-  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
-  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+  if (!s.ffmpeg) conn.logger.warn('\n\n[ IMPORTANTE ] : Por favor instalé el paquete ffmpeg para el envío de archivos multimedia\n[_>] (pkg install ffmpeg)\n\n')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no estén animadas sin libwebp en ffmpeg\n[_>] (pkg install libwebp) ó (--enable-ibwebp while compiling ffmpeg)\n\n')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('\n\n[ IMPORTANTE ] : Es posible que los stickers no funcionen sin imagemagick si libwebp y ffmpeg no esten instalados\n[_>] (pkg install imagemagick)\n\n')
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Quick Test Done'))
+  .then(() => conn.logger.info('\n\n[_>] Cargado los plugins un momentos ✓\n'))
   .catch(console.error)
