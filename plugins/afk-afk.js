@@ -8,9 +8,9 @@ let thumb = await getBuffer(global.pic)
 user.afk = + new Date
 user.afkReason = text
  conn.sendButtonDoc(m.chat, `${conn.getName(m.sender)} is now AFK${text ? ': ' + text : ''}`, wm, name, 'No moloestar ⚠️', 'Bilek', m,  { contextInfo: { externalAdReply: { showAdAttribution: true,
-        mediaUrl: sig,
+        mediaUrl: dygp,
         mediaType: "VIDEO",
-        description: sig, 
+        description: dygp, 
         title: wm3,
         body: wm,
         thumbnail: thumb,
