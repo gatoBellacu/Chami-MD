@@ -7,7 +7,7 @@ let user = global.db.data.users[m.sender]
 //let thumb = await getBuffer(global.pic)
 user.afk = + new Date
 user.afkReason = text
- conn.sendButtonDoc(m.chat, `${conn.getName(m.sender)} is now AFK${text ? ': ' + text : ''}`, wm, name, 'No moloestar ⚠️', 'Bilek', m,  { contextInfo: { externalAdReply: { showAdAttribution: true,
+ sendButtonDoc(m.chat, `${conn.getName(m.sender)} is now AFK${text ? ': ' + text : ''}`, wm, name, 'No moloestar ⚠️', 'Bilek', m,  { contextInfo: { externalAdReply: { showAdAttribution: true,
         mediaUrl: dygp,
         mediaType: "VIDEO",
         description: dygp, 
