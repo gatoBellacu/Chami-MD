@@ -201,7 +201,7 @@ export async function handler(chatUpdate) {
 
         const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './funciones')
         for (let name in global.funciones) {
-            let plugin = global.funciones[name]
+            let funcion = global.funciones[name]
             if (!funcion)
                 continue
             if (funcion.disabled)
@@ -244,7 +244,7 @@ export async function handler(chatUpdate) {
                         [[new RegExp(str2Regex(_prefix)).exec(m.text), new RegExp(str2Regex(_prefix))]] :
                         [[[], new RegExp]]
             ).find(p => p[1])
-            if (typeof plugin.before === 'function') {
+            if (typeof funcion.before === 'function') {
                 if (await funcion.before.call(this, m, {
                     match,
                     conn: this,
