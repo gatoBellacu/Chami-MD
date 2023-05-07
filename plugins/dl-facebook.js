@@ -7,8 +7,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
    let res = await fg.fbdl(args[0])
     for (let result of res.download) {
     	  let tex = `
-┌─⊷ *FBDL*
-▢ *Calidad:* ${result.quality}
+┌─⊷ *🧿 FACEBOOK 🧿*
+♨️ *Calidad:* ${result.quality}
 └───────────`
     conn.sendFile(m.chat, result.url, 'fb.mp4', tex, m)
      } 
