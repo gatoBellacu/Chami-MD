@@ -1,5 +1,3 @@
-//import db from '../lib/database.js'
-
 let handler = async (m, { text }) => {
     let hash = text
     if (m.quoted && m.quoted.fileSha256) hash = m.quoted.fileSha256.toString('hex')
