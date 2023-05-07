@@ -45,6 +45,7 @@ global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.pre
 global.fgig = '© Curiosity' 
 global.dygp = 'https://chat.whatsapp.com/ErnXC51D9lWJtRWOD4stR2'
 global.fgsc = 'https://github.com/Azami19/CuriosityBot-MD1' 
+global.thumb = 'https://telegra.ph/file/580055492f04ffa8399a3.jpg'
 global.fgyt = 'https://youtube.com'
 global.fgpyp = 'https://paypal.me'
 global.fglog = 'https://i.imgur.com/Owmb93c.png' 
