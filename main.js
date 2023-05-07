@@ -1,6 +1,5 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 import './config.js'; 
-
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
@@ -191,9 +190,9 @@ const funcionFolder = global.__dirname(join(__dirname, './funciones/index'))
 const funcionFilter = filename => /\.js$/.test(filename)
 global.funciones = {}
 async function filesInit() {
-  for (let filename of readdirSync(funcionFolder).filter(funcionFilter)) {
+  for (let filename of readdirSync(funcionesFolder).filter(funcionesFilter)) {
     try {
-      let file = global.__filename(join(funcionFolder, filename))
+      let file = global.__filename(join(funcionesFolder, filename))
       const module = await import(file)
       global.funciones[filename] = module.default || module
     } catch (e) {
@@ -205,8 +204,8 @@ async function filesInit() {
 filesInit().then(_ => console.log(Object.keys(global.funciones))).catch(console.error)
 
 global.reload = async (_ev, filename) => {
-  if (funcionFilter(filename)) {
-    let dir = global.__filename(join(funcionFolder, filename), true)
+  if (funcionesFilter(filename)) {
+    let dir = global.__filename(join(funcionesFolder, filename), true)
     if (filename in global.funciones) {
       if (existsSync(dir)) conn.logger.info(` updated plugin - '${filename}'`)
       else {
@@ -230,7 +229,7 @@ global.reload = async (_ev, filename) => {
   }
 }
 Object.freeze(global.reload)
-watch(funcionFolder, global.reload)
+watch(funcionesFolder, global.reload)
 await global.reloadHandler()
 
 // Quick Test
