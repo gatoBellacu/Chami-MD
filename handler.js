@@ -202,14 +202,14 @@ export async function handler(chatUpdate) {
         const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './funciones')
         for (let name in global.funciones) {
             let funcion = global.funciones[name]
-            if (!funcion)
+            if (!funciones)
                 continue
-            if (funcion.disabled)
+            if (funciones.disabled)
                 continue
             const __filename = join(___dirname, name)
-            if (typeof funcion.all === 'function') {
+            if (typeof funciones.all === 'function') {
                 try {
-                    await funcion.all.call(this, m, {
+                    await funciones.all.call(this, m, {
                         chatUpdate,
                         __dirname: ___dirname,
                         __filename
@@ -225,7 +225,7 @@ export async function handler(chatUpdate) {
                 }
             }
             if (!opts['restrict'])
-                if (funcion.tags && funcion.tags.includes('admin')) {
+                if (funciones.tags && funciones.tags.includes('admin')) {
                     // global.dfail('restrict', m, this)
                     continue
                 }
