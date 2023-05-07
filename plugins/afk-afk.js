@@ -9,6 +9,13 @@ let handler = async (m, { text, conn }) => {
 ▢ *Usuario:* ${conn.getName(m.sender)} 
 ▢ *Razon:* ${text ? text : ''}
   `)
+mediaUrl: dygp,
+        mediaType: "VIDEO",
+        description: dygp, 
+        title: wm3,
+        body: wm,
+        thumbnail: thumb,
+        sourceUrl: fgsc
 }
 handler.help = ['afk <razon>']
 handler.tags = ['fun']
