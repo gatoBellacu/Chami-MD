@@ -230,7 +230,7 @@ export async function handler(chatUpdate) {
                     continue
                 }
             const str2Regex = str => str.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
-            let _prefix = funcion.customPrefix ? funcion.customPrefix : conn.prefix ? conn.prefix : global.prefix
+            let _prefix = funciones.customPrefix ? funciones.customPrefix : conn.prefix ? conn.prefix : global.prefix
             let match = (_prefix instanceof RegExp ? // RegExp Mode?
                 [[_prefix.exec(m.text), _prefix]] :
                 Array.isArray(_prefix) ? // Array?
@@ -244,8 +244,8 @@ export async function handler(chatUpdate) {
                         [[new RegExp(str2Regex(_prefix)).exec(m.text), new RegExp(str2Regex(_prefix))]] :
                         [[[], new RegExp]]
             ).find(p => p[1])
-            if (typeof funcion.before === 'function') {
-                if (await funcion.before.call(this, m, {
+            if (typeof funciones.before === 'function') {
+                if (await funciones.before.call(this, m, {
                     match,
                     conn: this,
                     participants,
@@ -264,7 +264,7 @@ export async function handler(chatUpdate) {
                 }))
                     continue
             }
-            if (typeof funcion !== 'function')
+            if (typeof funciones !== 'function')
                 continue
             if ((usedPrefix = (match[0] || '')[0])) {
                 let noPrefix = m.text.replace(usedPrefix, '')
@@ -273,21 +273,21 @@ export async function handler(chatUpdate) {
                 let _args = noPrefix.trim().split` `.slice(1)
                 let text = _args.join` `
                 command = (command || '').toLowerCase()
-                let fail = plugin.fail || global.dfail // When failed
+                let fail = funciones.fail || global.dfail // When failed
                 let isAccept = funcion.command instanceof RegExp ? // RegExp Mode?
                     funcion.command.test(command) :
                     Array.isArray(funcion.command) ? // Array?
-                        funcion.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
+                        funciones.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
                             cmd.test(command) :
                             cmd === command
                         ) :
-                        typeof funcion.command === 'string' ? // String?
-                            funcion.command === command :
+                        typeof funciones.command === 'string' ? // String?
+                            funciones.command === command :
                             false
 
                 if (!isAccept)
                     continue
-                m.funcion = name
+                m.funciones = name
                 if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
                     let chat = global.db.data.chats[m.chat]
                     let user = global.db.data.users[m.sender]
@@ -296,51 +296,51 @@ export async function handler(chatUpdate) {
                     if (name != 'owner-unbanuser.js' && user?.banned)
                         return
                 }
-                if (funcion.rowner && funcion.owner && !(isROwner || isOwner)) { // Both Owner
+                if (funciones.rowner && funciones.owner && !(isROwner || isOwner)) { // Both Owner
                     fail('owner', m, this)
                     continue
                 }
-                if (funcion.rowner && !isROwner) { // Real Owner
+                if (funciones.rowner && !isROwner) { // Real Owner
                     fail('rowner', m, this)
                     continue
                 }
-                if (funcion.owner && !isOwner) { // Number Owner
+                if (funciones.owner && !isOwner) { // Number Owner
                     fail('owner', m, this)
                     continue
                 }
-                if (funcion.mods && !isMods) { // Moderator
+                if (funciones.mods && !isMods) { // Moderator
                     fail('mods', m, this)
                     continue
                 }
-                if (funcion.premium && !isPrems) { // Premium
+                if (funciones.premium && !isPrems) { // Premium
                     fail('premium', m, this)
                     continue
                 }
-                if (funcion.group && !m.isGroup) { // Group Only
+                if (funciones.group && !m.isGroup) { // Group Only
                     fail('group', m, this)
                     continue
-                } else if (funcion.botAdmin && !isBotAdmin) { // You Admin
+                } else if (funciones.botAdmin && !isBotAdmin) { // You Admin
                     fail('botAdmin', m, this)
                     continue
-                } else if (funcion.admin && !isAdmin) { // User Admin
+                } else if (funciones.admin && !isAdmin) { // User Admin
                     fail('admin', m, this)
                     continue
                 }
-                if (funcion.private && m.isGroup) { // Private Chat Only
+                if (funciones.private && m.isGroup) { // Private Chat Only
                     fail('private', m, this)
                     continue
                 }
-                if (funcion.register == true && _user.registered == false) { // Butuh daftar?
+                if (funciones.register == true && _user.registered == false) { // Butuh daftar?
                     fail('unreg', m, this)
                     continue
                 }
                 m.isCommand = true
-                let xp = 'exp' in funcion ? parseInt(funcion.exp) : 17 // XP Earning per command
+                let xp = 'exp' in funciones ? parseInt(funciones.exp) : 17 // XP Earning per command
                 if (xp > 200)
                     m.reply('chirrido -_-') // Hehehe
                 else
                     m.exp += xp
-                if (!isPrems && funcion.diamond && global.db.data.users[m.sender].diamond < funcion.diamond * 1) {
+                if (!isPrems && funciones.diamond && global.db.data.users[m.sender].diamond < funciones.diamond * 1) {
                     this.sendButton(m.chat, `✳️ Tus diamantes se agotaron \n use el siguiente comando para comprar más diamantes \n*${usedPrefix}buy* <cantidad> \n*${usedPrefix}buyall*`, fgig, null, [['Buy', `${usedPrefix}buy`], ['Buy All', `${usedPrefix}buyall`]], m)
                     continue // Limit habis
                 }
@@ -372,9 +372,9 @@ export async function handler(chatUpdate) {
                     __filename
                 }
                 try {
-                    await funcion.call(this, m, extra)
+                    await funciones.call(this, m, extra)
                     if (!isPrems)
-                        m.diamond = m.diamond || funcion.diamond || false
+                        m.diamond = m.diamond || funciones.diamond || false
                                 } catch (e) {
                     // Error occured
                     m.error = e
@@ -387,15 +387,15 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.funcion}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
+                                    m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.funciones}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
                 } finally {
                     // m.reply(util.format(_user))
-                    if (typeof funcion.after === 'function') {
+                    if (typeof funciones.after === 'function') {
                         try {
-                            await funcion.after.call(this, m, extra)
+                            await funciones.after.call(this, m, extra)
                         } catch (e) {
                             console.error(e)
                         }
@@ -423,10 +423,10 @@ export async function handler(chatUpdate) {
             }
 
             let stat
-            if (m.funcion) {
+            if (m.funciones) {
                 let now = +new Date
-                if (m.plugin in stats) {
-                    stat = stats[m.funcion]
+                if (m.funciones in stats) {
+                    stat = stats[m.funciones]
                     if (!isNumber(stat.total))
                         stat.total = 1
                     if (!isNumber(stat.success))
@@ -436,7 +436,7 @@ export async function handler(chatUpdate) {
                     if (!isNumber(stat.lastSuccess))
                         stat.lastSuccess = m.error != null ? 0 : now
                 } else
-                    stat = stats[m.funcion] = {
+                    stat = stats[m.funciones] = {
                         total: 1,
                         success: m.error != null ? 0 : 1,
                         last: now,
