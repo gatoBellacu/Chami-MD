@@ -557,10 +557,9 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-≡ Borró un mensaje  
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-▢ *Nombre :* @${participant.split`@`[0]} 
-└─────────────
+╔═✪「 𝙰𝙽𝚃𝙸 𝙳𝙴𝙻𝙴𝚃𝙴 」
+║ ■ *𝙽𝙾𝙼𝙱𝚁𝙴 :* @${participant.split`@`[0]} 
+╚═════════════✪
 
 Para desactivar esta función, escriba 
 */off antidelete*
@@ -576,23 +575,23 @@ Para desactivar esta función, escriba
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '👑 Este comando solo puede ser utilizado por el *Creador del bot*',
-        owner: '🔱 Este comando solo puede ser utilizado por el *Dueño del Bot*',
-        mods: '🔰  Esta función es solo para *Para moderadores del Bot*',
-        premium: '💠 Este comando es solo para miembros *Premium*\n\nEscribe */premium* para más info',
-        group: '⚙️ ¡Este comando solo se puede usar en grupos!',
-        private: '📮 Este comando solo se puede usar en el chat *privado del Bot*',
-        admin: '🛡️ Este comando es solo para *Admins* del grupo',
-        botAdmin: '💥 ¡Para usar este comando debo ser *Administrador!*',
-        unreg: '📇 Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre.edad*\n\n📌Ejemplo : */reg dylux.16*',
-        restrict: '🔐 Esta característica está *deshabilitada*'
+        rowner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*',
+        owner: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*',
+        mods: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙰 𝙵𝚄𝙽𝙲𝙸𝙾́𝙽 𝙴𝚂 𝚂𝙾𝙻𝙾 𝙿𝙰𝚁𝙰 𝙼𝙾𝙳𝙴𝚁𝙰𝙳𝙾𝚁 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃',
+        premium: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂 𝚂𝙾𝙻𝙾 𝙿𝙰𝚁𝙰 𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂 𝙿𝚁𝙴𝙼𝙸𝚄𝙼\n\n𝙴𝚂𝙲𝚁𝙸𝙱𝙸  */premium* 𝙿𝙰𝚁𝙰 𝙼𝙰́𝚂 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾́𝙽',
+        group: '️[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] ¡𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝚂𝙴 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!',
+        private: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝚂𝙴 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃',
+        admin: '️[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙴𝚂 𝙿𝙰𝚁𝙰 𝙰𝙳𝙼𝙸𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾',
+        botAdmin: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁  𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙳𝙴𝙱𝙾 𝚂𝙴𝚁 𝚄𝙽 𝙰𝙳𝙼𝙸𝙽*',
+        unreg: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝚁𝚃𝙴 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙰 𝙵𝚄𝙽𝙲𝙸𝙾́𝙽 𝙴𝚂𝙲𝚁𝙸𝙱𝙸𝙴𝙽𝙳𝙾:\n\n*/reg nombre.edad*\n\n📌𝙴𝙹𝙴𝙼𝙿𝙻𝙾 : */reg azami.16*',
+        restrict: '[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]𝙴𝚂𝚃𝙰 𝙵𝚄𝙽𝙲𝙸𝙾́𝙽 𝙴𝚂𝚃𝙰 𝙳𝙴𝚂𝙷𝙰𝙱𝙸𝙻𝙸𝚃𝙰𝚁'
     }[type]
-    if (msg) return conn.sendButton(m.chat, msg, fgig, null, [['🔖 OK', 'khajs'], ['⦙☰ Menu', '/menu'] ], m)
+    if (msg) return conn.sendButton(m.chat, msg, fgig, null, [['😱 OK', 'khajs'], ['☔ MENU', '/menu'] ], m)
 }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.magenta("✅  Se actualizo 'handler.js'"))
+    console.log(chalk.magenta("UPDATE 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 }) 
