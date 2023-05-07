@@ -1,4 +1,3 @@
-
 export async function all(m) {
 	
     // cuando alguien envía un enlace de un grupo al dm del bot
