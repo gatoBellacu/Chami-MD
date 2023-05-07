@@ -205,7 +205,7 @@ async function filesInit() {
 filesInit().then(_ => console.log(Object.keys(global.funciones))).catch(console.error)
 
 global.reload = async (_ev, filename) => {
-  if (pluginFilter(filename)) {
+  if (funcionFilter(filename)) {
     let dir = global.__filename(join(funcionFolder, filename), true)
     if (filename in global.funciones) {
       if (existsSync(dir)) conn.logger.info(` updated plugin - '${filename}'`)
