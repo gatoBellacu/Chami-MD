@@ -35,7 +35,8 @@ global.author = 'CuriosityBot'
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = 'CuriosityBot-MD'
+global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」'
+global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
 global.nombreowner = 'Azami'
 global.igfg = 'CURIOSITY'
 global.nomorown = '5214531106422'
