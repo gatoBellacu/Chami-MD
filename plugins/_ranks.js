@@ -1,4 +1,3 @@
-
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
@@ -15,12 +14,12 @@ global.rpg = {
     if (isNaN(level)) return { name: '', level: '' }
     // this code make config.js to be a more understandable code
     const role = [
-      { name: 'Warrior V', level: 0 }, { name: 'Warrior IV', level: 4 }, { name: 'Warrior III', level: 8 }, { name: 'Warrior II', level: 12 }, { name: 'Warrior I', level: 16 },
-      { name: 'Paladin V', level: 20 }, { name: 'Paladin IV', level: 24 }, { name: 'Paladin III', level: 28 }, { name: 'Paladin II', level: 32 }, { name: 'Paladin I', level: 36 },
-      { name: 'Sorcerer V', level: 40 }, { name: 'Sorcerer IV', level: 44 }, { name: 'Sorcerer III', level: 48 }, { name: 'Sorcerer II', level: 52 }, { name: 'Sorcerer I', level: 56 },
-      { name: 'Ranger V', level: 60 }, { name: 'Ranger IV', level: 64 }, { name: 'Ranger III', level: 68 }, { name: 'Ranger II', level: 72 }, { name: 'Ranger I', level: 76 },
-      { name: 'Mage V', level: 80 }, { name: 'Mage IV', level: 84 }, { name: 'Mage III', level: 88 }, { name: 'Mage II', level: 92 }, { name: 'Mage I', level: 96 },
-      { name: 'Cleric V', level: 100 }, { name: 'Cleric IV', level: 104 }, { name: 'Cleric III', level: 108 }, { name: 'Cleric II', level: 112 }, { name: 'Cleric I', level: 116 },
+      { name: 'Guerrero V', level: 0 }, { name: 'Guerrero IV', level: 4 }, { name: 'Guerrero III', level: 8 }, { name: 'Guerrero II', level: 12 }, { name: 'Guerrero I', level: 16 },
+      { name: 'Jardinero V', level: 20 }, { name: 'Jardinero IV', level: 24 }, { name: 'Jardinero III', level: 28 }, { name: 'Jardinero II', level: 32 }, { name: 'Jardinero I', level: 36 },
+      { name: 'Guardabosques V', level: 40 }, { name: 'Guardabosques IV', level: 44 }, { name: 'Guardabosques III', level: 48 }, { name: 'Guardabosques II', level: 52 }, { name: 'Guardabosques I', level: 56 },
+      { name: 'Hechicero V', level: 60 }, { name: 'Hechicero IV', level: 64 }, { name: 'Hechicero III', level: 68 }, { name: 'Hechicero II', level: 72 }, { name: 'Hechicero I', level: 76 },
+      { name: 'Mago V', level: 80 }, { name: 'Mago IV', level: 84 }, { name: 'Mago III', level: 88 }, { name: 'Mago II', level: 92 }, { name: 'Mago I', level: 96 },
+      { name: 'Clérigo V', level: 100 }, { name: 'Clérigo IV', level: 104 }, { name: 'Clérigo III', level: 108 }, { name: 'Clérigo II', level: 112 }, { name: 'Clérigo I', level: 116 },
       { name: 'Thief V', level: 120 }, { name: 'Thief IV', level: 124 }, { name: 'Thief III', level: 128 }, { name: 'Thief II', level: 132 }, { name: 'Thief I', level: 136 },
       { name: 'Assassin V', level: 140 }, { name: 'Assassin IV', level: 144 }, { name: 'Assassin III', level: 148 }, { name: 'Assassin II', level: 152 }, { name: 'Assassin I', level: 156 },
       { name: 'Monk V', level: 160 }, { name: 'Monk IV', level: 164 }, { name: 'Monk III', level: 168 }, { name: 'Monk II', level: 172 }, { name: 'Monk I', level: 176 },
