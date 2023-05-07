@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn }) => {
     conn.reply(m.chat, `
 *🍧 LISTA CMD 🍧*
@@ -16,8 +15,3 @@ handler.tags = ['database']
 handler.command = ['listcmd']
 
 export default handler
-
-
-
-
-
