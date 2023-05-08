@@ -4,18 +4,18 @@ let handler = async (m, { conn, text }) => {
   let who
   if (m.isGroup) who = m.mentionedJid[0]
   else who = m.chat
-  if (!who) throw '✳️ Taguea al usuario'
+  if (!who) throw '*⚠️ Taguea al usuario*'
   let txt = text.replace('@' + who.split`@`[0], '').trim()
-  if (!txt) throw '✳️ Ingrese la cantidad de *XP* que quiere añadir'
-  if (isNaN(txt)) throw ' 🔢 sólo números'
+  if (!txt) throw '*⚠️ Ingrese la cantidad de *XP* que quiere añadir*'
+  if (isNaN(txt)) throw '*🔢 sólo números*'
   let xp = parseInt(txt)
   let exp = xp
   
-  if (exp < 1) throw '✳️ Mínimo es  *1*'
+  if (exp < 1) throw '*⚠️ Lo mínimo que puedes añadir es  1*'
   let users = global.db.data.users
   users[who].exp += xp
 
-  await m.reply(`* ✨XP AÑADIDO ✨*
+  await m.reply(`*✨XP AÑADIDO ✨*
 
 ► *Total añadido:* ${xp}
 `)
