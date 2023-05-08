@@ -4,9 +4,9 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
-    if (!who) throw '✳️ Taguea al usuario'
+    if (!who) throw '*⚠️ Taguea al usuario*'
     let txt = text.replace('@' + who.split`@`[0], '').trim()
-    if (!txt) throw '✳️ Ingrese la cantidad de *Diamantes* que quiere añadir'
+    if (!txt) throw '*⚠️ Ingrese la cantidad de Diamantes que quiere añadir*'
     if (isNaN(txt)) throw '🔢 sólo números'
     let dmt = parseInt(txt)
     let diamond = dmt
