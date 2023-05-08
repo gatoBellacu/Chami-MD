@@ -1,4 +1,3 @@
-
 let handler = async (m, {conn, usedPrefix}) => {
 	
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -11,10 +10,10 @@ let handler = async (m, {conn, usedPrefix}) => {
 → *🍧 XP* : _${user.exp}_
 ╰──────────────
 
-*NOTA :* 
-Puedes comprar 💎 diamantes usando los comandos
-❏ *${usedPrefix}buy <cantidad>*
-❏ *${usedPrefix}buyall*`, m, { mentions: [who] })
+*NOTA 🔔:* 
+*_Puedes comprar 💎 diamantes usando los comandos_*
+► *${usedPrefix}buy <cantidad>*
+► *${usedPrefix}buyall*`, m, { mentions: [who] })
 }
 handler.help = ['balance']
 handler.tags = ['econ']
