@@ -40,7 +40,7 @@ const defaultMenu = {
 ~|-------------------------|~
 *[_>] _COMANDOS_  ☷*
 ~|-------------------------|~\n`.trimStart(),
-  header: ▣──「 %category 」───⬣',
+  header: '▣──「 %category 」───⬣',
   body: '│○ %cmd %isdiamond %isPremium',
   footer: '▣───────────⬣\n',
   after: `
