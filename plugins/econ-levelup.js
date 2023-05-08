@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 ⇨ 🍧 *Rango :* ${user.role}
 └──────────────
 
-Te falta *${max - user.exp}* de *XP* para subir de nivel
+_Te falta *${max - user.exp}* de *XP* para subir de nivel_
 `.trim()
 try {
   let imgg = API('fgmods', '/api/rank', {
