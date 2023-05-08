@@ -13,19 +13,19 @@ let handler = async (m, { conn, args, participants }) => {
   let usersLevel = sortedLevel.map(enumGetKey)
   let len = args[0] && args[0].length > 0 ? Math.min(50, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length)
   let text = `
-       ≡ *TABLA DE CLASIFICACION*
+       *TABLA DE CLASIFICACION*
     
-▢ *TOP ${len} XP* 🧬
+► *TOP ${len} XP* 🧬
 Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length}*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*XP ${exp}*_`).join`\n`}
 
-▢ *TOP ${len} DIAMANTES💎* 
+► *TOP ${len} DIAMANTES💎* 
 Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}*
 
 ${sortedLim.slice(0, len).map(({ jid, diamond }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*Diamantes ${diamond}*_`).join`\n`}
 
-▢ *TOP ${len} NIVEL* ⬆️
+► *TOP ${len} NIVEL* ⬆️
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `*${i + 1}.* ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*Nivel ${level}*_`).join`\n`}
