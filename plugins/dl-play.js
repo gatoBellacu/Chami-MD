@@ -5,7 +5,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
   await m.reply(wait)
   let search = await yts(text)
   let vid = search.videos[Math.floor(Math.random() * search.videos.length)]
-  if (!search) throw 'Video Not Found, Try Another Title'
+  if (!search) throw '*⚠️ Vídeo no encontrado, prueba con otro título*'
   let { title, thumbnail, timestamp, views, ago, url } = vid
 
   let captvid = `╭──── 〔 Y O U T U B E 〕 ─⬣
