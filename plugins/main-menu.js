@@ -27,7 +27,6 @@ const defaultMenu = {
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Nombre:* %name
-⬡│☂︎ *Tag:* %tag
 ⬡│☂︎ *Premium:* %prems
 ⬡│☂︎ *Diamantes:* %limit
 ⬡│☂︎ *Money:* %money
@@ -37,8 +36,7 @@ const defaultMenu = {
 │╰────────────────···
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Nombre Del Bot:* %wm2
-⬡│☂︎ *Prefix:* [ *%_p* ]
+┴│☂︎ *Nombre Del Bot:* ${wm2}
 ⬡│☂︎ *Baileys:* Multi dispositivos 
 ⬡│☂︎ *Version del bot*: %version
 ⬡│☂︎ *tipo:* Node.Js
