@@ -16,7 +16,8 @@ let handler = async (m, { conn, text }) => {
    users[who].diamond += dmt
 
     await m.reply(`*🔰 DIAMANTES AÑADIDOS 🔰*
-💎┆► *Total añadido:* ${dmt}
+    
+► *Total añadido:* ${dmt}
 `)
    conn.fakeReply(m.chat, `*► Recibiste*\n\n *${dmt}* Diamantes 💎`, who, m.text)
 }
