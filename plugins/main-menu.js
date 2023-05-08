@@ -34,6 +34,12 @@ const defaultMenu = {
 ⬡│☂︎ *Level:* %level 
 ┬│☂︎ *Total Xp:* %totalexp
 │╰────────────────···
+┠─────═[ HOY ]═─────⋆
+│╭────────────────···
+┴│    *${ucapan()} %name!*
+⬡│☂︎ *Fecha:* %week %date
+┬│☂︎ *Tiempo:* %time
+│╰────────────────··
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
 ┴│☂︎ *Nombre Del Bot:* ${wm2}
@@ -41,7 +47,7 @@ const defaultMenu = {
 ⬡│☂︎ *Version del bot*: %version
 ⬡│☂︎ *tipo:* Node.Js
 ⬡│☂︎ *tiempo de actividad:* %uptime
-┬│☂︎ *Database:* %rtotalreg de  %totalreg
+┬│☂︎ *Base de Datos:* %rtotalreg de  %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
   
