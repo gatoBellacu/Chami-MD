@@ -36,7 +36,7 @@ const defaultMenu = {
 │╰────────────────···
 ┠─────═[ HOY ]═─────⋆
 │╭────────────────···
-┴│    *${ucapan()} %name!*
+┴│ *${ucapan()} %name!*
 ⬡│☂︎ *Fecha:* %week, %date
 ┬│☂︎ *Tiempo:* %time
 │╰────────────────··
