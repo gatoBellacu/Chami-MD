@@ -1,4 +1,4 @@
-import fg from 'api-dylux'
+/*import fg from 'api-dylux'
 let handler = async (m, { conn, text, args }) => {
 	
   if (!text) throw `*⚠️ Ingrese el Username de un usuario de TikTok*`
@@ -23,4 +23,4 @@ handler.help = ['tiktokstalk']
 handler.tags = ['dl']
 handler.command = /^t(tstalk|iktokstalk)$/i
 
-export default handler
+export default handler*/
