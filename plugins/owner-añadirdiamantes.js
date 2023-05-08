@@ -15,13 +15,11 @@ let handler = async (m, { conn, text }) => {
     let users = global.db.data.users
    users[who].diamond += dmt
 
-    await m.reply(`≡ *💎 AÑADIDO*
-┌──────────────
-▢ *Total:* ${dmt}
-└──────────────`)
+    await m.reply(`* 🔰DIAMANTES AÑADIDOS 🔰*
+💎┆► *Total añadido:* ${dmt}
+`)
    conn.fakeReply(m.chat, `*▢ Recibiste*\n\n *${dmt}* Diamantes 💎`, who, m.text)
 }
-
 handler.help = ['adddi <@user>']
 handler.tags = ['econ']
 handler.command = ['adddi'] 
