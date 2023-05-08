@@ -1,4 +1,3 @@
-
 import { youtubeSearch } from '@bochilteam/scraper'
 import yts from 'yt-search'
 let handler = async(m, { conn, usedPrefix, text, args, command }) => {
