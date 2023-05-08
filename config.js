@@ -31,11 +31,12 @@ global.author = 'CuriosityBot'
 
 //❑━━━━━━━━━━━━━━━━━━━━ ❐
 
-//
+
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」'
+global.wm2 = 'CuriosityBot-MD'
 global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
 global.nombreowner = 'Azami'
 global.igfg = 'CURIOSITY'
