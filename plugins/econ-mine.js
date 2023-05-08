@@ -21,7 +21,7 @@ let user = global.db.data.users[m.sender]
   let time = global.db.data.users[m.sender].lastmiming + 300000
   if (new Date - global.db.data.users[m.sender].lastmiming < 300000) throw `⏳ 𝔼𝕤𝕡𝕖𝕣𝕒 *${msToTime(time - new Date())}* ℙ𝕒𝕣𝕒 𝕧𝕠𝕝𝕧𝕖𝕣 𝕒 𝕞𝕚𝕟𝕒𝕣`
   global.db.data.users[m.sender].exp += hasil
-  m.reply(`⛏️ 𝔾𝕖𝕟𝕚𝕒𝕝 𝕞𝕚𝕟𝕒𝕤𝕥𝕖 ${hasil} 𝕏ℙ`)
+  m.reply(`⛏️ Genial minaste ${hasil} XP`)
   global.db.data.users[m.sender].lastmiming = new Date * 1
 }
 handler.help = ['mine']
