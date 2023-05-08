@@ -7,11 +7,11 @@ let handler = async (m, { conn, text }) => {
     if (!who) throw '*⚠️ Taguea al usuario*'
     let txt = text.replace('@' + who.split`@`[0], '').trim()
     if (!txt) throw '*⚠️ Ingrese la cantidad de Diamantes que quiere añadir*'
-    if (isNaN(txt)) throw '🔢 sólo números'
+    if (isNaN(txt)) throw '*🔢 sólo números*'
     let dmt = parseInt(txt)
     let diamond = dmt
     
-    if (diamond < 1) throw '✳️ Mínimo es  *1*'
+    if (diamond < 1) throw '*⚠️ Lo minimo que puedes añadir es 1*'
     let users = global.db.data.users
    users[who].diamond += dmt
 
