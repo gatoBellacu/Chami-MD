@@ -12,9 +12,9 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 		const title = await yt.title
 		const size = await yt.audio[q].fileSizeH
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
- ≡  *🔰 YOUTUBE 🔰*
+*🔖 YOUTUBE MP3 🔖*
   
-▢ *📌Titulo* : ${title}
+▢ *📃 Titulo* : ${title}
 ▢ *⚖️Tamaño* : ${size}
 `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done)
