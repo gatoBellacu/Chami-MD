@@ -27,9 +27,7 @@ const defaultMenu = {
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Nombre:* %name
-⬡│☂︎ *Premium:* %prems
-⬡│☂︎ *Diamantes:* %limit
-⬡│☂︎ *Money:* %money
+⬡│☂︎ *Diamantes:* %diamond
 ⬡│☂︎ *Role:* %role
 ⬡│☂︎ *Level:* %level 
 ┬│☂︎ *Total Xp:* %totalexp
@@ -41,7 +39,7 @@ const defaultMenu = {
 │╰────────────────··
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Nombre Del Bot:* ${wm2}
+┴│☂︎ *Nombre Del Bot:* ${wm}
 ⬡│☂︎ *Baileys:* Multi dispositivos 
 ⬡│☂︎ *Version del bot*: %version
 ⬡│☂︎ *tipo:* Node.Js
@@ -59,7 +57,7 @@ const defaultMenu = {
   after: `
 `,
 }
-let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
+let handler = async (m, { conn, isPrems, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, diamond, limit, level, role } = global.db.data.users[m.sender]
@@ -88,6 +86,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       minute: 'numeric',
       second: 'numeric'
     })
+    let user = global.db.data.users[m.sender]
     let _uptime = process.uptime() * 1000
     let _muptime
     if (process.send) {
@@ -169,10 +168,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['[ GRUPOS ]', `${_p}gpdylux`]
     ],m, rpl)
   
-    
+    m.react('🎈') 
     
   } catch (e) {
-    conn.reply(m.chat, '*⚠️ Lo sentimos, el menú tiene un error*', m)
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
     throw e
   }
 }
@@ -190,39 +189,39 @@ const readMore = more.repeat(4001)
 
 
 function clockString(ms) {
-  let h = isNaN(ms) ? "--" : Math.floor(ms / 3600000)
-  let m = isNaN(ms) ? "--" : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? "--" : Math.floor(ms / 1000) % 60
-  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(":")
+  let h = isNaN(ms) ? "--" : Math.floor(ms / 3600000);
+  let m = isNaN(ms) ? "--" : Math.floor(ms / 60000) % 60;
+  let s = isNaN(ms) ? "--" : Math.floor(ms / 1000) % 60;
+  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(":");
 
 }
 
 function ucapan() {
 
-  const time = moment.tz("America/Los_Angeles").format("HH") //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  const time = moment.tz("America/Los_Angeles").format("HH"); //America/Los_Angeles  Asia/Jakarta   America/Toronto
 
-  let res = "🌉Buenas madrugadas"
+  let res = "🌉Buenas madrugadas";
 
   if (time >= 4) {
-    res = "🌇Buenos Días"
+    res = "🌇Buenos Días";
 
   }
 
   if (time >= 11) {
-    res = "🏙️Buenas Tardes"
+    res = "🏙️Buenas Tardes";
 
   }
 
   if (time >= 15) {
-    res = "🌆Buenas tardes"
+    res = "🌆Buenas tardes";
 
   }
 
   if (time >= 17) {
-    res = "🌃Buenas noches"
+    res = "🌃Buenas noches";
 
   }
 
-  return res
+  return res;
 
 }
