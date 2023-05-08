@@ -15,7 +15,7 @@ let handler = async (m, { conn, text }) => {
     let users = global.db.data.users
    users[who].diamond += dmt
 
-    await m.reply(`*🔰 DIAMANTES AÑADIDOS 🔰*
+    await m.reply(`*💎 DIAMANTES AÑADIDOS 💎*
     
 ► *Total añadido:* ${dmt}
 `)
