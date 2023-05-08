@@ -21,7 +21,7 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
 ⬡ Vistas: ${views}
 ⬡ Subido: ${ago}
 ⬡ Enlece: ${url}
-╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽 VIDEO', `${usedPrefix}getvid ${url} 360`], false, { quoted: m, 'document': { 'url':'https://wa.me/12522518391' },
+╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽 VIDEO', `${usedPrefix}getvid ${url} 360`], false, { quoted: m, 'document': { 'url':'https://wa.me/59176184204' },
 'mimetype': global.dpdf,
 'fileName': `𝕐𝕠𝕦𝕋𝕦𝕓𝕖 ℙ𝕝𝕒𝕪𝕤`,
 'fileLength': 666666666666666,
@@ -30,7 +30,7 @@ mediaType:  2,
 mediaUrl: `${url}`,
 title: `AUDIO SEDANG DIKIRIM...`,
 body: wm,
-sourceUrl: 'http://wa.me/12522518391', thumbnail: await ( await conn.getFile(thumbnail)).data
+sourceUrl: 'http://wa.me/59176184204', thumbnail: await ( await conn.getFile(thumbnail)).data
   }
  } 
 })
@@ -68,36 +68,3 @@ handler.exp = 0
 handler.limit = true
 
 export default handler
-
-
-
-
-
-
-/*import yts from 'yt-search'
-let handler = async (m, { conn, command, text, usedPrefix }) => {
-	
-	if (!text) throw `*⚠️ Ingresa el título de una canción*\n\n*📌 Ejemplo ${usedPrefix + command}* Perfect`
-	let vid = (await yts(text)).all[0]
-	if (!vid) throw `*⚠️ Vídeo/Audio no encontrado*`
-	let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
-	//const url = 'https://www.youtube.com/watch?v=' + videoId
-	m.react('❤️')
-	let play = `
-	🔰 *YOUTUBE* 🔰
-┌──────────────
-▢ 📌 *Título* : ${title}
-▢ 📆 *Publicado:* ${ago}
-▢ ⌚ *Duración:* ${timestamp}
-▢ 👀 *Vistas:* ${views}
-└──────────────`
- await conn.sendButton(m.chat, play, wm, thumbnail, [
-    ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], m, rpl)
-}
-handler.help = ['play']
-handler.tags = ['dl']
-handler.command = ['play', 'playvid']
-
-export default handler*/
