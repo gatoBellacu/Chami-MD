@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
 ┌───⧼ *NIVEL* ⧽
 ⇨ 🍧 *Nombre :* ${name}
 ⇨ 🍧 *Nivel :* ${user.level}
-⇨ 🍧 *XP :* ${user.exp - min}/${xp}
+⇨ 🍧 *XP :* ${xp}
 ⇨ 🍧 *Rango :* ${user.role}
 └──────────────
 
@@ -37,10 +37,10 @@ try {
     	user.role = global.rpg.role(user.level).name
 
         let str = `
-┌─⊷ *LEVEL UP*
-▢ Nivel anterior : *${before}*
-▢ Nivel actual : *${user.level}*
-▢ Rango : *${user.role}*
+┌─⧼ *LEVEL UP* ⧽
+⇨ 🍧 *Nivel anterior :* ${before}
+⇨ 🍧 *Nivel actual :* ${user.level}
+⇨ 🍧 *Rango :* ${user.role}
 └──────────────
 
 *_Cuanto más interactúes con los bots, mayor será tu nivel_*
