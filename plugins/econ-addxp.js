@@ -15,11 +15,11 @@ let handler = async (m, { conn, text }) => {
   let users = global.db.data.users
   users[who].exp += xp
 
-  await m.reply(`≡ *XP AÑADIDO*
-┌──────────────
-▢  *Total:* ${xp}
-└──────────────`)
- conn.fakeReply(m.chat, `▢ Recibiste \n\n *+${xp} XP*`, who, m.text)
+  await m.reply(`* ✨XP AÑADIDO ✨*
+
+► *Total añadido:* ${xp}
+`)
+ conn.fakeReply(m.chat, `► Recibiste \n\n *+${xp} XP*`, who, m.text)
 }
 
 handler.help = ['addxp <@user>']
