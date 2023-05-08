@@ -18,7 +18,7 @@ let handler = async (m, { conn, text }) => {
     await m.reply(`*🔰 DIAMANTES AÑADIDOS 🔰*
 💎┆► *Total añadido:* ${dmt}
 `)
-   conn.fakeReply(m.chat, `*▢ Recibiste*\n\n *${dmt}* Diamantes 💎`, who, m.text)
+   conn.fakeReply(m.chat, `*► Recibiste*\n\n *${dmt}* Diamantes 💎`, who, m.text)
 }
 handler.help = ['adddi <@user>']
 handler.tags = ['econ']
