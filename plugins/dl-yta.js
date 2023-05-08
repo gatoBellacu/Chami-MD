@@ -14,8 +14,8 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 		conn.sendFile(m.chat, dl_url, title + '.mp3', `
 *🔖 YOUTUBE MP3 🔖*
   
-▢ *📃 Titulo* : ${title}
-▢ *⚖️Tamaño* : ${size}
+*▢ 📃 Titulo* : ${title}
+*▢ ⚖️Tamaño* : ${size}
 `.trim(), m, false, { mimetype: 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done)
         } catch {
