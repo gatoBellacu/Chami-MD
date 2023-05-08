@@ -49,21 +49,7 @@ const defaultMenu = {
 ┬│☂︎ *Base de Datos:* %rtotalreg de  %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
-  
-  ╔═══❖•ೋ° °ೋ•❖═══╗
-║👋🏻 Hola *%name*
-║❂ Base de datos: %rtotalreg a %totalreg
-║❂ Fecha: %week , %date
-║❂ hora: %time
-║❂ Tiempo activo: %uptime
-║❂ Version del bot: %version
-║❂ Dueño del bot: azami
-║❂ Cliente: %name
-║❂ Nivel: %level (%exp / %maxexp)
-║❂ Rol: %role
-║❂ XP: %totalexp
-╚═══❖•ೋ° °ೋ•❖═══╝
-%readmore
+  %readmore
 ~|-------------------------|~
 *[_>] _COMANDOS_  ☷*
 ~|-------------------------|~\n`.trimStart(),
