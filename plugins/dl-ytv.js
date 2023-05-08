@@ -1,10 +1,9 @@
-
 import fg from 'api-dylux'
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 let limit = 350 
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
-	if (!args || !args[0]) throw `✳️ Ejemplo :\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`
-    if (!args[0].match(/youtu/gi)) throw `❎ Verifica que el link de YouTube`
+	if (!args || !args[0]) throw `*⚠️ Ejemplo :*\n*${usedPrefix + command}* https://youtu.be/YzkTFFwxtXI`
+    if (!args[0].match(/youtu/gi)) throw `*⚠️ Verifica que el link de YouTube*`
 	 let chat = global.db.data.chats[m.chat]
 	 m.react(rwait) 
 	try {
@@ -17,11 +16,11 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		
        if (size.split('MB')[0] >= limit) return m.reply(` ≡  *FG YTDL*\n\n▢ *⚖️Peso* : ${size}\n▢ *🎞️Calidad* : ${q}\n\n▢ _El archivo supera el límite de descarga_ *+${limit} MB*`)    
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
- ≡  *FG YTDL*
+ ≡  *🔰 YOUTUBE 🔰*
   
-▢ *📌Título* : ${title}
-▢ *📟 Ext* : mp4
-▢ *🎞️Calidad* : ${q}
+▢ *📌 Título* : ${title}
+▢ *🚀 Ext* : mp4
+▢ *🖥️ Calidad* : ${q}
 ▢ *⚖️Peso* : ${size}
 `.trim(), m, false, { asDocument: chat.useDocument })
 		m.react(done) 
