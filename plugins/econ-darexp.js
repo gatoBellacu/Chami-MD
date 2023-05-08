@@ -1,5 +1,3 @@
-//import db from '../lib/database.js'
-
 let handler = async (m, { conn, text }) => {
   let who
   if (m.isGroup) who = m.mentionedJid[0]
