@@ -24,7 +24,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-  ╭─────═[ INFO USER ]═─────⋆
+╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
 ┴│☂︎ *Nombre:* %name
 ⬡│☂︎ *Tag:* %tag
@@ -32,29 +32,18 @@ const defaultMenu = {
 ⬡│☂︎ *Diamantes:* %limit
 ⬡│☂︎ *Money:* %money
 ⬡│☂︎ *Role:* %role
-⬡│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
-⬡│☂︎ *Xp:* %exp / %maxexp
+⬡│☂︎ *Level:* %level 
 ┬│☂︎ *Total Xp:* %totalexp
-│╰────────────────···
-┠─────═[ TODAY ]═─────⋆
-│╭────────────────···
-┴│    *${ucapan()} %name!*
-⬡│☂︎ *Tanggal:* %week %weton
-⬡│☂︎ *Date:* %date
-⬡│☂︎ *Tanggal Islam:* %dateIslamic
-┬│☂︎ *Waktu:* %time
 │╰────────────────···
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
-┴│☂︎ *Nama Bot:* %me
-⬡│☂︎ *Mode:* %mode
+┴│☂︎ *Nombre Del Bot:* %wm2
 ⬡│☂︎ *Prefix:* [ *%_p* ]
-⬡│☂︎ *Baileys:* Multi Device
-⬡│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-⬡│☂︎ *Platform:* %platform
-⬡│☂︎ *Type:* Node.Js
-⬡│☂︎ *Uptime:* %muptime
-┬│☂︎ *Database:* %rtotalreg dari %totalreg
+⬡│☂︎ *Baileys:* Multi dispositivos 
+⬡│☂︎ *Version del bot*: %version
+⬡│☂︎ *tipo:* Node.Js
+⬡│☂︎ *tiempo de actividad:* %uptime
+┬│☂︎ *Database:* %rtotalreg de  %totalreg
 │╰────────────────···
 ╰──────────═┅═──────────
   
