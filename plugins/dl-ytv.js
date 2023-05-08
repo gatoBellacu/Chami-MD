@@ -33,9 +33,9 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 	conn.sendFile(m.chat, result, title + '.mp4', `
  ≡  *FG YTDL2*
   
-▢ *📌Título* : ${title}
-▢ *📟 Ext* : mp4
-▢ *⚖️Peso* : ${size}
+*📃 Título* : ${title}
+*🔰 Ext* : mp4
+*⚖️ Peso* : ${size}
 `.trim(), m, false, { asDocument: chat.useDocument })
 		m.react(done)*/ 
 	} 
@@ -43,7 +43,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 }
 handler.help = ['ytmp4 <link yt>']
 handler.tags = ['dl'] 
-handler.command = ['ytmp4', 'fgmp4']
+handler.command = ['ytmp4', 'sitymp4']
 handler.diamond = true
 
 export default handler
