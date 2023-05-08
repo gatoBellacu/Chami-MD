@@ -31,7 +31,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 		/*const { title, result, quality, size, duration, thumb, channel } = await fg.ytv(args[0]) 
 		if (size.split('MB')[0] >= limit) return m.reply(` ≡  *FG YTDL2*\n\n▢ *⚖️Peso* : ${size}\n▢ *🎞️Calidad* : ${quality}\n\n▢ _El archivo supera el límite de descarga_ *+${limit} MB*`)
 	conn.sendFile(m.chat, result, title + '.mp4', `
- ≡  *FG YT*
+ *📀 YOUTUBE MP4 📀*
   
 *📃 Título* : ${title}
 *🔰 Ext* : mp4
