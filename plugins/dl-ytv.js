@@ -18,10 +18,10 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 	  conn.sendFile(m.chat, dl_url, title + '.mp4', `
 *📣 YOUTUBE MP4 📣*
   
-▢ *📃 Título* : ${title}
-▢ *🚀 Ext* : mp4
-▢ *🪄 Calidad* : ${q}
-▢ *⚖️Peso* : ${size}
+*▢ 📃 Título* : ${title}
+*▢ 🚀 Ext* : mp4
+*▢ 🪄 Calidad* : ${q}
+*▢ ⚖️Peso* : ${size}
 `.trim(), m, false, { asDocument: chat.useDocument })
 		m.react(done) 
 		
