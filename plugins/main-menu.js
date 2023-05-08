@@ -23,7 +23,42 @@ let tags = {
   'advanced': 'AVANZADO',
 }
 const defaultMenu = {
-  before: `╔═══❖•ೋ° °ೋ•❖═══╗
+  before: `
+  ╭─────═[ INFO USER ]═─────⋆
+│╭───────────────···
+┴│☂︎ *Nombre:* %name
+⬡│☂︎ *Tag:* %tag
+⬡│☂︎ *Premium:* %prems
+⬡│☂︎ *Diamantes:* %limit
+⬡│☂︎ *Money:* %money
+⬡│☂︎ *Role:* %role
+⬡│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
+⬡│☂︎ *Xp:* %exp / %maxexp
+┬│☂︎ *Total Xp:* %totalexp
+│╰────────────────···
+┠─────═[ TODAY ]═─────⋆
+│╭────────────────···
+┴│    *${ucapan()} %name!*
+⬡│☂︎ *Tanggal:* %week %weton
+⬡│☂︎ *Date:* %date
+⬡│☂︎ *Tanggal Islam:* %dateIslamic
+┬│☂︎ *Waktu:* %time
+│╰────────────────···
+┠─────═[ INFO BOT ]═─────⋆
+│╭────────────────···
+┴│☂︎ *Nama Bot:* %me
+⬡│☂︎ *Mode:* %mode
+⬡│☂︎ *Prefix:* [ *%_p* ]
+⬡│☂︎ *Baileys:* Multi Device
+⬡│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+⬡│☂︎ *Platform:* %platform
+⬡│☂︎ *Type:* Node.Js
+⬡│☂︎ *Uptime:* %muptime
+┬│☂︎ *Database:* %rtotalreg dari %totalreg
+│╰────────────────···
+╰──────────═┅═──────────
+  
+  ╔═══❖•ೋ° °ೋ•❖═══╗
 ║👋🏻 Hola *%name*
 ║❂ Base de datos: %rtotalreg a %totalreg
 ║❂ Fecha: %week , %date
