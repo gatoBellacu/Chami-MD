@@ -1,4 +1,3 @@
-
 //import db from '../lib/database.js'
 
 const free = 5000
@@ -11,8 +10,8 @@ let handler = async (m, {conn, isPrems }) => {
   m.reply(`
 🎁 *RECOMPENSA DIARIA*
 
-▢ *Has recibido:*
-🆙 *XP* : +${isPrems ? prem : free}`)
+► *Has recibido:*
+✨ *XP* : +${isPrems ? prem : free}`)
   global.db.data.users[m.sender].lastclaim = new Date * 1
 }
 handler.help = ['daily']
