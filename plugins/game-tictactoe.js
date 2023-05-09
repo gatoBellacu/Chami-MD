@@ -2,12 +2,12 @@ import TicTacToe from '../lib/tictactoe.js'
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
     conn.game = conn.game ? conn.game : {}
-    if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `✳️ Todavía estás en el juego para reiniciar la session escribe : *${usedPrefix}delttt*`
-    if (!text) throw `✳️ Ponga un nombre a la sala`
+    if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `*⚠️ Todavía estás en el juego para reiniciar la session escribe : ${usedPrefix}delttt*`
+    if (!text) throw `*⚠️ Ponga un nombre a la sala*`
     let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     // m.reply('[WIP Feature]')
     if (room) {
-        m.reply('✅ Compañero encontrado')
+        m.reply('*✅ Compañero encontrado*')
         room.o = m.chat
         room.game.playerO = m.sender
         room.state = 'PLAYING'
@@ -27,17 +27,17 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             }[v]
         })
         let str = `
-Esperando a @${room.game.currentTurn.split('@')[0]} como primer jugador
+*Esperando a @${room.game.currentTurn.split('@')[0]} como primer jugador*
         
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-▢ *SALA ID* ${room.id}
+ *SALA ID* ${room.id}
 
 ▢ *Reglas*
-‣ Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar
-‣ Escribe *surrender* para salir del juego y ser declarado derrotado.
+► _*Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar*_
+► *_Escribe *surrender* para salir del juego y ser declarado derrotado._*
 `.trim()
         if (room.x !== room.o) await conn.sendButton(room.x, str, fgig, ['Surrender', 'surrender'], m, {
             mentions: conn.parseMention(str)
@@ -55,10 +55,10 @@ ${arr.slice(6).join('')}
         }
         if (text) room.name = text
         
-     conn.sendButton(m.chat, `⏳ *Esperando pareja*\nEscriba el siguiente comando para aceptar o presiona el botón 
+     conn.sendButton(m.chat, `⏳ *Esperando pareja*\n*Escriba el siguiente comando para aceptar o presiona el botón*
 ▢ *${usedPrefix + command} ${text}*
 
-🎁 Recompensa: *4999 XP*`, fgig, ['👍🏻 Aceptar', `${usedPrefix + command} ${text}`], m, {
+*🎁 Recompensa: 4999 XP*`, wm2, ['👍🏻 Aceptar', `${usedPrefix + command} ${text}`], m, {
             mentions: conn.parseMention(text)
         })
         
