@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
  global.db.data.users[m.sender].exp += hasil
 
   m.reply(`
-► ${res.fgwork} *${hasil} XP*
+*🏢 ${res.fgwork} ${hasil} XP*
 `)
   global.db.data.users[m.sender].lastwork = new Date * 1
 }
