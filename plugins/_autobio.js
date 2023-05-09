@@ -13,7 +13,7 @@ let _muptime
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `🎉 Soy ${wm2} || ⏰ Activo durante ${muptime} || 🌎 Modo ${global.opts['self'] ? 'Privado' : 'Publico'} || 🔰 Usuarios: ${Object.keys(global.db.data.users).length} || 🎨 Creado por ${nombreowner}`
+		let bio = `🎉 Soy ${wm2} || ⏰ Activo durante: ${muptime} || 🌎 Modo: ${global.opts['self'] ? 'Privado' : 'Publico'} || 🔰 Usuarios: ${Object.keys(global.db.data.users).length} || 🎨 Creado por: ${nombreowner}`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 
