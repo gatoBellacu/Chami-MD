@@ -16,7 +16,7 @@ const sections = [
 	{title: "🗣️ ┆ ChatBot", rowId: `${usedPrefix + command} chatbot`},
 	{title: "🔎 ┆ Detect", rowId: `${usedPrefix + command} detect`},
 	{title: "📑 ┆ Document", rowId: `${usedPrefix + command} document`},
-	{title: "🖥️ ┆ MODOJADIBOT", rowId: `${usedPrefix + command} modejadibot`},
+	{title: "🖥️ ┆ ModeJadiBot", rowId: `${usedPrefix + command} modejadibot`},
 	{title: "🛡️ ┆ Restrict", rowId: `${usedPrefix + command} restrict`},
 	{title: "💬 ┆ OnlyPv", rowId: `${usedPrefix + command} onlydm`},
 	{title: "👥 ┆ OnlyGp", rowId: `${usedPrefix + command} onlygp`}
