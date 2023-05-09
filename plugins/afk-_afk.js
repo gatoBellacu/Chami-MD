@@ -4,7 +4,7 @@
         m.reply(`
 *⚠️ Dejaste de estar afk*
 
-📍 *Estuviste inactivo por:* ${(new Date - user.afk).toTimeString()}
+🔰 *Estuviste inactivo por:* ${(new Date - user.afk).toTimeString()}
 `.trim())
         user.afk = -1
         user.afkReason = ''
