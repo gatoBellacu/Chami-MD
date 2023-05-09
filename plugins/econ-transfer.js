@@ -31,7 +31,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 *presiona un boton*
 `.trim()
    
-    conn.sendButton(m.chat, confirm, wm, null, [['si'], ['no']], m, { mentions: [who] })
+    conn.sendButton(m.chat, confirm, wm3, null, [['si'], ['no']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
         to: who,
