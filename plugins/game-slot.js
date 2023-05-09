@@ -17,7 +17,7 @@ Cuanto quieres apostar?
         throw `*⚠️ No tienes suficiente XP*`
     }
 
-    let emojis = ["🍧", "🍥", "🍡"];
+    let emojis = ["🍧", "🍥", "🍩"];
     let a = Math.floor(Math.random() * emojis.length);
     let b = Math.floor(Math.random() * emojis.length);
     let c = Math.floor(Math.random() * emojis.length);
