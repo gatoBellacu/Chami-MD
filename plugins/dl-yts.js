@@ -8,10 +8,10 @@ let handler = async (m, {conn, text }) => {
     switch (v.type) {
       case 'video': return `
 ⬡ ${v.title}
-*⬡ 🏷️ Link* : ${v.url}
-*⬡ 🚀 Duración* : ${v.timestamp}
-*⬡ 🍧 Subido :* ${v.ago}
-*⬡ 🧿 Vistas:* ${v.views}
+*⬡ 📊 Link* : ${v.url}
+*⬡ 🖥️ Duración* : ${v.timestamp}
+*⬡ 📅 Subido :* ${v.ago}
+*⬡ 👀 Vistas:* ${v.views}
 
    `.trim()
       case 'canal': return `
