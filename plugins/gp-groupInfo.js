@@ -8,13 +8,13 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
     let text = `
 ┌──「 *INFO DE GRUPO* 」
-→ *♻️ ID:*
+→ *🚀 ID:*
    • ${groupMetadata.id}
 → *🔖 Nombre* : 
 • ${groupMetadata.subject}
 → *👥 Miembros* :
 • ${participants.length}
-→ *🤿 Dueño de Grupo:*
+→ *🍧 Dueño de Grupo:*
 • @${owner.split('@')[0]}
 → *🕵🏻‍♂️ Admins:*
  ${listAdmin}
@@ -25,14 +25,14 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
 • ${del ? '❌' : '✅'} Anti Delete
 • ${antiLink ? '✅' : '❌'} Anti Link WhatsApp
 
-*  📬 Configuración de mensajes:*
+*📬 Configuración de mensajes:*
 • Bienvenida: ${sWelcome}
 • Despedida: ${sBye}
 • Promovidos: ${sPromote}
 • Degradados: ${sDemote}
 
 *🔰 Descripción* :
-   • ${groupMetadata.desc?.toString() || 'Sin description'}
+   • ${groupMetadata.desc?.toString() || 'Sin descripción'}
 `.trim()
     conn.sendFile(m.chat, pp, 'pp.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
