@@ -31,8 +31,8 @@ let str = `
  *📇 Registrado :* ${registered ? 'Si': 'No'}
  *⭐ Premium* : ${prem ? 'Si' : 'No'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
-    m.react(done)
+    //conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
+  conn.sendButton(m.chat, str, botdate, pp, [[`${registered ? 'Menu':'Verify'}`, `${user.registered ? '.menu':'.verify'}`]], fkon, { contextInfo: { mentionedJid: [who], forwardingScore: 999, isForwarded: true}})
 
 }
 handler.help = ['perfil']
