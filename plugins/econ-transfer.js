@@ -27,8 +27,8 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let confirm = `
 *🍧 ¿Está seguro de que desea transferir ${count} _${type}_ a  @${(who || '').replace(/@s\.whatsapp\.net/g, '')} ?*
 
-- Tienes  *60s* 
-_presiona un boton_
+*⏰ Tienes  60 segundos* 
+*presiona un boton*
 `.trim()
    
     conn.sendButton(m.chat, confirm, fgig, null, [['si'], ['no']], m, { mentions: [who] })
@@ -38,7 +38,7 @@ _presiona un boton_
         message: m,
         type,
         count,
-        timeout: setTimeout(() => (m.reply('⏳ Se acabó el tiempo'), delete confirmation[m.sender]), 60 * 1000)
+        timeout: setTimeout(() => (m.reply('*⏳ Se acabó el tiempo*'), delete confirmation[m.sender]), 60 * 1000)
     }
 }
 
@@ -60,7 +60,7 @@ handler.before = async m => {
         let _previous = _user[type] * 1
         user[type] -= count * 1
         _user[type] += count * 1
-        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`✅ Se realizo la transferencia de \n\n*${count}* *${type}*  a @${(to || '').replace(/@s\.whatsapp\.net/g, '')}`, null, { mentions: [to] })
+        if (previous > user[type] * 1 && _previous < _user[type] * 1) m.reply(`*✅ Se realizo la transferencia de*\n\n*${count} ${type}  a @${(to || '').replace(/@s\.whatsapp\.net/g, '')}*`, null, { mentions: [to] })
         else {
             user[type] = previous
             _user[type] = _previous
