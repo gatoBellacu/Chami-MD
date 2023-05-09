@@ -25,7 +25,7 @@ let str = `
  *⚠️ • Advertencias:* ${warn}/${maxwarn}
  *💎 • Diamantes :* ${diamond}
  *📊 • Nivel* : ${level}
- *✨ • XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `listo para *${usedPrefix}levelup*` : `_*${math}xp*_ Falta para subir de nivel`}
+ *✨ • XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ?
  *🏆 • Rango:* ${role}
  *📑 • Registrado :* ${registered ? '✅': '❌'}
  *⭐ • Premium* : ${prem ? '✅' : '❌'}`
