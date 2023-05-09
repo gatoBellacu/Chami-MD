@@ -37,7 +37,7 @@ ${arr.slice(6).join('')}
 
 ▢ *Reglas*
 ► _*Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar*_
-► *_Escribe *surrender* para salir del juego y ser declarado derrotado._*
+► *_Escribe surrender para salir del juego y ser declarado derrotado_*
 `.trim()
         if (room.x !== room.o) await conn.sendButton(room.x, str, fgig, ['Surrender', 'surrender'], m, {
             mentions: conn.parseMention(str)
