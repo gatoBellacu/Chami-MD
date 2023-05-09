@@ -2,19 +2,19 @@ const items = ['diamond', 'exp']
 let confirmation = {}
 
 async function handler(m, { conn, args, usedPrefix, command }) {
-    if (confirmation[m.sender]) return m.reply('estas haciendo una transferencia')
+    if (confirmation[m.sender]) return m.reply('*⚠️ estas haciendo una transferencia*')
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
-    let lol = `✳️ Uso correcto del comamdo 
+    let lol = `*⚠️ Uso correcto del comamdo*
 *${usedPrefix + command}*  [tipo] [cantidad] [@user]
 
-📌 Ejemplo : 
-*${usedPrefix + command}* exp 65 @${m.sender.split('@')[0]}
+*🔰 Ejemplo :*
+*${usedPrefix + command} exp 65* @${m.sender.split('@')[0]}
 
-📍 Artículos transferibles
+*📍 Artículos transferibles*
 ┌──────────────
-▢ *diamond* = Diamante 💎
-▢ *exp* = Experiencia 🆙
+► *diamond* = Diamante 💎
+► *exp* = Experiencia ✨
 └──────────────
 `.trim()
     const type = (args[0] || '').toLowerCase()
