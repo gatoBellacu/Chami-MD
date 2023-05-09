@@ -20,7 +20,7 @@ let str = `
 ┌───「 *PERFIL* 」
  *💌 • Nombre:* ${username} ${registered ? '\n*🎐 • Nombre de usuario:* ' + name + ' ': ''}
  *📧 • Tag:* @${who.replace(/@.+/, '')}
- *📱Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+ *📞 • Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
  *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n*🎈Edad*: ' + age + ' años' : ''}
  *⚠️ Advertencias:* ${warn}/${maxwarn}
  *💎 Diamantes :* ${diamond}
