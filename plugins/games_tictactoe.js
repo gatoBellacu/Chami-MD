@@ -61,16 +61,16 @@ export async function before(m) {
         }
         let winner = isSurrender ? room.game.currentTurn : room.game.winner
         let str = `
-${isWin ? `@${winner.split('@')[0]} *Eres el ganador 🎉 +${winScore} XP*` : isTie ? `*⚠️ Se acabó el juego, con un empate +${playScore} XP*` : `*⚠️ Ahora es tu turno* ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
+${isWin ? `@${winner.split('@')[0]} *Eres el ganador 🎉 +${winScore} XP*` : isTie ? `*⚠️ Se acabó el juego, con un empate +${playScore} XP*` : `*⚠️ Ahora es tu turno* ${['❎', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`} 
 
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-► *JUGADOR 1* ❌ : @${room.game.playerX.split('@')[0]} 
+► *JUGADOR 1* ❎ : @${room.game.playerX.split('@')[0]} 
 ► *JUGADOR 2* ⭕ : @${room.game.playerO.split('@')[0]}
 
-Escriba *surrender* para darse por vencido 
+*_Escriba surrender para darse por vencido_*
 `.trim()
         let users = global.global.db.data.users
         if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
