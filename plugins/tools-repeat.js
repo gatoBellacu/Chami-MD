@@ -1020,4 +1020,4 @@ handler.botAdmin = false
 handler.fail = null
 handler.limit = false
 
-module.exports = handler
+export default handler
