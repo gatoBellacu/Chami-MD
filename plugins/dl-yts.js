@@ -3,7 +3,7 @@ import yts from 'yt-search'
 var handler = async(m, { conn, usedPrefix, text, args, command }) => {
 let name = await conn.getName(m.sender)
 
-  if (!text) throw 'Qué estás buscando?'
+  if (!text) throw '*⚠️ Qué estás buscando?*'
   let cari = await yts(`${text}`)
     let dapet = cari.all
     let listSections = []
