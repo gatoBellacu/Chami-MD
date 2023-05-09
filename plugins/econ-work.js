@@ -8,12 +8,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     /*let w = await axios.get(global.API('fgmods', '/api/work', { }, 'apikey'))
     let res = w.data.result*/
-    let anu = (await axios.get('https://raw.githubusercontent.com/fgmods/fg-team/main/games/work.json')).data
+    let anu = (await axios.get('https://raw.githubusercontent.com/Azami19/storage-curiosity/main/juegos/work.json')).data
     let res = pickRandom(anu)
  global.db.data.users[m.sender].exp += hasil
 
   m.reply(`
-*🏢 ${res.fgwork} ${hasil} XP*
+*🏢 ${res.work} ${hasil} XP*
 `)
   global.db.data.users[m.sender].lastwork = new Date * 1
 }
