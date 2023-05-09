@@ -4,7 +4,7 @@ let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whats
 conn.sendButton(m.chat, `*🍧 LISTA CMD 🍧*
 \`\`\`
 ${Object.entries(global.db.data.sticker).map(([key, value], index) => `${index + 1}. ${value.locked ? `(bloqueado) ${key}` : key} : ${value.text}`).join('\n\n')}
-\`\`\``, null, [['✳️MENU', `/menu`]], fkon, m)
+\`\`\``, null, [['✳️MENU', `/menu`]], fkon, { contextInfo: { mentionedJid: [who], forwardingScore: 999, isForwarded: true}})
 }
 handler.help = ['listcmd']
 handler.tags = ['database']
