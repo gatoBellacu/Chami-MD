@@ -22,7 +22,7 @@ let str = `
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
    • @${who.replace(/@.+/, '')}
  *📱Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
- *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈Edad*: ' + age + ' años' : ''}
+ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n*🎈Edad*: ' + age + ' años' : ''}
  *⚠️ Advertencias:* ${warn}/${maxwarn}
  *💎 Diamantes :* ${diamond}
  *📊 Nivel* : ${level}
