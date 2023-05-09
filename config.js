@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url'
 global.owner = [
   ['59894808483', 'creador', true],
   ['5492266613038'],
-  ['59169316023']]
+  ['59169316023'],
+  ['593968585383']]
  //Numeros de owner 
 
 global.mods = [] 
