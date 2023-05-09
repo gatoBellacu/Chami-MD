@@ -21,14 +21,14 @@ let str = `
  *💌 • Nombre:* ${username} ${registered ? '\n*🎐 • Nombre de usuario:* ' + name + ' ': ''}
  *📧 • Tag:* @${who.replace(/@.+/, '')}
  *📞 • Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
- *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n*🎨 • Edad*: ' + age + ' años' : ''}
- *⚠️ Advertencias:* ${warn}/${maxwarn}
- *💎 Diamantes :* ${diamond}
- *📊 Nivel* : ${level}
- *✨ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `listo para *${usedPrefix}levelup*` : `_*${math}xp*_ Falta para subir de nivel`}
- *🏆 Rango:* ${role}
- *📇 Registrado :* ${registered ? 'Si': 'No'}
- *⭐ Premium* : ${prem ? 'Si' : 'No'}
+ *🔗 • Link:* wa.me/${who.split`@`[0]}${registered ? '\n*🎨 • Edad*: ' + age + ' años' : ''}
+ *⚠️ • Advertencias:* ${warn}/${maxwarn}
+ *💎 • Diamantes :* ${diamond}
+ *📊 • Nivel* : ${level}
+ *✨ • XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `listo para *${usedPrefix}levelup*` : `_*${math}xp*_ Falta para subir de nivel`}
+ *🏆 • Rango:* ${role}
+ *📇 • Registrado :* ${registered ? 'Si': 'No'}
+ *⭐ • Premium* : ${prem ? 'Si' : 'No'}
 └──────────────`
     //conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
   conn.sendButton(m.chat, str, wm2, pp, [[`${registered ? 'Menu':'Verificar'}`, `${user.registered ? '.menu':'.verify'}`]], fkon, { contextInfo: { mentionedJid: [who], forwardingScore: 999, isForwarded: true}})
