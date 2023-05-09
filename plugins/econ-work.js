@@ -1,11 +1,10 @@
-
 import fetch from 'node-fetch'
 import axios from 'axios'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
   let hasil = Math.floor(Math.random() * 2000)
   let time = global.db.data.users[m.sender].lastwork + 3600000
-  if (new Date - global.db.data.users[m.sender].lastwork < 3600000) throw `*🧘🏻‍♂️ Estas cansado* y por lo tanto hay que esperar *${msToTime(time - new Date())}* para volver a trabajar!`
+  if (new Date - global.db.data.users[m.sender].lastwork < 3600000) throw `*⚠️ Estas cansado y por lo tanto hay que esperar *${msToTime(time - new Date())}* para volver a trabajar*`
 
     /*let w = await axios.get(global.API('fgmods', '/api/work', { }, 'apikey'))
     let res = w.data.result*/
@@ -14,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
  global.db.data.users[m.sender].exp += hasil
 
   m.reply(`
-‣ ${res.fgwork} *${hasil} XP*
+► ${res.fgwork} *${hasil} XP*
 `)
   global.db.data.users[m.sender].lastwork = new Date * 1
 }
