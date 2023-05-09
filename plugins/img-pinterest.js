@@ -6,7 +6,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
   const json = await pinterest(text)
   conn.sendFile(m.chat, json.getRandom(), 'pinterest.jpg', `
 *🍧 Pinterest:*  ${text}
-`.trim(), null, [['MENU', `/menu`]], fkontak, m)
+`, null, [['MENU', `/menu`]], fkontak, m)
 }
 handler.help = ['pinterest']
 handler.tags = ['img']
