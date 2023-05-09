@@ -36,8 +36,8 @@ ${arr.slice(6).join('')}
  *SALA ID* ${room.id}
 
 🔰 *Reglas*
-► _*Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar*_
-► _*Escribe surrender para salir del juego y ser declarado derrotado*_
+ _*Haz 3 filas de símbolos verticales, horizontales o diagonales para ganar*_
+ _*Escribe surrender para salir del juego y ser declarado derrotado*_
 `.trim()
         if (room.x !== room.o) await conn.sendButton(room.x, str, fgig, ['Surrender', 'surrender'], m, {
             mentions: conn.parseMention(str)
@@ -55,10 +55,10 @@ ${arr.slice(6).join('')}
         }
         if (text) room.name = text
         
-     conn.sendButton(m.chat, `⏳ *Esperando pareja*\n*Escriba el siguiente comando para aceptar o presiona el botón*
-▢ *${usedPrefix + command} ${text}*
+     conn.sendButton(m.chat, `🔰 *Esperando pareja*\n_*Escriba el siguiente comando para aceptar o presiona el botón*_
+*${usedPrefix + command} ${text}*
 
-*🎁 Recompensa: 4999 XP*`, wm2, ['👍🏻 Aceptar', `${usedPrefix + command} ${text}`], m, {
+*🎁 Recompensa: 4999 XP*`, wm2, ['Aceptar', `${usedPrefix + command} ${text}`], m, {
             mentions: conn.parseMention(text)
         })
         
