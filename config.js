@@ -62,6 +62,14 @@ global.done = '✅'
 global.error = '❌' 
 global.xmoji = '🔥' 
 
+global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
+global.cmenut = '❏––––––『'                    
+global.cmenuh = '』––––––'         
+global.cmenub = '┊❀'                          
+global.cmenuf = '┗━═┅═━––––––๑\n'                
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' 
+global.pmenus = '┊'                          
+
 global.multiplier = 69 
 global.maxwarn = '6' // máxima advertencias
 
