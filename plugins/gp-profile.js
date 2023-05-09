@@ -25,7 +25,7 @@ let str = `
  *⚠️ • Advertencias:* ${warn}/${maxwarn}
  *💎 • Diamantes :* ${diamond}
  *📊 • Nivel* : ${level}
- *✨ • XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ?
+ *✨ • XP* : Total ${exp} (${user.exp - min} / ${xp})
  *🏆 • Rango:* ${role}
  *📑 • Registrado :* ${registered ? '✅': '❌'}
  *⭐ • Premium* : ${prem ? '✅' : '❌'}`
