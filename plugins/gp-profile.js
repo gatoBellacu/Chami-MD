@@ -17,20 +17,25 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-┌───「 *PERFIL* 」
-→ *🔖 Nombres:* 
-   • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • @${who.replace(/@.+/, '')}
-→ *📱Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-→ *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n*→ 🎈 Edad*: ' + age + ' años' : ''}
-→ *⚠️ Advertencias:* ${warn}/${maxwarn}
-→ *💎 Diamantes :* ${diamond}
-→ *🆙 Nivel* : ${level}
-→ *⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `listo para *${usedPrefix}levelup*` : `_*${math}xp*_ Falta para subir de nivel`}
-→ *🏆 Rango:* ${role}
-→ *📇 Registrado :* ${registered ? 'Si': 'No'}
-→ *⭐ Premium* : ${prem ? 'Si' : 'No'}
-└──────────────`
+┏━━━「 *PERFIL* 」
+┃ *✨ Nombres ✨:* 
+┃   • ${username} ${registered ? '\n   • ' + name + ' ': ''}
+┃   • @${who.replace(/@.+/, '')}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *📱Numero 📱:* 
+┃${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *🔗 Link:* 
+┃wa.me/${who.split`@`[0]}${registered ? '┃*→ 🎈 Edad*: ' + age + ' años' : ''}\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *⚠️ Advertencias:* ${warn}/${maxwarn}
+┃ *💎 Diamantes :* ${diamond}
+┃ *🆙 Nivel* : ${level}
+┃ *⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `listo para *${usedPrefix}levelup*` : `_*${math}xp*_ Falta para subir de nivel`}
+┃ *🏆 Rango:* ${role}
+┃ *📇 Registrado :* ${registered ? 'Si': 'No'}
+┃ *⭐ Premium* : ${prem ? 'Si' : 'No'}
+┗━━━━━━━━━━━━━━`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
