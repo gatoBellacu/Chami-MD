@@ -9,4 +9,5 @@ ${text} ${text} ${text} ${text} ${text} ${text} ${text} ${text} ${text} ${text} 
 handler.help = ['repeat2 <teks>']
 handler.tags = ['tools']
 handler.command = /^(repeat2)$/i
+
 module.exports = handler
