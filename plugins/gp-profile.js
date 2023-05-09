@@ -32,7 +32,7 @@ let str = `
  *⭐ Premium* : ${prem ? 'Si' : 'No'}
 └──────────────`
     //conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
-  conn.sendButton(m.chat, str, wm, pp, [[`${registered ? 'Menu':'Verify'}`, `${user.registered ? '.menu':'.verify'}`]], fkon, { contextInfo: { mentionedJid: [who], forwardingScore: 999, isForwarded: true}})
+  conn.sendButton(m.chat, str, wm2, pp, [[`${registered ? 'Menu':'Verificar'}`, `${user.registered ? '.menu':'.verify'}`]], fkon, { contextInfo: { mentionedJid: [who], forwardingScore: 999, isForwarded: true}})
 
 }
 handler.help = ['perfil']
