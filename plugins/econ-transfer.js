@@ -53,7 +53,7 @@ handler.before = async m => {
     if (/no?/g.test(m.text.toLowerCase())) {
         clearTimeout(timeout)
         delete confirmation[sender]
-        return m.reply('✅ Transferencia Cancelado')
+        return m.reply('*✅ Transferencia Cancelada*')
     }
     if (/si?/g.test(m.text.toLowerCase())) {
         let previous = user[type] * 1
@@ -64,7 +64,7 @@ handler.before = async m => {
         else {
             user[type] = previous
             _user[type] = _previous
-            m.reply(`❎ Error al transferir *${count}* ${type} a *@${(to || '').replace(/@s\.whatsapp\.net/g, '')}*`, null, { mentions: [to] })
+            m.reply(`*⚠️ Error al transferir ${count} ${type} a @${(to || '').replace(/@s\.whatsapp\.net/g, '')}*`, null, { mentions: [to] })
         }
         clearTimeout(timeout)
         delete confirmation[sender]
