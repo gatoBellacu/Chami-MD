@@ -9,11 +9,11 @@ let name = await conn.getName(m.sender)
     let listSections = []
 	Object.values(dapet).map((v, index) => {
 	listSections.push([index + ' ' + cmenub + ' ' + v.title, [
-          ['Video 🎥', usedPrefix + 'getvid ' + v.url, '\n⌚ *Duración:* ' + v.timestamp + '\n⏲️ *Subido:* ' + v.ago + '\n👁️ *Vistas:* ' + v.views + '\n📎 *Url:* ' + v.url],
-          ['Audio 🎧', usedPrefix + 'getaud ' + v.url, '\n⌚ *Duración:* ' + v.timestamp + '\n⏲️ *Subido:* ' + v.ago + '\n👁️ *Vistas:* ' + v.views + '\n📎 *Url:* ' + v.url]
+          ['Video 🎥', usedPrefix + 'sitymp4 ' + v.url, '\n⏰ *Duración:* ' + v.timestamp + '\n📊 *Subido:* ' + v.ago + '\n👀 *Vistas:* ' + v.views + '\n📎 *Url:* ' + v.url],
+          ['Audio 🎧', usedPrefix + 'sitymp3 ' + v.url, '\n⏰ *Duración:* ' + v.timestamp + '\n📊 *Subido:* ' + v.ago + '\n👀 *Vistas:* ' + v.views + '\n📎 *Url:* ' + v.url]
         ]])
 	}) 
-	return conn.sendList(m.chat, '*───「 Youtube Search 」───*', `Seleccione un tipo a continuación...\n*El texto que solicitaste:* ${text}\n\Vuelva a escribir *${usedPrefix + command}* su texto para cambiar el texto de nuevo`, wm2, `YouTube Search 🔎`, listSections, m)
+	return conn.sendList(m.chat, '*───「 Youtube Search 」───*', `Seleccione un tipo a continuación...\n*El texto que solicitaste:* ${text}\n\Vuelva a escribir *${usedPrefix + command}* su texto para cambiar el texto de nuevo`, wm2, `SELECCIONE AQUI`, listSections, m)
 }
 handler.help = ['ytsearch <query>']
 handler.tags = ['internet']
