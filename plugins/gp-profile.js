@@ -19,7 +19,7 @@ let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whats
 let str = `
 ┌───「 *PERFIL* 」
  *💌 • Nombres:* ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • @${who.replace(/@.+/, '')}
+ *🎐 • Nombre de usuario: @${who.replace(/@.+/, '')}
  *📱Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
  *🔗 Link:* wa.me/${who.split`@`[0]}${registered ? '\n*🎈Edad*: ' + age + ' años' : ''}
  *⚠️ Advertencias:* ${warn}/${maxwarn}
