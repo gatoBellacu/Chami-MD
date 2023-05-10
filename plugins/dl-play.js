@@ -15,13 +15,13 @@ var handler = async (m, { conn, command, text, usedPrefix }) => {
 ⬡ Subido: ${ago}
 ⬡ Enlace: ${url}
 ╰────────⬣`
-  conn.sendButton(m.chat, `╭──── 〔 Y O U T U B E 〕 ─⬣
+ /* conn.sendButton(m.chat, `╭──── 〔 Y O U T U B E 〕 ─⬣
 ⬡ Título: ${title}
 ⬡ Duración: ${timestamp}
 ⬡ Vistas: ${views}
 ⬡ Subido: ${ago}
 ⬡ Enlece: ${url}
-╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽 VIDEO', `${usedPrefix}getvid ${url} 360`], false, { quoted: m, 'document': { 'url':'https://wa.me/59176184204' },
+╰────────⬣`, author.trim(), await( await conn.getFile(thumbnail)).data, ['📽 VIDEO', `${usedPrefix}getvid ${url} 360`], false, { quoted: m, 'document': { 'url':'https://wa.me/59176184204' },*/
 'mimetype': global.dpdf,
 'fileName': `𝕐𝕠𝕦𝕋𝕦𝕓𝕖 ℙ𝕝𝕒𝕪𝕤`,
 'fileLength': 666666666666666,
