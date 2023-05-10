@@ -162,11 +162,7 @@ let handler = async (m, { conn, isPrems, usedPrefix: _p, __dirname }) => {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m)*/  
-   /* conn.sendButton(m.chat, text.trim(), 'CURIOSITY-BOT-MD : AZAMI', pp, [
-      ['[ DONAR ]', `${_p}donate`],
-      ['[ INFO ]', `${_p}botinfo`],
-      ['[ GRUPOS ]', `${_p}gpdylux`]
-    ],m, rpl)*/
+
   
     m.react('🎈') 
     
