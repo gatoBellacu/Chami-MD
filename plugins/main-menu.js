@@ -6,10 +6,10 @@ import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': '*👨‍💻 ACERCA DE 👨‍💻*',
-  'game': 'JUEGOS 🎮',
-  'econ': 'NIVEL & ECONOMIA 🔰',
-  'rg': 'REGISTRO 📑',
-  'sticker': 'STICKER 🚀',
+  'game': '*🎮 JUEGOS 🎮*',
+  'econ': '*💸 NIVEL & ECONOMIA 💸*',
+  'rg': '*📑 REGISTRO 📑*',
+  'sticker': '*🎠 STICKER 🎠*',
   'img': 'IMAGEN 🖼️',
   'maker': 'MAKER 📊',
   'prem': 'PREMIUM 💎',
