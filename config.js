@@ -68,7 +68,14 @@ global.cmenuh = '』––––––'
 global.cmenub = '┊❀'                          
 global.cmenuf = '┗━═┅═━––––––๑\n'                
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' 
-global.pmenus = '┊'                          
+global.pmenus = '┊'         
+global.htki = '––––––『' // Hiasan Titile (KIRI)
+global.htka = '』––––––' // Hiasan Title  (KANAN)
+global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
+global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
+global.htjava = '⫹⫺'    //hiasan Doang :v
+global.hsquere = ['⛶','❏','⫹⫺']
+
 
 global.multiplier = 69 
 global.maxwarn = '6' // máxima advertencias
