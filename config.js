@@ -40,6 +40,7 @@ global.wm = '                「 ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃 汉  」'
 global.wm2 = 'CuriosityBot-MD'
 global.wm3 = '⫹⫺ ᴄᴜʀɪᴏsɪᴛʏ 𝙱𝙾𝚃'
 global.nombreowner = 'Azami'
+global.namebot = 'Curiosity' 
 global.igfg = 'CURIOSITY'
 global.nomorown = '5214531106422'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
