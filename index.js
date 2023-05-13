@@ -23,7 +23,7 @@ function start() {
 CFonts.say('Curiosity\nBot\nMD', {
    font: 'block',
    align: 'center',
-   colors: ['blue']
+   colors: ['cyan']
 }), CFonts.say('Github : https://github.com/Azami19/CuriosityBot-MD1', {
    colors: ['red'],
    font: 'console',
