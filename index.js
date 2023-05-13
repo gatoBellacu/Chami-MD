@@ -20,12 +20,12 @@ function start() {
 	})
 }
 
-CFonts.say('NEOXR BOT', {
-   font: 'tiny',
+CFonts.say('Curiosity\nBot\nMD', {
+   font: 'block',
    align: 'center',
-   colors: ['system']
-}), CFonts.say('Github : https://github.com/neoxr/neoxr-bot', {
-   colors: ['system'],
+   colors: ['blue']
+}), CFonts.say('Github : https://github.com/Azami19/CuriosityBot-MD1', {
+   colors: ['red'],
    font: 'console',
    align: 'center'
 }), start()
