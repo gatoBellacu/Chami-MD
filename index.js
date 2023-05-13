@@ -24,8 +24,8 @@ CFonts.say('Curiosity\nBot\nMD', {
    font: 'block',
    align: 'center',
    colors: ['cyan']
-}), CFonts.say('WhatsApp Bot (Beta)', {
-   colors: ['yellow'],
+}), CFonts.say('Desarrollado por @Azami', {
+   colors: ['candy'],
    font: 'console',
    align: 'center'
 }), start()
