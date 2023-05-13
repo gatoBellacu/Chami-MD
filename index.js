@@ -25,7 +25,7 @@ CFonts.say('Curiosity\nBot\nMD', {
    align: 'center',
    colors: ['cyan']
 }), CFonts.say('WhatsApp Bot (Beta)', {
-   colors: ['red'],
+   colors: ['yellow'],
    font: 'console',
    align: 'center'
 }), start()
