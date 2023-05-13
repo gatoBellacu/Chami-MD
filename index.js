@@ -25,7 +25,7 @@ CFonts.say('Curiosity\nBot\nMD', {
    align: 'center',
    colors: ['green']
 }), CFonts.say('Desarrollado por @Azami', {
-   colors: ['candy'],
+   colors: ['yellow'],
    font: 'console',
    align: 'center'
 }), start()
