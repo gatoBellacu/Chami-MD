@@ -21,7 +21,7 @@ exports.run = {
          const obj = {
             "type": "quote",
             "format": "png",
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#40ECE7",
             "width": 512,
             "height": 768,
             "scale": 2,
