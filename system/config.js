@@ -1,6 +1,21 @@
 const { Function, Scraper } = new (require('@neoxr/neoxr-js'))
 // Owner number
-global.owner = '593968585383' '59894808483'
+global.owner = [
+
+['12362000021', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈', true], 
+
+['972529277518', '𝙊𝙬𝙣𝙚𝙧 (1) 💻', true],  
+
+['972529277026', '𝙊𝙬𝙣𝙚𝙧 (2) 💻', true],  
+
+['5355772234', '𝘾𝙪𝙨𝙩𝙤𝙢𝙚𝙧 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🍓', true],
+
+['593968585383'], 
+
+['59894808483'],
+
+['5492266613038']]
+//global.owner = '5'
 // Owner name
 global.owner_name = 'Wildan Izzudin'
 // Database name (Default: database)
