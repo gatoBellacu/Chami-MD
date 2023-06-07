@@ -1,46 +1,33 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
-import './config.js';
+import './config.js'; 
 
-import { createRequire } from "module"; // Bring in the ability to create the 'require' method 
+import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
-global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') { return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString() }; global.__dirname = function dirname(pathURL) { return path.dirname(global.__filename(pathURL, true)) }; global.__require = function require(dir = import.meta.url) { return createRequire(dir) }
-
 import * as ws from 'ws';
-import {
-  readdirSync,
-  statSync,
-  unlinkSync,
-  existsSync,
-  readFileSync,
-  watch
-} from 'fs';
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch, rmSync } from 'fs';
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
+import chalk from 'chalk'
 import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
 import { makeWASocket, protoType, serialize } from './lib/simple.js';
 import { Low, JSONFile } from 'lowdb';
-// import pino from 'pino';
-import {
-  mongoDB,
-  mongoDBV2
-} from './lib/mongoDB.js';
+import pino from 'pino';
+import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
 import store from './lib/store.js'
-
-const {
-  DisconnectReason
-} = await import('@adiwajshing/baileys')
-
+const { DisconnectReason, useMultiFileAuthState } = await import('@adiwajshing/baileys')
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
 
 protoType()
 serialize()
+
+global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') { return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString() }; global.__dirname = function dirname(pathURL) { return path.dirname(global.__filename(pathURL, true)) }; global.__require = function require(dir = import.meta.url) { return createRequire(dir) } 
 
 global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 // global.Fn = function functionCallBack(fn, ...args) { return fn.call(global.conn, ...args) }
@@ -51,7 +38,7 @@ global.timestamp = {
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || 'xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-HhhHBb.*aA').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎z/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.,\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 // global.opts['db'] = process.env['db']
 
@@ -88,13 +75,17 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json`
-const { state, saveState } = store.useSingleFileAuthState(global.authFile)
+//-- SESSION
+//global.authFile = `${opts._[0] || 'session'}.data.json`
+//const { state, saveState } = store.useSingleFileAuthState(global.authFile)
+global.authFile = `sessions`
+const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  // logger: pino({ level: 'trace' })
+  logger: pino({ level: 'silent'}),
+  browser: ['curiositybug','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -109,19 +100,26 @@ if (!opts['test']) {
     } catch (e) { console.error(e) }
   }, 60 * 1000)
 }
+
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
-
-function clearTmp() {
+/* Clear */
+async function clearTmp() {
   const tmp = [tmpdir(), join(__dirname, './tmp')]
   const filename = []
   tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+
+  //---
   return filename.map(file => {
     const stats = statSync(file)
-    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 1)) return unlinkSync(file) // 1 minuto
     return false
   })
 }
+setInterval(async () => {
+	var a = await clearTmp()
+	console.log(chalk.cyan(`✅  Auto clear  | Se limpio la carpeta tmp`))
+}, 60000) //1 munto
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -162,7 +160,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('connection.update', conn.connectionUpdate)
     conn.ev.off('creds.update', conn.credsUpdate)
   }
-  
+
   conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ 𝘉𝘐𝘌𝘕𝘝𝘌𝘕𝘐𝘋𝘖/𝘈 𝘈 𝘌𝘚𝘛𝘌 𝘏𝘌𝘙𝘔𝘖𝘚𝘖 𝘎𝘙𝘜𝘗𝘖💞 * \n*║*\n*╟❧ 𝘋𝘌𝘚𝘊𝘙𝘐𝘗𝘊𝘐𝘖𝘕 𝘋𝘌𝘓 𝘎𝘙𝘜𝘗𝘖:*\n*╟❧* @desc\n*║*\n*╟❧ 𝘋𝘐𝘚𝘍𝘙𝘜𝘛𝘈 𝘛𝘜 𝘌𝘚𝘛𝘈𝘋𝘐𝘈 𝘌𝘕 𝘌𝘓 𝘎𝘙𝘜𝘗𝘖😎!!*\n*╚══════════════*'
   conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝘚𝘌 𝘍𝘜𝘌 𝘜𝘕 𝘍𝘈𝘕 𝘋𝘌 𝘉𝘛𝘚. 🏳️‍🌈* \n*╚══════════════*'
   conn.spromote = '*@user 𝚂𝙴 𝚂𝚄𝙼𝙰 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂!!*'
@@ -176,7 +174,8 @@ global.reloadHandler = async function (restatConn) {
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
   conn.onDelete = handler.deleteUpdate.bind(global.conn)
   conn.connectionUpdate = connectionUpdate.bind(global.conn)
-  conn.credsUpdate = saveState.bind(global.conn, true)
+  //conn.credsUpdate = saveState.bind(global.conn, true)
+  conn.credsUpdate = saveCreds.bind(global.conn, true)
 
   conn.ev.on('messages.upsert', conn.handler)
   conn.ev.on('group-participants.update', conn.participantsUpdate)
