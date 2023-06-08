@@ -1,5 +1,5 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
-const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/sinfoto.jpg' 
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './storage/menus/Menu4.jpg.jpg' 
 const { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 const groupAdmins = participants.filter(p => p.admin) 
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
@@ -29,8 +29,7 @@ ${listAdmin}
 WELCOME: ${welcome ? '✅' : '❌'}
 DETECT ${detect ? '✅' : '❌'} 
 ANTILINK ${antiLink ? '✅' : '❌'} 
-ANTILINK 2 ${antiLink2 ? '✅' : '❌'} 
-AUDIOS ${audios ? '✅' : '❌'} 
+ANTILINK 2 ${antiLink2 ? '✅' : '❌'}  
 `.trim()
 conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
