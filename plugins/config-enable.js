@@ -174,10 +174,7 @@ if (!/[01]/.test(command)) return await conn.reply(m.chat, `╭┄┄≪ *「 �
 ➵ _${usedPrefix}disable *gconly*_
 ➵ _${usedPrefix}enable *autoread*_
 ➵ _${usedPrefix}disable *autoread*_
-➵ _${usedPrefix}enable *audios*_
-➵ _${usedPrefix}disable *audios*_
-➵ _${usedPrefix}enable *autosticker*_
-➵ _${usedPrefix}disable *autosticker*_`, fkontak, m)
+`, fkontak, m)
 throw false
 }
 conn.reply(m.chat, `📊 *OPCIÓN:* ${type} 
