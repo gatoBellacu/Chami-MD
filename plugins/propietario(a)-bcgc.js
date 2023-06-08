@@ -14,7 +14,7 @@ let tiempo = d.toLocaleString('es-CO', { hour: 'numeric', minute: 'numeric', sec
 let groups = Object.keys(await conn.groupFetchAllParticipating())
 let usersTag = participants.map(u => conn.decodeJid(u.id))
 let readMS = String.fromCharCode(8206).repeat(850)
-await m.reply(lenguajeGB.smsChatGP1())   
+await m.reply('*ENVIANDO MENSAJE, ESPERE UN MOMENTO...')  
 for (let i = 0; i < groups.length; i++) {
 const id = groups[i];
 const infoGP = `✅ *COMUNICADO OFICIAL* ✅\n${readMS}\n\`\`\`${dia}, ${mes} ${año}\`\`\`\n\`\`\`${fecha} || ${tiempo}\`\`\``
