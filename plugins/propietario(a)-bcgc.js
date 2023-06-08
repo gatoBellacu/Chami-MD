@@ -23,7 +23,7 @@ setTimeout(async () => {
 await conn.reply(id, infoGP + teks2, { mentions: usersTag }, { quoted: fkontak });
 }, delay)}        
 let totalGP = groups.length
-await m.reply(lenguajeGB.smsChatGP3(totalGP))
+await m.reply('✅ *EL MENSAJE FUE ENVIADO A ${totalGP} GRUPO(S)')
 }     
 handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
