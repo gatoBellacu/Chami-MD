@@ -5,13 +5,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }[(args[0] || '')]
     if (isClose === undefined)
         throw `
-*¡⚠️ FORMATO ERRÓNEO ⚠️!*\n\nEJEMPLO:
-  *○ 🔒 ${usedPrefix + command} close*
-  *○ 🔓 ${usedPrefix + command} open*
+*¡⚠️ FORMATO ERRÓNEO ⚠️!*\n\n💡 EJEMPLO:
+  *○ 🔒 ${usedPrefix + command} abrir*
+  *○ 🔓 ${usedPrefix + command} cerrar*
 `.trim()
     await conn.groupSettingUpdate(m.chat, isClose)
 }
-handler.help = ['group *open / close*']
+handler.help = ['group *abrir / cerrar*']
 handler.tags = ['group']
 handler.command = /^(grupo)$/i
 
