@@ -17,7 +17,7 @@ let readMS = String.fromCharCode(8206).repeat(850)
 await m.reply(lenguajeGB.smsChatGP1())   
 for (let i = 0; i < groups.length; i++) {
 const id = groups[i];
-const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
+const infoGP = `✅ *COMUNICADO OFICIAL* ✅\n${readMS}\n\`\`\`${dia}, ${mes} ${año}\`\`\`\n\`\`\`${fecha} || ${tiempo}\`\`\``
 const delay = i * 4000 //4 seg
 setTimeout(async () => {
 await conn.reply(id, infoGP + teks2, { mentions: usersTag }, { quoted: fkontak });
