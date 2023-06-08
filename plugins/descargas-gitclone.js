@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let handler = async (m, { args, usedPrefix, command }) => {
-if (!args[0]) throw `*⚠️ ESCRIBA EL ENLACE DE UN REPOSITORIO DE GITHUB*\n\n🔰 EJEMPLO\n*${usedPrefix + command} https://github.com/Azami19/CuriosityBot-MD1*`
+if (!args[0]) throw `*⚠️ ESCRIBA EL ENLACE DE UN REPOSITORIO DE GITHUB*\n\n💡 EJEMPLO\n*${usedPrefix + command} https://github.com/Azami19/CuriosityBot-MD1*`
 if (!regex.test(args[0])) throw `*⚠️ ENLECE NO VALIDO*`
 let [_, user, repo] = args[0].match(regex) || []
 repo = repo.replace(/.git$/, '')
