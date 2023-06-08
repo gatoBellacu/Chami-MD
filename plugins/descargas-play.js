@@ -3,7 +3,7 @@ import fetch from "node-fetch"
 import yts from 'yt-search'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality
-	if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n🔰 EJEMPLO\n*${usedPrefix + command} Another love*`
+	if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*`
 	let vid = (await yts(text)).all[0]
 let { title, description, publishedTime, url, thumbnail, videoId, timestamp, views, published } = vid
 try {
