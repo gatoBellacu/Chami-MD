@@ -16,15 +16,15 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Neko\nBot\nMD\nY\nERYKA', {
-  font: 'chrome',
+say('Curiosity\nBot\nMD', {
+  font: 'block',
   align: 'center',
-  gradient: ['red', 'magenta']
+  colors: ['yellowbright']
 })
-say(`Por Neko Bot`, {
+say(`✨ WhatsApp Bot MULTI-DEVICE By @Azami19`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  colors: ['green']  
 })
 
 var isRunning = false
