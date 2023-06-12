@@ -119,7 +119,7 @@ async function clearTmp() {
 setInterval(async () => {
 	var a = await clearTmp()
 	console.log(chalk.cyan(`\n╭ 🚀  AUTOCLEAR  🚀\n│ARCHIVOS DE LA CARPETA TMP ELIMINADAS\n╰―――――――――――――――――――`))
-}, 35000) //1 munto
+}, 10000) //1 munto
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -275,5 +275,5 @@ async function _quickTest() {
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Quick Test Done'))
+  .then(() => conn.logger.info('C A R G A N D O . . .'))
   .catch(console.error)
