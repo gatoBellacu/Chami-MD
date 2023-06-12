@@ -85,7 +85,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['curiositybug','Safari','1.0.0']
+  browser: ['CuriosityBot-MD1','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -118,8 +118,8 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.cyan(`✅  Auto clear  | Se limpio la carpeta tmp`))
-}, 60000) //1 munto
+	console.log(chalk.green(`♻️ Auto Clear\nSe limpio la carpeta tmp`))
+}, 3000) //1 munto
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
