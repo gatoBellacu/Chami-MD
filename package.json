@@ -27,7 +27,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@adiwajshing/baileys": "^5.0.0",
+        "@adiwajshing/baileys": "npm:baileys@^6.0.9",
         "@bochilteam/scraper": "^2.0.0",
         "@xct007/frieren-scraper": "^0.0.2",
         "awesome-phonenumber": "^2.68.0",
