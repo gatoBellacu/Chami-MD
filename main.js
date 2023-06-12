@@ -118,7 +118,7 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.blue(`\n╭ 🚀  AUTOCLEAR  🚀\n│ARCHIVOS DE LA CARPETA TMP ELIMINADAS\n╰―――――――――――――――――――`))
+	console.log(chalk.cyan(`\n╭ 🚀  AUTOCLEAR  🚀\n│ARCHIVOS DE LA CARPETA TMP ELIMINADAS\n╰―――――――――――――――――――`))
 }, 3000) //1 munto
 
 async function connectionUpdate(update) {
