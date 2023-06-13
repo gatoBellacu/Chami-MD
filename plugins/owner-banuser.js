@@ -24,7 +24,7 @@ let handler = async (m, {conn, text, command, usedPrefix}) => {
   };
 
   let who;
-  //let pp = './galeria/menudorrat3.jpg'
+  let menu = './storage/Menu1.jpg'
   if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
   else who = m.chat;
   if (!who) throw `*[❕] ETIQUETA A LA PERSONA QUE SERA BANEADA*`
@@ -40,6 +40,7 @@ let handler = async (m, {conn, text, command, usedPrefix}) => {
     "international"
   )}\n*RAZÓN: ${chatstext}*`
   users[who].banned = true
+  conn.sendFile(m.chat, menu, 'Curiosity.jpg', banea, banu, fkontak)}
 //  await conn.sendButton(m.chat, banea, banu, pp, [["𝙼𝙴𝙽𝚄", `#menusimple`]], m)
 };
 handler.help = ["banuser"]
