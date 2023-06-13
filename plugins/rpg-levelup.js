@@ -12,13 +12,14 @@ let user = global.db.data.users[m.sender]
 » *NOMBRE*
 › ${name}
 •-------------------
-» *NIVEL:* *${user.level}*
+» *NIVEL:* 
+› *${user.level}*
 •-------------------
 » *RANGO:*
-›{role}
+› ${role}
 •-------------------
 » *XP:*
-›*${user.exp - min}/${xp}*
+› *${user.exp - min}/${xp}*
 
 *Te falta ${max - user.exp} de XP para subir de nivel*
 `.trim()
@@ -28,17 +29,20 @@ let user = global.db.data.users[m.sender]
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇 | 𝙇𝙀𝙑𝙀𝙇* ]━━━━⬣
-┃ *NIVEL ANTERIOR:* *${before}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *NIVEL ACTUAL:* *${user.level}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO:* ${role}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
-╰━━━〔 *🔮 ${vs}* 〕━━━━━⬣
+»»» 「 ✨ NIVEL ✨ 」
+» *NIVEL ANTERIOR:*
+› *${before}*
+•-------------------
+» *NIVEL ACTUAL:*
+› *${user.level}*
+•-------------------
+» *RANGO:* 
+› ${role}
+•-------------------
+» *FECHA:* 
+› *${new Date().toLocaleString('id-ID')}*
 
-*_Cuanto más interactúes con NekoBot-MD, mayor será tu nivel!!_*
+*_Cuanto más interactúes con ${cb}, mayor será tu nivel!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)
