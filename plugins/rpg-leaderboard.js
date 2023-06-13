@@ -9,8 +9,7 @@ return {...value, jid: key}
     let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
      let sortedRole = users.map(toNumber('role')).sort(sort('role'))
       let sortedMoney = users.map(toNumber('money')).sort(sort('money'))
-       let sortedJoincount = users.map(toNumber('joincount')).sort(sort('joincount'))
-        let sortedPremium = users.map(toNumber('premium')).sort(sort('premium'))
+       let sortedPremium = users.map(toNumber('premium')).sort(sort('premium'))
        
      
       let usersExp = sortedExp.map(enumGetKey)
@@ -24,34 +23,34 @@ return {...value, jid: key}
 console.log(participants)
 let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
 let text = `
-       🏆 𝚃𝚊𝚋𝚕𝚊 𝚍𝚎 𝚌𝚕𝚊𝚜𝚒𝚏𝚒𝚌𝚊𝚌𝚒𝚘́𝚗
+       🏆 𝗧𝗮𝗯𝗹𝗮 𝗱𝗲 𝗰𝗹𝗮𝘀𝗶𝗳𝗶𝗰𝗮𝗰𝗶𝗼́𝗻
     
-💠 *𝚃𝙾𝙿 ${len} 𝚇𝙿 🎯* 
+🌟 *𝗧𝗼𝗽 ${len} 𝘅𝗽 🎯* 
 Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} ⚡*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *𝚃𝙾𝙿 ${len} 𝙽𝙸𝚅𝙴𝙻 💪* 
+🌟 *𝗧𝗼𝗽 ${len} 𝗻𝗶𝘃𝗲𝗹 💪* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${level} 🔅*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *𝚃𝙾𝙿 ${len} 𝚁𝙾𝙻 🌟* 
+🌟 *𝗧𝗼𝗽 ${len} 𝗿𝗼𝗹 🌟* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *𝚃𝙾𝙿 𝚄𝚜𝚞𝚊𝚛𝚒𝚘 ${len} 𝚙𝚛𝚎𝚖𝚒𝚞𝚖 🎟️* 
+🌟 *𝗧𝗼𝗽 ${len} 𝘂𝘀𝘂𝗮𝗿𝗶𝗼(𝘀) 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 🎟️* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLim.slice(0, len).map(({ jid, premium, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${premium ? `✅` : `❌`} 🎟️*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *𝚃𝙾𝙿 ${len} 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴💎* 
+🌟 *𝗧𝗼𝗽 ${len} 𝗱𝗶𝗮𝗺𝗮𝗻𝘁𝗲 💎* 
 Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} 💎*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *top ${len} sitycoins🪙*
+🌟 *𝗧𝗼𝗽 ${len} 𝘀𝗶𝘁𝘆𝗰𝗼𝗶𝗻𝘀 🪙*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} 🪙*`).join`\n`}
