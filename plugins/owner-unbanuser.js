@@ -7,7 +7,7 @@ let handler = async (m, {conn, text}) => {
   let users = global.db.data.users
   users[who].banned = false
   conn.reply(m.chat, `*✨ EL USUARIO FUE DESBANEADO CON ÉXITO*\n*🎊 EL USUARIO YA PUEDE USAR EL BOT*`, m)
-};
+}
 handler.help = ["unbanuser"]
 handler.tags = ["owner"]
 handler.command = /^unbanuser$/i
