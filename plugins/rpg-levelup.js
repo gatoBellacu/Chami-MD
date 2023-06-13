@@ -8,15 +8,17 @@ let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-🍊 「 NIVEL 」
-🍎 *NOMBRE | NAME*
-🍉 ${name}
+»»» 「 ✨ NIVEL ✨ 」
+» *NOMBRE*
+› ${name}
 •-------------------
-🥭 *NIVEL:* *${user.level}*
+» *NIVEL:* *${user.level}*
 •-------------------
-🍍 *RANGO:* ${role}
+» *RANGO:*
+›{role}
 •-------------------
-🍐 *XP:* *${user.exp - min}/${xp}*
+» *XP:*
+›*${user.exp - min}/${xp}*
 
 *Te falta ${max - user.exp} de XP para subir de nivel*
 `.trim()
