@@ -7,7 +7,7 @@ m.reply(`
 ┌──── 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 ──✦
 🔰 *NOMBRE:* ${name}
 💎 *DIAMANTES:* ${global.db.data.users[who].limit}
-└───────────────✦
+└─────────────✦
 *🔔 NOTA:* 
 puedes comprar diamantes usando los comandos:
 ❏ *${usedPrefix}buy <cantidad>*
