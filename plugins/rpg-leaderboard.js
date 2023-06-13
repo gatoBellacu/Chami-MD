@@ -34,7 +34,7 @@ Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${level} 🍧*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🌟 *𝗧𝗼𝗽 ${len} 𝗿𝗼𝗹 🌟* 
+🌟 *𝗧𝗼𝗽 ${len} 𝗿𝗼𝗹 🚀* 
 Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
