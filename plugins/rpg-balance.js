@@ -6,7 +6,7 @@ let name = conn.getName(who)
 m.reply(`
 ┌──── 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 ──✦
 🔰 *NOMBRE:* ${name}
-💎 *DIAMANTES:* ${global.db.data.users[who].limit}💎
+💎 *DIAMANTES:* ${global.db.data.users[who].limit}
 └───────────────✦
 *🔔 NOTA:* 
 puedes comprar diamantes usando los comandos:
