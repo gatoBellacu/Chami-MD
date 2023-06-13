@@ -25,32 +25,32 @@ let text = `
        🏆 𝗧𝗮𝗯𝗹𝗮 𝗱𝗲 𝗰𝗹𝗮𝘀𝗶𝗳𝗶𝗰𝗮𝗰𝗶𝗼́𝗻
     
 🌟 *𝗧𝗼𝗽 ${len} 𝘅𝗽 🎯* 
-Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} usuarios*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} ⚡*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🌟 *𝗧𝗼𝗽 ${len} 𝗻𝗶𝘃𝗲𝗹 💪* 
-Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+🌟 *𝗧𝗼𝗽 ${len} 𝗻𝗶𝘃𝗲𝗹 🪁* 
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} usuarios*
 
-${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${level} 🔅*`).join`\n`}
+${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${level} 🍧*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🌟 *𝗧𝗼𝗽 ${len} 𝗿𝗼𝗹 🌟* 
-Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} usuarios*
 
 ${sortedLevel.slice(0, len).map(({ jid, role, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🌟 *𝗧𝗼𝗽 ${len} 𝘂𝘀𝘂𝗮𝗿𝗶𝗼(𝘀) 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 🎟️* 
-Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} usuarios*
 
 ${sortedLim.slice(0, len).map(({ jid, premium, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${premium ? `✅` : `❌`} 🎟️*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🌟 *𝗧𝗼𝗽 ${len} 𝗱𝗶𝗮𝗺𝗮𝗻𝘁𝗲 💎* 
-Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} usuarios*
 
 ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} 💎*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🌟 *𝗧𝗼𝗽 ${len} 𝘀𝗶𝘁𝘆𝗰𝗼𝗶𝗻𝘀 🪙*
-Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
+Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} usuarios*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} 🪙*`).join`\n`}
 `.trim()
