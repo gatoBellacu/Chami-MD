@@ -634,23 +634,59 @@ export async function participantsUpdate({ id, participants, action }) {
         case 'add':
         case 'remove':
             if (chat.welcome) {
-                let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                for (let user of participants) {
-                    let pp = './src/sinfoto.jpg'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                    } catch (e) {
-                    } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 | 𝘾𝙤𝙤𝙡 𝙂𝙧𝙤𝙪𝙥 😏*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-                            let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/GataNina-Li/GataBot-MD', '𝗡𝗘𝗞𝗢𝗕𝗢𝗧-𝗠𝗗', null, null, [
-                            [(action == 'add' ? '𝘚𝘦 𝘶𝘯𝘪𝘰 😎 | 𝘏𝘐!!' : '𝘚𝘦 𝘧𝘶𝘦 𝘶𝘯 𝘧𝘢𝘯 𝘥𝘦 𝘉𝘵𝘴 🏳️‍🌈 | 𝘉𝘺𝘦 𝘎𝘢𝘺'), '.s'],    
-                            ['📲 𝘐𝘳 𝘢𝘭 𝘔𝘦𝘯𝘶 | 𝘎𝘰 𝘔𝘦𝘯𝘶', '/menu']
-                            ], '', { mentions: [user]})
-                           }
-                }
-            }
+let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+for (let user of participants) {
+let pp = './src/sinfoto.jpg'
+try {
+pp = await this.profilePictureUrl(user, 'image')
+} catch (e) {
+} finally {
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*Sin descripción*') :
+(chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+let apii = await this.getFile(pp)
+const fake = { quoted: {
+key : {
+participant : '0@s.whatsapp.net' },
+message: {
+orderMessage: {
+itemCount : 999999,
+status: 1,
+surface : 1,
+message: wm, 
+orderTitle: 'WaBot',
+thumbnail: imagen1, 
+sellerJid: '0@s.whatsapp.net' }}}}      
+var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
+var document = doc[Math.floor(Math.random() * doc.length)]
+//const buttons = [
+//{buttonId: (action == 'add' ? '.bienvenido' : '.despedida'), buttonText: {displayText: (action == 'add' ? '🌻 𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗢 🌻' : '🗑️ 𝗔𝗗𝗜𝗢𝗦 🗑️')}, type: 1},
+//{buttonId: `#menu`, buttonText: {displayText: '𝗠 𝗘 𝗡 𝗨 ☘️'}, type: 1}, ]
+let buttonMessage = {
+document: imagen1, 
+fileName: `ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩`, 
+mimetype: `application/${document}`,
+jpegThumbnail: imagen1,
+caption: text,
+fileLength: "99999999999999",
+mentions: [user],
+footer: groupMetadata.subject,
+//buttons: buttons,
+headerType: 4,   
+contextInfo: {
+'forwardingScore': 200,
+'isForwarded': false,
+"mentionedJid": [user],
+"externalAdReply": {
+"showAdAttribution": false,
+"title": `𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝙲𝙸𝙾𝙽`,
+"mediaType": 2, 
+"previewType": "VIDEO",
+"thumbnail": apii.data,
+"mediaUrl": 'https://youtu.be/EaXoIuT3UQ0',
+"sourceUrl": 'https://www.xvideos.com' }}} 
+this.sendMessage(id, buttonMessage, fake)                          
+}}}
+            
             break
         case 'promote':
         case 'daradmin':
