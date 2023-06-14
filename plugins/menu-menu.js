@@ -1,4 +1,4 @@
-//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios
+//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios & https://github.com/Azami19 | @Azami
 
 import fs from 'fs'
 import fetch from 'node-fetch'
@@ -258,7 +258,7 @@ let buttonMessage = {
             'mediaType': 0x1,
             'previewType': "PHOTO",
             'title': 'Hola!!',
-            'thumbnail': fs.readFileSync('./storage/menus/Menu4.jpg'),
+            'thumbnail': fs.readFileSync('./storage/menus/Menu1.jpg'),
             'renderLargerThumbnail': !![],
             'sourceUrl': yt
         }
