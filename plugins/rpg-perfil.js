@@ -22,7 +22,7 @@ let handler = async (m, { conn }) => {
 ${clockString(user.premiumTime)}
 📑 • *Registrado:* ${registered ? '✅': '❌'}
 `.trim()
- conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
+ conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
  //   m.react(🌟) 
 }
 handler.help = ['profile [@user]']
