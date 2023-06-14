@@ -1,5 +1,5 @@
 let handler = async (m, { conn, isPrems}) => { //lastmiming
-let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes','Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+let minar = `${pickRandom(['Que pro 😎 has minado ${hasil} XP','🌟✨ Genial!! Obtienes ${hasil} XP','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes ${hasil} XP','Felicidades!! Ahora tienes ${hasil} XP','⛏️⛏️⛏️ Obtienes ${hasil} XP'])}`
 let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage180200332/95468325-mont%C3%B3n-de-piedras-preciosas-diamantes-azules-brillantes-concepto-de-joyas-caras-s%C3%ADmbolo-de-riqueza-d.jpg?ver=6'
 
 let d = Math.floor(Math.random() * 10)
@@ -8,7 +8,7 @@ let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].lastdiamantes + 600000
 if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
-conn.fakeReply(m.chat, minar, hasil, '0@s.whatsapp.net', '*🍁 CuriosityBot-MD 🍁*', 'status@broadcast')
+conn.fakeReply(m.chat, minar, '0@s.whatsapp.net', '*🍁 CuriosityBot-MD 🍁*', 'status@broadcast')
 global.db.data.users[m.sender].lastdiamantes = new Date * 1  
   
 
