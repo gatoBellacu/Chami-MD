@@ -258,7 +258,7 @@ let buttonMessage = {
             'mediaType': 0x1,
             'previewType': "PHOTO",
             'title': 'Hola!!',
-            'thumbnail': fs.readFileSync('./storage/menus/Menu3.jpg'),
+            'thumbnail': fs.readFileSync('./storage/menus/Menu4.jpg'),
             'renderLargerThumbnail': !![],
             'sourceUrl': yt
         }
