@@ -663,7 +663,7 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 //{buttonId: `#menu`, buttonText: {displayText: '𝗠 𝗘 𝗡 𝗨 ☘️'}, type: 1}, ]
 let buttonMessage = {
 document: imagen1, 
-fileName: `ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩`, 
+fileName: `SUPER WHATSAPP BOT`, 
 mimetype: `application/${document}`,
 jpegThumbnail: imagen1,
 caption: text,
