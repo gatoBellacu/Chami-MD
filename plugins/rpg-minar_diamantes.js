@@ -9,7 +9,7 @@ let time = global.db.data.users[m.sender].lastdiamantes + 600000
 if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
 conn.fakeReply(m.chat, minar, '0@s.whatsapp.net', '*🍁 CuriosityBot-MD 🍁*', 'status@broadcast')
-global.db.data.users[m.sender].lastdiamantes = new Date * 1  
+//global.db.data.users[m.sender].lastdiamantes = new Date * 1  
   
 
 //m.reply(`*${minar} *${hasil} XP ✨*`)
