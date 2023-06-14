@@ -189,7 +189,19 @@ ${usedPrefix}reg
 ${usedPrefix}unreg
 ${usedPrefix}myns
 ${usedPrefix}perfil
-${usedPrefix}levelup`
+${usedPrefix}levelup
+
+*「 STICKER 」*
+${usedPrefix}s
+${usedPrefix}wm
+
+*「 O W N E R 」*
+${usedPrefix}update
+${usedPrefix}restart
+${usedPrefix}cleartpm
+${usedPrefix}bc
+${usedPrefix}bcgc
+${usedPrefix}bcc`
 function _0x2daf() {
     const _0x4c1076 = ['namedoc', 'social', '1017dFLzIP', '11680bWFOeX', 'sendMessage', '1FnTozH', '6qNtNxK', '445374chjKag', '2096504ySppGm', '627669MaFyqj', 'readFileSync', 'En breve se enviará el menú...', '374160lMCurS', '356228pujvOS', './storage/menus/Menu3.jpg', '1019845zOpQQK', 'pdf', 'chat'];
     _0x2daf = function() {
@@ -242,7 +254,7 @@ let buttonMessage = {
             'mediaType': 0x1,
             'previewType': "PHOTO",
             'title': 'Hola!!',
-            'thumbnail': fs.readFileSync('./storage/menus/Menu3.jpg'),
+            'thumbnail': fs.readFileSync('./storage/menus/Menu2.jpg'),
             'renderLargerThumbnail': !![],
             'sourceUrl': yt
         }
