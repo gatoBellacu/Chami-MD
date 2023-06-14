@@ -4,19 +4,14 @@ let pp = 'https://us.123rf.com/450wm/emojiimage/emojiimage1802/emojiimage1802003
 
 let d = Math.floor(Math.random() * 10)
 global.db.data.users[m.sender].limit += d * 1  
-//let hasil = Math.floor(Math.random() * 2000)
+let hasil = Math.floor(Math.random() * 2000)
 let time = global.db.data.users[m.sender].lastdiamantes + 600000
 if (new Date - global.db.data.users[m.sender].lastdiamantes < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
-conn.sendHydrated(m.chat, `*${minar} ${d} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*`, wm, pp, md, '𝗡𝗘𝗞𝗢𝗕𝗢𝗧-𝗠𝗗', null, null, [
-['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
-['𝙈𝙞𝙣𝙖𝙧 𝗡𝗲𝗸𝗼𝘾𝙤𝙞𝙣𝙨 🔮', `.minar2`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]
-], m,)
 global.db.data.users[m.sender].lastdiamantes = new Date * 1  
   
 
-//m.reply(`*${minar} *${hasil} 𝙓𝙋*`)
+m.reply(`*${minar} *${hasil} XP ✨*`)
 
 }
 handler.help = ['minar']
