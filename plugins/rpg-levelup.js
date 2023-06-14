@@ -15,9 +15,6 @@ let user = global.db.data.users[m.sender]
 » *NIVEL:* 
 › *${user.level}*
 •-------------------
-» *RANGO:*
-› ${role}
-•-------------------
 » *XP:*
 › *${user.exp - min}/${xp}*
 
@@ -35,9 +32,6 @@ let user = global.db.data.users[m.sender]
 •-------------------
 » *NIVEL ACTUAL:*
 › *${user.level}*
-•-------------------
-» *RANGO:* 
-› ${role}
 •-------------------
 » *FECHA:* 
 › *${new Date().toLocaleString('id-ID')}*
