@@ -1,5 +1,5 @@
 // Codigo desarollado por @gata_dios 
-// Editado por @Azami19
+// Editado por @Azami
 
 import { join, dirname } from 'path' 
 import { createRequire } from "module";
