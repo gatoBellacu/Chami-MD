@@ -23,11 +23,11 @@ ${clockString(user.premiumTime)}
 📑 • *Registrado:* ${registered ? '✅': '❌'}
 `.trim()
  conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
-    m.react(🌟) 
+ //   m.react(🌟) 
 }
 handler.help = ['profile [@user]']
 handler.tags = ['exp']
-handler.command = /^profile|pp$/i
+handler.command = /^perfil|pp$/i
 export default handler
 
 const more = String.fromCharCode(8206)
