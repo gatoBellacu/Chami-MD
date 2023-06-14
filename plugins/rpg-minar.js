@@ -1,6 +1,6 @@
 let handler = async (m, { conn, isPrems}) => {
 let hasil = Math.floor(Math.random() * 1000)
-let info = `*Genial minaste ${hasil} Diamantes 💎*`
+let info = `*Genial minaste ${hasil} XP ✨*`
 let time = global.db.data.users[m.sender].lastmiming + 600000
 if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*⏰ Debes esperar ${msToTime(time - new Date())} para volver a minar*`  
 
