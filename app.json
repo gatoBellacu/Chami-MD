@@ -1,9 +1,9 @@
 {
-  "name": "NekoBot-MD", 
+  "name": "CuriosityBot-MD", 
   "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/Sofianayeli/NEKOBOT-MD.git",
+  "repository": "https://github.com/Azami19/Curiosity-MD.git",
   "logo": "https://i.imgur.com/8fK4h6F.jpg",
-  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "gatabot"],
   "buildpacks": [
   {
     "url": "heroku/nodejs"
