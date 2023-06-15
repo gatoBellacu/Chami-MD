@@ -85,7 +85,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['dylux-bot','Safari','1.0.0']
+  browser: ['CuriosityBot-MD','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -132,7 +132,7 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
-console.log(chalk.red('CONECTADO CORRECTAMENTE'))
+console.log(chalk.yellow('CONECTADO CORRECTAMENTE'))
 await conn.reply(`59894808483@s.whatsapp.net`, `Hola Creador, soy un nuevo bot 😼`)
 await conn.groupAcceptInvite('HKY8AX69oMnHa0Q3ukh0nR')}}
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
