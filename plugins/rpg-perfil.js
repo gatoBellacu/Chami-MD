@@ -22,8 +22,8 @@ let handler = async (m, { conn }) => {
 ${clockString(user.premiumTime)}
 📑 • *Registrado:* ${registered ? '✅': '❌'}
 `.trim()
+  m.react(🌟) 
  conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
- m.react(🌟) 
 }
 handler.help = ['profile [@user]']
 handler.tags = ['exp']
