@@ -18,7 +18,7 @@ Trace:
 
 npm manifest: 
   { 
-      "name": "NovaBot-MD",
+      "name": "CuriosityBot-MD",
       "version": "2.2.2",
       "description": "Bot simple con pocos comando",
       "main": "index.js",
@@ -45,20 +45,20 @@ npm manifest:
           "MD",
           "baileys-md"
       ],
-      "homepage": "https://github.com/elrebelde21/NovaBot-MD",
+      "homepage": "https://github.com/Azami19/CuriosityBot-MD",
       "author": {
-          "name": "elrebelde21"
+          "name": "Azami19"
       },
       "repository": {
           "type": "git",
-          "url": "git+https://github.com/elrebelde21/NovaBot-MD.git"
+          "url": "git+https://github.com/Azami19/CuriosityBot-MD.git"
       },
       "bugs": {
-          "url": "https://github.com/elrebelde21/NovaBot-MD/issues"
+          "url": "https://github.com/Azami19/CuriosityBot-MD/issues"
       },
       "license": "GPL-3.0-or-later",
       "dependencies": {
-          "@adiwajshing/baileys": "^4.4.0",
+          "@adiwajshing/baileys": "npm:@ferdiz-afk/baileys",
           "@bochilteam/scraper": "^3.0.0",
           "awesome-phonenumber": "^3.4.0",
           "axios": "^1.1.2",
