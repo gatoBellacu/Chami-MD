@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw '*⚠️ INGRESE UN ENLACE DE YOUTUBE PARA DESCARGAR PARA DESCARGAR EL AUDIO*\n\n💡 EJEMPLO\n*#yta https://youtu.be/85xI8WFMIUY*'
 m.react(rwait)
-reply(`*Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*`
+await conn.reply(m.chat, `*Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*`, m)
 try {
 let q = '128kbps'
 let v = args[0]

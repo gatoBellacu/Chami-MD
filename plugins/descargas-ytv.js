@@ -25,7 +25,8 @@ let n4 = lolh.result.thumbnail
 await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*\n${n}\n\n*📊 PESO*\n${n3}`, thumbnail: await fetch(n4) }, { quoted: m })
 m.react(done)
 } catch {
-await conn.reply(m.chat, `*⚠️ ES POSIBLE QUE EL VIDEO SEA MUY PESADO. INTENTE CON OTRA OPCIÓN DE DESCARGA*`, fkontak, m)}
+await conn.reply(m.chat, `*⚠️ ES POSIBLE QUE EL VIDEO SEA MUY PESADO. INTENTE CON OTRA OPCIÓN DE DESCARGA*`, fkontak, m)
+m.react(error)}
 }}
 handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i 
 export default handler
