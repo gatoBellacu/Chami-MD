@@ -1,4 +1,4 @@
-console.log('🚀  Iniciando...')
+console.log('🚀 Iniciando...')
 
 import { join, dirname } from 'path'
 import { createRequire } from 'module';
@@ -17,14 +17,14 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('Curiosity\nBot\nMD', {
-  font: 'block',
+  font: 'chrome',
   align: 'center',
-  colors: ['cyan', 'magenta']
+  gradient: ['red', 'magenta']
 })
-say(`${name} By @Azami19`, {
+say(`'${name}' By @Azami19._`, {
   font: 'console',
   align: 'center',
-  colors: ['red', 'magenta']
+  gradient: ['red', 'magenta']
 })
 
 var isRunning = false
@@ -38,8 +38,8 @@ function start(file) {
   let args = [join(__dirname, file), ...process.argv.slice(2)]
   say([process.argv[0], ...args].join(' '), {
     font: 'console',
-    align: 'console',
-    gradient: ['blue', 'red']
+    align: 'center',
+    gradient: ['red', 'magenta']
   })
   setupMaster({
     exec: args[0],
