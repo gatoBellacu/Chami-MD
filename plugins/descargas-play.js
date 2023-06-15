@@ -4,10 +4,11 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
     text, 
     usedPrefix
                }) => {
-  if (!text) throw 'Enter Title / link'
+  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*'
+  m.react(rwait)
   try {
     var vid = (await youtubeSearch(text)).video[0]
-    if (!vid) throw 'Video/Audio Tidak Ditemukan'
+    if (!vid) throw '[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾'
     var { title, 
           description, 
           thumbnail, 
@@ -23,19 +24,30 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
 
     let web = `https://yt.btch.bz/downloadAudio?URL=${url}&videoName=video`
     var tmb = thumbnail
-    var captionvid = `  ∘ Title: ${title}
-  ∘ Published: ${publishedTime}
-  ∘ Duration: ${durationH}
-  ∘ Second: ${durationS}
-  ∘ Views: ${viewH}  
-  ∘ Url:  ${url}
-  ∘ Description: ${description}`
+    var captionvid = `
+  *∘ 📑 TÍTULO:*
+   ${title}
+   
+ *∘ 📆 PUBLICADO:* 
+  ${publishedTime}
+  
+  *∘ ⏰ DURACIÓN:* 
+  ${durationH}
+  
+  *∘ 👀 VISTAS* 
+  ${viewH}  
+  
+  *∘ 📡 URL*  
+  ${url}
+  
+  *∘ 💬 DESCRIPCIÓN* 
+  ${description}`
     var pesan = await conn.sendMessage(m.chat, {
     text: captionvid,
     contextInfo: {
     externalAdReply: {
     title: "",
-    body: "Powered by",
+    body: "${wm}",
     thumbnailUrl: tmb ,
     sourceUrl: web,
     mediaType: 1,
@@ -43,7 +55,8 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
     renderLargerThumbnail: true
     }}})
 
-    if (durationS > 18000) return conn.sendMessage(m.chat, { text: `*Link Original:* ${await cut(url)}\n\n_Durasi terlalu panjang..._\n*Duration Limit!*` }, { quoted: pesan })
+    if (durationS > 18000) return conn.sendMessage(m.chat, { text: `*LINK:* ${await cut(url)}\n\n_Durasi terlalu panjang..._\n*Duration Limit!*` }, { quoted: pesan })
+    m.react(done)
     conn.sendMessage(m.chat, { audio: { url: web }, mimetype: 'audio/mpeg', contextInfo: {
     externalAdReply: {
     title: title,
@@ -56,7 +69,7 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
     }}} , { quoted: pesan })
 
   } catch (e) {
-    throw 'Video/Audio Tidak Ditemukan'
+    throw '[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾'
   }
 }
 handler.command = handler.help = ['play','song','youtube','ytmp3','ds','downloadyt','yta'];
