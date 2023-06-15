@@ -1,6 +1,6 @@
 import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
    let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*'
+  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix}play Another love*'
   m.react(rwait)
   try {
     var vid = (await youtubeSearch(text)).video[0]
