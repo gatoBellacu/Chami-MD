@@ -631,37 +631,7 @@ export async function participantsUpdate({ id, participants, action }) {
     let chat = global.db.data.chats[id] || {}
     let text = ''
     switch (action) {
-    case 'add':
-        case 'remove':
-            if (chat.welcome) {
-                let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                for (let user of participants) {
-                    let pp = './src/avatar_contact.png'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                    } catch (e) {
-                    } finally {
-                    let apii = await this.getFile(pp)
-                    const antiArab = JSON.parse(fs.readFileSync('./src/antiArab.json'))
-                    const userPrefix = antiArab.some(prefix => user.startsWith(prefix))                        
-                    const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
-                    const isBotAdminNn = botTt2?.admin === "admin" || false
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
-                              (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-			    
-if (userPrefix && chat.antiArab && botTt.restrict && isBotAdminNn && action === 'add') {
- let responseb = await this.groupParticipantsUpdate(id, [user], 'remove')
-     if (responseb[0].status === "404") return 
-let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-this.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ sᴇ ᴘᴇʀᴍɪᴛᴇɴ ɴᴜᴍᴇʀᴏs ᴀʀᴀʙᴇs ᴏ ʀᴀʀᴏs, ᴘᴏʀ ʟᴏ ϙᴜᴇ sᴇ ᴛᴇ sᴀᴄᴀʀᴀ ᴅᴇʟ ɢʀᴜᴘᴏ*`, mentions: [user] }, { quoted: fkontak2 });          
-return    
-}    
-			    
-this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
-                   }
-                }
-            }
-      /*  case 'add':
+       case 'add':
         case 'remove':
             if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
@@ -714,9 +684,9 @@ contextInfo: {
 "thumbnail": apii.data,
 "mediaUrl": 'https://youtu.be/EaXoIuT3UQ0',
 "sourceUrl": 'https://www.xvideos.com' }}} 
-this.sendMessage(m.chat, { image: apii.data, mentions: mentionsString }, { quoted: fake }, { quoted: buttonMessage })
+this.sendFile(id, apii.data, 'pp.jpg', text, buttonMessage, fake, null, false, { mentions: [user] }) 
 //this.sendMessage(id, apii.data, 'pp.jpg', buttonMessage, fake)                          
-}}}*/
+}}}
             
             break
         case 'promote':
