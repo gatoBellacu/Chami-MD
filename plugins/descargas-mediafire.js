@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
 	var limit
      if((isOwner || isPrems)) limit = 1000
      else limit = 600
-   if (!args[0]) throw `ingrese el link de mediafire`
+   if (!args[0]) throw `⚠️ INGRESE UN ENLACE DE MEDIAFIRE`
     if (!args[0].match(/mediafire/gi)) throw `❎ Link incorrecto`
     try {
     m.react(rwait)
@@ -18,24 +18,19 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
     let isLimit = (isPrems || isOwner ? limit : limit) * 1012 < filesize
     let caption = `
 ╭━─━─━─≪💎≫─━─━─━╮
-┆      *MEDIAFIRE*
-┆——————«•»——————
-┆🔸️ *Nombre:* ${filename}
-┆——————«•»——————
-┆🔸️ *Tamaño:* ${filesizeH}
-┆——————«•»——————
-┆🔸️ *Extension:* ${ext}
-┆——————«•»——————
-┆🔸 ️*Subido:* ${aploud}
+║ 🔰 *${wm}*
+║╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+║ 📡 *NOMBRE*
+║ ${filename}
+║╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+║ 📊 *PESO*
+║ ${filesizeH}
+║╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+║ 🚀 *TIPO*
+║ ${ext}
 ╰━─━─━─≪💎≫─━─━─━╯
 `.trim()
-conn.reply(m.chat, caption, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'CURIOSITYBOT-MD | By Azami ©',
-body: 'Super Bot WhatsApp',         
-previewType: 0, thumbnail: ss 'ssweb.png',
-sourceUrl: `https://github.com/Azami19/Curiosity-MD.git`}}})
-   // await conn.sendFile(m.chat, ss, 'ssweb.png', caption, m)
+   await conn.sendFile(m.chat, ss, 'ssweb.png', caption, m)
     
     if(!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
     m.react(done)
