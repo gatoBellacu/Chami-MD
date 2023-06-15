@@ -27,12 +27,9 @@ title: 'CURIOSITYBOT-MD | By Azami ©',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/Azami19/Curiosity-MD.git`}}})
-  
-  
-conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
+ conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 m.react(done)
-} catch (e) { 
-m.react(error)
+} catch (e) {
 m.reply(`*⚠️ VUELVA A INTENTARLO. DEBE DE SER UN ENLACE VALIDO DE MEDIAFIRE*`)
 console.log(e)
 }}
