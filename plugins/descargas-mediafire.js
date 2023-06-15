@@ -2,8 +2,8 @@ import fs from 'fs'
 import { mediafiredl } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) throw `*⚠️ INGRESE UN ENLACE DE MEDIAFIRE*`
-try {
 m.react(rwait)
+try {
 let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let caption = `
@@ -32,8 +32,8 @@ sourceUrl: `https://github.com/Azami19/Curiosity-MD.git`}}})
 conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 m.react(done)
 } catch (e) { 
-m.reply(`*⚠️ VUELVA A INTENTARLO. DEBE DE SER UN ENLACE VALIDO DE MEDIAFIRE*`)
 m.react(error)
+m.reply(`*⚠️ VUELVA A INTENTARLO. DEBE DE SER UN ENLACE VALIDO DE MEDIAFIRE*`)
 console.log(e)
 }}
 handler.help = ['mediafire'].map(v => v + ' <url>')
