@@ -161,7 +161,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 💛 *BIENVENIDO* 💛 〙──\n┃━━━━━━━━━━━━\n┃ *_👀 @user bienvenid@ a_* \n┃ *_@subject 🪁_*\n┃\n┃=> *_Puedes solicitar mi lista de_*\n┃ *_comandos con:_*\n┠⊷ *.menu*\n┃\n┃=> *_Aquí tienes la descripción_* \n┃ *_del grupo, léela!!_*\n┃\n\n@desc\n\n┃ \n┃ *_❗  Disfruta de tu_* \n┃ *_estancia  ❗_*  \n┃\n┗━━━━━━━━━━━'
+  conn.welcome = '╭┄┄┄┄┄┄┄┄┄┄┄┄\n│──〘 💛 *BIENVENIDO* 💛 〙──\n│┄┄┄┄┄┄┄┄┄┄┄┄\n│ *👀 @user bienvenid@ a* \n│ *_@subject 🪁_*\n│\n│≫ *_Puedes solicitar mi lista de_*\n│ *_comandos con:_*\n│≫ *.menu*\n│\n│≫ *_Aquí tienes la descripción_* \n│ *_del grupo, léela!!_*\n│\n\n@desc'
   conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝘚𝘌 𝘍𝘜𝘌 𝘜𝘕 𝘍𝘈𝘕 𝘋𝘌 𝘉𝘛𝘚. 🏳️‍🌈* \n*╚══════════════*'
   conn.spromote = '⚠️ *@user SE SUMA AL GRUPO DE ADMINS!!*'
   conn.sdemote = '⚠️ *@user ANDANDA EL GRUPO DE ADMINS!!*'
