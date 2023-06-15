@@ -13,8 +13,8 @@ Bot el desarrollo
 #### COLABORADORES 
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![Mario](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
 ---|---
-[GataDios](https://github.com/BOTCAHX)  | [Erlan](https://github.com/ERLANRAHMAT)
-Recode | Contributor |
+[Gata Dios](https://github.com/GataNina-Li)  | [Mario](https://github.com/elrebelde21)
+Colaboradora | Colaborador |
 
 ##### AGRADECIMIENTO ESPECIAL PARA
 <!--[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
