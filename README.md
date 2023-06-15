@@ -1,8 +1,3 @@
-# CuriosityBot-MD1 
-Bot el desarrollo
-
-
-
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Azami19"><img src="https://github.com/Azami19.png" width="250" height="250" alt="Azami19"/></a>
 
