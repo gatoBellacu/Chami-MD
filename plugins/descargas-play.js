@@ -6,6 +6,7 @@ let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, current
 	if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*`
 	let vid = (await yts(text)).all[0]
 let { title, description, publishedTime, url, thumbnail, videoId, timestamp, views, published } = vid
+m.react(rwait)
 try {
 if (command == 'play') {	
 conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
@@ -33,6 +34,7 @@ dl_url = await yt.audio[q].download()
 title = await yt.title
 size = await yt.audio[q].fileSizeH
 await conn.sendFile(m.chat, dl_url, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
+m.react(done)
 }
 if (command == 'play2') {
 conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
@@ -63,6 +65,7 @@ const size = await yt.video[q].fileSizeH
 await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo: ${ttl}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 }
 } catch (e) {
+m.react(error)
 }}
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']

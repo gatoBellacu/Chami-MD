@@ -2,6 +2,8 @@ import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args }) => {
 if (!args[0]) throw '*⚠️ INGRESE UN ENLACE DE YOUTUBE PARA DESCARGAR PARA DESCARGAR EL AUDIO*\n\n💡 EJEMPLO\n*#yta https://youtu.be/85xI8WFMIUY*'
+m.react(rwait)
+reply(`*Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*`
 try {
 let q = '128kbps'
 let v = args[0]
@@ -16,6 +18,7 @@ let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolke
 let lolh = await lolhuman.json()
 let n = lolh.result.title || 'error'
 await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${n}.mp3`, mimetype: 'audio/mp4' }, { quoted: m })
+m.react(done)
 //await conn.sendFile(m.chat, lolh.result.link, `${n}.mp3`, null, m, false, { mimetype: 'audio/mp4' })    
 } catch {
 }
