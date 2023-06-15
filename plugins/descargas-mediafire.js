@@ -33,7 +33,7 @@ conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'CURIOSITYBOT-MD | By Azami ©',
 body: 'Super Bot WhatsApp',         
-previewType: 0, thumbnail: fs.readFileSync("./storage/menus/Menu3.jpg"),
+previewType: 0, thumbnail: ss 'ssweb.png',
 sourceUrl: `https://github.com/Azami19/Curiosity-MD.git`}}})
    // await conn.sendFile(m.chat, ss, 'ssweb.png', caption, m)
     
