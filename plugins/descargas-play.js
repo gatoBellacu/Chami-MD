@@ -1,9 +1,5 @@
 import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
-   var handler = async (m, { 
-    conn,
-    text, 
-    usedPrefix
-               }) => {
+   let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*'
   m.react(rwait)
   try {
@@ -47,7 +43,7 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
     contextInfo: {
     externalAdReply: {
     title: "",
-    body: "${wm}",
+    body: "CuriosityBot-MD",
     thumbnailUrl: tmb ,
     sourceUrl: web,
     mediaType: 1,
