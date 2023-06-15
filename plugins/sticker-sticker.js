@@ -21,6 +21,7 @@ stiker = await sticker(img, false, global.packname, global.author)
 } catch (e) {
 console.error(e)
 } finally {
+await conn.reply(m.chat, `Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos*\n\n_*by CuriosityBot*_`, m)
 if (!stiker) {
 if (/webp/g.test(mime)) out = await webp2png(img)
 else if (/image/g.test(mime)) out = await uploadImage(img)
