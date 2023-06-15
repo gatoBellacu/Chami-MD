@@ -28,7 +28,6 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
 ┆——————«•»——————
 ┆🔸 ️*Subido:* ${aploud}
 ╰━─━─━─≪💎≫─━─━─━╯
-${isLimit ? `\n🔸*️EL ARCHIVO SUPERA EL LIMITE DE DESCARGA* +${limit} MB*\n*PASATE A PREMIUM PARA PODER DESCARGA ARCHIVO PESADO MAS DEL 600 MB*` : ''} 
 `.trim()
 conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
