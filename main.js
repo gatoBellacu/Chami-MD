@@ -162,7 +162,7 @@ global.reloadHandler = async function (restatConn) {
   }
 
   conn.welcome = '╭┄┄┄┄┄┄┄┄┄┄┄┄\n│──〘 💛 *WELCOME* 💛 〙──\n│┄┄┄┄┄┄┄┄┄┄┄┄\n│ *👀 @user bienvenid@ a* \n│ *_@subject 🪁_*\n│\n│≫ *_Puedes solicitar mi lista de_*\n│ *_comandos con:_*\n│≫ *.menu*\n│\n│≫ *_Aquí tienes la descripción_* \n│ *_del grupo, léela!!_*\n│\n\n@desc\n\n╰┄┄┄┄┄┄┄┄┄┄┄┄'
-  conn.bye = '*╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄*\n*│≫ @user*\n*│≫ SE FUE UN PRO 🍷*\n*╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄*'
+  conn.bye = '*╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄*\n*│≫ Adios @user*\n*│≫ SE FUE UN GAY 🐀*\n*╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄*'
   conn.spromote = '⚠️ *@user SE SUMA AL GRUPO DE ADMINS!!*'
   conn.sdemote = '⚠️ *@user ABANDONA EL GRUPO DE ADMINS!!*'
   conn.sDesc = '📝 *SE HA MODIFICADO LA DESCRIPCIÓN*\n\n*NUEVA DESCRIPCIÓN:* @desc'
