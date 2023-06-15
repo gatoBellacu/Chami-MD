@@ -1,8 +1,8 @@
 const cooldown = 10800000;
 
 let handler = async (m, {conn, text, usedPrefix, command, groupMetadata}) => {
-  let time = global.db.data.users[m.sender].lastrob + 7200000;
-  if (new Date() - global.db.data.users[m.sender].lastrob < 7200000) throw `➳ ⏱️ ESPERA *${msToTime(time - new Date())}* PARA VOLVER A ROBAR`;
+  let time = global.db.data.users[m.sender].lastrob + 1200000;
+  if (new Date() - global.db.data.users[m.sender].lastrob < 1200000) throw `➳ ⏱️ ESPERA *${msToTime(time - new Date())}* PARA VOLVER A ROBAR`;
   if (!text) return m.reply(`*➳ ETIQUETA AL USUARIO QUE QUIERE SAQUEAR*\n\n*EJEMPLO:* ${usedPrefix + command} @tɑg>.`);
   try {
     let _user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender;
