@@ -23,7 +23,7 @@ ${clockString(user.premiumTime)}
 📑 • *Registrado:* ${registered ? '✅': '❌'}
 `.trim()
  conn.sendFile(m.chat, pp, 'perfil.jpg', str, fkon, false, { mentions: [who] })
- //   m.react(🌟) 
+ m.react(🌟) 
 }
 handler.help = ['profile [@user]']
 handler.tags = ['exp']
