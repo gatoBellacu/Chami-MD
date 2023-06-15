@@ -497,9 +497,10 @@ return
 }    
 			    
 this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
-            break
+                   }
+                }
             }
-           }
+            break
 /**
  * Handle groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
