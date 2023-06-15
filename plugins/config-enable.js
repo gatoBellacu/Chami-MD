@@ -104,6 +104,14 @@ throw false
 }
 bot.restrict = isEnable
 break
+case 'modejadibot':
+isAll = true
+if (!isROwner) {
+global.dfail('rowner', m, conn)
+throw false
+}
+bot.modejadibot = isEnable
+break     
 case 'nyimak':
 isAll = true
 if (!isROwner) {
@@ -174,6 +182,8 @@ if (!/[01]/.test(command)) return await conn.reply(m.chat, `╭┄┄≪ *「 �
 ➵ _${usedPrefix}disable *gconly*_
 ➵ _${usedPrefix}enable *autoread*_
 ➵ _${usedPrefix}disable *autoread*_
+➵ _${usedPrefix}enable *modejadibot*_
+➵ _${usedPrefix}disable *modejadibot*_
 `, fkontak, m)
 throw false
 }
