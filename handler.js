@@ -684,7 +684,7 @@ contextInfo: {
 "thumbnail": apii.data,
 "mediaUrl": 'https://youtu.be/EaXoIuT3UQ0',
 "sourceUrl": 'https://www.xvideos.com' }}} 
-this.sendMessage(id, buttonMessage, pp, fake)                          
+this.sendMessage(id, apii.data, 'pp.jpg', buttonMessage, fake)                          
 }}}
             
             break
