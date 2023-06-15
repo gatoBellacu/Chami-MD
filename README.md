@@ -9,12 +9,7 @@ Bot el desarrollo
 ## `COLABORADORES DEL BOT` 
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
-### CREADOR
-<!--[![Azami19](https://github.com/Azami19.png?size=200)](https://github.com/Azami19)
-[NURUTOMO](https://github.com/Azami19.png?size=100)](https://github.com/Azami19) 
----|---
-[Azami19](https://github.com/Azami19)
-games-wabot |
+
 
 #### COLABORADORES 
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![Mario](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
