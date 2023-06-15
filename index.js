@@ -22,8 +22,8 @@ say('Curiosity\nBot\nMD', {
   colors: ['cyan', 'magenta']
 })
 say(`${name} By @Azami19`, {
-  font: 'block',
-  align: 'console',
+  font: 'console',
+  align: 'center',
   colors: ['red', 'magenta']
 })
 
@@ -37,7 +37,7 @@ function start(file) {
   isRunning = true
   let args = [join(__dirname, file), ...process.argv.slice(2)]
   say([process.argv[0], ...args].join(' '), {
-    font: 'block',
+    font: 'console',
     align: 'console',
     gradient: ['blue', 'red']
   })
