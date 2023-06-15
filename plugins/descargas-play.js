@@ -20,28 +20,25 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
   let yt = await youtubedl(v).catch(async () => await youtubedlv2(v)).catch(async () => await youtubedlv3(v))
   let dl_url = await (isVideo ? yt.video[q].download() : yt.audio[q].download())
   let title = await yt.title
-  let size = await (isVideo ? yt.video[q].fileSizeH : yt.audio[q].fileSizeH)
-  let play = `
+  let size = await (isVideo ? yt.video[q].fileSizeH : yt.audio[q].fileSizeH) 
+  conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', `
 *📑 TÍTULO:*
-${vid.title}
+${title}
 
 *⏰ DURACIÓN:* 
-${vid.timestamp}
+${timestamp}
 
-*📆 PUBLICADO:* 
-${vid.ago}
- 
 *💬 DESCRIPCIÓN*
 ${description}
 
 *👀 VISTAS*
-${vid.views}
+${views}
 
 *📡 URL*
 ${url}
 
-*🚀 Aguarde un momento en lo que envío su audio*`
-conn.sendFile(m.chat, vid.thumbnail, 'play', play, m, null)
+*🚀 Aguarde un momento en lo que envío su audio*
+`.trim(), m)
 
 if (size.split('MB')[0] >= limit) return m.reply(`🔸 *⚖️Peso* : ${size}\n🔸 *🎞️Calidad* : ${q}\n\n🔸 _El archivo supera el límite de descarga_ *+${limit} MB*`) 
 if (size.includes('GB')) return m.reply(`🔸 *⚖️Peso* : ${size}\n🔸 *🎞️Calidad* : ${q}\n\n🔸 _El archivo supera el límite de descarga_ *+${limit} MB*`)   
