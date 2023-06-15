@@ -1,4 +1,3 @@
-/*
 let handler = m => m
 handler.all = async function (m) {
 	let setting = global.db.data.settings[this.user.jid]
@@ -26,4 +25,3 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, ' Día(s) ️', h, ' Hora(s) ', m, ' Minuto(s)'].map(v => v.toString().padStart(2, 0)).join('')
 }
-*/
