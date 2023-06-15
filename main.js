@@ -85,7 +85,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   logger: pino({ level: 'silent'}),
-  browser: ['CuriosityBot-MD1','Edge','1.0.0']
+  browser: ['dylux-bot','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -118,7 +118,7 @@ async function clearTmp() {
 }
 setInterval(async () => {
 	var a = await clearTmp()
-	console.log(chalk.cyan(`\n╭ 🚀  AUTOCLEAR  🚀\n│ARCHIVOS DE LA CARPETA TMP ELIMINADAS\n╰―――――――――――――――――――`))
+	console.log(chalk.cyan(`✅  Auto clear  | Se limpio la carpeta tmp`))
 }, 60000) //1 munto
 
 async function connectionUpdate(update) {
@@ -275,5 +275,5 @@ async function _quickTest() {
 }
 
 _quickTest()
-  .then(() => conn.logger.info('C A R G A N D O . . .'))
+  .then(() => conn.logger.info('Quick Test Done'))
   .catch(console.error)
