@@ -11,9 +11,9 @@ Bot el desarrollo
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
 
 #### COLABORADORES 
-<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![Erlan](https://github.com/ERLANRAHMAT.png?size=100)](https://github.com/ERLANRAHMAT) 
+<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![Mario](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
 ---|---
-[Tio](https://github.com/BOTCAHX)  | [Erlan](https://github.com/ERLANRAHMAT)
+[GataDios](https://github.com/BOTCAHX)  | [Erlan](https://github.com/ERLANRAHMAT)
 Recode | Contributor |
 
 ##### AGRADECIMIENTO ESPECIAL PARA
