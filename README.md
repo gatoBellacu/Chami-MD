@@ -1,10 +1,15 @@
+
+### INSTALACIÓN POR TERMUX 
+MUY PRONTO
+
+
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Azami19"><img src="https://github.com/Azami19.png" width="250" height="250" alt="Azami19"/></a>
 
 #### COLABORADORES 
-<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![Mario](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
+<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png?size=100" width="100" height="100"></a> | [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
 ---|---
-[Gata Dios](https://github.com/GataNina-Li)  | [Mario](https://github.com/elrebelde21)
+[Gata Dios](https://github.com/GataNina-Li)  | [elrebelde21](https://github.com/elrebelde21)
 Colaboradora | Colaborador |
 
 ##### AGRADECIMIENTO ESPECIAL PARA
