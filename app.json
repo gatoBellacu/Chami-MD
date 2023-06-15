@@ -1,7 +1,21 @@
 {
-  "name": "dylux-fg",
-  "description": "Customizable WhatsApp Bot",
-  "repository": "https://github.com/FG98F/dylux-fg",
-  "logo": "https://i.ibb.co/dG6rm49/fg-logo.png",
-  "keywords": ["bot", "whatsapp", "whatsapp-bot", "rpg", "dylux-bot-md", "dylux-bot"]
+  "name": "CuriosityBot-MD", 
+  "description": "Super Bot WhatsApp",
+  "repository": "https://github.com/Azami19/Curiosity-MD.git",
+  "logo": "https://i.imgur.com/8fK4h6F.jpg",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation", "gatabot"],
+  "buildpacks": [
+  {
+    "url": "heroku/nodejs"
+  },
+  {
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+  },
+  {
+    "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+  },
+  {
+    "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+  }    
+ ]
 }
