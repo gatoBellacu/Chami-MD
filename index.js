@@ -1,4 +1,4 @@
-console.log('✅ Iniciando...')
+console.log('🚀  Iniciando...')
 
 import { join, dirname } from 'path'
 import { createRequire } from 'module';
@@ -21,10 +21,10 @@ say('Curiosity\nBot\nMD', {
   align: 'center',
   colors: ['cyan', 'magenta']
 })
-say(`'${name}' By @fg98._`, {
-  font: 'console',
-  align: 'center',
-  gradient: ['red', 'magenta']
+say(`${name} By @Azami19`, {
+  font: 'block',
+  align: 'console',
+  colors: ['red', 'magenta']
 })
 
 var isRunning = false
@@ -37,9 +37,9 @@ function start(file) {
   isRunning = true
   let args = [join(__dirname, file), ...process.argv.slice(2)]
   say([process.argv[0], ...args].join(' '), {
-    font: 'console',
-    align: 'center',
-    gradient: ['red', 'magenta']
+    font: 'block',
+    align: 'console',
+    gradient: ['blue', 'red']
   })
   setupMaster({
     exec: args[0],
