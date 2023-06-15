@@ -100,6 +100,11 @@ global.md = 'https://github.com/Azami19/CuriosityBot-MD1'
 global.nn = 'https://chat.whatsapp.com'
 global.nnn = 'https://chat.whatsapp.com'
 global.paypal = 'https://paypal.me/Azami19'
+global.rwait = '⌛'
+global.dmoji = '🤭'
+global.done = '✅'
+global.error = '❌' 
+global.xmoji = '🔥' 
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
