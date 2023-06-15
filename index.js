@@ -17,9 +17,9 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('DyLux -  FG98', {
-  font: 'chrome',
+  font: 'block',
   align: 'center',
-  gradient: ['red', 'magenta']
+  colors: ['red', 'magenta']
 })
 say(`'${name}' By @fg98._`, {
   font: 'console',
