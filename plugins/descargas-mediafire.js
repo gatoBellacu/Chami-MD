@@ -30,7 +30,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
 ╰━─━─━─≪💎≫─━─━─━╯
 ${isLimit ? `\n🔸*️EL ARCHIVO SUPERA EL LIMITE DE DESCARGA* +${limit} MB*\n*PASATE A PREMIUM PARA PODER DESCARGA ARCHIVO PESADO MAS DEL 600 MB*` : ''} 
 `.trim()
-await conn.reply(m.chat, caption, m, {
+conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'CURIOSITYBOT-MD | By Azami ©',
 body: 'Super Bot WhatsApp',         
