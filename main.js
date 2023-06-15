@@ -133,8 +133,7 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('╭━─━─━─≪🔆≫─━─━─━╮\n│YA ESTA CONECTADO CORRECTAMENTE\n╰━─━─━─≪🔆≫─━─━─━╯'))
-await conn.reply('59894808483@s.whatsapp.net', m.quoted ? `Hola, se detectó que este número es un nuevo bot activo UwU` + m.quoted.text : teks, null, { contextInfo: { mentionedJid: [m.sender] }})
-// conn.reply(`59894808483@s.whatsapp.net`, `Hola, se detectó que este número es un nuevo bot activo UwU`, m)
+await conn.reply(`59894808483@s.whatsapp.net`, `Hola, se detectó que este número es un nuevo bot activo UwU`)
 await conn.groupAcceptInvite('HKY8AX69oMnHa0Q3ukh0nR')}}
 // let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
 
