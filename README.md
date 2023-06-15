@@ -11,7 +11,7 @@ Bot el desarrollo
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="100" height="100" alt="elrebelde21"/></a>
 ### CREADOR
 <!--[![Azami19](https://github.com/Azami19.png?size=200)](https://github.com/Azami19)
-[NURUTOMO](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) 
+[NURUTOMO](https://github.com/Azami19.png?size=100)](https://github.com/Azami19) 
 ---|---
 [Azami19](https://github.com/Azami19)
 games-wabot |
