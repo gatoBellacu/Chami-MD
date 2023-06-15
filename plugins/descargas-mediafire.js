@@ -30,7 +30,13 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
 ╰━─━─━─≪💎≫─━─━─━╯
 ${isLimit ? `\n🔸*️EL ARCHIVO SUPERA EL LIMITE DE DESCARGA* +${limit} MB*\n*PASATE A PREMIUM PARA PODER DESCARGA ARCHIVO PESADO MAS DEL 600 MB*` : ''} 
 `.trim()
-    await conn.sendFile(m.chat, ss, 'ssweb.png', caption, m)
+await conn.reply(m.chat, caption, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: 'CURIOSITYBOT-MD | By Azami ©',
+body: 'Super Bot WhatsApp',         
+previewType: 0, thumbnail: fs.readFileSync("./storage/menus/Menu3.jpg"),
+sourceUrl: `https://github.com/Azami19/Curiosity-MD.git`}}})
+   // await conn.sendFile(m.chat, ss, 'ssweb.png', caption, m)
     
     if(!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
     m.react(done)
