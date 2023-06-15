@@ -1,59 +1,76 @@
-import yts from 'yt-search'
-import fetch from "node-fetch"
-import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
-let limit = 1500
-let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  
-    if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n💡 EJEMPLO\n*${usedPrefix + command} Another love*`
-  let chat = global.db.data.chats[m.chat]
-  let res = await yts(text)
-  //let vid = res.all.find(video => video.seconds < 3600)
-  let vid = res.videos[0]
-  let { title, description, publishedTime, url, thumbnail, videoId, timestamp, views, published } = vid
-  if (!vid) throw `✳️ Vídeo/Audio no encontrado`
-  let isVideo = /vid$/.test(command)
-  m.react('🎧') 
-  
+import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
+   var handler = async (m, { 
+    conn,
+    text, 
+    usedPrefix
+               }) => {
+  if (!text) throw 'Enter Title / link'
   try {
-  let q = isVideo ? '360p' : '128kbps' 
-  let v = vid.url
-  let yt = await youtubedl(v).catch(async () => await youtubedlv2(v)).catch(async () => await youtubedlv3(v))
-  let dl_url = await (isVideo ? yt.video[q].download() : yt.audio[q].download())
-  let title = await yt.title
-  let size = await (isVideo ? yt.video[q].fileSizeH : yt.audio[q].fileSizeH) 
-  conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', `
-*📑 TÍTULO:*
-${title}
+    var vid = (await youtubeSearch(text)).video[0]
+    if (!vid) throw 'Video/Audio Tidak Ditemukan'
+    var { title, 
+          description, 
+          thumbnail, 
+          videoId, 
+          durationH, 
+          durationS,
+          viewH,
+          publishedTime
+                         } = vid
+    var url = 'https://www.youtube.com/watch?v=' + videoId
 
-*⏰ DURACIÓN:* 
-${timestamp}
+   let vide = `https://yt.btch.bz/download?URL=${url}&videoName=video`
 
-*💬 DESCRIPCIÓN*
-${description}
+    let web = `https://yt.btch.bz/downloadAudio?URL=${url}&videoName=video`
+    var tmb = thumbnail
+    var captionvid = `  ∘ Title: ${title}
+  ∘ Published: ${publishedTime}
+  ∘ Duration: ${durationH}
+  ∘ Second: ${durationS}
+  ∘ Views: ${viewH}  
+  ∘ Url:  ${url}
+  ∘ Description: ${description}`
+    var pesan = await conn.sendMessage(m.chat, {
+    text: captionvid,
+    contextInfo: {
+    externalAdReply: {
+    title: "",
+    body: "Powered by",
+    thumbnailUrl: tmb ,
+    sourceUrl: web,
+    mediaType: 1,
+    showAdAttribution: true,
+    renderLargerThumbnail: true
+    }}})
 
-*👀 VISTAS*
-${views}
+    if (durationS > 18000) return conn.sendMessage(m.chat, { text: `*Link Original:* ${await cut(url)}\n\n_Durasi terlalu panjang..._\n*Duration Limit!*` }, { quoted: pesan })
+    conn.sendMessage(m.chat, { audio: { url: web }, mimetype: 'audio/mpeg', contextInfo: {
+    externalAdReply: {
+    title: title,
+    body: "",
+    thumbnailUrl: tmb,
+    sourceUrl: web,
+    mediaType: 1,
+    showAdAttribution: true,
+    renderLargerThumbnail: true
+    }}} , { quoted: pesan })
 
-*📡 URL*
-${url}
-
-*🚀 Aguarde un momento en lo que envío su audio*
-`.trim(), m)
-
-if (size.split('MB')[0] >= limit) return m.reply(`🔸 *⚖️Peso* : ${size}\n🔸 *🎞️Calidad* : ${q}\n\n🔸 _El archivo supera el límite de descarga_ *+${limit} MB*`) 
-if (size.includes('GB')) return m.reply(`🔸 *⚖️Peso* : ${size}\n🔸 *🎞️Calidad* : ${q}\n\n🔸 _El archivo supera el límite de descarga_ *+${limit} MB*`)   
-	  conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /vid$/.test(command)), `🔸 *📌Título* : ${title}
-🔸 *🎞️Calidad* : ${q}
-🔸 *⚖️Peso* : ${size}
-`.trim(), m, false, { mimetype: isVideo ? '' : 'audio/mpeg', asDocument: chat.useDocument })
-		m.react(done) 
-    } catch {
-		m.reply(`Error: intenta de nuevo`)
-    }
-
+  } catch (e) {
+    throw 'Video/Audio Tidak Ditemukan'
+  }
 }
-handler.help = ['play']
-handler.tags = ['dl']
-handler.command = ['play', 'playvid']
-
+handler.command = handler.help = ['play','song','youtube','ytmp3','ds','downloadyt','yta'];
+handler.tags = ['downloader'];
+handler.exp = 0;
+handler.limit = true;
+handler.premium = false;
 export default handler
+async function cut(url) {
+  url = encodeURIComponent(url)
+  let res = await fetch(`https://api.botcahx.live/api/linkshort/bitly?link=${url}&apikey=${btc}`)
+  if (!res.ok) throw false
+  return await res.text()
+}
+async function delay(ms) {
+   await new Promise(resolve => setTimeout(resolve, ms));
+}
