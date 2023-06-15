@@ -399,7 +399,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️ 🅡🅔🅟🅞🅡🅣🅔 🅓🅔 🅒🅞🅜🅐🅝🅓🅞 🅒🅞🅝 🅕🅐🅛🅛🅞🅢 ⚠️ ]*\n\n*—◉ 🄿🄻🅄🄶🄸🄽 :* ${m.plugin}\n*—◉ 🅄🅂🅄🄰🅁🄸🄾  :* ${m.sender}\n*—◉ 🄲🄾🄼🄰🄽🄳🄾  :* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n🅁🄴🄿🄾🅁🅃🄴🅁🄻🄾🅂 🄰🄻 🄲🅁🄴🄰🄳🄾🅁 🄳🄴🄻 🄱🄾🅃 🄿🄰🅁🄰 🄳🄰🅁🄻🄴 🅂🄾🄻🅄🄲🄸🄾🄽, 🄿🅄🄴🄳🄴 🅄🅂🄰🅁 🄴🄻 🄲🄾🄼🄰🄽🄳🄾 #reporte`.trim(), data.jid)
+                                    m.reply(`*⚠️ COMANDO FALLANDO ⚠️*\n\n*📑 PLUGIN:* ${m.plugin}\n*👤 USUARIO:* ${m.sender}\n*🚀 COMANDO:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -595,16 +595,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*✳️ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ ʟᴏs ᴘᴜᴇᴅᴇ ᴜsᴀʀ ᴇʟ ᴘʀᴏᴘɪᴇᴛᴀʀɪᴏ (ᴏᴡɴᴇʀ) ᴅᴇʟ ʙᴏᴛ*',
-        owner: '*✳️ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ ʟᴏs ᴘᴜᴇᴅᴇ ᴜsᴀʀ ᴇʟ ᴘʀᴏᴘɪᴇᴛᴀʀɪᴏ (ᴏᴡɴᴇʀ) ᴅᴇʟ ʙᴏᴛ*',
-        mods: '🔰ᴇsᴛᴀ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ ᴇs ᴘᴀʀᴀ ᴍᴏᴅᴇʀᴀᴛᴏʀ ʏ ᴏᴡɴᴇʀ ᴅᴇʟ ʙᴏᴛ',
-        premium: '💠ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ ᴇs sᴏʟᴏ ᴘᴀʀᴀ ᴍɪᴇᴍʙʀᴏs ᴘʀᴇᴍɪᴜᴍ',
-        group: '⚙️¡ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ sᴇ ᴘᴜᴇᴅᴇ ᴜsᴀʀ ᴇʟ ɢʀᴜᴘᴏs!',
-        private: '📮ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ sᴇ ᴘᴜᴇᴅᴇ ᴜsᴀʀ ᴀʟ ᴄʜᴀᴛ ᴘʀɪᴠᴀᴅᴏ ᴅᴇʟ ʙᴏᴛ',
-        admin: '🛡️ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ sᴏʟᴏ ᴇs ᴘᴀʀᴀ ᴀᴅᴍɪɴ ᴅᴇʟ ɢʀᴜᴘᴏ',
-        botAdmin: '💥¡ᴘᴀʀᴀ ᴜsᴀ ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ ᴘʀɪᴍᴇʀᴏ ᴇʟ ʙᴏᴛ (ʏᴏ) ɴᴇᴄᴇsɪᴛᴀ sᴇʀ ᴀᴅᴍɪɴ ᴅᴇʟ ɢʀᴜᴘᴏ!*',
-        unreg: '🔴ʜᴇʏ ᴀʟᴛᴏ ɴᴏ ᴇsᴛᴀ ʀᴇɢɪsᴛʀᴀᴅᴏ 🔴\nᴘᴀʀᴀ ᴘᴏᴅᴇʀ ᴜsᴀʀ ᴇʟ ʙᴏᴛ ɴᴇᴄᴇsɪᴛᴀ ʀᴇɢɪsᴛʀᴀʀᴛᴇ:\n\n*/reg nombre.edad*',
-        restrict: '🔐 ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ ᴇsᴛᴀ ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ'
+        rowner: '⚠️️ *Este comando solo puede ser utilizado por el Creador del bot*',
+        owner: '⚠️ *Este comando solo puede ser utilizado por el Dueño del Bot*',
+        mods: '⚠️ *Esta función es solo para moderadores del Bot*',
+        premium: '⚠️ *Este comando es solo para miembros Premium*',
+        group: '⚠️ *¡¡¡Este comando solo se puede usar en grupos!!!*',
+        private: '⚠️️ *¡¡¡Este comando solo se puede usar en el chat privado del Bot!!!*',
+        admin: '⚠️️ *Este comando es solo para Admins del grupo*',
+        botAdmin: '⚠️️ *¡¡¡Para usar este comando debo ser Administrador!!!*',
+        unreg: '⚠️ *Regístrese para usar esta función  Escribiendo:*\n\n• */reg nombre.edad*\n\n*_💡 Ejemplo_* : */reg Azami.19*',
+        restrict: '*¡¡¡Esta característica está -deshabilitada!!!*'
     }[type]
     if (msg) return m.reply(msg)
    //if (msg) return conn.sendButton(m.chat, msg, wm, null, [['OK', '.ok'] ], m)
