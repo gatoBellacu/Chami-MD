@@ -33,7 +33,9 @@ En caso de duda, antes de instalar CuriosityBot-MD, pruebe el bot aquí
 
 ***
 
-#### Deploy to Heroku
+#### ACTIVA EL HEROKU
+para usuarios del heroku
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
 
 #### Heroku Buildpack
@@ -43,13 +45,21 @@ En caso de duda, antes de instalar CuriosityBot-MD, pruebe el bot aquí
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
 ### ACTIVA EL TERMUX
-```sh
+```bash
 > apt-get update -y && apt-get upgrade -y
 > pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 > git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && npm install && yarn 
 > npm start
 ```
----------
+
+### `🔥 OBTENER OTRO CODIGO QR🔥`
+```bash
+ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+> cd 
+> cd CuriosityBot-MD1
+> rm -rf sessions
+> npm start
+```
 
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Azami19"><img src="https://github.com/Azami19.png" width="250" height="250" alt="Azami19"/></a>
