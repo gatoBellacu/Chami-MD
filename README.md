@@ -43,6 +43,7 @@ para usuarios del heroku
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
+***
 ### `➳ ACTIVA EL TERMUX`
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
