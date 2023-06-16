@@ -1,7 +1,7 @@
 # `CuriosityBot-MD`
 
 <p align="center">
-<img src="https://tinyurl.com/26w3bh8t.jpg" alt="CuriosityBot-MD" width="900"/>
+<img src="https://telegra.ph/file/847bdd9005d7e75eb2373.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
 
 # 📖 Características del bot 
