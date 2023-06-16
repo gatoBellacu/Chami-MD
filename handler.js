@@ -414,7 +414,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.diamond)
-                        m.reply(`*${+m.diamond}* ᴅɪᴀᴍᴀɴᴛᴇ 💎 ᴜsᴀᴅᴏ`)
+                        m.reply(`*${+m.diamond}* Diamante usado`)
                 }
                 break
             }
