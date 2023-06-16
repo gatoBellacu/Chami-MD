@@ -17,15 +17,15 @@ let handler = async (m, { conn, args, participants }) => {
  
 *TOP ${len} XP* 🧬 
 TU : *${usersExp.indexOf(m.sender) + 1}* DE *${usersExp.length}*
-${sortedExp.slice(0, len).map(({ jid, exp }, i) => `║${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*𝚡𝚙 ${exp}*_`).join`\n`}
+${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Xp ${exp}*`).join`\n`}
 
 *TOP ${len} DIAMANTES  💎*
 TU : *${usersLim.indexOf(m.sender) + 1}* DE *${usersLim.length}*
-${sortedLim.slice(0, len).map(({ jid, diamond }, i) => `║${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎𝚜 ${diamond}*_`).join`\n`}
+${sortedLim.slice(0, len).map(({ jid, diamond }, i) => `${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Diamantes ${diamond}*`).join`\n`}
 
 *TOP ${len} NIVEL* ⬆️
 TU : *${usersLevel.indexOf(m.sender) + 1}* DE *${usersLevel.length}*
-${sortedLevel.slice(0, len).map(({ jid, level }, i) => `║${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ➭ _*𝙽𝚒𝚟𝚎𝚕 ${level}*_`).join`\n`}`.trim()
+${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => areJidsSameUser(jid, p.id)) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}`.trim()
   conn.reply(m.chat, text, m, {
     mentions: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len)].filter(v => !participants.some(p => areJidsSameUser(v, p.id) )) 
 })
