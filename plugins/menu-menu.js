@@ -84,7 +84,7 @@ let menu = `*❏──── 「 MENU 」 ────❏*
 
 *I N F O*
 *Creador:* Azami
-*Número*: wa.me/598
+*Número*: wa.me/59894808483
 *Bot oficial:* wa.me/5355772234
 *Tiempo activo:* ${uptime}
 *Usuarios:* ${rtotalreg}
