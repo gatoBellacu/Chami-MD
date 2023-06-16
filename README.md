@@ -1,11 +1,28 @@
 # `CuriosityBot-MD`
 
+# 📖 Características del bot 
+|  Funciones y comandos  |                                           Sip |
+| :---------------------------------------------: | :-----------: |
+| Crea stickers|✔️|
+| Bienvenida automática|✔️|
+| Anti-Link|✔️|
+| Anti-Fakes|✔️|
+| Jadibot |✔️|
+| Anti-Estranjeros|✔️|
+| Anti-Llamadas|✔️|
+| Anti-Privados|✔️|
+| Modo Publico/Privado|✔️|
+| Herramientas de edición|✔️|
+| Descarga de música/videos|✔️|
+| Random commands|✔️|
+| Más funciones en adelante|♻️|
+
 ### ACTIVA EL TERMUX
 ```sh
-$ apt-get update -y && apt-get upgrade -y
-$ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-$ git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && npm install && yarn 
-$ npm start
+> apt-get update -y && apt-get upgrade -y
+> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
+> git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && npm install && yarn 
+> npm start
 ```
 ---------
 
