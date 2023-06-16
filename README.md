@@ -61,7 +61,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-# ⚡ DUDAS SOBRE EL BOT?, CONTACTANOS
+ ### `⚡ DUDAS SOBRE EL BOT?, CONTACTANOS`
 
 <a href="https://wa.me/59894808483"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
