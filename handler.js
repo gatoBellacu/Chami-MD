@@ -232,7 +232,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⚠️ 🅡🅔🅟🅞🅡🅣🅔 🅓🅔 🅒🅞🅜🅐🅝🅓🅞 🅒🅞🅝 🅕🅐🅛🅛🅞🅢 ⚠️ ]*\n\n*—◉ 🄿🄻🅄🄶🄸🄽:* ${name}\n*—◉ 🅄🅂🅄🄰🅁🄸🄾:* ${m.sender}\n*—◉ 🄲🄾🄼🄰🄽🄳🄾:* ${m.text}\n\n*—◉ 🄴🅁🅁🄾🅁:*\n\`\`\`${format(e)}\`\`\`\n\n🅁🄴🄿🄾🅁🅃🄴🅁🄻🄾🅂 🄰🄻 🄲🅁🄴🄰🄳🄾🅁 🄳🄴🄻 🄱🄾🅃 🄿🄰🅁🄰 🄳🄰🅁🄻🄴 🅂🄾🄻🅄🄲🄸🄾🄽, 🄿🅄🄴🄳🄴 🅄🅂🄰🅁 🄴🄻 🄲🄾🄼🄰🄽🄳🄾 #reporte`.trim(), data.jid)                  
+                            m.reply(`*[ ⚠️ 🅡🅔🅟🅞🅡🅣🅔 🅓🅔 🅒🅞🅜🅐🅝🅓🅞 🅒🅞🅝 🅕🅐🅛🅛🅞🅢 ⚠️ ]*\n\n*—◉ 🄿🄻🅄🄶🄸🄽:* ${name}\n*—◉ 🅄🅂🅄🄰🅁🄸🄾:* ${m.sender}\n*—◉ 🄲🄾🄼🄰🄽🄳🄾:* ${m.text}\n\n*—◉ 🄴🅁🅁🄾🅁:*\n\`\`\`${format(e)}\`\`\`\n\n🅁🄴🄿🄾🅁🅃🄴🅁🄻🄾🅂 🄰🄻 🄲🅁🄴🄰🄳🄾🅁 🄳🄴🄻 🄱🄾🅃 🄿🄰🅁🄰 🄳🄰🅁🄻🄴 🅂🄾🄻🅄🄲🄸🄾🄽, 🄿🅄🄴🄳🄴 🅄🅂🄰🅁 🄴🄻 🄲🄾🄼🄰🄽🄳🄾 #reporte`.trim(), data.jid)                               
                     }
                 }
             }
@@ -399,7 +399,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*⚠️ COMANDO FALLANDO ⚠️*\n\n*📑 PLUGIN:* ${m.plugin}\n*👤 USUARIO:* ${m.sender}\n*🚀 COMANDO:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n`.trim(), data.jid)
+                                    m.reply(`*[ *⚠️ COMANDO FALLANDO ⚠️ ]*\n\n*📑 PLUGIN :* ${m.plugin}\n*👤 USUARIO :* ${m.sender}\n*🚀 COMANDO :* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -501,8 +501,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     let apii = await this.getFile(pp)
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
                               (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] })                               
-//this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })                        
+this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] })                             
 //this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? 'ʙɪᴇɴᴠᴇɴɪᴅᴏ 👋' : ' ᴀᴅɪᴏs 🚮'), (action == 'add' ? '.ok' : '.llorar')], ['🛑 ᴍᴇɴᴜ 🛑', `#menu`]], null, {mentions: this.parseMention(text)})
                    }
                 }
@@ -607,12 +606,11 @@ global.dfail = (type, m, conn) => {
         restrict: '*¡¡¡Esta característica está -deshabilitada!!!*'
     }[type]
     if (msg) return m.reply(msg)
-   //if (msg) return conn.sendButton(m.chat, msg, wm, null, [['OK', '.ok'] ], m)
 }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.magenta("Se actualizo 'handler.js'"))
+    console.log(chalk.magenta("UPDATE 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 }) 
