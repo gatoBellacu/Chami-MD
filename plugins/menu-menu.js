@@ -1,3 +1,5 @@
+//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios & https://github.com/Azami19 | @Azami
+
 import fs from 'fs'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
@@ -21,7 +23,7 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 
-let pp = await conn.profilePictureUrl(m.sender, 'image') || img
+let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./storage/menus/Menu3.jpg'), thumbnail: fs.readFileSync('./storage/menus/Menu3.jpg'),sendEphemeral: true}}}
 const ftrol = {
     key : {
@@ -35,7 +37,7 @@ const ftrol = {
     surface : 1,
     message: `Hola ${name}!`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch(img)).buffer(), //Gambarnye
+    thumbnail: await (await fetch(pp)).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -48,8 +50,8 @@ let d4 = 'application/pdf'
 let d5 = 'application/vnd.android.package-archive'
 let d6 = 'application/zip'
 let td = `${pickRandom([d1,d2,d3,d4,d5,d6])}`
-
-const fload = {
+ 
+ const fload = {
     key : {
     remoteJid: 'status@broadcast',
     participant : '0@s.whatsapp.net'
@@ -61,13 +63,13 @@ const fload = {
     surface : 1,
     message: 'Menú...' + '\n🚀 Cargando ^ω^', 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch(img)).buffer(), 
+    thumbnail: await (await fetch(pp)).buffer(), 
     sellerJid: '0@s.whatsapp.net' 
     }
     }
     }
     await conn.reply(m.chat, '*Enviando el menu . . .*', ftrol) 
-
+    
 let menu = `*❏──── 「 MENU 」 ────❏*
 
 *U S U A R I O*
@@ -82,7 +84,7 @@ let menu = `*❏──── 「 MENU 」 ────❏*
 
 *I N F O*
 *Creador:* Azami
-*Número*: wa.me/59894808483
+*Número*: wa.me/598
 *Bot oficial:* wa.me/5355772234
 *Tiempo activo:* ${uptime}
 *Usuarios:* ${rtotalreg}
@@ -268,7 +270,7 @@ await conn[_0x110137(0x1ba)](m[_0x110137(0x1b5)], buttonMessage, { 'quoted': fko
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 }}
 handler.command = /^(menu)$/i
-handler.register = true
+//handler.register = true
 export default handler
 
 function clockString(ms) {
