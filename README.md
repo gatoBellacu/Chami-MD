@@ -4,7 +4,6 @@ Bot el desarrollo
 <p align="center">
 <img src="https://telegra.ph/file/847bdd9005d7e75eb2373.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
-l
 
 ### `⚙️ AJUSTES ⚙️`
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/azami19/CuriosityBot-MD1/blob/main/config.js#L6)
