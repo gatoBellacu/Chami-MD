@@ -1,7 +1,13 @@
+# `CuriosityBot-MD`
 
-### INSTALACIÓN POR TERMUX 
-MUY PRONTO
-
+### ACTIVA EL TERMUX
+```sh
+$ apt-get update -y && apt-get upgrade -y
+$ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
+$ git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && npm install && yarn 
+$ npm start
+```
+---------
 
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Azami19"><img src="https://github.com/Azami19.png" width="250" height="250" alt="Azami19"/></a>
