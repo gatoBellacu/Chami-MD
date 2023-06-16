@@ -471,6 +471,7 @@ export async function handler(chatUpdate) {
         }
         if (opts['autoread'])
             await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
+            this.sendPresenceUpdate('composing', m.chat)   
     }
 }
 
