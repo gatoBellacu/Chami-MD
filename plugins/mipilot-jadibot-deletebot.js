@@ -24,7 +24,7 @@ let handler  = async (m, { conn }, args) => {
         
         fs.rmdir("./jadibts/" + uniqid, { recursive: true, force: true })
         .then(() => {
-        console.log('se han eliminado todos los archivos')
+        console.log('*⚠️ SE HAN ELIMINADO TODOS LOS ARCHIVOS*')
         })
         await conn.sendMessage(m.chat, {text : "todos los archivos fueron eliminados" } , { quoted: m })
         /*fs.unlink("./jadibts/" + uniqid + "/creds.json")
@@ -34,7 +34,7 @@ let handler  = async (m, { conn }, args) => {
         console.log('Folder removed')
         await conn.sendMessage(m.chat, {text : "la carpeta fue eliminada " } , { quoted: m })*/
         } catch(err) {
-        console.error('La carpeta o archivo de sesion no existen ', err)
+        console.error('*⚠️ LA CARPETA O SESIÓN NO EXISTEN*', err)
       
     }
             
