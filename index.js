@@ -17,14 +17,14 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('Curiosity\nBot\nMD', {
-  font: 'chrome',
+  font: 'block',
   align: 'center',
-  gradient: ['red', 'magenta']
+  colors: ['cyan', 'magenta']
 })
 say(`'${name}' By @Azami19._`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  colors: ['red', 'magenta']
 })
 
 var isRunning = false
@@ -39,7 +39,7 @@ function start(file) {
   say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
-    gradient: ['red', 'magenta']
+    gradient: ['blue', 'red']
   })
   setupMaster({
     exec: args[0],
@@ -50,25 +50,27 @@ function start(file) {
     console.log('[RECEIVED]', data)
     switch (data) {
       case 'reset':
-        p.process.kill()
-        isRunning = false
-        start.apply(this, arguments)
-        break
-      case 'uptime':
-        p.send(process.uptime())
-        break
-    }
-  })
-  //---
- p.on('exit', (_, code) => {
-    isRunning = false
-    console.error('⚠️ Ocurrió un error inesperado:', code)
-    if (code === 0) return
-    watchFile(args[0], () => {
-      unwatchFile(args[0])
-      start(file)
-    })
-  })
+p.process.kill()
+isRunning = false
+start.apply(this, arguments)
+break
+case 'uptime':
+p.send(process.uptime())
+break }})
+p.on('exit', (_, code) => {
+isRunning = false
+console.error('⚠️ Ocurrió un error inesperado️', code)
+  
+p.process.kill()
+isRunning = false
+start.apply(this, arguments)
+  
+if (process.env.pm_id) {
+process.exit(1)
+} else {
+process.exit()
+}
+})
   //----
   let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
   if (!opts['test'])
