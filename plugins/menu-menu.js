@@ -84,7 +84,7 @@ let menu = `*❏──── 「 MENU 」 ────❏*
 
 *I N F O*
 *Creador:* Azami
-*Número*: wa.me/598
+*Número*: wa.me/59894808483
 *Bot oficial:* wa.me/5355772234
 *Tiempo activo:* ${uptime}
 *Usuarios:* ${rtotalreg}
@@ -101,12 +101,21 @@ ${usedPrefix}reporte
 ${usedPrefix}join
 bot
 
+*「 ＳＥＲ ＢＯＴ/ＪＡＤＩＢＯＴ 」*
+${usedPrefix}Serbot 
+${usedPrefix}jadibot
+${usedPrefix}bots
+${usedPrefix}deletesesion
+${usedPrefix}stop
+
 *「 D E S C A R G A S 」*
 ${usedPrefix}play
 ${usedPrefix}play2
 ${usedPrefix}yta
 ${usedPrefix}ytv
 ${usedPrefix}facebook
+${usedPrefix}tiktok
+${usedPrefix}instagram
 ${usedPrefix}gitclone
 ${usedPrefix}pinterest
 ${usedPrefix}imagen
@@ -187,6 +196,8 @@ ${usedPrefix}disable gconly
 ${usedPrefix}minar
 ${usedPrefix}daily
 ${usedPrefix}work
+${usedPrefix}rob
+${usedPrefix}limit
 ${usedPrefix}reg
 ${usedPrefix}unreg
 ${usedPrefix}myns
