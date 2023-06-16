@@ -20,9 +20,10 @@ Bot el desarrollo
 | Random commands|✔️|
 | Más funciones en adelante|♻️|
 
-### Información
+### `➳ ⚙️ AJUSTES ⚙️`
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/azami19/CuriosityBot-MD1/blob/main/config.js#L6)
-- Puede cambiar a la última versión de baileys editando el package.json [esta sección](https://github.com/Azami19/CuriosityBot-MD1/blob/main/package.json#L42)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/Azami19/CuriosityBot-MD1/fork)
+- Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Azami19/CuriosityBot-MD1/blob/main/package.json#L42)
 
 ### Ejemplo 
 En caso de duda, antes de instalar CuriosityBot-MD, pruebe el bot aquí
@@ -31,7 +32,7 @@ En caso de duda, antes de instalar CuriosityBot-MD, pruebe el bot aquí
 
 ***
 
-#### ACTIVA EL HEROKU
+#### `➳ ACTIVA EL HEROKU`
 para usuarios del heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
@@ -42,20 +43,24 @@ para usuarios del heroku
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-### `ACTIVA EL TERMUX`
+### `➳ ACTIVA EL TERMUX`
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
 ```
+
 ```bash
 apt-get update -y && apt-get upgrade -y
 ```
+
 ```bash
 pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
+
 ```bash
 git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && yarn install && yarn install
 ```
+
 ```bash
 npm start
 ```
