@@ -5,7 +5,7 @@ Bot el desarrollo
 <img src="https://telegra.ph/file/847bdd9005d7e75eb2373.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
 
-# 📖 Características del bot 
+# 💛 Características del bot 
 |  Funciones y comandos  |                                           Sip |
 | :---------------------------------------------: | :-----------: |
 | Crea stickers|✔️|
