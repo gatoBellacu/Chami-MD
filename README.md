@@ -23,7 +23,7 @@ Bot el desarrollo
 | Más funciones en adelante|♻️|
 
 ### Información
-- Cambie número de dueño en [Config](https://github.com/azami19/CuriosityBot-MD1/blob/main/config.js#L6)
+- CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/azami19/CuriosityBot-MD1/blob/main/config.js#L6)
 - Puede cambiar a la última versión de baileys editando el package.json [esta sección](https://github.com/Azami19/CuriosityBot-MD1/blob/main/package.json#L42)
 
 ### Ejemplo 
@@ -60,6 +60,10 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > rm -rf sessions
 > npm start
 ```
+
+# ⚡ DUDAS SOBRE EL BOT?, CONTACTANOS
+
+<a href="https://wa.me/59894808483"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### EDITOR & PROPIETARIO DEL BOT
 <a href="https://github.com/Azami19"><img src="https://github.com/Azami19.png" width="250" height="250" alt="Azami19"/></a>
