@@ -21,6 +21,26 @@
 | Random commands|✔️|
 | Más funciones en adelante|♻️|
 
+### Información
+- Cambie número de dueño en [Config](https://github.com/FG98F/dylux-fg/blob/main/config.js#L6)
+- Puede cambiar a la última versión de baileys editando el package.json [esta sección](https://github.com/FG98F/dylux-fg/blob/main/package.json#L42)
+
+### Ejemplo 
+En caso de duda, antes de instalar CuriosityBot-MD, pruebe el bot aquí
+
+[![Grupos](https://img.shields.io/badge/CuriosityBot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://muyprom) 
+
+***
+
+#### Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
+
+#### Heroku Buildpack
+| BuildPack | LINK |
+|--------|--------|
+| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
+| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+
 ### ACTIVA EL TERMUX
 ```sh
 > apt-get update -y && apt-get upgrade -y
