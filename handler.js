@@ -354,11 +354,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.diamond && global.db.data.users[m.sender].diamond < plugin.diamond * 1) {
-                    this.sendButton(m.chat, `ɴᴏ ᴛɪᴇɴᴇ ᴍᴀs ᴅɪᴀᴍᴀɴᴛᴇs 💎\nᴜsᴇ ᴇʟ sɪɢᴜɪᴇɴᴛᴇ ᴄᴏᴍᴀɴᴅᴏ ᴘᴀʀᴀ ᴄᴏᴍᴘʀᴀʀ ᴍᴀs ᴅɪᴀᴍᴀɴᴛᴇs\n*${usedPrefix}buy* <cantidad> \n*${usedPrefix}buyall*`, fgig, null, [['Buy', `${usedPrefix}buy`], ['Buy All', `${usedPrefix}buyall`]], m)
+                    this.reply(m.chat, `No tiene diamantes 💎`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `ɴᴇᴄᴇsɪᴛᴀ ᴇʟ ɴɪᴠᴇʟ ${plugin.level} ᴘᴀʀᴀ ᴘᴏᴅᴇʀ ᴜsᴀʀ ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ\nᴛᴜ ɴɪᴠᴇʟ ᴇs ${_user.level}`, m)
+                    this.reply(m.chat, `Nesesitas el nivel ${plugin.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -504,7 +504,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
                               (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] })                             
-//this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? 'ʙɪᴇɴᴠᴇɴɪᴅᴏ 👋' : ' ᴀᴅɪᴏs 🚮'), (action == 'add' ? '.ok' : '.llorar')], ['🛑 ᴍᴇɴᴜ 🛑', `#menu`]], null, {mentions: this.parseMention(text)})
+//this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? 'Bienvenido 👋' : 'Adios 🚮'), (action == 'add' ? '.ok' : '.llorar')], ['🛑 ᴍᴇɴᴜ 🛑', `#menu`]], null, {mentions: this.parseMention(text)})
                    }
                 }
             }
@@ -550,11 +550,11 @@ export async function callUpdate(callUpdate) {
     for (let nk of callUpdate) {
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
-    let callmsg = await this.reply(nk.from, `ʜᴏʟᴀ *@${nk.from.split('@')[0]}*, ʟᴀs ${nk.isVideo ? 'videollamadas' : 'llamadas'} ɴᴏ ᴇsᴛᴀɴ ᴘᴇʀᴍɪᴛɪᴅᴀs, sᴇʀᴀs ʙʟᴏǫᴜᴇᴀᴅᴏ.\n\nsɪ ᴀᴄᴄɪᴅᴇɴᴛᴀʟᴍᴇɴᴛᴇ ʟʟᴀᴍᴀsᴛᴇ ᴘᴏɴɢᴀsᴇ ᴇɴ ᴄᴏɴᴛᴀᴄᴛᴏ ᴄᴏɴ ᴍɪ ᴄʀᴇᴀᴅᴏʀ ᴘᴀʀᴀ ǫᴜᴇ ᴛᴇ ᴅᴇsʙʟᴏǫᴜᴇᴇ!\n\nɢʀᴜᴘᴏ ᴀsɪsᴛᴇɴᴄɪᴀ ғᴀᴄᴇʙᴏᴏᴋ: https://facebook.com/groups/872989990425789/`, false, { mentions: [nk.from] })
+    let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, Las ${nk.isVideo ? 'videollamadas' : 'llamadas'} las llamadas están prohibidas, seras bloqueado`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑;;;\nFN:ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ\nORG:ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑\nTITLE:\nitem1.TEL;waid=18134039996:+1 (813) 403-9996\nitem1.X-ABLabel:ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: 'ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Azami 👑;;;\nFN:Azami\nORG:Azami 👑\nTITLE:\nitem1.TEL;waid=18134039996:+598 9999\nitem1.X-ABLabel:Azami 👑\nX-WA-BIZ-DESCRIPTION:Solo cosas del bot.\nX-WA-BIZ-NAME:Azami 👑\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: 'Azami 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -573,18 +573,8 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-╭━─━─━─≪🔴≫─━─━─━╮
-│ 🤨 ʙᴏʀʀᴏ ᴜɴ ᴍᴇɴsᴀᴊᴇ 🤨
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│ 🔴 ᴀɴᴛɪ ᴅᴇʟᴇᴛᴇ 🔴
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│🔸️ *ɴᴏᴍʙʀᴇ :* @${participant.split`@`[0]} 
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│🔸ᴘᴀʀᴀ ᴅᴇsᴀᴄᴛɪᴠᴀʀ ᴇsᴛᴀ ᴏᴘᴄɪᴏɴ, 
-│🔸️ᴇsᴄʀɪʙɪ 
-│/off antidelete
-│#enable delete
-╰━─━─━─≪🔴≫─━─━─━╯
+🔎 BORRO UN MENSAJE
+🪁 *NOMBRE:* @${participant.split`@`[0]} 
 `.trim(), msg, {
             mentions: [participant]
         })
