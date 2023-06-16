@@ -42,12 +42,22 @@ para usuarios del heroku
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-### ACTIVA EL TERMUX
+### `ACTIVA EL TERMUX`
+- ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
-> apt-get update -y && apt-get upgrade -y
-> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-> git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && npm install && yarn 
-> npm start
+termux-setup-storage
+```
+```bash
+apt-get update -y && apt-get upgrade -y
+```
+```bash
+pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
+```
+```bash
+git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && yarn install && yarn install
+```
+```bash
+npm start
 ```
 
 ### `🔥 OBTENER OTRO CODIGO QR🔥`
