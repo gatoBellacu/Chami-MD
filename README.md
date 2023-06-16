@@ -66,7 +66,7 @@ git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && 
 npm start
 ```
 
-### `🔥 OBTENER OTRO CODIGO QR🔥`
+### `OBTENER OTRO CODIGO QR`
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
