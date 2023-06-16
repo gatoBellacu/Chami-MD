@@ -4,23 +4,9 @@ Bot el desarrollo
 <p align="center">
 <img src="https://telegra.ph/file/847bdd9005d7e75eb2373.jpg" alt="CuriosityBot-MD" width="900"/>
 </p>
+l
 
-### 💛 Características del bot 
-|  Funciones y comandos  |                                           Sip |
-| :---------------------------------------------: | :-----------: |
-| Crea stickers|✔️|
-| Bienvenida automática|✔️|
-| Anti-Link|✔️|
-| Anti-Fakes|✔️|
-| Jadibot |✔️|
-| Anti-Llamadas|✔️|
-| Modo Publico/Privado|✔️|
-| Herramientas de edición|✔️|
-| Descarga de música/videos|✔️|
-| Random commands|✔️|
-| Más funciones en adelante|♻️|
-
-### `➳ ⚙️ AJUSTES ⚙️`
+### `⚙️ AJUSTES ⚙️`
 - CAMBIAR NÚMERO DE PROPIETARIO [aqui](https://github.com/azami19/CuriosityBot-MD1/blob/main/config.js#L6)
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/Azami19/CuriosityBot-MD1/fork)
 - Puede cambiar a la última versión de baileys editando el package.json [aqui](https://github.com/Azami19/CuriosityBot-MD1/blob/main/package.json#L42)
