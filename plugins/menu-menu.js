@@ -68,7 +68,7 @@ let td = `${pickRandom([d1,d2,d3,d4,d5,d6])}`
     }
     }
     }
-    await conn.reply(m.chat, '*Enviando el menu . . .*', ftrol, fload) 
+    await conn.reply(m.chat, '*Enviando el menu . . .*', ftrol) 
     
 let menu = `*❏──── 「 MENU 」 ────❏*
 
