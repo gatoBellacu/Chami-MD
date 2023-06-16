@@ -1,5 +1,9 @@
 # `CuriosityBot-MD`
 
+<p align="center">
+<img src="https://tinyurl.com/26w3bh8t.jpg" alt="CuriosityBot-MD" width="900"/>
+</p>
+
 # 📖 Características del bot 
 |  Funciones y comandos  |                                           Sip |
 | :---------------------------------------------: | :-----------: |
