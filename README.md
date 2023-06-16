@@ -13,9 +13,7 @@ Bot el desarrollo
 | Anti-Link|✔️|
 | Anti-Fakes|✔️|
 | Jadibot |✔️|
-| Anti-Estranjeros|✔️|
 | Anti-Llamadas|✔️|
-| Anti-Privados|✔️|
 | Modo Publico/Privado|✔️|
 | Herramientas de edición|✔️|
 | Descarga de música/videos|✔️|
