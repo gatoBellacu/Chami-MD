@@ -1,6 +1,6 @@
 import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
    let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix}play2 Another love'
+if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix + command}* Another love`
   m.react(rwait)
   try {
   m.reply(`*Calma ✋🥸🤚*\n\n*Estoy descargando tu video 🔄*\n\n*Aguarde un momento, por favor*\n\n*Si el comando play2 no funciona utiliza el comando .ytmp4*`)
@@ -44,11 +44,11 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
       }
     })
     if (durationS > 18000) return conn.sendMessage(m.chat, { text: `*Link Original:* ${await cut(url)}\n\n_Durasi terlalu panjang..._\n*Duration Limit!*` }, { quoted: pesan })
-conn.sendMessage(m.chat, { video: { url: vide }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*\n${ttl}\n\n*📊 PESO*\n${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: pesan })
-   /* conn.sendMessage(m.chat, {
+//conn.sendMessage(m.chat, { video: { url: vide }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*📑 TÍTULO*\`, thumbnail: await fetch(yt.thumbnail) }, { quoted: pesan })
+   conn.sendMessage(m.chat, {
       video: {
         url: vide,
-        mimetype: 'video/webm',
+        mimetype: 'video/mp4',
         attributes: [
           {
             name: 'controls',
@@ -60,7 +60,7 @@ conn.sendMessage(m.chat, { video: { url: vide }, fileName: `${ttl}.mp4`, mimetyp
           }
         ]
       }
-    }, { quoted: pesan })*/
+    }, { quoted: pesan })
     m.react(done)
   } catch (e) {
     throw '[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾'
@@ -73,3 +73,12 @@ handler.exp = 0
 handler.limit = true
 handler.premium = false
 export default handler
+async function cut(url) {
+  url = encodeURIComponent(url)
+  let res = await fetch(`https://api.botcahx.live/api/linkshort/bitly?link=${url}&apikey=${btc}`)
+  if (!res.ok) throw false
+  return await res.text()
+}
+async function delay(ms) {
+   await new Promise(resolve => setTimeout(resolve, ms));
+}
