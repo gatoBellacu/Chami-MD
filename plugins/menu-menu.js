@@ -73,7 +73,7 @@ let td = `${pickRandom([d1,d2,d3,d4,d5,d6])}`
 let menu = `*❏──── 「 MENU 」 ────❏*
 
 *U S U A R I O*
-*Nombre:* ${taguser}
+*Nombre:* ${name}
 *Nivel:* ${level}
 *Coins:* ${money}
 *Exp:* ${exp}
@@ -101,7 +101,7 @@ ${usedPrefix}reporte
 ${usedPrefix}join
 bot
 
-*「 ＳＥＲ ＢＯＴ/ＪＡＤＩＢＯＴ 」*
+*「 S E R D O T/J A D I B O T 」*
 ${usedPrefix}Serbot 
 ${usedPrefix}jadibot
 ${usedPrefix}bots
