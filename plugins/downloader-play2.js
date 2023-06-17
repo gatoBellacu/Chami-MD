@@ -1,6 +1,6 @@
 import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
    let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix}play2 Another love'
+  if (!text) throw `*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix + command}* Another love`
   m.react(rwait)
   try {
   m.reply(`*Calma ✋🥸🤚*\n\n*Estoy descargando tu video 🔄*\n\n*Aguarde un momento, por favor*\n\n*Si el comando play2 no funciona utiliza el comando .ytmp4*`)
