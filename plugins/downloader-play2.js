@@ -1,7 +1,9 @@
 import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
    let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix + command}* Another love'
+  if (!text) throw '*⚠️ INGRESE EL NOMBRE DE LA CANCIÓN QUE ESTÁ BUSCANDO*\n\n*💡 EJEMPLO*\n*${usedPrefix}play2 Another love'
+  m.react(rwait)
   try {
+  m.reply(`*Calma ✋🥸🤚*\n\n*Estoy descargando tu video 🔄*\n\n*Aguarde un momento, por favor*\n\n*Si el comando play2 no funciona utiliza el comando .ytmp4*`)
     var vid = (await youtubeSearch(text)).video[0]
     if (!vid) throw '[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾'
     var { title, description, thumbnail, videoId, durationH, durationS, viewH, publishedTime } = vid
@@ -59,12 +61,13 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
         ]
       }
     }, { quoted: pesan })
+    m.react(done)
   } catch (e) {
     throw '[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾'
   }
 }
 
-handler.command = handler.help = ['play2', 'ytmp4', 'ytv']
+handler.command = handler.help = ['play2', 'playvideo']
 handler.tags = ['downloader']
 handler.exp = 0
 handler.limit = true
