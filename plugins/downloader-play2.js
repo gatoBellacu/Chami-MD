@@ -64,7 +64,7 @@ import { youtubedl, youtubeSearch, youtubedlv2, youtubedlv3 } from '@bochilteam/
   }
 }
 
-handler.command = handler.help = ['ytmp4', 'ytv']
+handler.command = handler.help = ['play2', 'ytmp4', 'ytv']
 handler.tags = ['downloader']
 handler.exp = 0
 handler.limit = true
