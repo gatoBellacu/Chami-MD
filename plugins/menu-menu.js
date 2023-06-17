@@ -101,7 +101,7 @@ ${usedPrefix}reporte
 ${usedPrefix}join
 bot
 
-*「 S E R D O T/J A D I B O T 」*
+*「 S E R B O T/J A D I B O T 」*
 ${usedPrefix}Serbot 
 ${usedPrefix}jadibot
 ${usedPrefix}bots
