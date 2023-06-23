@@ -1,29 +1,14 @@
-import { generateWAMessageFromContent } from '@adiwajshing/baileys'
-let handler  = async (m, { conn }) => {
-let texto = `
-╭─────────────┈⊷
-│ *INSTALACIÓN DE CURIOSITYBOT-MD*
-╰┬────────────┈⊷
-┌┤ *REQUISITOS PARA LAS INSTALACION*
-┌┤➳ _Dudas: wa.me/59894808483_
-┌┤➳ _Tutoríal: pronto_
-┌┤➳ _1 GB de almacenamiento_
-┌┤➳ _Termux: https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file_
-┌┤➳ _GitHub: https://github.com/Azami19/CuriosityBot-MD_
-┌┤➳ _un whatsapp inmune (secundario)_
-┌┤➳ _un número victual_
-┌┤➳ _2 dispositivo o una PC para escanear_
-╰┬────────────┈⊷
-  │ *COMANDO DE INSTALACION TERMUX*
-  │> termux-setup-storage
-  │> apt-get update -y && apt-get upgrade -y
-  │> pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
-  │> git clone https://github.com/Azami19/CuriosityBot-MD1 && cd CuriosityBot-MD1 && yarn 
-  │> npm start 
-  ╰────────────┈⊷` 
-let aa = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: `${texto}`.trim(), contextInfo: { externalAdReply: { title: 'Curiositybug', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/Azami19/CuriosityBot-MD' }, mentionedJid: [m.sender] }}}, aa)
-conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })  
+import fs from 'fs'
+let handler = async (m, { text, usedPrefix, command }) => {
+    if (!text) throw `uhm.. Que nombre le pongo al plugin?`
+    if (!m.quoted.text) throw `Responder al mensaje!`
+    let path = `plugins/${text}.js`
+    await fs.writeFileSync(path, m.quoted.text)
+    m.reply(`Guardado en ${path}`)
 }
-handler.command = /^(instalarbot)/i
+handler.help = ['saveplugin'].map(v => v + ' *<nombre>*')
+handler.tags = ['owner']
+handler.command = ["salvar", "saveplugin"]
+
+handler.rowner = true
 export default handler
